@@ -1,5 +1,5 @@
 import { FaPhoneAlt } from "react-icons/fa";
-import HeroImg from "/src/assets/HeroImg.png"; // Adjust the path as necessary
+import HeroImg from "/src/assets/Home/HeroImg.png"; // Adjust the path as necessary
 
 const HeroMain = () => {
   return (

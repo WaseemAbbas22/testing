@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import Cir1 from "/src/assets/cir1.png";
+import Cir1 from "/src/assets/Home/cir1.png";
 const ContactRequest = () => {
   const [service, setService] = useState("");
   const [name, setName] = useState("");

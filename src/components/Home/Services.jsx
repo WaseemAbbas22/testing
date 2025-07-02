@@ -1,11 +1,11 @@
-import Service1 from "/src/assets/Ser1.jpg";
-import Service2 from "/src/assets/Ser1.jpg";
-import Service3 from "/src/assets/Ser1.jpg";
-import Service4 from "/src/assets/Ser1.jpg";
-import Service5 from "/src/assets/Ser1.jpg";
-import Service6 from "/src/assets/Ser1.jpg";
-import Service7 from "/src/assets/Ser1.jpg";
-import Service8 from "/src/assets/Ser1.jpg";
+import Service1 from "/src/assets/Home/Ser1.jpg";
+import Service2 from "/src/assets/Home/Ser1.jpg";
+import Service3 from "/src/assets/Home/Ser1.jpg";
+import Service4 from "/src/assets/Home/Ser1.jpg";
+import Service5 from "/src/assets/Home/Ser1.jpg";
+import Service6 from "/src/assets/Home/Ser1.jpg";
+import Service7 from "/src/assets/Home/Ser1.jpg";
+import Service8 from "/src/assets/Home/Ser1.jpg";
 
 const Services = () => {
   const services = [

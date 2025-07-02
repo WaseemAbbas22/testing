@@ -1,10 +1,10 @@
-import Company1 from "/src/assets/company1.png";
-import Company2 from "/src/assets/company2.png";
-import Company3 from "/src/assets/company3.png";
-import Company4 from "/src/assets/company4.png";
-import Company5 from "/src/assets/company5.png";
-import Company6 from "/src/assets/company6.png";
-import Company7 from "/src/assets/company7.png";
+import Company1 from "/src/assets/Home/company1.png";
+import Company2 from "/src/assets/Home/company2.png";
+import Company3 from "/src/assets/Home/company3.png";
+import Company4 from "/src/assets/Home/company4.png";
+import Company5 from "/src/assets/Home/company5.png";
+import Company6 from "/src/assets/Home/company6.png";
+import Company7 from "/src/assets/Home/company7.png";
 
 const Branches = () => {
   return (

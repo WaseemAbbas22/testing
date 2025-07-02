@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import Logo from '/src/assets/Logo.png';
+import Logo from '/src/assets/Home/Logo.png';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { HiMenu } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,18 +17,16 @@ const Navbar = () => {
 
       {/* Desktop Links */}
       <ul className="hidden md:flex items-center justify-center space-x-5 flex-1">
-        <li><a href="#" className="text-sm hover:text-green-600 hover:underline transition">Home</a></li>
-        <li><a href="#" className="text-sm hover:text-green-600 hover:underline transition">About</a></li>
-        <li><a href="#" className="text-sm hover:text-green-600 hover:underline transition">Services</a></li>
-        <li><a href="#" className="text-sm hover:text-green-600 hover:underline transition">Portfolio</a></li>
-        <li><a href="#" className="text-sm hover:text-green-600 hover:underline transition">Pricing</a></li>
-        <li><a href="#" className="text-sm hover:text-green-600 hover:underline transition">Blog</a></li>
-        <li><a href="#" className="text-sm hover:text-green-600 hover:underline transition">Testimonials</a></li>
-        <li><a href="#" className="text-sm hover:text-green-600 hover:underline transition">FAQ</a></li>
-        <li><a href="#" className="text-sm hover:text-green-600 hover:underline transition">Careers</a></li>
-        <li><a href="#" className="text-sm hover:text-green-600 hover:underline transition">Contact</a></li>
-        <li><a href="#" className="text-sm hover:text-green-600 hover:underline transition">Privacy</a></li>
-        <li><a href="#" className="text-sm hover:text-green-600 hover:underline transition">Terms</a></li>
+        <li><Link to="/" className="text-sm hover:text-green-600 hover:underline transition">Home</Link></li>
+        <li><Link to="/pests" className="text-sm hover:text-green-600 hover:underline transition">Pests</Link></li>
+        <li><Link to="/services" className="text-sm hover:text-green-600 hover:underline transition">Services</Link></li>
+        <li><Link to="/sectors" className="text-sm hover:text-green-600 hover:underline transition">Sectors</Link></li>
+        <li><Link to="/about" className="text-sm hover:text-green-600 hover:underline transition">About Us</Link></li>
+        <li><Link to="/documents" className="text-sm hover:text-green-600 hover:underline transition">Documents</Link></li>
+        <li><Link to="/equipment-trading" className="text-sm hover:text-green-600 hover:underline transition">Pest Control Equipment Trading</Link></li>
+        <li><Link to="/careers" className="text-sm hover:text-green-600 hover:underline transition">Careers</Link></li>
+        <li><Link to="/blogs" className="text-sm hover:text-green-600 hover:underline transition">Blogs</Link></li>
+        <li><Link to="/contact" className="text-sm hover:text-green-600 hover:underline transition">Contact Us</Link></li>
       </ul>
 
       {/* Call Button */}
@@ -49,19 +48,17 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-md p-6 md:hidden z-50">
-          <ul className="flex flex-col space-y-4 text-lg">
-            <li><a href="#" className="text-gray-900 hover:text-green-600 hover:underline transition">Home</a></li>
-            <li><a href="#" className="text-gray-900 hover:text-green-600 hover:underline transition">About</a></li>
-            <li><a href="#" className="text-gray-900 hover:text-green-600 hover:underline transition">Services</a></li>
-            <li><a href="#" className="text-gray-900 hover:text-green-600 hover:underline transition">Portfolio</a></li>
-            <li><a href="#" className="text-gray-900 hover:text-green-600 hover:underline transition">Pricing</a></li>
-            <li><a href="#" className="text-gray-900 hover:text-green-600 hover:underline transition">Blog</a></li>
-            <li><a href="#" className="text-gray-900 hover:text-green-600 hover:underline transition">Testimonials</a></li>
-            <li><a href="#" className="text-gray-900 hover:text-green-600 hover:underline transition">FAQ</a></li>
-            <li><a href="#" className="text-gray-900 hover:text-green-600 hover:underline transition">Careers</a></li>
-            <li><a href="#" className="text-gray-900 hover:text-green-600 hover:underline transition">Contact</a></li>
-            <li><a href="#" className="text-gray-900 hover:text-green-600 hover:underline transition">Privacy</a></li>
-            <li><a href="#" className="text-gray-900 hover:text-green-600 hover:underline transition">Terms</a></li>
+          <ul className="hidden md:flex items-center justify-center space-x-5 flex-1">
+            <li><Link to="/" className="text-sm hover:text-green-600 hover:underline transition">Home</Link></li>
+            <li><Link to="/pests" className="text-sm hover:text-green-600 hover:underline transition">Pests</Link></li>
+            <li><Link to="/services" className="text-sm hover:text-green-600 hover:underline transition">Services</Link></li>
+            <li><Link to="/sectors" className="text-sm hover:text-green-600 hover:underline transition">Sectors</Link></li>
+            <li><Link to="/about" className="text-sm hover:text-green-600 hover:underline transition">About Us</Link></li>
+            <li><Link to="/documents" className="text-sm hover:text-green-600 hover:underline transition">Documents</Link></li>
+            <li><Link to="/equipment-trading" className="text-sm hover:text-green-600 hover:underline transition">Pest Control Equipment Trading</Link></li>
+            <li><Link to="/careers" className="text-sm hover:text-green-600 hover:underline transition">Careers</Link></li>
+            <li><Link to="/blogs" className="text-sm hover:text-green-600 hover:underline transition">Blogs</Link></li>
+            <li><Link to="/contact" className="text-sm hover:text-green-600 hover:underline transition">Contact Us</Link></li>
           </ul>
 
           <div className="bg-green-600 rounded-full border border-gray-300 mt-6 w-40 h-11 flex overflow-hidden">

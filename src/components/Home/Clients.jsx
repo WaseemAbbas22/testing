@@ -1,12 +1,12 @@
-import Client1 from "/src/assets/LogoClients1.png";
-import Client2 from "/src/assets/LogoClients2.png";
-import Client3 from "/src/assets/LogoClients3.png";
-import Client4 from "/src/assets/LogoClients4.png";
-import Client5 from "/src/assets/LogoClients5.png";
-import Client6 from "/src/assets/LogoClients6.png";
-import Client7 from "/src/assets/LogoClients7.png";
-import Client8 from "/src/assets/LogoClients8.png";
-import Client9 from "/src/assets/LogoClient9.png";
+import Client1 from "/src/assets/Home/LogoClients1.png";
+import Client2 from "/src/assets/Home/LogoClients2.png";
+import Client3 from "/src/assets/Home/LogoClients3.png";
+import Client4 from "/src/assets/Home/LogoClients4.png";
+import Client5 from "/src/assets/Home/LogoClients5.png";
+import Client6 from "/src/assets/Home/LogoClients6.png";
+import Client7 from "/src/assets/Home/LogoClients7.png";
+import Client8 from "/src/assets/Home/LogoClients8.png";
+import Client9 from "/src/assets/Home/LogoClient9.png";
 
 const OurClients = () => {
   const clients = [

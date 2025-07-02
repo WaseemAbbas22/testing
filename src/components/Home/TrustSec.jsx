@@ -1,4 +1,4 @@
-import Img from "/src/assets/Trust.jpg"; // Replace with your actual image path 
+import Img from "/src/assets/Home/Trust.jpg"; // Replace with your actual image path 
 
 const TrustSec = () => {
   const stats = [

@@ -1,6 +1,6 @@
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
-import googleLogo from "/src/assets/Google.png"; // Adjust your path
-import facebookLogo from "/src/assets/facebook.png"; // Adjust your path
+import googleLogo from "/src/assets/Home/Google.png"; // Adjust your path
+import facebookLogo from "/src/assets/Home/facebook.png"; // Adjust your path
 
 const Ratings = () => {
   const renderStars = (rating) => {

@@ -1,7 +1,7 @@
-import Member1 from "/src/assets/image1.png";
-import Member2 from "/src/assets/image2.png";
-import Member3 from "/src/assets/image3.png";
-import Member4 from "/src/assets/image1.png";
+import Member1 from "/src/assets/Home/image1.png";
+import Member2 from "/src/assets/Home/image2.png";
+import Member3 from "/src/assets/Home/image3.png";
+import Member4 from "/src/assets/Home/image1.png";
 
 const OurTeam = () => {
   const team = [

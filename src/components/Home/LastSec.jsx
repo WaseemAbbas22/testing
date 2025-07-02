@@ -1,6 +1,6 @@
-import Pic1 from "/src/assets/step1.png";
-import Pic2 from "/src/assets/step2.png";
-import Pic3 from "/src/assets/step3.png";
+import Pic1 from "/src/assets/Home/step1.png";
+import Pic2 from "/src/assets/Home/step2.png";
+import Pic3 from "/src/assets/Home/step3.png";
 
 const KeepSteps = () => {
   const cards = [
