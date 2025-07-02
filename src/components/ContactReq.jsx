@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-
+import Cir1 from "/src/assets/cir1.png";
 const ContactRequest = () => {
   const [service, setService] = useState("");
   const [name, setName] = useState("");
@@ -25,7 +25,7 @@ const ContactRequest = () => {
     <div
       className="flex flex-col justify-center items-center text-center bg-cover bg-center px-6 py-12"
       style={{
-        backgroundImage: "url('https://yourdomain.com/your-bg-image.jpg')",
+        backgroundImage: `url(${Cir1})`,
         backgroundColor: "rgba(0,0,0,0.5)",
         backgroundBlendMode: "darken",
       }}

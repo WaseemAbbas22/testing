@@ -9,6 +9,12 @@ import AboutHome from "../components/AboutHome"
 import Branches from "../components/Branches"
 import Services from "../components/Services"
 import Process from "../components/Process"
+import TrustSec from "../components/TrustSec"
+import OurTeam from "../components/OurTeam"
+import Clients from "../components/Clients"
+import Reviews from "../components/Reviews"
+import Form from "../components/Form"
+import LastSec from "../components/LastSec" 
 const Home = () => {
   return (
     <>
@@ -22,6 +28,12 @@ const Home = () => {
         <Branches />
         <Services />
         <Process />
+        <TrustSec />
+        <OurTeam />
+        <Clients />
+        <Reviews />
+        <Form /> 
+        <LastSec />   
         <Footer />
     </div>
     </>

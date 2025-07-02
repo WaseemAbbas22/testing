@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h2 className="font-semibold mb-5">Contact</h2>
+
             <ul className="text-sm space-y-1">
               <li className="flex items-start gap-2">
                 <FaPhoneAlt className="mt-1" />
