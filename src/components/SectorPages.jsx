@@ -20,7 +20,7 @@ const SectorsPage = () => {
       <div className="max-w-7xl w-full flex flex-col space-y-10">
         
         {/* Heading */}
-        <h2 className="text-center text-2xl md:text-3xl font-bold">
+        <h2 className="text-center text-2xl md:text-3xl font-semibold">
           Industries We Protect — Comprehensive Pest Solutions for Every Sector
         </h2>
 
