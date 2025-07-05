@@ -1,5 +1,5 @@
-import CEOImg from "/src/assets/About/ceo.png";
-import MDImg from "/src/assets/About/md.png";
+import CEOImg from "/src/assets/About/CEO.png";
+import MDImg from "/src/assets/About/MD.png";
 
 const Messages = () => {
   return (
