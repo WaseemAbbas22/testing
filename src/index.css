@@ -1,15 +1,17 @@
-/* Import Google Fonts and Typekit Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Import Google Fonts and Typekit Fonts */@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+
 @import url('https://use.typekit.net/jbl6izv.css');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 body {
+  font-family: 'Open Sans',sans-serif;
   margin: 0;
   width: 100vw;
-  font-family: Inter;
   background-color: var(--White, #fff);
   padding: 0;
   overflow-x: hidden;

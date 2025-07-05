@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import Cir1 from "/src/assets/Home/cir1.png";
+import Cir1 from "/src/assets/Blogs/FreeIns.png";
+
 const ContactRequest = () => {
   const [service, setService] = useState("");
   const [name, setName] = useState("");
@@ -23,11 +24,12 @@ const ContactRequest = () => {
 
   return (
     <div
-      className="flex flex-col justify-center items-center text-center bg-cover bg-center px-6 py-12"
+      className="flex flex-col justify-center items-center text-center bg-cover px-0 py-12 w-full"
       style={{
         backgroundImage: `url(${Cir1})`,
-        backgroundColor: "rgba(0,0,0,0.5)",
+        backgroundColor: "rgba(0,0,0,0.4)", // decreased dark shade
         backgroundBlendMode: "darken",
+        backgroundPosition: "center 80%", // move image slightly above bottom
       }}
     >
       <h2 className="text-white text-3xl font-bold mb-6">Get a free inspection</h2>
@@ -42,11 +44,11 @@ const ContactRequest = () => {
           className="flex flex-col md:flex-row bg-white rounded shadow overflow-hidden w-full max-w-3xl"
         >
           {/* Dropdown */}
-          <div className="flex-1 px-4 py-3">
+          <div className="flex-1 px-4 py-1">
             <select
               value={service}
               onChange={(e) => setService(e.target.value)}
-              className="w-full text-gray-800 text-base focus:outline-none"
+              className="w-full text-gray-800 text-base focus:outline-none h-10"
               required
             >
               <option value="">Select Service</option>
@@ -57,33 +59,36 @@ const ContactRequest = () => {
           </div>
 
           {/* Divider */}
-          <div className="hidden md:block w-px bg-green-600 h-12"></div>
+          <div className="hidden md:block w-px bg-green-600 h-10"></div>
 
           {/* Name */}
-          <div className="flex-1 px-4 py-3">
+          <div className="flex-1 px-4 py-1">
             <input
               type="text"
               placeholder="Your Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full text-gray-800 text-base focus:outline-none"
+              className="w-full text-gray-800 text-base focus:outline-none h-10"
               required
             />
           </div>
 
           {/* Divider */}
-          <div className="hidden md:block w-px bg-green-600 h-12"></div>
+          <div className="hidden md:block w-px bg-green-600 h-10"></div>
 
           {/* Phone Number with country flag */}
-          <div className="flex-1 px-4 py-3">
+          <div className="flex-1 px-4 py-1">
             <PhoneInput
               country={"ae"}
               value={phone}
               onChange={(phone) => setPhone(phone)}
               inputStyle={{
                 width: "100%",
-                height: "48px",
+                height: "40px",
                 fontSize: "1rem",
+                border: "none", // removed border
+                outline: "none", // removed focus outline
+                boxShadow: "none", // removed inner shadow
               }}
               containerStyle={{ width: "100%" }}
               required
@@ -91,16 +96,16 @@ const ContactRequest = () => {
           </div>
 
           {/* Divider */}
-          <div className="hidden md:block w-px bg-green-600 h-12"></div>
+          <div className="hidden md:block w-px bg-green-600 h-10"></div>
 
           {/* Email */}
-          <div className="flex-1 px-4 py-3">
+          <div className="flex-1 px-4 py-1">
             <input
               type="email"
               placeholder="Your Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full text-gray-800 text-base focus:outline-none"
+              className="w-full text-gray-800 text-base focus:outline-none h-10"
               required
             />
           </div>

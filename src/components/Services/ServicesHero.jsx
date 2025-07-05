@@ -1,6 +1,6 @@
 import { FaPhoneAlt } from 'react-icons/fa';
 import PropTypes from 'prop-types';
-//import heroImg from '../../assets/Services/step2.png'; // Adjust the path as necessary
+// import heroImg from '../../assets/Services/step2.png'; // Adjust the path as necessary
 
 const ServicesHero = ({ title = "Services", breadcrumb = "Home > Services", bgImg }) => {
   return (
@@ -17,16 +17,23 @@ const ServicesHero = ({ title = "Services", breadcrumb = "Home > Services", bgIm
         <p className="text-sm mt-2">{breadcrumb}</p>
       </div>
 
-      {/* Call Box remains unchanged */}
-      <div className="absolute bottom-5 right-5">
-        <div className="bg-white border border-gray-300 w-52 h-12 rounded-full flex overflow-hidden shadow">
-          <div className="bg-white flex items-center justify-center w-1/3">
+      {/* Call Box */}
+      <div className="absolute bottom-5 right-0">
+        <div className="flex rounded overflow-hidden shadow" style={{ width: "200px", height: "50px" }}>
+          
+          {/* Icon Part */}
+          <div className="bg-white flex items-center justify-center px-3">
             <FaPhoneAlt className="text-green-600 text-lg" />
           </div>
-          <div className="flex flex-col justify-center pl-2 w-2/3">
-            <span className="text-xs text-green-600 font-semibold">Call for Free Inspection</span>
-            <span className="text-xs font-medium text-gray-700">+92 300 1234567</span>
+
+          {/* Text Part */}
+          <div className="bg-green-600 flex flex-col justify-center px-3 flex-1">
+            <span className="text-sm text-white font-semibold leading-tight">
+              Call for Schedule
+            </span>
+            <span className="text-xs text-white font-bold">0800-25456158</span>
           </div>
+
         </div>
       </div>
     </div>

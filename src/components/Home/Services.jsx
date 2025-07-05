@@ -1,22 +1,22 @@
-import Service1 from "/src/assets/Home/Ser1.jpg";
-import Service2 from "/src/assets/Home/Ser1.jpg";
-import Service3 from "/src/assets/Home/Ser1.jpg";
-import Service4 from "/src/assets/Home/Ser1.jpg";
-import Service5 from "/src/assets/Home/Ser1.jpg";
-import Service6 from "/src/assets/Home/Ser1.jpg";
-import Service7 from "/src/assets/Home/Ser1.jpg";
-import Service8 from "/src/assets/Home/Ser1.jpg";
+import Service1 from "/src/assets/Pests/ant.png";
+import Service2 from "/src/assets/Pests/termites.png";
+import Service3 from "/src/assets/Pests/cockroch.png";
+import Service4 from "/src/assets/Pests/redbug.png";
+import Service5 from "/src/assets/Pests/mosquitoes.png";
+import Service6 from "/src/assets/Pests/rodent.png";
+import Service7 from "/src/assets/Pests/flies.png";
+import Service8 from "/src/assets/Pests/spider.png";
 
 const Services = () => {
   const services = [
     { img: Service1, title: "Ants", subtitle: "Treatment" },
-    { img: Service2, title: "Termites", subtitle: "Control" },
-    { img: Service3, title: "Cockroaches", subtitle: "Removal" },
-    { img: Service4, title: "Bed Bugs", subtitle: "Solution" },
-    { img: Service5, title: "Mosquitoes", subtitle: "Management" },
-    { img: Service6, title: "Rats", subtitle: "Extermination" },
-    { img: Service7, title: "Bees", subtitle: "Relocation" },
-    { img: Service8, title: "Spiders", subtitle: "Control" },
+    { img: Service2, title: "Termites", subtitle: "Treatment" },
+    { img: Service3, title: "Cockroaches", subtitle: "Treatment" },
+    { img: Service4, title: "Bed Bugs", subtitle: "Treatment" },
+    { img: Service5, title: "Mosquitoes", subtitle: "Treatment" },
+    { img: Service6, title: "Rats", subtitle: "Treatment" },
+    { img: Service7, title: "Bees", subtitle: "Treatment" },
+    { img: Service8, title: "Spiders", subtitle: "Treatment" },
   ];
 
   return (

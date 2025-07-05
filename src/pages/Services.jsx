@@ -7,6 +7,7 @@ import Process from "../components/Home/Process"
 import ContactRequest from "../components/Home/ContactReq"
 import ServicesTabs from "../components/Services/ServicesTabs"
 import ServicesHeroImg from '/src/assets/Services/step2.png'; // Adjust the path as necessary
+import ServicesImg from '/src/assets/Services/step2.png'; // Adjust the path as necessary
 
 const Services = () => {
   return (
@@ -19,7 +20,12 @@ const Services = () => {
           breadcrumb="Home > Services"
           bgImg={ServicesHeroImg}
         />
-        <ServicesSection />
+        <ServicesSection
+          title="Services"
+          description="Detailed services text here..."
+          buttonText="Call For Services"
+          image={ServicesImg}
+        />
         <ServicesTabs />
         <Process />
         <ContactRequest />

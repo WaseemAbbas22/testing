@@ -9,10 +9,10 @@ const Process = () => {
   ];
 
   return (
-    <div className="w-full h-[50vh] bg-white flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32">
+    <div className="w-full h-[60vh] bg-white flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32">
 
       {/* Main Heading */}
-      <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 font-serif">
+      <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 ">
         Domestic & Commercial Clients
       </h2>
 
@@ -26,7 +26,7 @@ const Process = () => {
         {steps.map((step, index) => (
           <div
             key={index}
-            className="bg-gray-100 rounded-lg shadow-md flex flex-col items-center justify-center py-6 px-4 relative hover:shadow-lg transition"
+            className="bg-gray-100 rounded-lg border border-gray-300 shadow-md flex flex-col items-center justify-center py-10 px-4 relative hover:shadow-lg transition"
           >
             {/* Number Box (Left Upper Corner) */}
             <div className="absolute top-2 left-2 bg-green-600 text-white rounded-md w-6 h-6 flex items-center justify-center text-xs font-bold">

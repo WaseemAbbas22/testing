@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-//import ReactCountryFlag from "react-country-flag";
 
 const TopBar = () => {
   const [selectedCountry, setSelectedCountry] = useState("AE");
@@ -23,14 +22,17 @@ const TopBar = () => {
             <FaPhoneAlt className="text-xs" />
             <span className="text-xs">+971 52 152 8725</span>
           </div>
-          <div className="flex items-center space-x-3">
+
+          {/* Follow us on */}
+          <div className="flex items-center space-x-2">
+            <span className="text-xs">Follow us on:</span>
             <a href="#"><FaFacebookF className="text-xs hover:text-gray-200" /></a>
             <a href="#"><FaTwitter className="text-xs hover:text-gray-200" /></a>
             <a href="#"><FaInstagram className="text-xs hover:text-gray-200" /></a>
           </div>
         </div>
 
-        {/* Right Side: Country Dropdown */}
+        {/* Right Side: Country Dropdown with emoji flags */}
         <div className="relative">
           <select
             value={selectedCountry}

@@ -10,91 +10,52 @@ import Client9 from "/src/assets/Home/LogoClient9.png";
 
 const OurClients = () => {
   const clients = [
-    {
-      logo: Client1,
-      main: "Pure Food Processing Industries LLC",
-      subs: ["GGFT", "Golden Green General Trading"]
-    },
-    {
-      logo: Client2,
-      main: "Three Star Printing Press",
-      subs: ["hidubai", "Seven Albion Food and Beverages LLC", "JPM InvestmentWeek LLC"]
-    },
-    {
-      logo: Client3,
-      main: "GUITMANN PVB",
-      subs: []
-    },
-    {
-      logo: Client4,
-      main: "ABC Industries",
-      subs: ["SubBrand A", "SubBrand B"]
-    },
-    {
-      logo: Client5,
-      main: "XYZ Holdings",
-      subs: []
-    },
-    {
-      logo: Client6,
-      main: "Horizon Traders",
-      subs: ["Horizon Foods"]
-    },
-    {
-      logo: Client7,
-      main: "Global Ventures",
-      subs: ["Venture A", "Venture B", "Venture C"]
-    },
-    {
-      logo: Client8,
-      main: "Quick Logistics",
-      subs: []
-    },
-    {
-      logo: Client9,
-      main: "Urban Developers",
-      subs: ["Urban Living", "Urban Commercial"]
-    },
+    { logo: Client1, main: "Pure Food Processing Industries L.L.C" },
+    { logo: Client2, main: "Three Star Printing Press" },
+    { logo: Client3, main: "Gutmann PVB Plastic Sheets Manufacturing L.L.C" },
+    { logo: Client4, main: "Golden Grains General Trading" },
+    { logo: Client5, main: "hidubai Sama Alkhair Food and Beverages L.L.C" },
+    { logo: Client6, main: "Boxx Storage" },
+    { logo: Client7, main: "IFM Investments L.L.C" },
+    { logo: Client8, main: "Meridian PF General Trading" },
+    { logo: Client9, main: "Golden Ready Mix" },
   ];
 
   return (
     <div className="w-full flex flex-col bg-white py-12 px-6 md:px-16 lg:px-24 xl:px-32">
+      <div className="flex flex-col md:flex-row md:items-center md:space-x-10">
+        
+        {/* Left Side - Centered Heading */}
+        <div className="md:w-1/4 flex items-center justify-center mb-8 md:mb-0">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 font-serif">
+            Our Clients
+          </h2>
+        </div>
 
-      {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 font-serif text-center mb-2">
-        Our Clients
-      </h2>
-      <hr className="border-gray-400 mb-8 w-24 mx-auto" />
-
-      {/* Client Entries Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {clients.map((client, index) => (
-          <div key={index} className="flex flex-col border-b pb-4">
-            
-            {/* Main Name with Logo */}
-            <div className="flex items-center mb-2">
-              {client.logo && (
-                <img
-                  src={client.logo}
-                  alt={`${client.main} logo`}
-                  className="w-10 h-10 object-contain mr-3"
-                />
-              )}
-              <h3 className="text-lg font-bold text-gray-800">{client.main}</h3>
+        {/* Right Side - Clients Grid with Thin Lines */}
+        <div className="md:w-3/4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 divide-x divide-y divide-black divide-opacity-10">
+          {clients.map((client, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center text-center px-4 py-6"
+            >
+              <img
+                src={client.logo}
+                alt={client.main}
+                className="w-24 h-16 object-contain mb-2"
+              />
+              <p className="text-sm text-gray-800">{client.main}</p>
             </div>
+          ))}
+        </div>
+      </div>
 
-            {/* Sub Entities */}
-            <div className="pl-12 space-y-1">
-              {client.subs.map((sub, subIndex) => (
-                <p key={subIndex} className="text-sm text-gray-600">{sub}</p>
-              ))}
-            </div>
-
-            {/* Horizontal line between entries */}
-            {index < clients.length - 1 && <hr className="mt-4 border-gray-300" />}
-
-          </div>
-        ))}
+      {/* Optional: Dots at bottom */}
+      <div className="flex justify-center mt-8 space-x-2">
+        <span className="w-2 h-2 bg-green-600 rounded-full"></span>
+        <span className="w-2 h-2 bg-gray-300 rounded-full"></span>
+        <span className="w-2 h-2 bg-gray-300 rounded-full"></span>
+        <span className="w-2 h-2 bg-gray-300 rounded-full"></span>
       </div>
     </div>
   );
