@@ -42,7 +42,7 @@ const OurClients = () => {
               <img
                 src={client.logo}
                 alt={client.main}
-                className="w-24 h-16 object-contain mb-2"
+                className="w-20 h-12 object-contain mb-2"
               />
               <p className="text-sm text-gray-800">{client.main}</p>
             </div>

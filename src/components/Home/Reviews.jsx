@@ -70,7 +70,7 @@ const Reviews = () => {
                 I have been using imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.
               </p>
             </div>
-            <a href="#" className="text-green-600 underline px-5">Read more</a>
+            
           </div>
         ))}
       </div>

@@ -21,8 +21,8 @@ const Services = () => {
           bgImg={ServicesHeroImg}
         />
         <ServicesSection
-          title="Services"
-          description="Detailed services text here..."
+          title="Our Services"
+          description="At Accurate Pest Control, we understand that protecting your home or business from pests is about more than just treatments — it’s about creating a safe, healthy, and comfortable space for you, your family, your employees, and your customers. That’s why our services go far beyond standard pest removal. We provide comprehensive, science-backed pest management solutions tailored to your unique environment, using the latest tools and eco-friendly methods to deliver results that last. From routine inspections and targeted treatments to ongoing monitoring and prevention, our certified professionals work diligently to ensure pests are not just controlled but kept away for good. Whether you’re facing a sudden infestation or want to prevent one before it starts, trust Accurate Pest Control to handle every detail with care, efficiency, and a commitment to your peace of mind. Experience service excellence that protects what matters most — every single day."
           buttonText="Call For Services"
           image={ServicesImg}
         />

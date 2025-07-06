@@ -2,7 +2,7 @@ import Img from "/src/assets/Home/trustsec.png"; // Replace with your actual ima
 
 const TrustSec = () => {
   const stats = [
-    { number: "1000+", label: "Happy Residential Clients" },
+    { number: "1000+", label: "Happy  Residential Clients " },
     { number: "500+", label: "Commercial Sites Protected" },
     { number: "800+", label: "Sanitization Jobs Completed" },
     { number: "99%", label: "Customer Satisfaction Rate" },
@@ -28,15 +28,27 @@ const TrustSec = () => {
 
         {/* Stats with 70% width */}
         <div className="w-[70%] mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between mt-6 w-full">
+          <div className="flex flex-col md:flex-row items-center justify-between ml-[-200px] mt-6 w-full">
             {stats.map((stat, index) => (
-              <div key={index} className="flex flex-col items-center text-center px-4">
-                <h3 className="text-green-600 text-2xl md:text-3xl font-bold mb-1">
-                  {stat.number}
-                </h3>
-                <p className="text-sm md:text-base">{stat.label}</p>
+              <div key={index} className="flex items-center">
+
+                {/* Stat Block */}
+                <div className="flex flex-col items-center text-center px-4">
+                  <h3 className="text-green-600 text-2xl md:text-4xl font-bold mb-1">
+                    {stat.number}
+                  </h3>
+                  <p className="text-sm md:text-base w-48">
+                    {stat.label}
+                  </p>
+                </div>
+
+                {/* Divider Line except after last item */}
+                {index !== stats.length - 1 && (
+                  <div className="hidden md:block h-10 border-r border-gray-300 mx-4"></div>
+                )}
               </div>
             ))}
+
           </div>
         </div>
       </div>
