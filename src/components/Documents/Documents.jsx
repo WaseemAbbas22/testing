@@ -6,7 +6,6 @@ const Documents = () => {
     id: i + 1,
     name: `Document ${i + 1}`,
     validFrom: "01-01-2025",
-    validTo: "31-12-2025",
     msdsLink: "#",
     corLink: "#",
   }));
@@ -20,7 +19,7 @@ const Documents = () => {
         >
           {/* Document Name */}
           <div className="flex-1 mb-2 md:mb-0">
-            <h2 className="text-base md:text-lg font-semibold text-gray-800">
+            <h2 className="text-base md:text-lg font-semibold ">
               {doc.name}
             </h2>
           </div>
@@ -29,7 +28,7 @@ const Documents = () => {
           <div className="flex-1 mb-2 md:mb-0 text-gray-800 text-sm md:text-base font-bold">
             Valid Till:{" "}
             <span className="text-gray-600 font-normal text-xs">
-              ({doc.validFrom} - {doc.validTo})
+              ({doc.validFrom})
             </span>
           </div>
 
@@ -38,10 +37,10 @@ const Documents = () => {
             <a
               href={doc.msdsLink}
               download
-              className="text-green-700 hover:text-green-900 transition flex items-center gap-1"
+              className="text-[#32A849] hover:text-green-900 transition flex items-center gap-1"
             >
               <span className="text-sm md:text-base">MSDS</span>
-              <FaDownload />
+              <FaDownload className="text-[#222222]" />
             </a>
           </div>
 
@@ -50,10 +49,10 @@ const Documents = () => {
             <a
               href={doc.corLink}
               download
-              className="text-green-700 hover:text-green-900 transition flex items-center gap-1"
+              className="text-[#32A849] hover:text-green-900 transition flex items-center gap-1"
             >
               <span className="text-sm md:text-base">COR</span>
-              <FaDownload />
+              <FaDownload className="text-[#222222]" />
             </a>
           </div>
         </div>

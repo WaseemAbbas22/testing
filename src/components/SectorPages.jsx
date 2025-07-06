@@ -3,7 +3,7 @@ import FreeInspection from "../components/Blogs/FreeInspection";
 
 const SectorsPage = () => {
   const tabs = [
-    { title: "Hotels & Hospitality", content: "We provide discreet and effective pest control solutions tailored for hotels and hospitality venues to ensure guest comfort and safety.In the hospitality industry, your reputation is everything. One pest sighting can lead to poor reviews, lost bookings, and damage to your brand. We understand the importance of maintaining pristine guest rooms, spotless kitchens, and pest-free public areas at all times." },
+    { title: "Hotels & Hospitality", content: "In the hospitality industry, your reputation is everything. One pest sighting can lead to poor reviews, lost bookings, and damage to your brand. We understand the importance of maintaining pristine guest rooms, spotless kitchens, and pest-free public areas at all times." },
     { title: "Shopping Malls", content: "Our pest management programs are designed to keep shopping malls pest-free, ensuring a safe and clean shopping experience." },
     { title: "Restaurants", content: "Restaurants require strict pest control to maintain hygiene standards. We offer targeted treatments to eliminate pests effectively." },
     { title: "Manufacturing", content: "We provide comprehensive pest control services to manufacturing facilities, ensuring protection of goods and compliance with health standards." },
@@ -16,7 +16,7 @@ const SectorsPage = () => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
-    <div className="w-full min-h-screen bg-gray-100 flex items-center justify-center px-4 md:px-12 lg:px-24 py-10">
+    <div className="w-full min-h-screen flex items-center justify-center px-4 md:px-12 lg:px-24 py-10">
       <div className="max-w-7xl w-full flex flex-col space-y-10">
         
         {/* Heading */}
@@ -25,7 +25,7 @@ const SectorsPage = () => {
         </h2>
 
         {/* Tabs Row */}
-        <div className="bg-gray-200 rounded shadow overflow-x-auto">
+        <div className="bg-[#F0F0F0] rounded shadow overflow-x-auto">
           <div className="flex">
             {tabs.map((tab) => (
               <div
@@ -45,10 +45,10 @@ const SectorsPage = () => {
         </div>
 
         {/* Content + FreeInspection */}
-        <div className="flex flex-col  bg-white md:flex-row md:space-x-10 space-y-10 md:space-y-0">
+        <div className="flex flex-col md:flex-row md:space-x-10 space-y-10 md:space-y-0">
           
           {/* Left Side - Content */}
-          <div className="flex-[7] bg-white rounded shadow p-4 text-sm">
+          <div className="flex-[7] bg-white rounded  p-4 text-sm">
             <h3 className="text-lg font-bold mb-2">{activeTab.title}</h3>
             <p>{activeTab.content}</p>
           </div>
