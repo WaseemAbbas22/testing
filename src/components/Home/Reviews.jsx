@@ -21,7 +21,7 @@ const Reviews = () => {
     <div className="w-full py-12 px-6 md:px-16 lg:px-24 xl:px-32 bg-gray-100 flex flex-col items-center">
       
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2 font-serif">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
         Client Testimonials
       </h2>
 

@@ -5,7 +5,7 @@ const AboutCompany = () => {
     <div className="w-full min-h-[150vh] bg-white px-6 md:px-16 lg:px-24 xl:px-32 py-16 flex flex-col">
       
       {/* Heading */}
-      <h2 className="text-4xl font-bold text-gray-800 mb-10 font-serif">
+      <h2 className="text-4xl font-bold text-gray-800 mb-10">
         Company Introduction
       </h2>
 

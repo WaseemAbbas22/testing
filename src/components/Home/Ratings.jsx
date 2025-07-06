@@ -23,29 +23,29 @@ const Ratings = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-8 py-12 bg-gray-50">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-8 py-12 bg-gray-50 ">
       {/* Google Rating Box */}
-      <div className="flex items-center bg-green-100 border border-green-200 rounded shadow-md px-6 py-4 w-96">
+      <div className="flex items-center bg-green-100 border border-[#32A84980] rounded shadow-md px-6 py-4 w-96">
         {/* Logo Left */}
         <div className="flex-shrink-0">
           <img src={googleLogo} alt="Google Logo" className="h-12" />
         </div>
 
         {/* Divider */}
-        <div className="w-px bg-green-300 h-20 mx-4"></div>
+        <div className="w-px bg-gray-400 h-20 mx-4"></div>
 
         {/* Right Content */}
         <div className="flex-1 pl-4">
-          <p className="text-sm text-green-700 mb-1">Google Rating</p>
+          <p className="text-xs text-gray-700 mb-0">Google Rating</p>
           <div className="flex items-center mb-2">
-            <div className="text-3xl font-bold text-green-800 mr-2">4.7</div>
+            <div className="text-4xl font-cabin font-bold  mr-2">4.8</div>
             <div className="flex">{renderStars(4.7)}</div>
           </div>
           <a
             href="https://www.google.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-green-700 underline hover:text-green-900"
+            className="text-sm text-blue-700  hover:text-green-900"
           >
             See all our reviews
           </a>
@@ -53,27 +53,27 @@ const Ratings = () => {
       </div>
 
       {/* Facebook Rating Box */}
-      <div className="flex items-center bg-green-100 border border-green-200 rounded shadow-md px-6 py-4 w-96">
+      <div className="flex items-center bg-green-100 border border-[#32A84980] rounded shadow-md px-6 py-4 w-96">
         {/* Logo Left */}
         <div className="flex-shrink-0">
-          <img src={facebookLogo} alt="Facebook Logo" className="h-10" />
+          <img src={facebookLogo} alt="Facebook Logo" className="h-12" />
         </div>
 
         {/* Divider */}
-        <div className="w-px bg-green-300 h-20 mx-4"></div>
+        <div className="w-px bg-gray-400 h-20 mx-4"></div>
 
         {/* Right Content */}
         <div className="flex-1 pl-4">
-          <p className="text-sm text-green-700 mb-1">Facebook Rating</p>
+          <p className="text-xs text-gray-700 mb-1">Facebook Rating</p>
           <div className="flex items-center mb-2">
-            <div className="text-3xl font-bold text-green-800 mr-2">4.8</div>
+            <div className="text-4xl font-cabin font-bold  mr-2">4.7</div>
             <div className="flex">{renderStars(4.8)}</div>
           </div>
           <a
             href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-green-700 underline hover:text-green-900"
+            className="text-sm text-blue-700  hover:text-green-900"
           >
             See all our reviews
           </a>

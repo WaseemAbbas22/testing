@@ -27,7 +27,7 @@ const OurClients = () => {
         
         {/* Left Side - Centered Heading */}
         <div className="md:w-1/4 flex items-center justify-center mb-8 md:mb-0">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 ">
             Our Clients
           </h2>
         </div>

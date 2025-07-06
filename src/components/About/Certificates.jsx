@@ -7,7 +7,7 @@ const Certificates = () => {
     <div className="w-full min-h-[50vh] bg-gray-100 px-6 md:px-16 lg:px-24 xl:px-32 py-10 flex flex-col items-center justify-between">
       
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center font-serif mb-8">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">
         Our Official Certificates
       </h2>
 

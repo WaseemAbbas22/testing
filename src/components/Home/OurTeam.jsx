@@ -15,7 +15,7 @@ const OurTeam = () => {
     <div className="w-full h-[50vh] bg-gray-100 flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32">
       
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8 font-serif">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
         Get help from our team
       </h2>
       <br />

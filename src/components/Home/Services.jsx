@@ -9,21 +9,22 @@ import Service8 from "/src/assets/Pests/spider.png";
 
 const Services = () => {
   const services = [
-    { img: Service1, title: "Ants", subtitle: "Treatment" },
-    { img: Service2, title: "Termites", subtitle: "Treatment" },
-    { img: Service3, title: "Cockroaches", subtitle: "Treatment" },
-    { img: Service4, title: "Bed Bugs", subtitle: "Treatment" },
-    { img: Service5, title: "Mosquitoes", subtitle: "Treatment" },
-    { img: Service6, title: "Rats", subtitle: "Treatment" },
-    { img: Service7, title: "Bees", subtitle: "Treatment" },
-    { img: Service8, title: "Spiders", subtitle: "Treatment" },
+    { img: Service1, title: "ANTS", subtitle: "Treatment" },
+    { img: Service3, title: "COCKROACHES", subtitle: "Treatment" },
+    { img: Service4, title: "BED BUGS", subtitle: "Treatment" },
+    { img: Service6, title: "RODENTS", subtitle: "Treatment" },
+    { img: Service7, title: "FLIES ", subtitle: "Treatment" },
+    { img: Service5, title: "MOSQUITOES", subtitle: "Treatment" },
+    { img: Service8, title: "SPIDERS", subtitle: "Treatment" },
+    { img: Service2, title: "TERMITES", subtitle: "Treatment" },
+    
   ];
 
   return (
     <div className="w-full bg-gray-100 py-16 px-6 md:px-16 lg:px-24 xl:px-32 flex flex-col items-center">
       
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2 font-serif">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
         Our Services
       </h2>
 

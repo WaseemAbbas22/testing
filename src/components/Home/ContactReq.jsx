@@ -24,7 +24,7 @@ const ContactRequest = () => {
 
   return (
     <div
-      className="flex flex-col justify-center items-center text-center bg-cover px-0 py-12 w-full"
+      className="flex flex-col items-center bg-cover px-0 py-12 w-full"
       style={{
         backgroundImage: `url(${Cir1})`,
         backgroundColor: "rgba(0,0,0,0.4)", // decreased dark shade
@@ -32,7 +32,7 @@ const ContactRequest = () => {
         backgroundPosition: "center 80%", // move image slightly above bottom
       }}
     >
-      <h2 className="text-white text-3xl font-bold mb-6">Get a free inspection</h2>
+      <h2 className="text-white text-3xl font-bold ml-2 mb-6">Get a Free Inspection</h2>
 
       <form
         onSubmit={handleSubmit}
@@ -118,7 +118,7 @@ const ContactRequest = () => {
         >
           <button
             type="submit"
-            className="bg-gray-600 text-white text-base font-semibold px-6 py-3 h-full rounded shadow hover:bg-green-600 transition w-full md:w-auto"
+            className="bg-green-600 text-white text-base font-semibold px-6 py-3 h-full rounded shadow hover:bg-green-600 transition w-full md:w-auto"
             style={{ height: containerHeight || "auto" }}
           >
             Send

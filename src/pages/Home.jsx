@@ -7,7 +7,7 @@ import Rating from "../components/Home/Ratings"
 import ContactReq from "../components/Home/ContactReq"
 import AboutHome from "../components/Home/AboutHome"
 import Branches from "../components/Home/Branches"
-import Services from "../components/Home/Services"
+//import Services from "../components/Home/Services"
 import Process from "../components/Home/Process"
 import TrustSec from "../components/Home/TrustSec"
 import OurTeam from "../components/Home/OurTeam"
@@ -15,6 +15,9 @@ import Clients from "../components/Home/Clients"
 import Reviews from "../components/Home/Reviews"
 import Form from "../components/Home/Form"
 import LastSec from "../components/Home/LastSec" 
+import PestsGrid from "../components/Home/PestsGrid"
+//import PestsGrid from "../components/Pests/PestsGrid"
+
 const Home = () => {
   return (
     <>
@@ -24,9 +27,13 @@ const Home = () => {
         <HeroMain />
         <Rating />
         <ContactReq />
+        <br />
+        <br />
         <AboutHome />
         <Branches />
-        <Services />
+        {/*<Services />*/}
+        {/*<PestsGrid />*/}
+        <PestsGrid />
         <Process />
         <TrustSec />
         <OurTeam />
