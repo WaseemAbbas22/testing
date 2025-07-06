@@ -36,20 +36,20 @@ const ServicesTabs = () => {
 
           <p>
             We provide professional pest control services for different types of
-            businesses including:
-          </p>
-          <ul className="list-disc list-inside">
-            <li>Food Processing and Services</li>
-            <li>Retail</li>
-            <li>Hotels</li>
-            <li>Schools</li>
-            <li>Hospitals</li>
-            <li>Offices</li>
-            <li>Industrial & Construction</li>
-            <li>Yachts and Boats</li>
-            <li>Warehouses</li>
-          </ul>
+            businesses including 
 
+
+            Food Processing and Services,
+            Retail,
+            Hotels,
+            Schools,
+            Hospitals,
+            Offices,
+            Industrial & Construction,
+            Yachts and Boats and
+            Warehouses
+
+          </p>
           <p>
             We strongly understand that each business has its own unique needs.
             This knowledge allows us to cater to your individual requirements in
@@ -112,18 +112,17 @@ const ServicesTabs = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="w-full min-h-screen bg-gray-100 px-5 md:px-20 py-10">
+    <div className="w-full min-h-screen px-5 md:px-20 py-10 bg-[#F0F0F0]">
       {/* Tabs */}
       <div className="flex overflow-x-auto space-x-4 mb-10 border-b pb-4">
         {tabs.map((tab, index) => (
           <button
             key={index}
             onClick={() => setActiveTab(index)}
-            className={`flex-shrink-0 px-4 py-2 rounded-t whitespace-nowrap ${
-              activeTab === index
+            className={`flex-shrink-0 px-4 py-2 rounded-t whitespace-nowrap ${activeTab === index
                 ? "bg-green-600 text-white"
                 : "bg-gray-200 text-gray-700 hover:bg-green-100"
-            } transition`}
+              } transition`}
           >
             {tab.title}
           </button>
@@ -131,7 +130,7 @@ const ServicesTabs = () => {
       </div>
 
       {/* Tab Content */}
-      <div className="bg-white p-5 rounded shadow-inner">
+      <div className=" p-5 rounded">
         {tabs[activeTab].content}
       </div>
     </div>
