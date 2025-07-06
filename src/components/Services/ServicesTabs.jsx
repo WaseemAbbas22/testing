@@ -5,7 +5,7 @@ const ServicesTabs = () => {
     {
       title: "Residential & Commercial Pest Control",
       content: (
-        <div className="text-sm text-gray-700 leading-6 space-y-4">
+        <div className="text-xs text-gray-700 leading-6 space-y-1">
           <p>
             <strong>Accurate Pest Control Services</strong> offers comprehensive
             Pest Control Services in Dubai, Sharjah, and Ajman for both
@@ -36,7 +36,7 @@ const ServicesTabs = () => {
 
           <p>
             We provide professional pest control services for different types of
-            businesses including 
+            businesses including
 
 
             Food Processing and Services,
@@ -112,29 +112,40 @@ const ServicesTabs = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="w-full min-h-screen px-5 md:px-20 py-10 bg-[#F0F0F0]">
-      {/* Tabs */}
-      <div className="flex overflow-x-auto space-x-4 mb-10 border-b pb-4">
-        {tabs.map((tab, index) => (
+  <div className="w-full min-h-screen px-5 md:px-20 py-10 bg-[#F0F0F0] flex flex-col items-center">
+
+    {/* Tabs Bar */}
+    <div className="flex justify-center items-center border-b border-gray-300 mb-8 bg-white rounded">
+      {tabs.map((tab, index) => (
+        <div key={index} className="flex items-center">
           <button
-            key={index}
             onClick={() => setActiveTab(index)}
-            className={`flex-shrink-0 px-4 py-2 rounded-t whitespace-nowrap ${activeTab === index
-                ? "bg-green-600 text-white"
-                : "bg-gray-200 text-gray-700 hover:bg-green-100"
-              } transition`}
+            className={`text-xs font-bold py-2 px-1 whitespace-nowrap transition
+              ${activeTab === index
+                ? "text-green-600 border-b-2 border-green-600"
+                : "text-gray-700 hover:bg-green-600 hover:text-white"
+              }`}
           >
             {tab.title}
           </button>
-        ))}
-      </div>
-
-      {/* Tab Content */}
-      <div className=" p-5 rounded">
-        {tabs[activeTab].content}
-      </div>
+          {/* Divider line between tabs */}
+          {index !== tabs.length - 1 && (
+            <div className="h-4 border-r border-gray-300 mx-2"></div>
+          )}
+        </div>
+      ))}
     </div>
-  );
+
+    {/* Tab Content */}
+    <div className="text-xs p-5 rounded max-w-5xl w-full">
+      {tabs[activeTab].content}
+    </div>
+
+  </div>
+);
+
+
+
 };
 
 export default ServicesTabs;
