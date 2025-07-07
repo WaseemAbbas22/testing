@@ -6,7 +6,7 @@ import ServicesSection from "../components/Services/ServicesSection"
 import Process from "../components/Home/Process"
 import ContactRequest from "../components/Home/ContactReq"
 import ServicesTabs from "../components/Services/ServicesTabs"
-import ServicesHeroImg from '/src/assets/Services/step2.png'; // Adjust the path as necessary
+import ServicesHeroImg from '/src/assets/Services/heroImg.png'; // Adjust the path as necessary
 import ServicesImg from '/src/assets/Services/step2.png'; // Adjust the path as necessary
 
 const Services = () => {

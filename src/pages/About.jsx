@@ -1,4 +1,4 @@
-import aboutHeroImg from '/src/assets/About/step1.png';
+import aboutHeroImg from '/src/assets/About/heroImg.png';
 import ServicesHero from "../components/Services/ServicesHero"
 import Navbar from "../components/Navbar"
 import TopBar from "../components/TopBar"

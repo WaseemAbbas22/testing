@@ -6,12 +6,16 @@ const ServicesHero = ({ title = "Services", breadcrumb = "Home > Services", bgIm
   return (
     <div className="relative w-full h-[50vh]">
       <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${bgImg})` }}
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url(${bgImg})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
       >
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
-
       <div className="relative z-10 flex flex-col justify-center h-full pl-10 text-white ml-12">
         <h1 className="text-5xl font-bold">{title}</h1>
         <p className="text-sm mt-2">{breadcrumb}</p>
@@ -20,7 +24,7 @@ const ServicesHero = ({ title = "Services", breadcrumb = "Home > Services", bgIm
       {/* Call Box */}
       <div className="absolute bottom-5 right-0">
         <div className="flex rounded overflow-hidden shadow" style={{ width: "200px", height: "50px" }}>
-          
+
           {/* Icon Part */}
           <div className="bg-white flex items-center justify-center px-3">
             <FaPhoneAlt className="text-green-600 text-lg" />
