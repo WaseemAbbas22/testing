@@ -4,13 +4,13 @@ const Form = () => {
   const [countryCode, setCountryCode] = useState("+971"); // default UAE
 
   return (
-    <div className="bg-green-600 w-full min-h-[120vh] flex items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32">
+    <div className="bg-green-600 w-full min-h-screen sm:min-h-[120vh] flex items-center justify-center px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32">
       
       {/* White container */}
-      <div className="bg-white rounded-lg shadow-lg w-full max-w-4xl h-[600px] flex flex-col p-6 md:p-10">
+      <div className="bg-white rounded-lg shadow-lg w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl h-auto md:h-[600px] flex flex-col p-4 sm:p-6 md:p-10">
 
         {/* Heading at top */}
-        <h1 className="text-2xl md:text-4xl font-semibold text-black-400 text-center mb-6">
+        <h1 className="text-xl sm:text-2xl md:text-4xl font-semibold text-black-400 text-center mb-4 sm:mb-6">
           Get in Touch
         </h1>
 
@@ -18,13 +18,13 @@ const Form = () => {
         <div className="flex-grow flex flex-col justify-center">
           <form className="flex flex-col items-center text-sm w-full h-full">
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 w-full">
               
               {/* First Name */}
               <div>
                 <label className="text-black/70 font-bold text-xs" htmlFor="firstName">First Name</label>
                 <input
-                  className="h-10 p-2 mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] placeholder-gray-400"
+                  className="h-10 p-2 mt-1 sm:mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] placeholder-gray-400"
                   type="text"
                   id="firstName"
                   placeholder="First Name"
@@ -36,7 +36,7 @@ const Form = () => {
               <div>
                 <label className="text-black/70 font-bold text-xs" htmlFor="lastName">Last Name</label>
                 <input
-                  className="h-10 p-2 mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] placeholder-gray-400"
+                  className="h-10 p-2 mt-1 sm:mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] placeholder-gray-400"
                   type="text"
                   id="lastName"
                   placeholder="Last Name"
@@ -47,7 +47,7 @@ const Form = () => {
               {/* Phone Number with Country Code */}
               <div>
                 <label className="text-black/70 font-bold text-xs" htmlFor="phone">Phone Number</label>
-                <div className="flex mt-2">
+                <div className="flex mt-1 sm:mt-2">
                   <select
                     value={countryCode}
                     onChange={(e) => setCountryCode(e.target.value)}
@@ -72,7 +72,7 @@ const Form = () => {
               <div>
                 <label className="text-black/70 font-bold text-xs" htmlFor="email">Email</label>
                 <input
-                  className="h-10 p-2 mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] placeholder-gray-400"
+                  className="h-10 p-2 mt-1 sm:mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] placeholder-gray-400"
                   type="email"
                   id="email"
                   placeholder="E-mail"
@@ -85,7 +85,7 @@ const Form = () => {
                 <label className="text-black/70 font-bold text-xs" htmlFor="pestConcern">Select Pest Concern</label>
                 <select
                   id="pestConcern"
-                  className="h-10 p-2 mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] text-gray-700"
+                  className="h-10 p-2 mt-1 sm:mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] text-gray-700"
                   required
                 >
                   <option value="">select----</option>
@@ -102,7 +102,7 @@ const Form = () => {
                 <label className="text-black/70 font-bold text-xs" htmlFor="priorityType">Select Priority Type</label>
                 <select
                   id="priorityType"
-                  className="h-10 p-2 mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] text-gray-700"
+                  className="h-10 p-2 mt-1 sm:mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] text-gray-700"
                   required
                 >
                   <option value="">select----</option>
@@ -115,10 +115,10 @@ const Form = () => {
             </div>
 
             {/* Message */}
-            <div className="mt-4 w-full">
+            <div className="mt-3 sm:mt-4 w-full">
               <label className="text-black/70 font-bold text-xs" htmlFor="message">Message</label>
               <textarea
-                className="w-full mt-2 p-2 h-20 border border-gray-500/30 rounded resize-none outline-none focus:border-green-300 bg-[#F2F2F2] placeholder-gray-400"
+                className="w-full mt-1 sm:mt-2 p-2 h-20 border border-gray-500/30 rounded resize-none outline-none focus:border-green-300 bg-[#F2F2F2] placeholder-gray-400"
                 id="message"
                 placeholder="Write your message"
                 required
@@ -129,10 +129,10 @@ const Form = () => {
         </div>
 
         {/* Submit Button */}
-        <div className="flex justify-center mt-1">
+        <div className="flex justify-center mt-2 sm:mt-4">
           <button
             type="submit"
-            className="text-[11px] font-xs bg-green-600 text-white h-8 w-[130px] px-1 rounded active:scale-95 transition hover:bg-green-700"
+            className="text-[11px] font-xs bg-green-600 text-white h-8 w-[120px] sm:w-[130px] px-1 rounded active:scale-95 transition hover:bg-green-700"
           >
             Send Message
           </button>

@@ -12,18 +12,17 @@ const OurTeam = () => {
   ];
 
   return (
-    <div className="w-full h-[70vh] bg-gray-100 flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32">
+    <div className="w-full min-h-[70vh] bg-gray-100 flex flex-col items-center justify-center px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32">
       
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
+      <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-center text-gray-800 mb-12 sm:mb-12">
         Get help from our team
       </h2>
-      <br />
 
       {/* Team Boxes */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl">
         {team.map((member, index) => (
-          <div key={index} className="relative bg-white rounded-md shadow-md pt-12 pb-4 px-4 flex flex-col items-center text-center border-l-4 border-r-4 border-green-400">
+          <div key={index} className="relative bg-white rounded-md shadow-md pt-12 pb-12 px-4 flex flex-col items-center text-center border-l-4 border-r-4 border-green-400">
             
             {/* Circular Image */}
             <img
@@ -33,11 +32,11 @@ const OurTeam = () => {
             />
 
             {/* Name */}
-            <h3 className="mt-4 text-lg font-bold text-gray-800">{member.name}</h3>
+            <h3 className="mt-2 text-base sm:text-lg font-bold text-gray-800">{member.name}</h3>
             {/* Position */}
-            <p className="text-sm text-gray-600 mb-2">{member.position}</p>
+            <p className="text-xs sm:text-sm text-gray-600 sm:mb-2">{member.position}</p>
             {/* Contact */}
-            <p className="text-green-600 text-base font-semibold">{member.contact}</p>
+            <p className="text-green-600 text-sm sm:text-base font-semibold">{member.contact}</p>
           </div>
         ))}
       </div>

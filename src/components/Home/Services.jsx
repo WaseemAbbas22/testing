@@ -17,39 +17,38 @@ const Services = () => {
     { img: Service5, title: "MOSQUITOES", subtitle: "Treatment" },
     { img: Service8, title: "SPIDERS", subtitle: "Treatment" },
     { img: Service2, title: "TERMITES", subtitle: "Treatment" },
-    
   ];
 
   return (
-    <div className="w-full bg-gray-100 py-16 px-6 md:px-16 lg:px-24 xl:px-32 flex flex-col items-center">
+    <div className="w-full bg-gray-100 py-12 sm:py-16 px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 flex flex-col items-center">
       
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
         Our Services
       </h2>
 
       {/* Subtext */}
-      <p className="text-center text-gray-600 text-sm mb-10 max-w-xl">
+      <p className="text-center text-gray-600 text-xs sm:text-sm mb-6 sm:mb-10 max-w-xl">
         We provide comprehensive pest control and treatment services tailored to your needs.<br/>
         Our expert team ensures effective, safe, and long-lasting solutions.
       </p>
 
       {/* Gallery Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-10 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-10 w-full">
         {services.map((service, index) => (
           <div key={index} className="relative group rounded-md overflow-hidden">
             {/* Image */}
             <img
               src={service.img}
               alt={service.title}
-              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
             />
             {/* Dark Overlay */}
             <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition duration-500"></div>
 
             {/* Overlay Text */}
-            <div className="absolute bottom-4 left-4 text-white">
-              <h3 className="text-lg font-semibold">{service.title}</h3>
+            <div className="absolute bottom-2 sm:bottom-4 left-2 sm:left-4 text-white">
+              <h3 className="text-sm sm:text-base md:text-lg font-semibold">{service.title}</h3>
               <p className="text-xs">{service.subtitle}</p>
             </div>
           </div>
@@ -57,7 +56,7 @@ const Services = () => {
       </div>
 
       {/* Learn More Button */}
-      <button className="bg-green-600 text-white text-sm font-semibold px-6 py-2 rounded shadow hover:bg-green-600 transition">
+      <button className="bg-green-600 text-white text-sm font-semibold px-5 sm:px-6 py-2 rounded shadow hover:bg-green-600 transition">
         View More
       </button>
     </div>

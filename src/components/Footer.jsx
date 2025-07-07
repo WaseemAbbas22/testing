@@ -1,7 +1,6 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPhoneAlt, FaGlobe, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import LogoWhite from '/src/assets/Home/LogoWhite.png';
 
-
 const Footer = () => {
   return (
     <footer className="bg-[#32A849] text-white px-6 md:px-16 lg:px-24 w-full flex flex-col justify-between">
@@ -24,41 +23,46 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Middle Links */}
-        <div className="flex-1 grid grid-cols-2 md:grid-cols-4 gap-4 text-center md:text-left">
+        {/* Middle Links - combined two columns sharing one column space */}
+        <div className="flex-1 flex flex-col md:flex-row justify-between gap-4 text-center md:text-left">
 
-          <div>
-            <h2 className="font-semibold mb-3 text-base">About Us</h2>
-            <ul className="text-xs space-y-2">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Pests</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Sectors</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Documents</a></li>
-              <li><a href="#">Equipment Trading</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Blogs</a></li>
-            </ul>
-          </div>
+          {/* Combined Container */}
+          <div className="flex justify-between w-full md:w-1/2 mx-auto gap-4">
 
-          <div>
-            <h2 className="font-semibold mb-3 text-base">Pest Library</h2>
-            <ul className="text-xs space-y-2">
-              <li><a href="#">Venomous</a></li>
-              <li><a href="#">Cockroaches</a></li>
-              <li><a href="#">Mosquitoes</a></li>
-              <li><a href="#">Rodents</a></li>
-              <li><a href="#">Termites</a></li>
-              <li><a href="#">Ants</a></li>
-              <li><a href="#">Flies</a></li>
-              <li><a href="#">Birds</a></li>
-              <li><a href="#">Snakes</a></li>
-            </ul>
+            <div className="w-1/2 text-left">
+              <h2 className="font-semibold mb-3 text-base">About Us</h2>
+              <ul className="text-xs space-y-2">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pests</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Sectors</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Documents</a></li>
+                <li><a href="#">Equipment Trading</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blogs</a></li>
+              </ul>
+            </div>
+
+            <div className="w-1/2 text-left md:ml-10">
+              <h2 className="font-semibold mb-3 text-base">Pest Library</h2>
+              <ul className="text-xs space-y-2 ">
+                <li><a href="#">Venomous</a></li>
+                <li><a href="#">Cockroaches</a></li>
+                <li><a href="#">Mosquitoes</a></li>
+                <li><a href="#">Rodents</a></li>
+                <li><a href="#">Termites</a></li>
+                <li><a href="#">Ants</a></li>
+                <li><a href="#">Flies</a></li>
+                <li><a href="#">Birds</a></li>
+                <li><a href="#">Snakes</a></li>
+              </ul>
+            </div>
+
           </div>
 
           {/* Contact Info */}
-          <div className="col-span-2 md:col-span-2 text-xs flex flex-col gap-4">
+          <div className="text-xs flex flex-col gap-5  md:ml-12 mt-6 md:mt-0">
 
             <div className="flex items-center gap-3">
               <div className="bg-white rounded-full p-1">
