@@ -35,7 +35,7 @@ const Process = () => {
               className="bg-[#F5F5F5] rounded-lg border border-gray-300 shadow-md flex flex-col items-center justify-center py-10 px-4 relative hover:shadow-lg transition"
             >
               {/* Number Box (Left Upper Corner) */}
-              <div className="absolute top-0 left-0 bg-green-600 text-white rounded-md w-10 h-10 flex items-center justify-center text-xs font-bold">
+              <div className="absolute top-0 left-0 bg-green-600 text-white rounded-ee-3xl rounded-ss-md w-10 h-10 flex items-center justify-center text-2xl italic font-semibold">
                 {index + 1}
               </div>
 

@@ -11,7 +11,7 @@ const PestCard = ({ pestName }) => {
   }
 
   return (
-    <div className="relative w-[250px] h-[250px] overflow-hidden rounded-lg shadow-lg group">
+    <div className="relative w-[220px] h-[220px] overflow-hidden rounded-lg shadow-lg group">
       <img
         src={pest.image}
         alt={pest.name}
@@ -21,12 +21,12 @@ const PestCard = ({ pestName }) => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-60 transition duration-300 group-hover:bg-opacity-60 flex items-end">
         
-        <div className="pl-3 pb-0 w-full">
+        <div className="pl-3 w-full">
           {/* Container for moving title & subtitle */}
-          <div className="transition-all duration-500 ease-in-out transform group-hover:-translate-y-12 text-left">
+          <div className="transition-all duration-500 ease-in-out transform group-hover:-translate-y-8 text-left">
 
             {/* Title & Subtitle */}
-            <div className="mb-0">
+            <div className="-mt-4">
               <h2 className="text-white text-lg font-bold">{pest.name}</h2>
               <p className="text-gray-300 text-xs">{pest.desc}</p>
             </div>

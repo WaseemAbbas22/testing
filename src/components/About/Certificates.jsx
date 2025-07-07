@@ -28,8 +28,8 @@ const Certificates = () => {
       </div>
 
       {/* View More Button */}
-      <button className="bg-green-600 text-white text-sm font-semibold px-6 py-2 rounded shadow hover:bg-green-700 transition mb-4">
-        View More
+      <button className="bg-green-600 text-white text-xs font-semibold px-4 py-2 rounded shadow hover:bg-green-700 transition mb-4">
+        View All
       </button>
       
     </div>

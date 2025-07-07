@@ -1,49 +1,53 @@
 import { useState } from 'react';
-import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import CountrySelector from './CountrySelector';
 
 const TopBar = () => {
-  const [selectedCountry, setSelectedCountry] = useState("AE");
-
-  const handleCountryChange = (e) => {
-    setSelectedCountry(e.target.value);
-  };
+  const [selectedCountry, setSelectedCountry] = useState("GB");
 
   return (
-    <div className="text-sm text-white w-full">
-      <div className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-2 bg-green-600">
+    <div className="bg-green-600 text-white text-xs w-full">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 py-2">
 
-        {/* Left Side: Email, Phone, Social Icons */}
-        <div className="flex items-center space-x-4">
-          <div className="flex items-center space-x-1">
-            <FaEnvelope className="text-xs" />
-            <span className="text-xs">info@example.com</span>
-          </div>
-          <div className="flex items-center space-x-1">
-            <FaPhoneAlt className="text-xs" />
-            <span className="text-xs">+971 52 152 8725</span>
+        {/* Main Flex Container */}
+        <div className="flex flex-col md:flex-row items-center justify-between ml-7 mr-6 space-y-2 md:space-y-0">
+
+          {/* Left Side Div */}
+          <div className="flex flex-wrap items-center justify-center md:justify-start space-x-4">
+
+            {/* Phone Div */}
+            <div className="flex items-center space-x-1">
+              <FaPhoneAlt className="text-xs" />
+              <span>+971 52 152 8725</span>
+            </div>
+
+            {/* Email Div */}
+            <div className="flex items-center space-x-1">
+              <FaEnvelope className="text-xs" />
+              <span>info@accuratepestcontrol.ae</span>
+            </div>
+
+            {/* Social Icons Div */}
+            <div className="flex items-center space-x-2">
+              <span>Follow us on:</span>
+              <a href="#"><FaFacebookF /></a>
+              <a href="#"><FaTwitter /></a>
+              <a href="#"><FaInstagram /></a>
+              <a href="#"><FaYoutube /></a>
+            </div>
+
           </div>
 
-          {/* Follow us on */}
-          <div className="flex items-center space-x-2">
-            <span className="text-xs">Follow us on:</span>
-            <a href="#"><FaFacebookF className="text-xs hover:text-gray-200" /></a>
-            <a href="#"><FaTwitter className="text-xs hover:text-gray-200" /></a>
-            <a href="#"><FaInstagram className="text-xs hover:text-gray-200" /></a>
+          {/* Right Side Div: Country Selector */}
+          <div className="flex items-center">
+            <CountrySelector
+              selectedCountry={selectedCountry}
+              setSelectedCountry={setSelectedCountry}
+              width="90px"
+              height="30px"
+            />
           </div>
-        </div>
 
-        {/* Right Side: Country Dropdown with emoji flags */}
-        <div className="relative">
-          <select
-            value={selectedCountry}
-            onChange={handleCountryChange}
-            className="bg-white text-gray-800 text-xs px-3 py-1 rounded shadow focus:outline-none appearance-none pr-8"
-          >
-            <option value="AE">🇦🇪 UAE</option>
-            <option value="PK">🇵🇰 Pakistan</option>
-            <option value="IN">🇮🇳 India</option>
-            <option value="GB">🇬🇧 UK</option>
-          </select>
         </div>
 
       </div>

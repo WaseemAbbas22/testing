@@ -1,57 +1,68 @@
 import PhoneCallBox from "./PhoneCallBox";
 import HeroImg from "/src/assets/Home/HeroImg.png"; // Adjust the path as necessary
 
-
 const HeroMain = () => {
   return (
+    <div className="relative bg-green-100">
 
-    <div className="relative">
-      <div className="relative w-full min-h-8 bg-green-50 flex flex-col md:flex-row items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-12">
+      {/* Main Container */}
+      <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-12 space-y-8 md:space-y-0">
 
-        {/* Left Side Content */}
-        <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Safe & Fast Pest Control Services in the UAE
-          </h1>
+        {/* Left Side Div */}
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start space-y-6">
 
-          <p className="text-sm text-gray-700 leading-relaxed">
-            Protect your home or business with eco-friendly pest control solutions tailored to your needs. Trusted by thousands across Dubai and beyond — we eliminate pests fast and keep them from coming back.
-          </p>
+          {/* Heading Div */}
+          <div className="w-full text-center md:text-left space-y-2">
+            <h1 className="text-3xl md:text-[35px] font-bold text-gray-900">
+              Safe & Fast Pest Control             </h1>
+            <h1 className="text-3xl md:text-[35px] font-bold text-gray-900">
+               Services in the UAE
+            </h1>
+          </div>
 
-          <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-3 sm:space-y-0 justify-center md:justify-start">
-            <button className="bg-gray-700 text-white text-sm font-semibold px-5 py-2.5 rounded shadow hover:bg-green-600 transition">
+          {/* Paragraph Div */}
+          <div className="w-full text-center md:text-left">
+            <p className="text-[12px] text-gray-700 leading-relaxed justify-content">
+              Protect your home or business with eco-friendly pest control solutions tailored to <br /> yourneeds. Trusted by thousands across Dubai and beyond — we eliminate pests <br />fast and keep them from coming back.
+            </p>
+          </div>
+
+          {/* Buttons Div */}
+          <div className="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-3 sm:space-y-0 justify-center md:justify-start">
+            <button className="bg-gray-700 text-white text-xs font-semibold px-5 py-2.5 rounded shadow hover:bg-green-600 transition">
               Get a free inspection
             </button>
-            <button className="bg-gray-700 text-white text-sm font-semibold px-5 py-2.5 rounded shadow hover:bg-green-600 transition">
+            <button className="bg-gray-700 text-white text-xs font-semibold px-5 py-2.5 rounded shadow hover:bg-green-600 transition">
               View Services
             </button>
           </div>
+
         </div>
 
-        {/* Right Side Image */}
-        {/* Right Side Image */}
-        <div className="w-full md:w-1/2 flex justify-center mt-8 md:mt-0">
-          <img
-            className="w-full h-full object-cover" // Fill width & height, remove rounded/shadow
-            src={HeroImg}
-            alt="Hero"
-          />
+        {/* Right Side Div */}
+        <div className="w-full md:w-1/2 flex justify-center items-center">
+          <div className="w-full">
+            <img
+              className="w-full h-full object-cover"
+              src={HeroImg}
+              alt="Hero"
+            />
+          </div>
         </div>
 
-
-        {/* Bottom Right Call Box */}
-        {/* ✅ PhoneCallBox Component */}
-        <div className="absolute bottom-0 right-4">
-          <PhoneCallBox
-            title="Call for free Inspection"
-            phone="0800-25456158"
-            containerWidth="200px"
-            containerHeight="56px"
-          />
-        </div>
       </div>
-    </div>
 
+      {/* PhoneCallBox Div */}
+      <div className="absolute bottom-0 right-4">
+        <PhoneCallBox
+          title="Call for free Inspection"
+          phone="0800-25456158"
+          containerWidth="180px"
+          containerHeight="46px"
+        />
+      </div>
+
+    </div>
   );
 };
 

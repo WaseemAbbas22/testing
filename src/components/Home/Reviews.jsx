@@ -18,43 +18,43 @@ const Reviews = () => {
   ];
 
   return (
-    <div className="w-full py-12 px-6 md:px-16 lg:px-24 xl:px-32 bg-gray-100 flex flex-col items-center">
+    <div className="w-full h-[70vh] py-0 px-6 md:px-16 lg:px-24 xl:px-32 bg-[#F0F0F0] flex flex-col items-center justify-center">
       
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-black/80 mb-1">
         Client Testimonials
       </h2>
 
       {/* Subtext */}
-      <p className="text-center text-gray-600 text-sm mb-10 max-w-xl">
+      <p className="text-center text-gray-500 text-xs mb-6 max-w-xl">
         Clean, efficient, and no strong chemical smells — perfect for families.
       </p>
 
       {/* Reviews */}
-      <div className="flex flex-wrap items-center justify-center gap-6 mb-8">
+      <div className="flex flex-wrap items-center justify-center gap-6 mb-20 h-[20vh]">
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="text-sm w-80 border border-gray-500/30 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5 overflow-hidden"
+            className="text-sm w-80 border bg-white h-42 border-gray-500/30 pb-6 rounded-lg  shadow-[0px_4px_15px_0px] shadow-black/5 overflow-hidden"
           >
-            <div className="flex items-center gap-4 px-5 py-4 bg-green-500/10">
+            <div className="flex items-center gap-4 px-5 py-4">
               <img
-                className="h-12 w-12 rounded-full border border-green-600"
+                className="h-8 w-8 rounded-full border-2 border-green-600"
                 src={review.img}
                 alt={review.name}
               />
               <div>
-                <h1 className="text-lg font-medium text-gray-800">{review.name}</h1>
-                <p className="text-gray-800/80">{review.role}</p>
+                <h1 className="text-sm font-bold text-gray-800">{review.name}</h1>
+                <p className="text-gray-800/80 text-xs">{review.role}</p>
               </div>
             </div>
-            <div className="p-5 pb-7">
+            <div className="p-2 pb-1 mr-2">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
-                    width="22"
-                    height="20"
+                    width="16"
+                    height="14"
                     viewBox="0 0 22 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -66,8 +66,8 @@ const Reviews = () => {
                   </svg>
                 ))}
               </div>
-              <p className="text-gray-500 mt-5">
-                I have been using imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.
+              <p className="text-gray-500 mt-2 -space-y-4 text-[12px]">
+                "I have been using imagify for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier."
               </p>
             </div>
             
@@ -76,7 +76,7 @@ const Reviews = () => {
       </div>
 
       {/* View More Button */}
-      <button className="bg-green-600 text-white text-sm font-semibold px-6 py-2 rounded shadow hover:bg-green-700 transition">
+      <button className="bg-[#32A849] mt-4 text-white text-[10px] font-medium px-4 py-2 rounded shadow hover:bg-green-700 transition">
         View More Testimonials
       </button>
     </div>
