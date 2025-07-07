@@ -10,7 +10,7 @@ const TrustSec = () => {
 
   return (
     <div
-      className="w-full min-h-[50vh] bg-cover bg-center flex flex-col items-center justify-center px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 relative"
+      className="w-full h-[50vh] bg-cover bg-center flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32 relative"
       style={{
         backgroundImage: `url(${Img})`,
       }}
@@ -20,23 +20,24 @@ const TrustSec = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-4xl">
-        <p className="text-xs sm:text-sm md:text-sm mb-4 sm:mb-6 md:mb-8 px-2 sm:px-0">
+        <p className="text-sm md:text-sm mb-8">
           Join thousands who trust us to keep their homes and businesses pest-free and spotless.
           <br />
           Fast response, eco-friendly solutions, and results you can count on — every time!
         </p>
 
-        {/* Stats */}
-        <div className="w-full md:w-[70%] mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-center md:justify-between mt-6 w-full gap-4 md:gap-0">
+        {/* Stats with 70% width */}
+        <div className="w-[70%] mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between ml-[-200px] mt-6 w-full">
             {stats.map((stat, index) => (
-              <div key={index} className="flex flex-col md:flex-row items-center justify-center">
+              <div key={index} className="flex items-center">
+
                 {/* Stat Block */}
-                <div className="flex flex-col items-center text-center px-2 sm:px-4">
-                  <h3 className="text-green-600 text-xl sm:text-2xl md:text-4xl font-bold mb-1">
+                <div className="flex flex-col items-center text-center px-4">
+                  <h3 className="text-green-600 text-2xl md:text-4xl font-bold mb-1">
                     {stat.number}
                   </h3>
-                  <p className="text-xs sm:text-sm md:text-base w-40 sm:w-48">
+                  <p className="text-sm md:text-base w-48">
                     {stat.label}
                   </p>
                 </div>
@@ -47,6 +48,7 @@ const TrustSec = () => {
                 )}
               </div>
             ))}
+
           </div>
         </div>
       </div>
