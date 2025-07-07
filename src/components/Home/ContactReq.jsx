@@ -35,7 +35,7 @@ const ContactRequest = () => {
 
       {/* Content */}
       <div className="relative z-10 w-full flex flex-col items-center">
-        <h2 className="text-white text-3xl font-semibold ml-[-595px] mb-6">Get a Free Inspection</h2>
+        <h2 className="text-white text-3xl font-semibold md:ml-[-595px] mb-6">Get a Free Inspection</h2>
 
         <form
           onSubmit={handleSubmit}
