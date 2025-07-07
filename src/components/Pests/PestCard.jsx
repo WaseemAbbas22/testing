@@ -11,7 +11,7 @@ const PestCard = ({ pestName }) => {
   }
 
   return (
-    <div className="relative w-[220px] h-[220px] overflow-hidden rounded-lg shadow-lg group">
+    <div className="relative w-[250px] h-[250px] overflow-hidden rounded-lg shadow-lg group">
       <img
         src={pest.image}
         alt={pest.name}
