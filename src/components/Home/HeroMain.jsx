@@ -22,17 +22,17 @@ const HeroMain = () => {
 
           {/* Paragraph Div */}
           <div className="w-full text-center md:text-left">
-            <p className="text-[12px] text-gray-700 leading-relaxed justify-content">
+            <p className="text-[12px] text-gray-600 leading-relaxed justify-content">
               Protect your home or business with eco-friendly pest control solutions tailored to <br /> yourneeds. Trusted by thousands across Dubai and beyond — we eliminate pests <br />fast and keep them from coming back.
             </p>
           </div>
 
           {/* Buttons Div */}
-          <div className="w-full flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-3 sm:space-y-0 justify-center md:justify-start">
-            <button className="bg-gray-700 text-white text-xs font-semibold px-5 py-2.5 rounded shadow hover:bg-green-600 transition">
+          <div className=" flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-1 sm:space-y-0 justify-center md:justify-start">
+            <button className="bg-gray-500 text-white text-[10px] font-semibold px-5 py-2.5 rounded shadow hover:bg-green-600 transition">
               Get a free inspection
             </button>
-            <button className="bg-gray-700 text-white text-xs font-semibold px-5 py-2.5 rounded shadow hover:bg-green-600 transition">
+            <button className="bg-gray-500 text-white text-[10px] font-semibold px-5 py-2.5 rounded shadow hover:bg-green-600 transition">
               View Services
             </button>
           </div>
