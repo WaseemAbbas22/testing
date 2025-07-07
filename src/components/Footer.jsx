@@ -1,6 +1,7 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaPhoneAlt, FaGlobe, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import LogoWhite from '/src/assets/Home/LogoWhite.png';
 
+
 const Footer = () => {
   return (
     <footer className="bg-[#32A849] text-white px-6 md:px-16 lg:px-24 w-full flex flex-col justify-between">

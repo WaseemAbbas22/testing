@@ -3,6 +3,7 @@ import Pic2 from "/src/assets/Home/step2.png";
 import Pic3 from "/src/assets/Home/step3.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import lastsec from "/src/assets/Home/lastsec.png";
 
 const KeepSteps = () => {
   const cards = [
@@ -47,7 +48,7 @@ const KeepSteps = () => {
             />
             <div className="flex flex-col flex-grow ">
               <h3 className="text-sm font-semibold text-gray-800 mb-1 mt-2">{card.title}</h3>
-              <img src="/src/assets/Home/lastsec.png" alt="icon" className="h-2 w-auto mt-1" />
+              <img src={lastsec} alt="Last Section" className="h-2 w-auto mt-1" />
               <p className="text-xs text-gray-600 mb-5 mt-2 flex-grow">{card.description}</p> 
             </div>  
             <button type="button" className="h-[25px] bg-green-600 w-[100px] text-white text-[12px] rounded justify-center items-start"> Read More      <FontAwesomeIcon className="ml-2 mt-1" icon={faArrowRight} /></button>          
