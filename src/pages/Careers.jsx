@@ -22,10 +22,10 @@ const Careers = () => {
                 <ServicesSection
                     title={
                         <div>
-                            <div className="text-2xl font-bold text-gray-800 mb-1">
-                                Join's Pest-Free Mission
+                            <div className="text-4xl font-bold text-gray-800 mb-1">
+                                Join Dubai's Pest-Free Mission
                             </div>
-                            <div className="text-black-600 font-semibold text-xl">
+                            <div className="text-gray font-semibold justify-center text-xl">
                                 Explore Job Openings In Dubai & Be Part of Something Great!
                             </div>
                         </div>
