@@ -3,6 +3,7 @@ import { useState } from "react";
 import Blog1 from "../../assets/Blogs/blog1.png";
 import Blog2 from "../../assets/Blogs/blog2.png";
 import Blog3 from "../../assets/Blogs/blog3.png";
+import lastsec from "/src/assets/Home/lastsec.png"
 
 const blogs = [
   { id: 1, img: Blog1, title: "Pest Control Tips, Insights & Expert Advice", desc: "Stay informed with the latest pest prevention tips, seasonal advice, and expert insights from our certified technicians. Whether you're dealing with termites, cockroaches...", date: "01 Jul 2025" },
@@ -35,53 +36,55 @@ const BlogList = () => {
   };
 
   return (
-    <div className="w-full mx-auto">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-    {currentBlogs.map((blog) => (
-      <div
-        key={blog.id}
-        className="bg-white flex flex-col border rounded shadow-sm w-full p-3"
-      >
-        <img
-          src={blog.img}
-          alt={blog.title}
-          className="mb-3 w-full h-auto rounded-lg"
-        />
-        <h3 className="text-lg font-bold mb-1">{blog.title}</h3>
-        <p className="text-sm mb-4">{blog.desc}</p>
-        <div className="flex justify-between items-center mt-auto">
-          <button className="bg-green-600 text-white px-4 py-2 rounded flex items-center gap-1">
-            Read More <span>→</span>
-          </button>
-          <div className="flex items-center text-sm text-gray-500">
-            <FaCalendarAlt className="mr-1" /> {blog.date}
+    <div className="w-[700px] py-12 px-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {currentBlogs.map((blog) => (
+          <div
+            key={blog.id}
+            className="flex flex-col rounded w-full"
+          >
+            <img
+              src={blog.img}
+              alt={blog.title}
+              className="mb-3 w-full h-auto rounded-lg"
+            />
+            <h3 className="text-base font-semibold mb-1">{blog.title}</h3>
+            <img src={lastsec} alt="Last Section" className="h-2 w-auto mt-1" />
+                          
+            <p className="text-xs mb-4">{blog.desc}</p>
+            <div className="flex justify-between items-center mt-auto">
+              <button className="bg-green-600 text-[10px] text-white px-3 py-1 rounded flex items-center gap-1">
+                Read More <span>→</span>
+              </button>
+              <div className="flex items-center text-[9px] text-gray-500">
+                <FaCalendarAlt className="mr-1" /> {blog.date}
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
-    ))}
-  </div>
 
-  {/* Pagination */}
-  <div className="flex justify-center items-center mt-6 gap-4">
-    <button
-      onClick={handlePrev}
-      disabled={currentPage === 1}
-      className="px-3 py-1 rounded bg-gray-300 hover:bg-gray-400 disabled:opacity-50"
-    >
-      Previous
-    </button>
-    <span className="text-sm">
-      Page {currentPage} of {totalPages}
-    </span>
-    <button
-      onClick={handleNext}
-      disabled={currentPage === totalPages}
-      className="px-3 py-1 rounded bg-gray-300 hover:bg-gray-400 disabled:opacity-50"
-    >
-      Next
-    </button>
-  </div>
-</div>
+      {/* Pagination */}
+      <div className="flex justify-center items-center mt-6 gap-4">
+        <button
+          onClick={handlePrev}
+          disabled={currentPage === 1}
+          className="px-3 py-1 rounded bg-gray-300 hover:bg-gray-400 disabled:opacity-50"
+        >
+          Previous
+        </button>
+        <span className="text-sm">
+          Page {currentPage} of {totalPages}
+        </span>
+        <button
+          onClick={handleNext}
+          disabled={currentPage === totalPages}
+          className="px-3 py-1 rounded bg-gray-300 hover:bg-gray-400 disabled:opacity-50"
+        >
+          Next
+        </button>
+      </div>
+    </div>
 
 
   );

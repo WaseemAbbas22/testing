@@ -7,9 +7,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Override react-phone-input-2 country list max-height globally */
+.react-tel-input .country-list {
+  max-height: 50vh !important; /* half of screen height */
+  overflow-y: auto !important;
+  z-index: 9999 !important; /* ensures it appears above other elements */
+}
+
 
 body {
-  font-family: 'Open Sans',sans-serif;
+  font-family: 'Cabin',sans-serif;
   margin: 0;
   width: 100vw;
   background-color: var(--White, #fff);

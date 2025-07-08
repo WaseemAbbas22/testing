@@ -12,7 +12,7 @@ const Navbar = () => {
       <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 py-2">
 
         {/* Main Flex Container with margins */}
-        <div className="flex items-center justify-between ml-6 mr-6">
+        <div className="flex items-center justify-between ml-16 mr-12">
 
           {/* Logo Div */}
           <div className="flex-shrink-0">

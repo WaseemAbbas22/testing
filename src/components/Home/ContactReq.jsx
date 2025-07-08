@@ -92,11 +92,25 @@ const ContactRequest = () => {
                   border: "none",
                   outline: "none",
                   boxShadow: "none",
+                  display: "flex",
+                  alignItems: "center",
                 }}
-                containerStyle={{ width: "100%" }}
+                buttonStyle={{
+                  border: "none",
+                  background: "transparent",
+                  boxShadow: "none",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+                containerStyle={{
+                  width: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                }}
                 required
               />
             </div>
+
 
             {/* Divider */}
             <div className="hidden md:block w-px bg-gray-600 h-15"></div>

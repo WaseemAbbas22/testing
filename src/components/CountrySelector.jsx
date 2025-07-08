@@ -86,7 +86,7 @@ const CountrySelector = ({ selectedCountry, setSelectedCountry, width, height })
             display: 'none'
           }),
           dropdownIndicator: () => ({
-            display: 'none'
+            display: 'flex'
           }),
         }}
       />

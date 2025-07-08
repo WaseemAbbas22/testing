@@ -21,23 +21,24 @@ const BlogsPage = () => {
         bgImg={BlogsHeroImg}
       />
 
-      <div className="w-full min-h-screen bg-gray-100 flex flex-col">
-  <div className="flex flex-1 px-4 md:px-8 lg:px-16 xl:px-32 gap-6">
-    {/* Left Side - Blogs */}
-    <div className="flex-[6]">
-      <BlogsList />
-    </div>
+      <div className="w-full min-h-screen flex flex-col">
+        <div className="flex flex-col md:flex-row px-4 md:px-2 lg:px-16 xl:px-32 gap-4">
 
-    {/* Right Side - Sidebar */}
-    <div className="flex-[4] flex flex-col space-y-6">
-      <SearchBar /> {/* Add your search component here */}
-      <FreeInspection />
-      <RecentBlogs />
-      <Categories />
-      <Tags />
-    </div>
-  </div>
-</div>
+          {/* Left Side - Blogs (60%) */}
+          <div className="w-full md:w-[60%] ">
+            <BlogsList />
+          </div>
+
+          {/* Right Side - Search Bar (40%) */}
+          <div className="w-full md:w-[40S%] ml-16 mt-12 flex flex-col">
+            <SearchBar />
+            <FreeInspection />
+            <RecentBlogs />
+          </div>
+
+        </div>
+      </div>
+
 
       <Footer />
     </>
