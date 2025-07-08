@@ -1,31 +1,31 @@
-import { FaDownload } from "react-icons/fa";
+import download from '/src/assets/Documents/downloadImg.png'
 
 const DocumentsGrid = () => {
   const gridDocs = [
     {
       id: 1,
-      name: "Doc 1",
+      name: "Quick Bayt Granules",
       validFrom: "01-01-2025",
       msdsLink: "#",
       corLink: "#",
     },
     {
       id: 2,
-      name: "Doc 2",
+      name: "Quick Bayt Granules",
       validFrom: "01-02-2025",
       msdsLink: "#",
       corLink: "#",
     },
     {
       id: 3,
-      name: "Doc 3",
+      name: "Quick Bayt Granules",
       validFrom: "01-03-2025",
       msdsLink: "#",
       corLink: "#",
     },
     {
       id: 4,
-      name: "Doc 4",
+      name: "Quick Bayt Granules",
       validFrom: "01-04-2025",
       msdsLink: "#",
       corLink: "#",
@@ -33,7 +33,7 @@ const DocumentsGrid = () => {
   ];
 
   return (
-    <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto flex flex-wrap md:flex-nowrap justify-center gap-6 mt-10">
+    <div className="w-[90%] md:w-[100%] lg:w-[70%] mx-auto flex flex-wrap md:flex-nowrap justify-center gap-4 mt-10">
       {gridDocs.map((doc) => (
         <div
           key={doc.id}
@@ -42,7 +42,7 @@ const DocumentsGrid = () => {
           {/* Content Above Buttons */}
           <div className="flex flex-col justify-between px-6 py-5 flex-grow">
             {/* Document Name */}
-            <h2 className="text-base font-bold">{doc.name}</h2>
+            <h2 className="text-bold font-bold mb-2">{doc.name}</h2>
 
             {/* Valid Till */}
             <div>
@@ -55,23 +55,23 @@ const DocumentsGrid = () => {
           
 
           {/* Buttons - full width with no margin below */}
-          <div className="flex w-full bg-[#D1D1D1]">
+          <div className="flex w-full rounded bg-[#D1D1D1]">
             <a
               href={doc.msdsLink}
               download
-              className="flex items-center justify-center gap-2 text-sm text-[#32A849] px-3 py-2 flex-1 hover:bg-gray-800 hover:text-white transition"
+              className="flex items-center justify-center gap-2 text-semibold font-bold text-[#32A849] px-3 py-2 flex-1 hover:bg-gray-800 hover:text-white transition"
             >
-              MSDS <FaDownload className="text-gray-600" />
+              MSDS <img src={download} className='h-5 w-5' />
             </a>
 
-            <div className="w-px bg-green-600"></div>
+            <div className="w-px bg-[#A2A2A2] h-8 mt-1"></div>
 
             <a
               href={doc.corLink}
               download
-              className="flex items-center justify-center gap-2 text-sm text-[#32A849] px-3 py-2 flex-1 hover:bg-gray-800 hover:text-white transition"
+              className="flex items-center justify-center gap-2 text-semibold font-bold text-[#32A849] px-3 py-2 flex-1 hover:bg-gray-800 hover:text-white transition"
             >
-              COR <FaDownload className="text-gray-600"/>
+              COR <img src={download} className='h-5 w-5' />
             </a>
           </div>
         </div>

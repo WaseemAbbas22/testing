@@ -9,7 +9,7 @@ const HeroMain = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
 
-      // Adjust threshold to hero section height where PhoneCallBox should stick
+      // Threshold for when PhoneCallBox should become fixed
       const threshold = 400;
 
       if (scrollY > threshold) {
@@ -20,7 +20,7 @@ const HeroMain = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // initial check
+    handleScroll(); // Initial check
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -29,13 +29,34 @@ const HeroMain = () => {
     <div className="relative bg-green-100">
 
       {/* Main Container */}
-      <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-12 space-y-8 md:space-y-0">
+      <div
+        className="
+          max-w-[1600px] mx-auto flex flex-col items-center justify-between px-6 py-12 space-y-8
+          md:flex-row md:px-16 md:space-y-0
+          lg:px-24
+          xl:px-32
+        "
+        // Mobile View: flex-col, center aligned, px-6
+        // Tab View: md:flex-row, px-16, no vertical spacing
+        // Laptop View: lg:px-24
+        // Desktop View: xl:px-32
+        // Big Screen View: max-w-[1600px] remains
+      >
 
         {/* Left Side Div */}
-        <div className="w-full md:w-1/2 flex flex-col px-10 md:items-start space-y-4">
-
-          {/* Heading Div */}
-          <div className="w-full text-center md:text-left space-y-2">
+        <div
+          className="
+            w-full flex flex-col px-10 space-y-4 text-center
+            md:w-1/2 md:items-start md:text-left
+          "
+          // Mobile View: w-full, text-center
+          // Tab View: md:w-1/2, items-start, text-left
+          // Laptop View: same as Tab
+          // Desktop View: same as Tab
+          // Big Screen View: same as Tab
+        >
+          {/* Heading */}
+          <div className="w-full space-y-2">
             <h1 className="text-3xl md:text-[35px] font-bold text-gray-900">
               Safe & Fast Pest Control
             </h1>
@@ -44,15 +65,26 @@ const HeroMain = () => {
             </h1>
           </div>
 
-          {/* Paragraph Div */}
-          <div className="w-full text-center md:text-left">
+          {/* Paragraph */}
+          <div className="w-full">
             <p className="text-[12px] text-gray-600 leading-relaxed">
               Protect your home or business with eco-friendly pest control solutions tailored to <br /> your needs. Trusted by thousands across Dubai and beyond — we eliminate pests <br /> fast and keep them from coming back.
             </p>
           </div>
 
-          {/* Buttons Div */}
-          <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-2 space-y-1 sm:space-y-0 justify-center md:justify-start">
+          {/* Buttons */}
+          <div
+            className="
+              flex flex-col justify-center space-y-1
+              sm:flex-row sm:items-center sm:space-x-2 sm:space-y-0
+              md:justify-start
+            "
+            // Mobile View: flex-col, centered
+            // Tab View: sm:flex-row, items-center, horizontal spacing
+            // Laptop View: md:justify-start
+            // Desktop View: same as Laptop
+            // Big Screen View: same as Laptop
+          >
             <button className="bg-[#32A849] text-white text-[13px] font-semibold px-4 py-2 rounded-md shadow hover:bg-green-600 transition">
               Get a Free Inspection
             </button>
@@ -60,11 +92,20 @@ const HeroMain = () => {
               View Services
             </button>
           </div>
-
         </div>
 
         {/* Right Side Div */}
-        <div className="w-full md:w-1/2 flex justify-center items-center">
+        <div
+          className="
+            w-full flex justify-center items-center
+            md:w-1/2
+          "
+          // Mobile View: w-full, centered
+          // Tab View: md:w-1/2
+          // Laptop View: same as Tab
+          // Desktop View: same as Tab
+          // Big Screen View: same as Tab
+        >
           <div className="w-full">
             <img
               className="w-full h-full object-cover"
@@ -76,8 +117,17 @@ const HeroMain = () => {
 
       </div>
 
-      {/* PhoneCallBox Div */}
-      <div className={`${isFixed ? "fixed top-4 right-2 z-50" : "absolute bottom-4 right-2"}`}>
+      {/* PhoneCallBox */}
+      <div
+        className={`
+          ${isFixed ? "fixed top-4 right-2 z-50" : "absolute bottom-4 right-2"}
+        `}
+        // Mobile View: position changes based on scroll
+        // Tab View: same
+        // Laptop View: same
+        // Desktop View: same
+        // Big Screen View: same
+      >
         <PhoneCallBox
           title="Call For Free Inspection"
           phone="0800-25456158"

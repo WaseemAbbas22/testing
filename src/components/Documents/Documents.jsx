@@ -1,4 +1,5 @@
-import { FaDownload } from "react-icons/fa";
+
+import download from "/src/assets/Documents/downloadImg.png"
 
 const Documents = () => {
   // Dummy data for 26 documents
@@ -15,7 +16,7 @@ const Documents = () => {
       {documents.map((doc) => (
         <div
           key={doc.id}
-          className="w-[90%] md:w-[80%] lg:w-[70%] bg-green-50 border border-green-600 rounded shadow flex flex-col md:flex-row items-center justify-between px-6 py-3 mb-3 h-[8vh]"
+          className="w-[90%] md:w-[90%] lg:w-[75%] bg-[#32A8491A] border border-green-600 rounded shadow flex flex-col md:flex-row items-center justify-between px-6 py-3 mb-3 h-[9vh]"
         >
           {/* Document Name */}
           <div className="flex-1 mb-2 md:mb-0">
@@ -33,14 +34,14 @@ const Documents = () => {
           </div>
 
           {/* MSDS */}
-          <div className="flex items-center gap-2 md:gap-3">
+          <div className="flex items-center gap-2 mr-20 md:gap-3">
             <a
               href={doc.msdsLink}
               download
               className="text-[#32A849] hover:text-green-900 transition flex items-center gap-1"
             >
-              <span className="text-sm md:text-base">MSDS</span>
-              <FaDownload className="text-[#222222]" />
+              <span className="text-semibold md:text-semibold font-semibold">MSDS</span>
+              <img src={download} alt="" className="h-5 w-5" />
             </a>
           </div>
 
@@ -49,10 +50,10 @@ const Documents = () => {
             <a
               href={doc.corLink}
               download
-              className="text-[#32A849] hover:text-green-900 transition flex items-center gap-1"
+              className="text-[#32A849] hover:text-green-900 transition flex items-center"
             >
-              <span className="text-sm md:text-base">COR</span>
-              <FaDownload className="text-[#222222]" />
+              <span className="text-semibold md:text-semibold font-semibold">COR</span>
+              <img src={download} alt="" className="h-5 w-5" />
             </a>
           </div>
         </div>

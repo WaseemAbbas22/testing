@@ -18,7 +18,7 @@ const CareersList = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           
           {/* Search bar with icon box */}
-          <div className="flex w-full  w-[420px] h-[6vh]">
+          <div className="flex w-full  w-[430px] h-[6vh]">
             <input
               type="text"
               placeholder="Search jobs"
@@ -30,15 +30,15 @@ const CareersList = () => {
           </div>
 
           {/* City dropdown */}
-          <select className="w-[55%] text-[10px] text-[#BABABA] ml-[260px] rounded bg-white">
-            <option className="ml-1">City</option>
+          <select className="w-[55%] text-[10px] text-[#BABABA] ml-[260px] px-3 rounded bg-white">
+            <option className="">City</option>
             <option>Lahore</option>
             <option>Karachi</option>
             <option>Islamabad</option>
           </select>
 
           {/* Employment Type dropdown */}
-          <select className="w-[90%] rounded text-[10px] ml-[176px] text-[#BABABA] bg-white">
+          <select className="w-[90%] rounded text-[10px] ml-[176px] px-3 text-[#BABABA] bg-white">
             <option className="ml-0">Employment Type</option>
             <option>Full Time</option>
             <option>Part Time</option>
@@ -46,7 +46,7 @@ const CareersList = () => {
           </select>
 
           {/* Sort by dropdown */}
-          <select className="w-[60%] text-[#BABABA] ml-[152px] text-[10px] text-left rounded bg-white">
+          <select className="w-[60%] text-[#BABABA] ml-[152px] px-3 text-[10px] text-left rounded bg-white">
             <option>Sort by</option>
             <option>Date</option>
             <option>Relevance</option>
@@ -71,7 +71,7 @@ const CareersList = () => {
           { title: "Marketing Coordinator", location: "Karachi", type: "Internship", posted: "1 month ago" },
           { title: "Customer Support", location: "Islamabad", type: "Full Time", posted: "2 months ago" },
         ].map((job, i) => (
-          <div key={i} className="border-t border-[#BABABA] rounded p-4 hover:bg-green-50 cursor-pointer transition flex flex-col md:flex-row md:items-center md:justify-between">
+          <div key={i} className="border-t border-[#BABABA] rounded p-2 hover:bg-green-50 cursor-pointer transition flex flex-col md:flex-row md:items-center md:justify-between">
             <div>
               <h4 className="text-lg py-1 font-bold text-[#32A849]">{job.title}</h4>
               <p className="text-sm font-semibold text-[#444444]">
@@ -80,7 +80,7 @@ const CareersList = () => {
               <p className="text-[14px] py-1  text-[#888888]">Posted: {job.posted}</p>
             </div>
             <div className="mt-4 md:mt-0">
-              <button className="bg-green-600 text-xs py-2 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+              <button className="bg-green-600 text-sm py-2 text-white px-5  rounded hover:bg-darkgreen transition">
                 View Job
               </button>
             </div>

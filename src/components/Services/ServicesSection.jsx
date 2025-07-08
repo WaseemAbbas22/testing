@@ -19,7 +19,7 @@ const ServicesSection = ({ title, description, buttonText, image, reverse }) => 
         <img
           src={image}
           alt={title}
-          className="w-[70%] md:w-[65%] h-[40vh] md:h-[90%] object-cover rounded shadow-md mt-8 mr-10"
+          className="w-[70%] md:w-[65%] h-[40vh] md:h-[90%] object-cover rounded-xl shadow-md mt-8 mr-28"
         />
       </div>
       
