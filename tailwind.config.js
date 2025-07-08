@@ -13,6 +13,7 @@ export default {
       colors: {
         'darkgreen':'#32A849',
         'gray': '#444444',
+        'Border': '#F2F2F2',
         'bggray': '#F0F0F0',
         'custom-brown': '#DED4CA',
         'custom-border': '#F0E5DB',

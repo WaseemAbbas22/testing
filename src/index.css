@@ -7,12 +7,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Override react-phone-input-2 country list max-height globally */
-.react-tel-input .country-list {
-  max-height: 50vh !important; /* half of screen height */
-  overflow-y: auto !important;
-  z-index: 9999 !important; /* ensures it appears above other elements */
+
+/*Hower Effect on Links*/
+@layer components {
+  .nav-link-hover {
+    @apply relative hover:text-green-600 after:content-[''] after:absolute after:left-0 after:-bottom-[21px] after:w-0 after:h-[4px] after:bg-darkgreen after:transition-all after:duration-300 hover:after:w-full;
+  }
 }
+@layer components {
+  .custom-textarea {
+    @apply w-full mt-1 sm:mt-2 p-2 h-10 border border-bggray rounded resize-none outline-none focus:border-green-300 bg-bggray;
+  }
+}
+@layer components {
+  .custom-box {
+    @apply bg-[#F2F2F2] w-[200px] sm:w-[220px] h-[90px] flex items-center justify-center rounded-md shadow-md;
+  }
+}
+
+
 
 
 body {

@@ -11,6 +11,7 @@ import Sectors from "./pages/Sectors"; // Assuming you have a Sectors page
 import Careers from "./pages/Careers";
 import Rodent from "./pages/pests/Rodent";
 //import BlogsPage from "./pages/Blogs";
+import "/src/index.css"
 
 const App = () => {
   return (

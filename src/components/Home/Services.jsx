@@ -20,10 +20,10 @@ const Services = () => {
   ];
 
   return (
-    <div className="w-full bg-gray-100 py-12 sm:py-16 px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 flex flex-col items-center">
+    <div className="w-full bg-bggray py-12 sm:py-16 px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 flex flex-col items-center">
       
       {/* Heading */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray mb-2">
         Our Services
       </h2>
 

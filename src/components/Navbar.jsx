@@ -23,17 +23,17 @@ const Navbar = () => {
 
           {/* Desktop Menu Div */}
           <div className="hidden md:flex flex-1 justify-center">
-            <ul className="flex text-xs space-x-3">
-              <li><Link to="/" className="hover:text-green-600 hover:underline">Home</Link></li>
-              <li><Link to="/pests" className="hover:text-green-600 hover:underline">Pests</Link></li>
-              <li><Link to="/services" className="hover:text-green-600 hover:underline">Services</Link></li>
-              <li><Link to="/sectors" className="hover:text-green-600 hover:underline">Sectors</Link></li>
-              <li><Link to="/about" className="hover:text-green-600 hover:underline">About Us</Link></li>
-              <li><Link to="/documents" className="hover:text-green-600 hover:underline">Documents</Link></li>
-              <li><Link to="/equipment-trading" className="hover:text-green-600 hover:underline">Equipment Trading</Link></li>
-              <li><Link to="/careers" className="hover:text-green-600 hover:underline">Careers</Link></li>
-              <li><Link to="/blogs" className="hover:text-green-600 hover:underline">Blogs</Link></li>
-              <li><Link to="/contact" className="hover:text-green-600 hover:underline">Contact Us</Link></li>
+            <ul className="flex text-[13px] space-x-3.5 ml-6 text-gray">
+              <li><Link to="/" className="nav-link-hover">Home</Link></li>
+              <li><Link to="/pests" className="nav-link-hover">Pests</Link></li>
+              <li><Link to="/services" className="nav-link-hover">Services</Link></li>
+              <li><Link to="/sectors" className="nav-link-hover">Sectors</Link></li>
+              <li><Link to="/about" className="nav-link-hover">About Us</Link></li>
+              <li><Link to="/documents" className="nav-link-hover">Documents</Link></li>
+              <li><Link to="/equipment-trading" className="nav-link-hover">Equipment Trading</Link></li>
+              <li><Link to="/careers" className="nav-link-hover">Careers</Link></li>
+              <li><Link to="/blogs" className="nav-link-hover">Blogs</Link></li>
+              <li><Link to="/contact" className="nav-link-hover">Contact Us</Link></li>
             </ul>
           </div>
 

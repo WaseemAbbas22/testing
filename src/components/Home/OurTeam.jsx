@@ -12,7 +12,7 @@ const OurTeam = () => {
   ];
 
   return (
-    <div className="w-full min-h-[70vh] bg-gray-100 flex flex-col items-center justify-center px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32">
+    <div className="w-full min-h-[70vh] bg-bggray flex flex-col items-center justify-center px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32">
       
       {/* Heading */}
       <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-center text-gray-800 mb-12 sm:mb-12">

@@ -28,12 +28,12 @@ const PestCard = ({ pestName }) => {
             {/* Title & Subtitle */}
             <div className="-mt-4">
               <h2 className="text-white text-lg font-bold">{pest.name}</h2>
-              <p className="text-gray-300 text-xs">{pest.desc}</p>
+              <p className="text-white text-xs">{pest.desc}</p>
             </div>
 
             {/* Hidden Text & Button */}
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <p className="text-gray-200 text-xs mb-2">{pest.more}</p>
+              <p className="text-white text-xs mb-2">{pest.more}</p>
               <button className="bg-green-600 text-white text-xs px-3 py-1 rounded hover:bg-green-700 transition">
                 View More
               </button>

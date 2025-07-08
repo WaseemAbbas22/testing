@@ -24,7 +24,7 @@ const Form = () => {
               <div>
                 <label className="text-black/70 font-bold text-xs" htmlFor="firstName">First Name</label>
                 <input
-                  className="h-10 p-2 mt-1 sm:mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] placeholder-gray-400"
+                  className="custom-textarea placeholder-gray-400"
                   type="text"
                   id="firstName"
                   placeholder="First Name"
@@ -36,7 +36,7 @@ const Form = () => {
               <div>
                 <label className="text-black/70 font-bold text-xs" htmlFor="lastName">Last Name</label>
                 <input
-                  className="h-10 p-2 mt-1 sm:mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] placeholder-gray-400"
+                  className="custom-textarea placeholder-gray-400"
                   type="text"
                   id="lastName"
                   placeholder="Last Name"
@@ -51,7 +51,7 @@ const Form = () => {
                   <select
                     value={countryCode}
                     onChange={(e) => setCountryCode(e.target.value)}
-                    className="border border-gray-500/30 rounded-l h-10 px-2 bg-[#F2F2F2] focus:border-green-300"
+                    className="custom-textare"
                   >
                     <option value="+971">🇦🇪</option>
                     <option value="+92">🇵🇰</option>
@@ -59,7 +59,7 @@ const Form = () => {
                     <option value="+1">🇺🇸</option>
                   </select>
                   <input
-                    className="h-10 p-2 w-full border-t border-b border-r border-gray-500/30 rounded-r outline-none focus:border-green-300 bg-[#F2F2F2] placeholder-gray-400"
+                    className="custom-textarea placeholder-gray-400"
                     type="tel"
                     id="phone"
                     placeholder="Phone Number"
@@ -72,7 +72,7 @@ const Form = () => {
               <div>
                 <label className="text-black/70 font-bold text-xs" htmlFor="email">Email</label>
                 <input
-                  className="h-10 p-2 mt-1 sm:mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] placeholder-gray-400"
+                  className="custom-textarea placeholder-gray-400"
                   type="email"
                   id="email"
                   placeholder="E-mail"
@@ -85,7 +85,7 @@ const Form = () => {
                 <label className="text-black/70 font-bold text-xs" htmlFor="pestConcern">Select Pest Concern</label>
                 <select
                   id="pestConcern"
-                  className="h-10 p-2 mt-1 sm:mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] text-gray-700"
+                  className="custom-textarea placeholder-gray-400"
                   required
                 >
                   <option value="">select----</option>
@@ -102,7 +102,7 @@ const Form = () => {
                 <label className="text-black/70 font-bold text-xs" htmlFor="priorityType">Select Priority Type</label>
                 <select
                   id="priorityType"
-                  className="h-10 p-2 mt-1 sm:mt-2 w-full border border-gray-500/30 rounded outline-none focus:border-green-300 bg-[#F2F2F2] text-gray-700"
+                  className="custom-textarea placeholder-gray-400"
                   required
                 >
                   <option value="">select----</option>
@@ -118,7 +118,7 @@ const Form = () => {
             <div className="mt-3 sm:mt-4 w-full">
               <label className="text-black/70 font-bold text-xs" htmlFor="message">Message</label>
               <textarea
-                className="w-full mt-1 sm:mt-2 p-2 h-20 border border-gray-500/30 rounded resize-none outline-none focus:border-green-300 bg-[#F2F2F2] placeholder-gray-400"
+                className="custom-textarea placeholder-gray-400 h-28"
                 id="message"
                 placeholder="Write your message"
                 required

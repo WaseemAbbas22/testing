@@ -42,7 +42,7 @@ const ServicesHero = ({ title = "Services", breadcrumb = "Home > Services", bgIm
         <h1 className="text-5xl font-bold">{title}</h1>
         <p className="text-sm mt-2">{breadcrumb}</p>
 
-        <div className={`${isFixed ? "fixed top-0 right-0 z-50" : "absolute bottom-0 right-2"}`}>
+        <div className={`${isFixed ? "fixed top-2 right-2 z-50" : "absolute bottom-0 right-2"}`}>
           <PhoneCallBox
             title="Call for free Inspection"
             phone="0800-25456158"
