@@ -110,17 +110,17 @@ const ServicesTabs = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="w-full min-h-screen px-4 md:px-20 py-10 bg-[#F0F0F0] flex flex-col items-center">
+    <div className="w-full min-h-screen px-4 md:px-20 py-10 bg-bggray flex flex-col items-center">
 
       {/* Tabs Bar */}
-      <div className="flex flex-wrap justify-center items-center border-b border-gray-300 mb-8 bg-white rounded">
+      <div className="flex h-[8vh] flex-wrap justify-center items-center mb-4 bg-white rounded">
         {tabs.map((tab, index) => (
           <div key={index} className="flex items-center">
             <button
               onClick={() => setActiveTab(index)}
-              className={`text-xs font-bold py-2 px-2 whitespace-nowrap transition
+              className={`text-sm font-bold py-2 px-2 whitespace-nowrap transition
                 ${activeTab === index
-                  ? "text-green-600 border-b-2 border-green-600"
+                  ? "text-white border-b-2 border-green-600 bg-darkgreen rounded"
                   : "text-gray-700 hover:bg-green-600 hover:text-white"
                 }`}
             >
@@ -128,14 +128,14 @@ const ServicesTabs = () => {
             </button>
             {/* Divider line between tabs */}
             {index !== tabs.length - 1 && (
-              <div className="hidden md:block h-4 border-r border-gray-300 mx-2"></div>
+              <div className="hidden md:block h-6 border-r border-bggray mx-0"></div>
             )}
           </div>
         ))}
       </div>
 
       {/* Tab Content */}
-      <div className="text-xs p-5 rounded max-w-5xl w-full bg-white shadow">
+      <div className="text-xs p-5 rounded max-w-5xl w-full">
         {tabs[activeTab].content}
       </div>
 
