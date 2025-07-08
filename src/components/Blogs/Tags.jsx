@@ -9,15 +9,15 @@ const Tags = () => {
   ];
 
   return (
-    <div className="bg-gray-200 rounded shadow">
+    <div className="bg-bggray rounded shadow mt-5">
       <div className="bg-green-600 text-white px-4 py-2 rounded-t">
         <h3 className="text-lg font-semibold">Tags</h3>
       </div>
-      <div className="p-4 flex flex-wrap gap-2">
+      <div className="p-2 flex flex-wrap gap-2">
         {tags.map((tag, i) => (
           <span
             key={i}
-            className="bg-gray-300 text-sm px-2 py-1 rounded cursor-pointer hover:bg-green-600 hover:text-white"
+            className="bg-white text-xs px-2 py-1 font-xs text-gray rounded cursor-pointer hover:bg-green-600 hover:text-white"
           >
             {tag}
           </span>

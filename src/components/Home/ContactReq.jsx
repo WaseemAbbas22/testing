@@ -35,7 +35,7 @@ const ContactRequest = () => {
 
       {/* Content */}
       <div className="relative z-10 w-full flex flex-col items-center">
-        <h2 className="text-white text-3xl font-semibold md:ml-[-595px] mb-6">Get a Free Inspection</h2>
+        <h2 className="text-white text-3xl font-semibold md:ml-[-630px] mb-6">Get a Free Inspection</h2>
 
         <form
           onSubmit={handleSubmit}
@@ -44,17 +44,17 @@ const ContactRequest = () => {
           {/* Inputs Container */}
           <div
             ref={containerRef}
-            className="flex flex-col md:flex-row bg-white rounded shadow overflow-hidden w-full max-w-4xl"
+            className="flex flex-col md:flex-row bg-white rounded shadow w-full max-w-4xl"
           >
             {/* Dropdown */}
             <div className="flex-1 px-4 py-1">
               <select
                 value={service}
                 onChange={(e) => setService(e.target.value)}
-                className="w-full text-gray-800 text-base focus:outline-none h-12"
+                className="w-full text-[#999999] text-xs focus:outline-none h-12"
                 required
               >
-                <option value="">Select Service</option>
+                <option value="">Select Pest Concern</option>
                 <option value="Pest Control">Pest Control</option>
                 <option value="Termite Control">Termite Control</option>
                 <option value="Cleaning">Cleaning</option>
@@ -62,33 +62,37 @@ const ContactRequest = () => {
             </div>
 
             {/* Divider */}
-            <div className="hidden md:block w-px bg-green-600 h-10"></div>
+            <div className="hidden md:block w-px bg-[#999999] h-10 mt-2"></div>
 
             {/* Name */}
-            <div className="flex-1 px-4 py-1">
+            <div className="flex-1 px-4 py-2">
               <input
                 type="text"
                 placeholder="Your Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full text-gray-800 text-base focus:outline-none h-10"
+                className="w-full text-[#999999] text-xs focus:outline-none h-10"
                 required
               />
             </div>
 
             {/* Divider */}
-            <div className="hidden md:block w-px bg-green-600 h-10"></div>
+            <div className="hidden md:block w-px bg-[#999999] h-10 mt-2"></div>
 
             {/* Phone Number */}
-            <div className="flex-1 px-4 py-1">
+            <div className="flex-1 px-4 py-2 text-xs text-[#999999]">
               <PhoneInput
                 country={"ae"}
                 value={phone}
                 onChange={(phone) => setPhone(phone)}
+                dropdownStyle={{
+                  maxHeight: "50vh", // half screen height
+                  overflowY: "auto",
+                }}
                 inputStyle={{
                   width: "100%",
                   height: "40px",
-                  fontSize: "1rem",
+                  fontSize: "12px",
                   border: "none",
                   outline: "none",
                   boxShadow: "none",
@@ -113,16 +117,16 @@ const ContactRequest = () => {
 
 
             {/* Divider */}
-            <div className="hidden md:block w-px bg-gray-600 h-15"></div>
+            <div className="hidden md:block w-px bg-[#999999] h-10 mt-2"></div>
 
             {/* Email */}
-            <div className="flex-1 px-4 py-1">
+            <div className="flex-1 px-4 py-2">
               <input
                 type="email"
-                placeholder="Your Email"
+                placeholder="E-mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full text-gray-800 text-base focus:outline-none h-10"
+                className="w-full text-[#999999] text-xs focus:outline-none h-10"
                 required
               />
             </div>

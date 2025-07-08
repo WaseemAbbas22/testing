@@ -34,6 +34,8 @@ const BlogsPage = () => {
             <SearchBar />
             <FreeInspection />
             <RecentBlogs />
+            <Categories />
+            <Tags />
           </div>
 
         </div>

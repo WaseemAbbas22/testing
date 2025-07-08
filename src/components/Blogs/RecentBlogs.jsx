@@ -11,7 +11,7 @@ const RecentBlogs = () => {
   ];
 
   return (
-    <div className="bg-gray-200 rounded shadow mt-5 bg-[#F0F0F0]">
+    <div className="bg-bggray rounded shadow mt-5 bg-[#F0F0F0]">
       <div className="bg-[#32A849] text-white px-4 py-2 rounded-t">
         <h3 className="text-lg font-semibold">Recent Blogs</h3>
       </div>

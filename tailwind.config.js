@@ -8,8 +8,12 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        poppins: ["Poppins","sans-serif"]
       },
       colors: {
+        'darkgreen':'#32A849',
+        'gray': '#444444',
+        'bggray': '#F0F0F0',
         'custom-brown': '#DED4CA',
         'custom-border': '#F0E5DB',
       },
