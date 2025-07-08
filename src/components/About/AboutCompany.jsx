@@ -1,5 +1,7 @@
 //import { FaBullseye, FaEye } from 'react-icons/fa'; // Example icons for Mission and Vision
-
+import mission from "/src/assets/About/mission.png"
+import vision from "/src/assets/About/vision.png"
+import bg from "/src/assets/About/bg.png"
 const AboutCompany = () => {
   return (
     <div className="w-full min-h-[150vh] bg-white px-6 md:px-16 lg:px-24 xl:px-32 py-16 flex flex-col">
@@ -65,10 +67,10 @@ const AboutCompany = () => {
         {/* Our Mission */}
         <div
           className="bg-green-800 text-white rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-cover bg-center"
-          style={{ backgroundImage: "url('/src/assets/About/bg.png')" }}
+          style={{ backgroundImage: `url(${bg})` }}
         >
           <img
-            src="/src/assets/About/mission.png" // replace with your actual image path
+            src= {mission}// replace with your actual image path
             alt="Vision"
             className="w-12 h-12 mb-4"
           />
@@ -81,11 +83,11 @@ const AboutCompany = () => {
         {/* Our Vision */}
         <div
           className="bg-green-800 text-white rounded-lg p-6 shadow-lg flex flex-col items-center text-center bg-cover bg-center"
-          style={{ backgroundImage: "url('/src/assets/About/bg.png')" }}
+          style={{ backgroundImage: `url(${bg})` }}
         >
           {/* Replaced icon with image */}
           <img
-            src="/src/assets/About/vision.png" // replace with your actual image path
+            src={vision} // replace with your actual image path
             alt="Vision"
             className="w-12 h-12 mb-4"
           />
