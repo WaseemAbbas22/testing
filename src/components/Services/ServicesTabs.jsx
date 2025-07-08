@@ -38,7 +38,6 @@ const ServicesTabs = () => {
             We provide professional pest control services for different types of
             businesses including
 
-
             Food Processing and Services,
             Retail,
             Hotels,
@@ -48,7 +47,6 @@ const ServicesTabs = () => {
             Industrial & Construction,
             Yachts and Boats and
             Warehouses
-
           </p>
           <p>
             We strongly understand that each business has its own unique needs.
@@ -112,40 +110,37 @@ const ServicesTabs = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-  <div className="w-full min-h-screen px-5 md:px-20 py-10 bg-[#F0F0F0] flex flex-col items-center">
+    <div className="w-full min-h-screen px-4 md:px-20 py-10 bg-[#F0F0F0] flex flex-col items-center">
 
-    {/* Tabs Bar */}
-    <div className="flex justify-center items-center border-b border-gray-300 mb-8 bg-white rounded">
-      {tabs.map((tab, index) => (
-        <div key={index} className="flex items-center">
-          <button
-            onClick={() => setActiveTab(index)}
-            className={`text-xs font-bold py-2 px-1 whitespace-nowrap transition
-              ${activeTab === index
-                ? "text-green-600 border-b-2 border-green-600"
-                : "text-gray-700 hover:bg-green-600 hover:text-white"
-              }`}
-          >
-            {tab.title}
-          </button>
-          {/* Divider line between tabs */}
-          {index !== tabs.length - 1 && (
-            <div className="h-4 border-r border-gray-300 mx-2"></div>
-          )}
-        </div>
-      ))}
+      {/* Tabs Bar */}
+      <div className="flex flex-wrap justify-center items-center border-b border-gray-300 mb-8 bg-white rounded">
+        {tabs.map((tab, index) => (
+          <div key={index} className="flex items-center">
+            <button
+              onClick={() => setActiveTab(index)}
+              className={`text-xs font-bold py-2 px-2 whitespace-nowrap transition
+                ${activeTab === index
+                  ? "text-green-600 border-b-2 border-green-600"
+                  : "text-gray-700 hover:bg-green-600 hover:text-white"
+                }`}
+            >
+              {tab.title}
+            </button>
+            {/* Divider line between tabs */}
+            {index !== tabs.length - 1 && (
+              <div className="hidden md:block h-4 border-r border-gray-300 mx-2"></div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      {/* Tab Content */}
+      <div className="text-xs p-5 rounded max-w-5xl w-full bg-white shadow">
+        {tabs[activeTab].content}
+      </div>
+
     </div>
-
-    {/* Tab Content */}
-    <div className="text-xs p-5 rounded max-w-5xl w-full">
-      {tabs[activeTab].content}
-    </div>
-
-  </div>
-);
-
-
-
+  );
 };
 
 export default ServicesTabs;
