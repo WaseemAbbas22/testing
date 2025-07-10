@@ -2,6 +2,7 @@
 
 import PropTypes from "prop-types";
 import { pests } from "../../data/pestsData";
+import { Link } from "react-router-dom";
 
 
 const PestCard = ({ pestName }) => {
@@ -38,12 +39,13 @@ const PestCard = ({ pestName }) => {
             {/* Hidden Text & Button */}
             <div className="opacity-0 group-hover:opacity-100 transition-opacity  duration-500">
               <p className="text-white text-xs">{pest.more}</p>
-              <button
-                className="bg-green-600 text-white text-xs px-3 py-1 rounded mt-2 hover:bg-green-700 transition"
-                onClick={() => window.location.href = pest.link} // navigate to different page
-              >
-                View More
-              </button>
+              <Link to={pest.link}>
+                <button
+                  className="bg-green-600 text-white text-xs px-3 py-1 rounded mt-2 hover:bg-green-700 transition"
+                >
+                  View More
+                </button>
+              </Link>
 
             </div>
           </div>
