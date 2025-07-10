@@ -1,5 +1,5 @@
 import TopBar from "/src/components/TopBar";
-import Navbar from "/src/components/NavBar";
+import Navbar from "/src/components/Navbar";
 import Footer from "/src/components/Footer";
 import ServicesHero from "/src/components/Services/ServicesHero";
 import BlogsHeroImg from "/src/assets/Blogs/BlogHero.png"
