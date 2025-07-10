@@ -30,7 +30,7 @@ export const pests = [
     desc: "Treatment",
     more: "We deliver safe, effective pest control and sanitization solutions for homes and businesses. Protect your property and health with our certified, hassle-free services...",
     image: CockroachImage,
-    link: "/cockroach" // or full URL
+    link: "/cockroch" // or full URL
   },
   {
     id: 3,

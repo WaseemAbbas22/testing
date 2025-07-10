@@ -4,7 +4,7 @@ import Footer from '/src/components/Footer'
 import ServicesHero from '/src/components/Services/ServicesHero'
 import HMheroImg from "/src/assets/Pests/housemouseHero.png"
 
-const housemouse = () => {
+const cockroch = () => {
     return (
         <>
             <div>
@@ -21,4 +21,4 @@ const housemouse = () => {
     )
 }
 
-export default housemouse;
+export default cockroch;
