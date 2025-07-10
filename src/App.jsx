@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as HashRouter,Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About"; // Assuming you have an About page
@@ -34,6 +34,7 @@ const App = () => {
   return (
     <>
     <div>
+      <HashRouter>
       <Router>
         <Routes>
         {/* Main NavLinks */}  
@@ -72,6 +73,7 @@ const App = () => {
           
         </Routes>
       </Router>
+      </HashRouter>
     </div>
     </>  
   )
