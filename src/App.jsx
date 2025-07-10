@@ -18,7 +18,7 @@ import Flies from "/src/components/Pests/Flies/Flies";
 import Mosquito from "/src/components/Pests/Mosquito/Mosquito";
 import RedBug from "/src/components/Pests/RedBug/RedBug";
 import Tick from "/src/components/Pests/Tick/Tick";
-import Venomous from "/src/components/Pests/venomous/Venomous";
+import Venomous from "/src/components/Pests/Venomous/Venomous";
 import Cockroch from "/src/components/Pests/Cockroch/Cockroch";
 import Termites from "/src/components/Pests/Termites/Termites";
 import Wasp from "/src/components/Pests/Wasp/Wasp";
