@@ -1,11 +1,11 @@
-import TopBar from "../../components/TopBar"    
-import Navbar from "../../components/Navbar"
-import ServicesHero from "../../components/Services/ServicesHero"   
+import TopBar from "/src/components/TopBar"    
+import Navbar from "/src/components/Navbar"
+import ServicesHero from "/src/components/Services/ServicesHero"   
 import RodentHeroImg from '/src/assets/Pests/rodenthero.png'; // Adjust the path as   
-import Footer from "../../components/Footer"
-import RodentSection from "../../components/Pests/RodentSection"; // Ensure casing matches the actual file
-import RatRemovalPro from "../../components/Pests/RatRemovalPro"; // Ensure casing matches the actual file
-import RemoveAnimals from "../../components/Pests/RemoveAnimals"; // Ensure casing matches the actual file
+import Footer from "/src/components/Footer"
+import RodentSection from "/src/components/Pests/Rodent/RodentSection"; // Ensure casing matches the actual file
+import RatRemovalPro from "/src/components/Pests/Rodent/RatRemovalPro"; // Ensure casing matches the actual file
+import RemoveAnimals from "/src/components/Pests/Rodent/RemoveAnimals"; // Ensure casing matches the actual file
 const Rodent = () => {
   return (
     <>

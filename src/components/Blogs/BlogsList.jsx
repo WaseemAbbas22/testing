@@ -1,21 +1,22 @@
 import { FaCalendarAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import Blog1 from "../../assets/Blogs/blog1.png";
 import Blog2 from "../../assets/Blogs/blog2.png";
 import Blog3 from "../../assets/Blogs/blog3.png";
-import lastsec from "/src/assets/Home/lastsec.png"
+import lastsec from "/src/assets/Home/lastsec.png";
 
 const blogs = [
-  { id: 1, img: Blog1, title: "Pest Control Tips, Insights & Expert Advice", desc: "Stay informed with the latest pest prevention tips, seasonal advice, and expert insights from our certified technicians. Whether you're dealing with termites, cockroaches...", date: "01 Jul 2025" },
-  { id: 2, img: Blog2, title: "Expert Tips from UAE Pest Specialists", desc: "Get insider knowledge straight from the professionals. Our blog covers real issues faced by homeowners and businesses in the UAE — with clear, practical solutions...", date: "02 Jul 2025" },
-  { id: 3, img: Blog3, title: "Smarter Pest Control Starts Here", desc: "Whether you're a first-time homeowner or a facility manager, our blog gives you the tools to stay ahead of pests. Find DIY prevention hacks, product comparisons, service guides...", date: "03 Jul 2025" },
-  { id: 4, img: Blog1, title: "Smarter Pest Control Starts Here", desc: "Whether you're a first-time homeowner or a facility manager, our blog gives you the tools to stay ahead of pests. Find DIY prevention hacks, product comparisons, service guides...", date: "04 Jul 2025" },
-  { id: 5, img: Blog2, title: "Pest Control Tips, Insights & Expert Advice", desc: "Stay informed with the latest pest prevention tips, seasonal advice, and expert insights from our certified technicians. Whether you're dealing with termites, cockroaches...", date: "05 Jul 2025" },
-  { id: 6, img: Blog3, title: "Expert Tips from UAE Pest Specialists", desc: "Get insider knowledge straight from the professionals. Our blog covers real issues faced by homeowners and businesses in the UAE — with clear, practical solutions...", date: "06 Jul 2025" },
-  { id: 7, img: Blog1, title: "Smarter Pest Control Starts Here", desc: "Whether you're a first-time homeowner or a facility manager, our blog gives you the tools to stay ahead of pests. Find DIY prevention hacks, product comparisons, service guides...", date: "07 Jul 2025" },
-  { id: 8, img: Blog2, title: "Smarter Pest Control Starts Here", desc: "Whether you're a first-time homeowner or a facility manager, our blog gives you the tools to stay ahead of pests. Find DIY prevention hacks, product comparisons, service guides...", date: "08 Jul 2025" },
-  { id: 9, img: Blog3, title: "Pest Control Tips, Insights & Expert Advice", desc: "Stay informed with the latest pest prevention tips, seasonal advice, and expert insights from our certified technicians. Whether you're dealing with termites, cockroaches...", date: "09 Jul 2025" },
-  { id: 10, img: Blog1, title: "Expert Tips from UAE Pest Specialists", desc: "Get insider knowledge straight from the professionals. Our blog covers real issues faced by homeowners and businesses in the UAE — with clear, practical solutions...", date: "10 Jul 2025" },
+  { id: 1, img: Blog1, title: "Pest Control Tips, Insights & Expert Advice", desc: "Stay informed with the latest pest prevention tips, seasonal advice, and expert insights from our certified technicians. Whether you're dealing with termites, cockroaches...", date: "01 Jul 2025",Link:"/bloggen" },
+  { id: 2, img: Blog2, title: "Expert Tips from UAE Pest Specialists", desc: "Get insider knowledge straight from the professionals. Our blog covers real issues faced by homeowners and businesses in the UAE — with clear, practical solutions...", date: "02 Jul 2025" ,Link:"/bloggen"},
+  { id: 3, img: Blog3, title: "Smarter Pest Control Starts Here", desc: "Whether you're a first-time homeowner or a facility manager, our blog gives you the tools to stay ahead of pests. Find DIY prevention hacks, product comparisons, service guides...", date: "03 Jul 2025",Link:"/bloggen" },
+  { id: 4, img: Blog1, title: "Smarter Pest Control Starts Here", desc: "Whether you're a first-time homeowner or a facility manager, our blog gives you the tools to stay ahead of pests. Find DIY prevention hacks, product comparisons, service guides...", date: "04 Jul 2025" ,Link:"/bloggen"},
+  { id: 5, img: Blog2, title: "Pest Control Tips, Insights & Expert Advice", desc: "Stay informed with the latest pest prevention tips, seasonal advice, and expert insights from our certified technicians. Whether you're dealing with termites, cockroaches...", date: "05 Jul 2025",Link:"/bloggen" },
+  { id: 6, img: Blog3, title: "Expert Tips from UAE Pest Specialists", desc: "Get insider knowledge straight from the professionals. Our blog covers real issues faced by homeowners and businesses in the UAE — with clear, practical solutions...", date: "06 Jul 2025" ,Link:"/bloggen"},
+  { id: 7, img: Blog1, title: "Smarter Pest Control Starts Here", desc: "Whether you're a first-time homeowner or a facility manager, our blog gives you the tools to stay ahead of pests. Find DIY prevention hacks, product comparisons, service guides...", date: "07 Jul 2025",Link:"/bloggen" },
+  { id: 8, img: Blog2, title: "Smarter Pest Control Starts Here", desc: "Whether you're a first-time homeowner or a facility manager, our blog gives you the tools to stay ahead of pests. Find DIY prevention hacks, product comparisons, service guides...", date: "08 Jul 2025",Link:"/bloggen" },
+  { id: 9, img: Blog3, title: "Pest Control Tips, Insights & Expert Advice", desc: "Stay informed with the latest pest prevention tips, seasonal advice, and expert insights from our certified technicians. Whether you're dealing with termites, cockroaches...", date: "09 Jul 2025",Link:"/bloggen" },
+  { id: 10, img: Blog1, title: "Expert Tips from UAE Pest Specialists", desc: "Get insider knowledge straight from the professionals. Our blog covers real issues faced by homeowners and businesses in the UAE — with clear, practical solutions...", date: "10 Jul 2025",Link:"/bloggen" },
 ];
 
 const BlogList = () => {
@@ -39,23 +40,19 @@ const BlogList = () => {
     <div className="w-[700px] py-12 px-5">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {currentBlogs.map((blog) => (
-          <div
-            key={blog.id}
-            className="flex flex-col rounded w-full"
-          >
-            <img
-              src={blog.img}
-              alt={blog.title}
-              className="mb-3 w-full h-auto rounded-lg"
-            />
+          <div key={blog.id} className="flex flex-col rounded w-full">
+            <img src={blog.img} alt={blog.title} className="mb-3 w-full h-auto rounded-lg" />
             <h3 className="text-base font-semibold mb-1">{blog.title}</h3>
             <img src={lastsec} alt="Last Section" className="h-2 w-auto mt-1" />
-                          
+
             <p className="text-xs mb-4">{blog.desc}</p>
             <div className="flex justify-between items-center mt-auto">
-              <button className="bg-green-600 text-[10px] text-white px-3 py-1 rounded flex items-center gap-1">
+              <Link
+                to={`${blog.Link}`} // replaced your button with Link for routing
+                className="bg-green-600 text-[10px] text-white px-3 py-1 rounded flex items-center gap-1"
+              >
                 Read More <span>→</span>
-              </button>
+              </Link>
               <div className="flex items-center text-[9px] text-gray-500">
                 <FaCalendarAlt className="mr-1" /> {blog.date}
               </div>
@@ -85,8 +82,6 @@ const BlogList = () => {
         </button>
       </div>
     </div>
-
-
   );
 };
 

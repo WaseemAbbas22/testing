@@ -6,7 +6,7 @@ const FreeInspection = () => {
       className="bg-cover bg-center rounded-lg shadow text-white mt-5 "
       style={{ backgroundImage: `url(${heroImg})` }}
     >
-      <div className="p-4 space-y-4 bg-black bg-opacity-70 rounded-b">
+      <div className="p-4 space-y-4 bg-black bg-opacity-70 rounded-lg">
 
         <div className="bg-opacity-80 px-2 py-2 rounded-t">
           <h3 className="text-lg font-semibold">Get a Free Inspection</h3>

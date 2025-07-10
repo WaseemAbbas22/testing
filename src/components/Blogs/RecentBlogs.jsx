@@ -12,21 +12,21 @@ const RecentBlogs = () => {
 
   return (
     <div className="bg-bggray rounded shadow mt-5 bg-[#F0F0F0]">
-      <div className="bg-[#32A849] text-white px-4 py-2 rounded-t">
+      <div className="bg-[#32A849] text-white px-4 py-4 rounded-t">
         <h3 className="text-lg font-semibold">Recent Blogs</h3>
       </div>
       <div className="p-4">
         {recentBlogs.map((blog) => (
           <div
             key={blog.id}
-            className="flex items-center space-x-2 py-2 border-b border-gray-400"
+            className="flex items-center space-x-2 py-4 border-b border-gray-400"
           >
             <img
               src={blog.img}
               alt={blog.title}
               className="rounded w-[70px] h-[70px] object-cover"
             />
-            <div>
+            <div className="ml-2 text-gray">
               <p className="text-sm font-semibold mb-3">{blog.title}</p>
               <div className="flex text-xs text-gray-500">
                 <FaCalendarAlt className="mb-2" /> {blog.date}
