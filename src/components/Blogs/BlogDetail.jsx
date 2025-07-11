@@ -29,18 +29,18 @@ const BlogDetail = () => {
             </div>
 
             {/* Blog Title */}
-            <h1 className="text-xl font-bold mb-1">
+            <h1 className="text-xl font-bold mb-0.5">
                 5 Eco-Friendly Pest Control Methods You Should Know About
             </h1>
 
             {/* Blog Content */}
             <div className="">
-                <p className="text-[13px]  justify-center space-y-0 mr-40 text-[#777777]">
+                <p className="text-[13px] mb-1  justify-center space-y-0 mr-40 text-[#777777]">
                     Pests can cause stress, damage property, and spread disease — but harsh chemical treatments often pose risks to your family, pets, and the environment. The good news? You can control pests naturally and responsibly. In this blog, we share five proven, eco-friendly pest control methods that help you maintain a safe, healthy, and pest-free home without relying on harmful chemicals.
                 </p>
 
-                <h1 className="text-lg font-bold">1. Keep a Clean: Prevention is Key</h1>
-                <p className="text-[13px]  justify-center mr-40 text-[#777777]">
+                <h1 className="text-lg font-bold  mb-0.5">1. Keep a Clean: Prevention is Key</h1>
+                <p className="text-[13px]  justify-center mb-1 mr-40 text-[#777777]">
                     One of the simplest and most effective eco-friendly pest control methods is good housekeeping. Crumbs, food scraps, and clutter attract pests like ants, cockroaches, and rodents.
                     <ul className="list-disc list-inside space-y-0 mx-2">
                         <li>Wipe kitchen counters daily.</li>
@@ -51,8 +51,8 @@ const BlogDetail = () => {
                     A clean home leaves pests with nothing to feed on and nowhere to hide
                 </p>
 
-                <h1 className="text-lg font-bold">2. Seal Entry Points</h1>
-                <p className="text-[13px]  justify-center mr-40 text-[#777777]">
+                <h1 className="text-lg font-bold mb-0.5">2. Seal Entry Points</h1>
+                <p className="text-[13px]  justify-center mb-1 mr-40 text-[#777777]">
                     Many pests enter your home through tiny cracks and gaps in doors, windows, and walls. Sealing these entry points is a safe, chemical-free way to keep unwanted visitors out.
                     <ul className="list-disc list-inside mx-2">
                         <li>Use weather stripping around doors and windows.</li>
@@ -64,8 +64,8 @@ const BlogDetail = () => {
                 </p>
 
 
-                <h1 className="text-lg font-bold">3. Use Natural Repellents </h1>
-                <p className="text-[13px]  justify-center space-y-0 mr-40 text-[#777777]">
+                <h1 className="text-lg font-bold mb-0.5">3. Use Natural Repellents </h1>
+                <p className="text-[13px]  justify-center mb-1 space-y-0 mr-40 text-[#777777]">
                     Nature provides plenty of pest-repelling ingredients you can use safely at home. Here are a few easy ideas:
                     <ul className="list-disc list-inside space-y-0 mx-2">
                         <li>Essential oils: Peppermint, lavender, and eucalyptus oils repel ants, spiders, and mosquitoes. Mix with water and spray around entryways.</li>
@@ -75,8 +75,8 @@ const BlogDetail = () => {
                     These methods are non-toxic, safe for kids and pets, and leave your home smelling fresh.
                 </p>
 
-                <h1 className="text-lg font-bold">4. Try Biological Pest Control</h1>
-                <p className="text-[13px]  justify-center space-y-0 mr-40 text-[#777777]">
+                <h1 className="text-lg font-bold mb-0.5">4. Try Biological Pest Control</h1>
+                <p className="text-[13px]  justify-center mb-1 space-y-0 mr-40 text-[#777777]">
                     Biological pest control means using natural predators or beneficial insects to manage pest populations instead of chemicals.
                     <ul className="list-disc list-inside space-y-0 mx-2">
                         <li>Introduce ladybugs to your garden to control aphids.</li>
@@ -86,8 +86,8 @@ const BlogDetail = () => {
                     This approach works best for outdoor spaces and gardens, creating a balanced ecosystem.
                 </p>
 
-                <h1 className="text-lg  font-bold">5. Hire Eco-Friendly Pest Control Professionals</h1>
-                <p className="text-[13px]  justify-center space-y-0 mr-40 text-[#777777]">
+                <h1 className="text-lg  font-bold mb-0.5">5. Hire Eco-Friendly Pest Control Professionals</h1>
+                <p className="text-[13px]  justify-center  mb-1 space-y-0 mr-40 text-[#777777]">
                     Sometimes, professional help is the safest option — but you don’t have to sacrifice eco-friendly values. Many pest control companies now offer green treatments using safe, low-toxicity products approved by local authorities.
                     <ul className="list-disc list-inside space-y-0 mx-2">
                         <li>Choose a licensed provider who uses environmentally responsible techniques.</li>
