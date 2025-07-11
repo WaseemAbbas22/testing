@@ -35,16 +35,18 @@ const HeroMain = () => {
             md:w-1/2 md:items-start md:text-left
           "
         >
-          <div className="w-[400px] space-y-1">
+          <div className="w-full sm:w-[400px] space-y-1">
             <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-gray-900">
               Trusted Commercial Pest Control Dubai Solution - Fast, Safe, Compliant
             </h1>
-           
           </div>
 
-          <div className="w-full">
-            <p className="text-[11px] sm:text-[12px] md:text-sm lg:text-base text-gray-600 leading-relaxed">
-              Protect your home or business with eco-friendly pest control solutions tailored to <br className="hidden md:block" /> your needs. Trusted by thousands across Dubai and beyond — we eliminate pests <br className="hidden md:block" /> fast and keep them from coming back.
+          <div className="w-full sm:w-[450px]">
+            <p className="text-[11px] sm:text-[12px] md:text-sm lg:text-sm font-bold text-gray leading-relaxed mb-2">
+              Dubai municipality's pest control solution tailored control for commercial properties
+            </p>
+            <p className="text-[11px] sm:text-[12px] md:text-sm lg:text-xs text-gray leading-relaxed">
+              In Dubai, Pest Control is not only essential for business but also a top functional and legal concern. Our company’s Pest Control Dubai services are designed for industries that value cleanliness, safety and regulations. We provide solutions that have been authorized by the pest control authority of the Dubai municipality, regardless of whether you are the owner of a restaurant, clinic, warehouse, or retail space. With thorough site inspections, digital reporting and preventive actions, we assist you in keeping our environment pest-free and audit-ready. With our customized approach, you can ensure that your company complies with Dubai's strongest pest control rules, react quickly, and be protected for a very long time.
             </p>
           </div>
 
@@ -55,10 +57,10 @@ const HeroMain = () => {
               md:justify-start
             "
           >
-            <button className="bg-[#32A849] text-white text-[12px] sm:text-[13px] font-semibold px-3 sm:px-4 py-2 rounded-md shadow hover:bg-green-600 transition">
+            <button className="bg-[#32A849] text-white text-[12px] sm:text-[12px] font-semibold px-3 sm:px-4 py-2 rounded-md shadow hover:bg-green-600 transition">
               Get a Free Inspection
             </button>
-            <button className="bg-[#898989] text-white text-[12px] sm:text-[13px] font-semibold px-3 sm:px-4 py-2 rounded-md shadow hover:bg-green-600 transition">
+            <button className="bg-[#898989] text-white text-[12px] sm:text-[12px] font-semibold px-3 sm:px-4 py-2 rounded-md shadow hover:bg-green-600 transition">
               View Services
             </button>
           </div>

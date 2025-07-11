@@ -22,7 +22,7 @@ const Branches = () => {
       {/* Boxes Grid */}
       <div className="flex flex-col items-center space-y-5">
         {/* Upper Line with 4 Boxes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-20 md:gap-[40px]">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-20 md:gap-[40px]">
           <div className="custom-box border border-[#DEDEDE]">
             <img src={Company5} alt="Company 1" className="max-h-10 object-contain" />
           </div>
@@ -38,7 +38,7 @@ const Branches = () => {
         </div>
 
         {/* Lower Line with 3 Boxes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-20 md:gap-[40px]">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-20 md:gap-[40px]">
           <div className="custom-box border border-[#DEDEDE]">
             <img src={Company1} alt="Company 5" className="max-h-14 object-contain" />
           </div>
