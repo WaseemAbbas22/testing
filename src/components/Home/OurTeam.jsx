@@ -5,68 +5,62 @@ import Member4 from "/src/assets/Home/image1.png";
 
 const OurTeam = () => {
   const team = [
-    { img: Member1, name: "John Doe", position: "Pest Control Expert", contact: "john@example.com" },
-    { img: Member2, name: "Jane Smith", position: "Field Supervisor", contact: "+971 50 123 4567" },
-    { img: Member3, name: "Mike Johnson", position: "Operations Manager", contact: "mike@example.com" },
-    { img: Member4, name: "Emily Brown", position: "Cleaning Specialist", contact: "+971 55 987 6543" },
+    { img: Member1, name: "Abdullah", position: "Dubai Call Centre", contact: "+971 52 152 8725,+971 4 375 6435" },
+    { img: Member2, name: "Neha", position: "Get Quotation", contact: "info@accuratepestcontrol.ae" },
+    { img: Member3, name: "Saleem", position: "Services", contact: "operations@accuratepestcontrol.ae" },
+    { img: Member4, name: "Azeem", position: "Sales", contact: "sales@accuratepst control.ae" },
   ];
 
   return (
-    <div
-      className="
-        w-full min-h-[70vh] bg-bggray flex flex-col items-center justify-center
-        px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 2xl:px-32
-      ">
-
+    <div className="w-full flex flex-col items-center py-10 bg-bggray">
       {/* Heading */}
-      <h2
-        className="
-          text-xl sm:text-2xl md:text-4xl font-bold text-center text-gray-800
-          mb-12 sm:mb-12
-        ">
-        Get help from our team
+      <h2 className="text-2xl md:text-4xl font-bold  text-gray-800 mb-16">
+        Get help from the Team
       </h2>
 
-      {/* Team Boxes */}
-      <div
-        className="
-          grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl
-        ">
+      {/* Team Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-6 w-full max-w-6xl px-12">
         {team.map((member, index) => (
           <div
             key={index}
-            className="
-              relative bg-white rounded-md shadow-md pt-12 pb-12 px-4
-              flex flex-col items-center text-center border-l-4 border-r-4 border-green-400
-            "
-
+            className="relative bg-white rounded-lg shadow-md pt-12 pb-6 px-4 flex flex-col items-center text-center"
+            style={{ height: "30vh" }}
           >
+            {/* Left Line with Triangle */}
+            <div className="absolute left-0 top-1/2 transform -translate-y-1/2 flex items-center">
+              <div className="h-[15vh] w-1 bg-green-600"></div>
+              <div
+                className="w-0 h-0 border-t-4 border-b-4 border-l-4 border-t-transparent border-b-transparent border-l-green-600"
+                // connect triangle to line
+              ></div>
+            </div>
+
+            {/* Right Line with Triangle */}
+            <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex items-center">
+              <div
+                className="w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent border-b-transparent border-r-green-600"
+               // connect triangle to line
+              ></div>
+              <div className="h-[15vh] w-1 bg-green-600"></div>
+            </div>
+
             {/* Circular Image */}
             <img
               src={member.img}
               alt={member.name}
-              className="absolute -top-10 w-20 h-20 rounded-full border-2 border-green-500
-                object-cover bg-white"/>
+              className="absolute -top-10 w-20 h-20 rounded-full border-4 border-darkgreen object-cover shadow-md"
+            />
 
             {/* Name */}
-            <h3
-              className="
-                mt-2 text-base sm:text-lg font-bold text-gray-800
-              "
-
-            >
-              {member.name}
-            </h3>
+            <h3 className="mt-2 text-sm font-bold text-gray">{member.name}</h3>
 
             {/* Position */}
-            <p className="text-xs sm:text-sm text-gray-600 sm:mb-2">
-              {member.position}
-            </p>
+            <p className="text-xs text-gray">{member.position}</p>
 
-            {/* Contact */}
-            <p className="text-green-600 text-sm sm:text-base font-semibold">
+            <p className="text-md font-bold px-6 w-52 break-words">
               {member.contact}
             </p>
+
           </div>
         ))}
       </div>
@@ -75,3 +69,5 @@ const OurTeam = () => {
 };
 
 export default OurTeam;
+
+

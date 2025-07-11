@@ -4,11 +4,11 @@ import PestCard from "../Pests/PestCard";
 
 const PestGrid = () => {
   return (
-    <div className="w-full bg-gray-50 py-10 px-4 md:px-10 lg:px-20 text-center">
+    <div className="w-full bg-gray-50 py-10 px-4 md:px-16 lg:px-32 text-center">
+      <h2 className="text-2xl md:text-3xl font-bold mb-8">Our Pest Services</h2>
 
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-4 gap-2 gap-x-0 justify-items-center">
-
+      <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 lg:gap-2 xl:gap-2 2xl:gap-8 justify-items-center">
+        {/* First 12 cards */}
         <PestCard pestName="ANTS" />
         <PestCard pestName="COCKROACHES" />
         <PestCard pestName="RED BUGS" />
@@ -21,19 +21,13 @@ const PestGrid = () => {
         <PestCard pestName="BIRDS" />
         <PestCard pestName="LIZARDS" />
         <PestCard pestName="TICKS" />
-        
 
-        {/* Last row with 2 cards centered in columns 2 and 3 */}
-       <div className="hidden lg:block"></div>  {/* Empty column 4 */}
+        {/* Last row with 2 cards centered */}
+        <div className="hidden md:block lg:hidden"></div> {/* for md screens: empty to center */}
         <PestCard pestName="WASPS" />
-                {/* Column 2 */}
-        <PestCard pestName="MOSQUITOES" />        {/* Column 3 */}
-        <div className="hidden lg:block"></div>  {/* Empty column 4 */}
-        <div className="hidden lg:block"></div>  {/* Empty column 1 */}
-        
+        <PestCard pestName="MOSQUITOES" />
+        <div className="hidden md:block lg:hidden"></div> {/* for md screens: empty to center */}
       </div>
-
-
     </div>
   );
 };
