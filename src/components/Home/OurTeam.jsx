@@ -39,7 +39,7 @@ const OurTeam = () => {
               relative bg-white rounded-md shadow-md pt-12 pb-12 px-4
               flex flex-col items-center text-center border-l-4 border-r-4 border-green-400
             "
-            
+
           >
             {/* Circular Image */}
             <img
@@ -53,7 +53,7 @@ const OurTeam = () => {
               className="
                 mt-2 text-base sm:text-lg font-bold text-gray-800
               "
-             
+
             >
               {member.name}
             </h3>

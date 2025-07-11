@@ -17,16 +17,16 @@ const Footer = () => {
           </p>
           <div className="flex justify-center md:justify-start gap-3  mt-12">
             <div className="bg-white rounded-full p-1">
-                <FaFacebookF className="text-darkgreen text-[14px]" />
+              <FaFacebookF className="text-darkgreen text-[14px]" />
             </div>
             <div className="bg-white rounded-full p-1">
-                <FaTwitter className="text-darkgreen text-[14px]" />
+              <FaTwitter className="text-darkgreen text-[14px]" />
             </div>
             <div className="bg-white rounded-full p-1">
-                <FaInstagram className="text-darkgreen text-[14px]" />
+              <FaInstagram className="text-darkgreen text-[14px]" />
             </div>
             <div className="bg-white rounded-full p-1">
-                <FaYoutube className="text-darkgreen text-[14px]" />
+              <FaYoutube className="text-darkgreen text-[14px]" />
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ const Footer = () => {
                 <li><a href="#">Sectors</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Documents</a></li>
-                
+
                 <li><a href="#">Pest Control</a></li>
                 <li><a href="#">Equipment Trading</a></li>
                 <li><a href="#">Careers</a></li>

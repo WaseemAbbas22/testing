@@ -29,12 +29,12 @@ const BlogDetail = () => {
             </div>
 
             {/* Blog Title */}
-            <h1 className="text-xl font-bold mb-0">
+            <h1 className="text-xl font-bold mb-1">
                 5 Eco-Friendly Pest Control Methods You Should Know About
             </h1>
 
             {/* Blog Content */}
-            <div className="-space-y-1">
+            <div className="">
                 <p className="text-[13px]  justify-center space-y-0 mr-40 text-[#777777]">
                     Pests can cause stress, damage property, and spread disease — but harsh chemical treatments often pose risks to your family, pets, and the environment. The good news? You can control pests naturally and responsibly. In this blog, we share five proven, eco-friendly pest control methods that help you maintain a safe, healthy, and pest-free home without relying on harmful chemicals.
                 </p>
@@ -52,9 +52,9 @@ const BlogDetail = () => {
                 </p>
 
                 <h1 className="text-lg font-bold">2. Seal Entry Points</h1>
-                <p className="text-[13px]  justify-center space-y-0 mr-40 text-[#777777]">
+                <p className="text-[13px]  justify-center mr-40 text-[#777777]">
                     Many pests enter your home through tiny cracks and gaps in doors, windows, and walls. Sealing these entry points is a safe, chemical-free way to keep unwanted visitors out.
-                    <ul className="list-disc list-inside space-y-0 mx-2">
+                    <ul className="list-disc list-inside mx-2">
                         <li>Use weather stripping around doors and windows.</li>
                         <li>Fill cracks and holes with silicone caulk or steel wool.</li>
                         <li>Install mesh screens on windows and vents.</li>
@@ -86,7 +86,7 @@ const BlogDetail = () => {
                     This approach works best for outdoor spaces and gardens, creating a balanced ecosystem.
                 </p>
 
-                <h1 className="text-lg font-bold">5. Hire Eco-Friendly Pest Control Professionals</h1>
+                <h1 className="text-lg  font-bold">5. Hire Eco-Friendly Pest Control Professionals</h1>
                 <p className="text-[13px]  justify-center space-y-0 mr-40 text-[#777777]">
                     Sometimes, professional help is the safest option — but you don’t have to sacrifice eco-friendly values. Many pest control companies now offer green treatments using safe, low-toxicity products approved by local authorities.
                     <ul className="list-disc list-inside space-y-0 mx-2">

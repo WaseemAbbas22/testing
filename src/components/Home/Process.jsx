@@ -31,14 +31,14 @@ const Process = () => {
       <div className="relative w-full max-w-[1200px] mb-10">
 
         {/* Green Dotted Line */}
-        <div className="hidden md:block absolute top-1/2 left-0 w-full border-t-2 border-dotted border-green-600 z-0"></div>
+        <div className="hidden md:block absolute top-1/2 left-0 w-full border-t-2 border-dotted border-darkgreen z-0"></div>
 
         {/* Steps Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-[25px] relative z-10">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-[#F5F5F5] rounded-lg border border-gray-300 shadow-md flex flex-col items-center justify-center py-10 px-4 relative hover:shadow-lg hover:border-green-600 transition"
+              className="bg-[#F5F5F5] rounded-lg border border-[#E0E0E0] shadow-md flex flex-col items-center justify-center py-10 px-4 relative hover:shadow-lg hover:border-green-600 transition"
             >
               {/* Number Box (Left Upper Corner) */}
               <div className="absolute top-0 left-0 bg-green-600 text-white rounded-ee-3xl rounded-ss-md w-10 h-10 flex items-center justify-center text-2xl italic font-semibold">

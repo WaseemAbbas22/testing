@@ -5,6 +5,7 @@ import ContactHeroImg from '/src/assets/Contact/heroImg.png'; // Adjust the path
 import ContactUs from "../components/Contact/ContactUs"
 import Footer from "../components/Footer";
 import Location from "../components/Contact/Location"
+import ContactUsForm from "../components/Contact/ContactUsForm";
 
 const Contact = () => {
     return (
@@ -17,8 +18,20 @@ const Contact = () => {
                     breadcrumb="Home > Contact Us"
                     bgImg={ContactHeroImg}
                 />
-                <ContactUs />   
-                <Location />    
+                <h2 className="text-center text-2xl md:text-4xl font-bold text-gray-800 mt-12 px-4">
+                    Contact Our Team Today & Say Goodbye to Pests
+                </h2>
+
+                <div className='flex flex-row w-full'>
+                    <div className='w-[50%]'>
+                        <ContactUs />
+                    </div>
+                    <div className='w-[50%]' >
+                        <ContactUsForm />
+
+                    </div>
+                </div>
+                <Location />
                 <Footer />
             </div>
         </>
