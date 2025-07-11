@@ -70,7 +70,7 @@ const CareersList = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
 
           {/* Search bar with icon box */}
-          <div className="flex w-full w-[425px] h-[6vh]">
+          <div className="flex w-full w-[260%] h-[6vh]">
             <input
               type="text"
               placeholder="Search jobs"
