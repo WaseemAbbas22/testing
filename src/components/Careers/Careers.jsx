@@ -7,47 +7,47 @@ const jobs = [
     title: "Pest Control Technician",
     location: "Building No. 3702, Shop No 3 & 4, Muweilah, Sharjah - UAE",
     type: "Full Time | 5,000 UAE - 25,000 per Year",
-    posted: "2 days ago",
+    posted: "June 05, 2025",
     link: "/jobdetail",
   },
   {
     id: 2,
-    title: "Sales Executive",
-    location: "Karachi",
-    type: "Part Time",
-    posted: "5 days ago",
+    title: "Inside Sales",
+    location: "Building No. 3702, Shop No 3 & 4, Muweilah, Sharjah - UAE  ",
+    type: "|  Full Time  |  5,000 UAE - 25,000 per Year",
+    posted: "June 05, 2025",
     link: "/jobdetail",
   },
   {
     id: 3,
-    title: "HR Manager",
-    location: "Islamabad",
-    type: "Full Time",
-    posted: "1 week ago",
+    title: "Office Administrator",
+    location: "Building No. 3702, Shop No 3 & 4, Muweilah, Sharjah - UAE  ",
+    type: "|  Full Time  |  5,000 UAE - 25,000 per Year",
+    posted: "June 05, 2025",
     link: "/jobdetail",
   },
   {
     id: 4,
-    title: "Operations Supervisor",
-    location: "Lahore",
-    type: "Full Time",
-    posted: "3 weeks ago",
+    title: "Pest Control Technician",
+    location: "Building No. 3702, Shop No 3 & 4, Muweilah, Sharjah - UAE",
+    type: "Full Time | 5,000 UAE - 25,000 per Year",
+    posted: "June 05, 2025",
     link: "/jobdetail",
   },
   {
     id: 5,
-    title: "Marketing Coordinator",
-    location: "Karachi",
-    type: "Internship",
-    posted: "1 month ago",
+    title: "Renewal Inspector",
+    location: "Building No. 3702, Shop No 3 & 4, Muweilah, Sharjah - UAE  | ",
+    type: " Full Time  |  5,000 UAE - 25,000 per Year",
+    posted: "June 05, 2025",
     link: "/jobdetail",
   },
   {
     id: 6,
-    title: "Customer Support",
-    location: "Islamabad",
-    type: "Full Time",
-    posted: "2 months ago",
+    title: "Pest Control Technician",
+    location: "Building No. 3702, Shop No 3 & 4, Muweilah, Sharjah - UAE",
+    type: "Full Time | 5,000 UAE - 25,000 per Year",
+    posted: "June 05, 2025",
     link: "/jobdetail",
   },
 ];
@@ -124,7 +124,7 @@ const CareersList = () => {
               <p className="text-sm font-semibold text-[#444444]">
                 {job.location} | {job.type}
               </p>
-              <p className="text-[14px] py-1 text-[#888888]">Posted: {job.posted}</p>
+              <p className="text-[14px] py-1 space-x-4 text-[#888888]">Posted: {job.posted}</p>
             </div>
             <div className="mt-4 md:mt-0">
               <Link to={job.link}>
