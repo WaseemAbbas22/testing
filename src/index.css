@@ -21,7 +21,7 @@
 }
 @layer components {
   .custom-box {
-    @apply bg-[#F2F2F2] w-[200px] sm:w-[220px] h-[90px] flex items-center justify-center rounded-md shadow-md;
+    @apply bg-[#F2F2F2] w-[150px] sm:w-[220px] h-[90px] flex items-center justify-center rounded-md shadow-md;
   }
 }
 @layer components {

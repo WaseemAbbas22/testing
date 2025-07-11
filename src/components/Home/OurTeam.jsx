@@ -19,7 +19,7 @@ const OurTeam = () => {
       </h2>
 
       {/* Team Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl px-4 sm:px-8 md:px-12">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-6xl px-4 sm:px-8 md:px-12">
         {team.map((member, index) => (
           <div
             key={index}
@@ -32,7 +32,7 @@ const OurTeam = () => {
           >
             {/* Left Line with Triangle */}
             <div className="absolute left-0 top-1/2 transform -translate-y-1/2 flex items-center">
-              <div className="h-[15vh] w-1 bg-green-600"></div>
+              <div className="h-[15vh] md:h-[15vh] w-1 bg-green-600"></div>
               <div className="w-0 h-0 border-t-4 border-b-4 border-l-4 border-t-transparent border-b-transparent border-l-green-600"></div>
             </div>
 
@@ -50,13 +50,13 @@ const OurTeam = () => {
             />
 
             {/* Name */}
-            <h3 className="mt-2 text-xs sm:text-sm md:text-base font-bold text-gray">{member.name}</h3>
+            <h3 className="text-xs sm:text-sm md:text-base font-bold text-gray">{member.name}</h3>
 
             {/* Position */}
-            <p className="text-[10px] sm:text-xs md:text-sm text-gray">{member.position}</p>
+            <p className="text-[10px] sm:text-xs md:text-xs text-gray">{member.position}</p>
 
             {/* Contact */}
-            <p className="text-xs sm:text-sm md:text-md font-bold px-4 w-44 sm:w-48 md:w-52 break-words">
+            <p className="text-xs sm:text-sm md:text-md md:mt-2 font-bold px-4  w-36 sm:w-48 md:w-52 break-words">
               {member.contact}
             </p>
           </div>
