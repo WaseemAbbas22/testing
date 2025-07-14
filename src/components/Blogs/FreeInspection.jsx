@@ -3,7 +3,11 @@ import heroImg from "../../assets/Blogs/FreeIns.png";
 const FreeInspection = () => {
   return (
     <div
+<<<<<<< HEAD
       className="bg-cover bg-center rounded-lg shadow text-white mt-5 mx-4 sm:mx- lg:mx-0 "
+=======
+      className="bg-cover bg-center rounded-lg shadow text-white mt-5 mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32"
+>>>>>>> ac8c5d003ad0e4805f1637b9f689827a5aba7f50
       style={{ backgroundImage: `url(${heroImg})` }}
     >
       <div className="p-3 sm:p-4 md:p-6 lg:p-8 space-y-3 sm:space-y-4 bg-black bg-opacity-70 rounded-lg">
