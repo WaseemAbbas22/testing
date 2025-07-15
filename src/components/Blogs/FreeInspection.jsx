@@ -3,20 +3,17 @@ import heroImg from "../../assets/Blogs/FreeIns.png";
 const FreeInspection = () => {
   return (
     <div
-<<<<<<< HEAD
-      className="bg-cover bg-center rounded-lg shadow text-white mt-5 mx-4 sm:mx- lg:mx-0 "
-=======
-      className="bg-cover bg-center rounded-lg shadow text-white mt-5 mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32"
->>>>>>> ac8c5d003ad0e4805f1637b9f689827a5aba7f50
+      className="bg-cover bg-center rounded-lg shadow text-white mt-4 mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-0"
       style={{ backgroundImage: `url(${heroImg})` }}
     >
       <div className="p-3 sm:p-4 md:p-6 lg:p-8 space-y-3 sm:space-y-4 bg-black bg-opacity-70 rounded-lg">
-
         <div className="bg-opacity-80 px-2 py-2 rounded-t">
-          <h3 className="text-base sm:text-lg md:text-xl font-semibold">Get a Free Inspection</h3>
+          <h3 className="text-base sm:text-lg md:text-xl font-semibold">
+            Get a Free Inspection
+          </h3>
         </div>
 
-        <select className="border px-3 py-2 rounded w-full text-xs sm:text-sm text-gray-400 h-8 sm:h-9 md:h-10">
+        <select className="border px-3 py-2 rounded w-[70%] md:w-full text-xs sm:text-sm text-gray h-8 sm:h-9 md:h-10">
           <option>Select Pest Concern</option>
           <option>Ants</option>
           <option>Cockroaches</option>
@@ -26,7 +23,7 @@ const FreeInspection = () => {
         <input
           type="text"
           placeholder="Name"
-          className="border text-xs sm:text-sm px-3 py-2 rounded w-full text-black h-8 sm:h-9 md:h-10"
+          className="border text-xs sm:text-sm px-3 py-2 rounded w-[60%] text-black h-8 sm:h-9 md:h-10"
         />
 
         <input

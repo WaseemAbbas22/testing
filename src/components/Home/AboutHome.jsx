@@ -42,13 +42,10 @@ const AboutHome = () => {
           </p>
 
           {/* Heading */}
-          <h2 className="text-[28px] md:text-[36px] font-bold text-gray-800 mb-1 leading-tight text-center md:text-left">
-            Experts in Safe & Reliable
+          <h2 className="text-[28px] md:text-[32px] font-bold text-gray-800 mb-1 leading-tight text-center md:text-left">
+            Dubai Municipality Pest Control – Approved Experts for Local Pest Issues
           </h2>
-          <h2 className="text-[28px] md:text-[36px] font-bold text-gray-800 mb-4 leading-tight text-center md:text-left">
-            Pest Control
-          </h2>
-
+        
           {/* Paragraphs */}
           <p className="text-gray-600 text-[12px] mb-3 text-center md:text-left">
             At Accurate Pest Control, we’ve been protecting homes and businesses

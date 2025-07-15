@@ -54,38 +54,34 @@ const jobs = [
 const CareersList = () => {
   return (
     <div className="w-full min-h-screen bg-bggray px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 py-10 flex flex-col">
-
       {/* Heading */}
       <h2 className="text-xl ml-4 md:text-2xl font-bold text-gray-800 mb-1">
         Current Job Listings
       </h2>
       <p className="text-sm text-gray ml-4 mb-6 max-w-2xl">
-        Below is list of the current openings with our company. Click on the job title to learn more about the opening.
+        Below is list of the current openings with our company. Click on the job
+        title to learn more about the opening.
       </p>
 
       {/* Search Jobs */}
-      <div className="bg-[#32A8491A] border border-[#32A84980] rounded p-4 h-[18vh] w-[90%] justify-center items-center ml-10 mb-10">
+      <div className="bg-[#32A8491A] border border-[#32A84980] rounded p-4 md:h-[18vh] h-auto w-[90%] mx-auto mb-10">
         <h3 className="text-md font-semibold mb-2">Search Jobs</h3>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
 
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6">
           {/* Search bar with icon box */}
-<<<<<<< HEAD
-          <div className="flex md:w-[430px] h-[6vh]">
-=======
-          <div className="flex w-full w-[430px] h-[6vh]">
->>>>>>> ac8c5d003ad0e4805f1637b9f689827a5aba7f50
+          <div className="flex w-full md:w-auto h-[6vh]">
             <input
               type="text"
               placeholder="Search jobs"
-              className="py-2 px-3 w-full text-[10px] rounded-l focus:outline-none bg-white"
+              className="py-2 px-3 w-full text-[12px] rounded-l focus:outline-none bg-white"
             />
-            <div className="bg-green-600 flex text-lg font-xs items-center justify-center px-5 rounded-r">
-              <FaSearch className="text-white" />
+            <div className="bg-green-600 flex items-center justify-center px-4 rounded-r">
+              <FaSearch className="text-white text-base" />
             </div>
           </div>
 
           {/* City dropdown */}
-          <select className="w-[55%] text-[10px] text-[#BABABA] ml-[260px] px-3 rounded bg-white">
+          <select className="w-full md:w-[80%] text-[12px] text-[#BABABA] px-3 rounded bg-white">
             <option>City</option>
             <option>Lahore</option>
             <option>Karachi</option>
@@ -93,7 +89,7 @@ const CareersList = () => {
           </select>
 
           {/* Employment Type dropdown */}
-          <select className="w-[90%] rounded text-[10px] ml-[176px] px-3 text-[#BABABA] bg-white">
+          <select className="w-full md:w-[90%] rounded text-[12px] px-3 text-[#BABABA] bg-white">
             <option>Employment Type</option>
             <option>Full Time</option>
             <option>Part Time</option>
@@ -101,18 +97,16 @@ const CareersList = () => {
           </select>
 
           {/* Sort by dropdown */}
-          <select className="w-[60%] text-[#BABABA] ml-[152px] px-3 text-[10px] text-left rounded bg-white">
+          <select className="w-full md:w-[80%] text-[#BABABA] px-3 text-[12px] text-left rounded bg-white">
             <option>Sort by</option>
             <option>Date</option>
             <option>Relevance</option>
           </select>
 
           {/* Clear Filters button */}
-          <button className="bg-[#7B7B7B] text-white text-[10px] ml-[80px] font-xs rounded w-[50%] hover:bg-green-700 transition">
+          <button className="bg-[#7B7B7B] text-white text-[12px] font-xs rounded w-full md:w-[60%] hover:bg-green-700 transition">
             Clear Filters
           </button>
-
-
         </div>
       </div>
 
@@ -147,7 +141,6 @@ const CareersList = () => {
           View More
         </button>
       </div>
-
     </div>
   );
 };

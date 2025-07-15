@@ -114,14 +114,7 @@ const ContactRequest = () => {
 
             {/* Divider */}
             <div
-              className="
-                hidden md:block w-px bg-[#999999] h-10 mt-2
-              "
-              // Mobile View: hidden
-              // Tab View: hidden
-              // Laptop View: visible (md:block)
-              // Desktop View: same as Laptop
-              // Big Screen View: same as Laptop
+              className="hidden md:block w-px bg-[#999999] h-10 mt-2"
             ></div>
 
             {/* Name */}

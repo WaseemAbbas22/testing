@@ -1,14 +1,20 @@
 import { useState } from "react";
-
+import Vector from "/src/assets/Home/VectorForm.png";
 const Form = () => {
   const [countryCode, setCountryCode] = useState("+971"); // default UAE
 
   return (
-    <div className="bg-green-600 w-full min-h-screen sm:min-h-[120vh] flex items-center justify-center px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32">
+    <div className="relative bg-green-600 py-10">
+      {/* Vector Design */}
+      <img
+        src={Vector}
+        className="absolute top-0 -right-8 h-full object-cover opacity-80 pointer-events-none"
+        alt="vector design"
+      />
+<div className="bg-green-600 w-full xl:min-h-[120vh] flex items-center justify-center px-4 sm:px-6  xl:px-8">
       
       {/* White container */}
-      <div className="bg-white rounded-lg shadow-lg w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl h-auto md:h-[600px] flex flex-col p-4 sm:p-6 md:p-10">
-
+      <div className="bg-white rounded-lg  shadow-lg w-full max-w-md sm:max-w-lg md:max-w-2xl xl:max-w-4xl h-auto xl:h-[110vh] flex flex-col p-4 sm:p-6 md:p-8 z-10">
         {/* Heading at top */}
         <h1 className="text-xl sm:text-2xl md:text-4xl font-semibold text-black-400 text-center mb-4 sm:mb-6">
           Get in Touch
@@ -17,12 +23,15 @@ const Form = () => {
         {/* Form Inputs */}
         <div className="flex-grow flex flex-col justify-center">
           <form className="flex flex-col items-center text-sm w-full h-full">
-            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 w-full">
-              
               {/* First Name */}
               <div>
-                <label className="text-black/70 font-bold text-xs" htmlFor="firstName">First Name</label>
+                <label
+                  className="text-black/70 font-bold text-xs"
+                  htmlFor="firstName"
+                >
+                  First Name
+                </label>
                 <input
                   className="custom-textarea placeholder-gray-400"
                   type="text"
@@ -34,7 +43,12 @@ const Form = () => {
 
               {/* Last Name */}
               <div>
-                <label className="text-black/70 font-bold text-xs" htmlFor="lastName">Last Name</label>
+                <label
+                  className="text-black/70 font-bold text-xs"
+                  htmlFor="lastName"
+                >
+                  Last Name
+                </label>
                 <input
                   className="custom-textarea placeholder-gray-400"
                   type="text"
@@ -46,7 +60,12 @@ const Form = () => {
 
               {/* Phone Number with Country Code */}
               <div>
-                <label className="text-black/70 font-bold text-xs" htmlFor="phone">Phone Number</label>
+                <label
+                  className="text-black/70 font-bold text-xs"
+                  htmlFor="phone"
+                >
+                  Phone Number
+                </label>
                 <div className="flex mt-1 sm:mt-2">
                   <select
                     value={countryCode}
@@ -70,7 +89,12 @@ const Form = () => {
 
               {/* Email */}
               <div>
-                <label className="text-black/70 font-bold text-xs" htmlFor="email">Email</label>
+                <label
+                  className="text-black/70 font-bold text-xs"
+                  htmlFor="email"
+                >
+                  Email
+                </label>
                 <input
                   className="custom-textarea placeholder-gray-400"
                   type="email"
@@ -82,7 +106,12 @@ const Form = () => {
 
               {/* Select Pest Concern */}
               <div>
-                <label className="text-black/70 font-bold text-xs" htmlFor="pestConcern">Select Pest Concern</label>
+                <label
+                  className="text-black/70 font-bold text-xs"
+                  htmlFor="pestConcern"
+                >
+                  Select Pest Concern
+                </label>
                 <select
                   id="pestConcern"
                   className="custom-textarea placeholder-gray-400"
@@ -99,7 +128,12 @@ const Form = () => {
 
               {/* Select Priority Type */}
               <div>
-                <label className="text-black/70 font-bold text-xs" htmlFor="priorityType">Select Priority Type</label>
+                <label
+                  className="text-black/70 font-bold text-xs"
+                  htmlFor="priorityType"
+                >
+                  Select Priority Type
+                </label>
                 <select
                   id="priorityType"
                   className="custom-textarea placeholder-gray-400"
@@ -111,12 +145,16 @@ const Form = () => {
                   <option value="emergency">Emergency</option>
                 </select>
               </div>
-
             </div>
 
             {/* Message */}
             <div className="mt-3 sm:mt-4 w-full">
-              <label className="text-black/70 font-bold text-xs" htmlFor="message">Message</label>
+              <label
+                className="text-black/70 font-bold text-xs"
+                htmlFor="message"
+              >
+                Message
+              </label>
               <textarea
                 className="custom-textarea placeholder-gray-400 h-28"
                 id="message"
@@ -124,12 +162,11 @@ const Form = () => {
                 required
               ></textarea>
             </div>
-
           </form>
         </div>
 
         {/* Submit Button */}
-        <div className="flex justify-center mt-2 sm:mt-4">
+        <div className="flex justify-left mt-2 sm:mt-4">
           <button
             type="submit"
             className="text-[11px] font-xs bg-green-600 text-white h-8 w-[120px] sm:w-[130px] px-1 rounded active:scale-95 transition hover:bg-green-700"
@@ -137,8 +174,9 @@ const Form = () => {
             Send Message
           </button>
         </div>
-
       </div>
+    </div>
+      
     </div>
   );
 };

@@ -8,8 +8,8 @@ import SafetyCheckImg from '/src/assets/Home/process4.png';
 const Process = () => {
   const steps = [
   { img: InspectionImg, title: "Inspection" },
-  { img: IdentificationImg, title: "Identification" },
-  { img: ApplicationImg, title: "Application" },
+  { img: ApplicationImg, title: "Identification" },
+  { img: IdentificationImg, title: "Application" },
   { img: SafetyCheckImg, title: "Safety Check" },
 ];
 
@@ -34,7 +34,7 @@ const Process = () => {
         <div className="hidden md:block absolute top-1/2 left-0 w-full border-t-2 border-dotted border-darkgreen z-0"></div>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-[25px] relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-[35px] relative z-10">
           {steps.map((step, index) => (
             <div
               key={index}
@@ -45,11 +45,11 @@ const Process = () => {
                 {index + 1}
               </div>
 
-              <div className="flex flex-col items-center">
+              <div className="flex h-[130px] flex-col items-center">
                 <img
                   src={step.img}
                   alt={step.title}
-                  className="h-14 w-14 mb-4" // adjust height and width as you prefer
+                  className="h-16  w-16 mb-4" // adjust height and width as you prefer
                 />
                 <h3 className="text-lg font-semibold text-gray-600">{step.title}</h3>
               </div>

@@ -42,9 +42,9 @@ const HeroMain = () => {
           </div>
 
           <div className="w-full sm:w-[450px]">
-            <p className="text-[11px] sm:text-[12px] md:text-sm lg:text-sm font-bold text-gray leading-relaxed mb-2">
+            <h2 className="text-[11px] sm:text-[12px] md:text-sm lg:text-sm font-bold text-gray leading-relaxed mb-2">
               Dubai municipality's pest control solution tailored control for commercial properties
-            </p>
+            </h2>
             <p className="text-[11px] sm:text-[12px] md:text-sm lg:text-xs text-gray leading-relaxed">
               In Dubai, Pest Control is not only essential for business but also a top functional and legal concern. Our company’s Pest Control Dubai services are designed for industries that value cleanliness, safety and regulations. We provide solutions that have been authorized by the pest control authority of the Dubai municipality, regardless of whether you are the owner of a restaurant, clinic, warehouse, or retail space. With thorough site inspections, digital reporting and preventive actions, we assist you in keeping our environment pest-free and audit-ready. With our customized approach, you can ensure that your company complies with Dubai's strongest pest control rules, react quickly, and be protected for a very long time.
             </p>

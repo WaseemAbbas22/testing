@@ -30,6 +30,7 @@ const OurClients = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 ">
             Our Clients
           </h2>
+          <p></p>
         </div>
 
         {/* Right Side - Clients Grid with Thin Lines */}

@@ -32,7 +32,7 @@ const OurTeam = () => {
           >
             {/* Left Line with Triangle */}
             <div className="absolute left-0 top-1/2 transform -translate-y-1/2 flex items-center">
-              <div className="h-[15vh] md:h-[15vh] w-1 bg-green-600"></div>
+              <div className="h-[15vh] xl:h-[15vh] w-1 bg-green-600"></div>
               <div className="w-0 h-0 border-t-4 border-b-4 border-l-4 border-t-transparent border-b-transparent border-l-green-600"></div>
             </div>
 
@@ -41,7 +41,7 @@ const OurTeam = () => {
               <div className="w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent border-b-transparent border-r-green-600"></div>
               <div className="h-[15vh] w-1 bg-green-600"></div>
             </div>
-
+ 
             {/* Circular Image */}
             <img
               src={member.img}
@@ -56,7 +56,7 @@ const OurTeam = () => {
             <p className="text-[10px] sm:text-xs md:text-xs text-gray">{member.position}</p>
 
             {/* Contact */}
-            <p className="text-xs sm:text-sm md:text-md md:mt-2 font-bold px-4  w-36 sm:w-48 md:w-52 break-words">
+            <p className="text-xs sm:text-sm md:text-md md:mt-1 font-bold px-4  w-36 sm:w-48 md:w-52 break-words">
               {member.contact}
             </p>
           </div>
