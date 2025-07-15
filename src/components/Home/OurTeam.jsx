@@ -33,13 +33,11 @@ const OurTeam = () => {
             {/* Left Line with Triangle */}
             <div className="absolute left-0 top-1/2 transform -translate-y-1/2 flex items-center">
               <div className="h-[15vh] xl:h-[15vh] w-1 bg-green-600"></div>
-              <div className="w-0 h-0 border-t-4 border-b-4 border-l-4 border-t-transparent border-b-transparent border-l-green-600"></div>
-            </div>
+             </div>
 
             {/* Right Line with Triangle */}
             <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex items-center">
-              <div className="w-0 h-0 border-t-4 border-b-4 border-r-4 border-t-transparent border-b-transparent border-r-green-600"></div>
-              <div className="h-[15vh] w-1 bg-green-600"></div>
+             <div className="h-[15vh] w-1 bg-green-600"></div>
             </div>
  
             {/* Circular Image */}
