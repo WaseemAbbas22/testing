@@ -43,7 +43,7 @@ const Ratings = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-10 py-6 md:py-8 bg-gray-50 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-32">
       {/* Google Rating Box */}
-      <div className="flex items-center bg-green-50 border border-green-300 rounded px-2.5 sm:px-6 py-4 w-full max-w-md shadow">
+      <div className="flex items-center bg-green-50 border border-green-300 rounded px-1 sm:px-6 py-4 w-full max-w-md shadow">
         {/* Logo */}
         <div className="flex-shrink-0 mr-0 md:mr-2">
           <img
@@ -57,7 +57,7 @@ const Ratings = () => {
         <div className="w-px bg-gray h-20 mx-2"></div>
 
         {/* Content */}
-        <div className="flex-1 ml-4">
+        <div className="flex-1 ml-0 md:ml-4">
           <p className="text-xs text-gray-700 mb-1">Google Rating</p>
           <div className="flex items-center mb-1">
             <span className=" text-5xl md:text-5xl font-cabin font-bold mr-2">4.9</span>
@@ -75,7 +75,7 @@ const Ratings = () => {
       {/* Facebook Rating Box */}
       <div className="flex items-center bg-green-50 border border-green-300 rounded px-0 sm:px-6 py-4 w-full max-w-md shadow">
         {/* Logo */}
-        <div className="flex-shrink-0 mr-2">
+        <div className="flex-shrink-0 mr-0">
           <img
             src={facebookLogo}
             alt="Facebook Logo"
@@ -87,7 +87,7 @@ const Ratings = () => {
         <div className="w-px bg-gray h-20 mx-2"></div>
 
         {/* Content */}
-        <div className="flex-1 ml-4">
+        <div className="flex-1 ml-0 md:ml-4">
           <p className="text-xs text-gray-700 mb-1">Facebook Rating</p>
           <div className="flex items-center mb-1">
             <span className="text-5xl font-bold mr-2">4.9</span>
