@@ -35,11 +35,11 @@ const Reviews = () => {
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="text-sm w-72 sm:w-80 border bg-white h-auto border-bggray pb-4 sm:pb-6 rounded-lg shadow-[0px_4px_15px_0px] shadow-black/5 overflow-hidden hover:border-darkgreen"
+            className="text-sm w-72 h-[35vh] sm:w-80 border bg-white h-auto border-bggray pb-4 sm:pb-6 rounded-lg shadow-[0px_4px_15px_0px] shadow-black/5 overflow-hidden hover:border-darkgreen"
           >
-            <div className="flex items-center gap-4 px-4 sm:px-5 py-4">
+            <div className="flex items-center gap-4 px-4 sm:px-5 py-2">
               <img
-                className="h-12 w-12 rounded-full border-2 border-green-600"
+                className="h-10 w-10 rounded-full border-2 border-green-600"
                 src={review.img}
                 alt={review.name}
               />
@@ -50,13 +50,13 @@ const Reviews = () => {
                 <p className="text-gray text-xs">{review.role}</p>
               </div>
             </div>
-            <div className="p-2 sm:p-2 pb-1 ml-4 sm:mr-2">
+            <div className="p-2 sm:p-0 pb-0 ml-4 sm:mr-2">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
-                    width="16"
-                    height="14"
+                    width="14"
+                    height="12"
                     viewBox="0 0 22 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const Reviews = () => {
                   </svg>
                 ))}
               </div>
-              <p className="text-gray-500 mt-4 text-[12px]">
+              <p className="text-gray-500 mt-1 text-xs">
                 "There was hidden pest activity, especially in the storage areas
                 and empty rooms For expert fumigation services, we contacted
                 Accurate Pest Control, and they came out right away. Using safe,

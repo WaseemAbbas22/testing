@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
 
         {/* Middle Links */}
-        <div className="flex-1 flex flex-col-3 md:flex-row justify-between gap-4 text-center md:text-left">
+        <div className="flex-1 flex flex-col-1 md:flex-row justify-between gap-4 text-center md:text-left">
 
           {/* Combined Container */}
           <div className="flex flex-row sm:flex-row justify-between w-full md:w-1/2 md:mx-8 gap-4">
@@ -69,7 +69,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-        
+        </div>
           {/* Contact Info */}
           <div className="text-[8px] sm:text-[10px] md:text-xs lg:text-sm flex flex-col gap-3 md:ml-6 md:mt-2">
             <div className="flex items-center gap-1 sm:gap-3">
@@ -135,7 +135,7 @@ const Footer = () => {
             </div>
 
           </div>
-        </div>
+        
       </div>
 
       {/* Bottom */}

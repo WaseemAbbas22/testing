@@ -1,4 +1,4 @@
-import Img from "/src/assets/Home/trustsec.png"; // Replace with your actual image path 
+import Img from "/src/assets/Home/trustsec.png"; // Replace with your actual image path
 
 const TrustSec = () => {
   const stats = [
@@ -21,17 +21,18 @@ const TrustSec = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-6xl w-full">
         <p className="text-xs sm:text-sm md:text-base mb-6 px-2">
-          Join thousands who trust us to keep their homes and businesses pest-free and spotless.
+          Join thousands who trust us to keep their homes and businesses
+          pest-free and spotless.
           <br />
-          Fast response, eco-friendly solutions, and results you can count on — every time!
+          Fast response, eco-friendly solutions, and results you can count on —
+          every time!
         </p>
 
         {/* Stats */}
         <div className="w-full mt-6">
-          <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 md:gap-0">
+          <div className="grid grid-cols-2 md:flex md:flex-row items-center justify-center md:justify-between gap-6 md:gap-0">
             {stats.map((stat, index) => (
-              <div key={index} className="flex items-center">
-                
+              <div key={index} className="flex items-center justify-center">
                 {/* Stat Block */}
                 <div className="flex flex-col items-center text-center px-2 sm:px-4">
                   <h3 className="text-green-600 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-1">

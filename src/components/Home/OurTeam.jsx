@@ -19,11 +19,11 @@ const OurTeam = () => {
       </h2>
 
       {/* Team Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-6xl px-4 sm:px-8 md:px-12">
+      <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-6xl px-4 sm:px-8 md:px-12">
         {team.map((member, index) => (
           <div
             key={index}
-            className="relative bg-white rounded-lg shadow-md pt-14 pb-6 px-4 flex flex-col items-center text-center"
+            className="relative bg-white rounded-lg shadow-md mt-4 pt-14 pb-6 px-4 flex flex-col items-center text-center"
             style={{
               height: "30vh",
               minHeight: "150px",
@@ -44,17 +44,17 @@ const OurTeam = () => {
             <img
               src={member.img}
               alt={member.name}
-              className="absolute -top-10 w-16 sm:w-20 md:w-20 h-16 sm:h-20 md:h-20 rounded-full border-4 border-darkgreen object-cover shadow-md"
+              className="absolute -top-10 w-20 sm:w-20 md:w-20 h-20 sm:h-20 md:h-20 rounded-full border-4 border-darkgreen object-cover shadow-md"
             />
 
             {/* Name */}
-            <h3 className="text-xs sm:text-sm md:text-base font-bold text-gray">{member.name}</h3>
+            <h3 className="text-sm sm:text-sm md:text-base font-bold text-gray">{member.name}</h3>
 
             {/* Position */}
-            <p className="text-[10px] sm:text-xs md:text-xs text-gray">{member.position}</p>
+            <p className="text-sm sm:text-xs md:text-xs text-gray">{member.position}</p>
 
             {/* Contact */}
-            <p className="text-xs sm:text-sm md:text-md md:mt-1 font-bold px-4  w-36 sm:w-48 md:w-52 break-words">
+            <p className="text-sm sm:text-sm md:text-md md:mt-1 font-bold px-4  w-44 sm:w-48 md:w-52 break-words">
               {member.contact}
             </p>
           </div>

@@ -8,7 +8,7 @@ const Form = () => {
       {/* Vector Design */}
       <img
         src={Vector}
-        className="absolute top-0 -right-8 h-full object-cover opacity-80 pointer-events-none"
+        className="absolute top-0 -right-0 h-full object-cover opacity-80 pointer-events-none overflow-hidden"
         alt="vector design"
       />
 <div className="bg-green-600 w-full xl:min-h-[120vh] flex items-center justify-center px-4 sm:px-6  xl:px-8">

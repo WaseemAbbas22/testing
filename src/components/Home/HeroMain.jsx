@@ -31,18 +31,18 @@ const HeroMain = () => {
         {/* Left Side */}
         <div
           className="
-            w-full flex flex-col space-y-3 text-center
-            md:w-1/2 md:items-start md:text-left
+            w-full flex flex-col space-y-3 text-left
+            md:w-1/2 md:items-start md:text-left lg:ml-8
           "
         >
-          <div className="w-full sm:w-[400px] space-y-1">
+          <div className="w-full sm:w-[400px] space-y-1 ">
             <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-gray-900">
               Trusted Commercial Pest Control Dubai Solution - Fast, Safe, Compliant
             </h1>
           </div>
 
           <div className="w-full sm:w-[450px]">
-            <h2 className="text-[11px] sm:text-[12px] md:text-sm lg:text-sm font-bold text-gray leading-relaxed mb-2">
+            <h2 className="text-[11px] sm:text-[10px] md:text-xs lg:text-sm font-bold text-gray leading-relaxed mb-2">
               Dubai municipality's pest control solution tailored control for commercial properties
             </h2>
             <p className="text-[11px] sm:text-[12px] md:text-sm lg:text-xs text-gray leading-relaxed">
@@ -52,16 +52,15 @@ const HeroMain = () => {
 
           <div
             className="
-              flex flex-col justify-center space-y-2
-              sm:flex-row sm:items-center sm:space-x-3 sm:space-y-0
-              md:justify-start
+              flex flex-col-2 justify-left space-y-1
+              sm:flex-row sm:items-center space-x-2 md:justify-start
             "
           >
-            <button className="bg-[#32A849] text-white text-[12px] sm:text-[12px] font-semibold px-3 sm:px-4 py-2 rounded-md shadow hover:bg-green-600 transition">
+            <button className="bg-[#32A849] text-white text-[14px] sm:text-[12px] font-semibold px-6 sm:px-4 rounded-md shadow hover:bg-green-600 transition">
               Get a Free Inspection
             </button>
-            <button className="bg-[#898989] text-white text-[12px] sm:text-[12px] font-semibold px-3 sm:px-4 py-2 rounded-md shadow hover:bg-green-600 transition">
-              View Services
+            <button className="bg-gray text-white text-[14px] sm:text-[12px] font-semibold px-6 sm:px-4 py-2 rounded-md shadow hover:bg-green-600 transition">
+              View More
             </button>
           </div>
         </div>

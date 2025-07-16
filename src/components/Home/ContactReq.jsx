@@ -81,7 +81,7 @@ const ContactRequest = () => {
           <div
             ref={containerRef}
             className="
-              flex flex-col bg-white rounded shadow w-full max-w-4xl
+              flex flex-col bg-white rounded shadow w-[90%] md:w-full max-w-4xl
               md:flex-row
             "
             // Mobile View: flex-col, w-full
@@ -228,7 +228,7 @@ const ContactRequest = () => {
             <button
               type="submit"
               className="
-                bg-green-600 text-white text-base font-semibold px-6 py-3 h-full rounded shadow hover:bg-green-600 transition w-full md:w-auto
+                bg-green-600 text-white ml-6 text-base font-semibold px-6 py-2 md:ml-0 rounded shadow hover:bg-green-600 transition md:w-full md:w-auto
               "
               style={{ height: containerHeight || "auto" }}
             >
