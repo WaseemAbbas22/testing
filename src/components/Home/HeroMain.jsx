@@ -52,11 +52,11 @@ const HeroMain = () => {
 
           <div
             className="
-              flex flex-col-2 justify-left space-y-1
+              flex flex-col-2 justify-left
               sm:flex-row sm:items-center space-x-2 md:justify-start
             "
           >
-            <button className="bg-[#32A849] text-white text-[14px] sm:text-[12px] font-semibold px-6 sm:px-4 rounded-md shadow hover:bg-green-600 transition">
+            <button className="bg-darkgreen text-white text-[14px] sm:text-[12px] font-semibold px-6 sm:px-4 py-2 rounded-md shadow hover:bg-green-600 transition">
               Get a Free Inspection
             </button>
             <button className="bg-gray text-white text-[14px] sm:text-[12px] font-semibold px-6 sm:px-4 py-2 rounded-md shadow hover:bg-green-600 transition">

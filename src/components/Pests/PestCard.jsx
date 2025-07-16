@@ -15,8 +15,8 @@ const PestCard = ({ pestName }) => {
     <div
       className="
         relative 
-        w-[30vw] sm:w-[20vw] md:w-[25vw] lg:w-[180px] xl:w-[250px] 2xl:w-[400px]
-        h-[30vw] sm:h-[20vw] md:h-[25vw] lg:h-[180px] xl:h-[250px] 2xl:h-[400px]
+        w-[250px] sm:w-[20vw] md:w-[25vw] lg:w-[180px] xl:w-[250px] 2xl:w-[400px]
+        h-[250px] sm:h-[20vw] md:h-[25vw] lg:h-[180px] xl:h-[250px] 2xl:h-[400px]
         rounded-lg shadow-lg group
       "
     >
@@ -31,17 +31,17 @@ const PestCard = ({ pestName }) => {
         <div className="px-2 sm:px-3 md:px-4 lg:px-5 mt-6 sm:mt-8 md:mt-10 w-full">
           
           {/* Moving title & subtitle */}
-          <div className="transition-all duration-500 ease-in-out transform group-hover:-translate-y-20 sm:group-hover:-translate-y-24 md:group-hover:-translate-y-28 text-left">
+          <div className="transition-all duration-500 ease-in-out transform group-hover:-translate-y-20 group-hover:-translate-y-28 md:group-hover:-translate-y-28 text-left">
             <div className="mb-2 sm:mb-3 md:mb-4">
-              <h2 className="text-white text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-xl font-bold">{pest.name}</h2>
-              <p className="text-white text-[8px] sm:text-xs md:text-sm lg:text-base">{pest.desc}</p>
+              <h2 className="text-white text-base sm:text-xs md:text-sm lg:text-base xl:text-xl font-bold">{pest.name}</h2>
+              <p className="text-white text-base sm:text-xs md:text-sm lg:text-base">{pest.desc}</p>
             </div>
           </div>
 
           {/* Hidden Text & Button */}
-          <div className="absolute mb-4 sm:mb-6 md:mb-8 transition-all duration-500 ease-in-out transform group-hover:-translate-y-20 sm:group-hover:-translate-y-24 md:group-hover:-translate-y-28 text-left">
+          <div className="absolute mb-4 sm:mb-6 md:mb-8 transition-all duration-500 ease-in-out transform group-hover:-translate-y-20 group-hover:-translate-y-28 md:group-hover:-translate-y-28 text-left">
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <p className="text-white text-[6px] sm:text-[9px] md:text-xs lg:text-xs xl:text-xs">{pest.more}</p>
+              <p className="text-white text-xs md:text-xs lg:text-xs xl:text-xs">{pest.more}</p>
               <Link to={pest.link}>
                 <button
                   className="

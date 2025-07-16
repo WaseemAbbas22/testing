@@ -5,21 +5,31 @@ const PestGrid = () => {
     <div className="w-full bg-bggray py-10 px-4 md:px-16 lg:px-32 text-center">
       <h2 className="text-2xl md:text-3xl font-bold mb-2">Our Services</h2>
       <p className="text-gray-600 text-xs sm:text-sm mb-6 max-w-2xl mx-auto">
-        We deliver safe, effective pest control and sanitization solutions for homes and businesses. Protect your property and health with our certified, hassle-free services.
+        We deliver safe, effective pest control and sanitization solutions for
+        homes and businesses. Protect your property and health with our
+        certified, hassle-free services.
       </p>
 
-
-      <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-2 xl:gap-2 2xl:gap-8 justify-items-center">
-
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-2 xl:gap-2 2xl:gap-8 justify-items-center">
         <PestCard pestName="ANTS" />
         <PestCard pestName="COCKROACHES" />
         <PestCard pestName="RED BUGS" />
         <PestCard pestName="RODENTS" />
-        <PestCard pestName="FLIES" />
-        <PestCard pestName="MOSQUITOES" />
-        <PestCard pestName="SPIDERS" />
-        <PestCard pestName="TERMITES" />
+
+        <div className="hidden lg:block">
+          <PestCard pestName="FLIES" />
+        </div>
+        <div className="hidden lg:block">
+          <PestCard pestName="MOSQUITOES" />
+        </div>
+        <div className="hidden lg:block">
+          <PestCard pestName="SPIDERS" />
+        </div>
+        <div className="hidden lg:block">
+          <PestCard pestName="TERMITES" />
+        </div>
       </div>
+
       <button className="bg-green-600 text-white text-sm mt-6 font-semibold px-6 py-2 rounded shadow hover:bg-green-700 transition">
         View More
       </button>
@@ -29,7 +39,8 @@ const PestGrid = () => {
 
 export default PestGrid;
 
-{/*
+{
+  /*
 
   const PestGrid = () => {
     return (
@@ -72,4 +83,5 @@ export default PestGrid;
       </button>  
 
 
-*/}
+*/
+}
