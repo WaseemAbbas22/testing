@@ -25,7 +25,7 @@ const ContactRequest = () => {
   return (
     <div
       className="
-        relative flex flex-col items-center px-0 py-10 w-full bg-cover bg-center bg-no-repeat
+        relative 2xl:h-[35vh] flex flex-col items-center px-0 py-10 w-full bg-cover bg-center bg-no-repeat
       "
       style={{
         backgroundImage: `url(${Cir1})`,
@@ -54,7 +54,7 @@ const ContactRequest = () => {
         <h2
           className="
             text-white text-3xl font-semibold mb-6
-            md:ml-[-630px]
+            lg:ml-[-750px] 2xl:text-6xl
           "
           // Mobile View: text-center, no margin-left
           // Tab View: same as Mobile
@@ -68,7 +68,7 @@ const ContactRequest = () => {
         <form
           onSubmit={handleSubmit}
           className="
-            flex flex-col items-center justify-center w-full max-w-4xl
+            flex flex-col items-center justify-center w-full lg:max-w-5xl
             md:flex-row
           "
           // Mobile View: flex-col
@@ -113,9 +113,7 @@ const ContactRequest = () => {
             </div>
 
             {/* Divider */}
-            <div
-              className="hidden md:block w-px bg-[#999999] h-10 mt-2"
-            ></div>
+            <div className="hidden md:block w-px bg-[#999999] h-10 mt-2"></div>
 
             {/* Name */}
             <div
@@ -216,9 +214,9 @@ const ContactRequest = () => {
           {/* Send Button */}
           <div
             className="
-              mt-4 w-full md:mt-0 md:ml-4 md:w-auto
+              mt-4 w-full md:mt-0 md:ml-4 md:w-auto flex justify-left ml-10
             "
-            style={{ height: containerHeight || "auto" }}
+            // style={{ height: containerHeight || "auto" }}
             // Mobile View: mt-4, w-full
             // Tab View: same
             // Laptop View: md:mt-0, md:ml-4, md:w-auto
@@ -227,10 +225,14 @@ const ContactRequest = () => {
           >
             <button
               type="submit"
-              className="
-                bg-green-600 text-white ml-6 text-base font-semibold px-6 py-2 md:ml-0 rounded shadow hover:bg-green-600 transition md:w-full md:w-auto
-              "
-              style={{ height: containerHeight || "auto" }}
+              className="bg-green-600 text-white 
+    text-sm sm:text-base md:text-lg
+    font-semibold
+    px-4 sm:px-6 md:px-8
+    py-2 md:py-3
+    rounded shadow
+    hover:bg-green-700 transition
+  "
             >
               Send
             </button>

@@ -19,11 +19,12 @@
     @apply w-full mt-1 sm:mt-2 p-2 h-10 border border-bggray rounded resize-none outline-none focus:border-green-300 bg-bggray;
   }
 }
-@layer components {
+/*a@layer components {
   .custom-box {
-    @apply bg-[#F2F2F2] w-[150px] sm:w-[220px] h-[90px] flex items-center justify-center rounded-md shadow-md;
+    @apply bg-[#F2F2F2] w-[150px] md:w-[100%] h-[90%] flex items-center justify-center rounded-md shadow-md;
   }
 }
+  */
 @layer components {
   .custom-form{
     @apply w-full rounded px-3 border border-[#DADADA] py-2 text-xs focus:outline-none focus:ring-2 focus:ring-green-500

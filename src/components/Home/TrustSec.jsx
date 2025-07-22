@@ -10,7 +10,7 @@ const TrustSec = () => {
 
   return (
     <div
-      className="w-full bg-cover bg-center flex flex-col items-center justify-center px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 relative py-10 sm:py-12 md:py-16"
+      className="w-full h-[45vh] bg-cover bg-center flex flex-col items-center justify-center px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 relative py-10 sm:py-12 md:py-16"
       style={{
         backgroundImage: `url(${Img})`,
       }}
@@ -19,26 +19,27 @@ const TrustSec = () => {
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white max-w-6xl w-full">
-        <p className="text-xs sm:text-sm md:text-base mb-6 px-2">
-          Join thousands who trust us to keep their homes and businesses
-          pest-free and spotless.
-          <br />
-          Fast response, eco-friendly solutions, and results you can count on —
-          every time!
+      <div className="relative z-10 text-center text-white w-full">
+        <p className="text-center lg:ml-[300px] 2xl:ml-[600px] justify-center items-center text-xs sm:text-sm lg:text-xl 2xl:mb-12 px-2 2xl:max-w-6xl lg:max-w-3xl 2xl:text-3xl font-xs">
+          Our team are one of the most recognized pest control companies in
+          Dubai, offering safe solutions and a history of satisfied customers in
+          Sharjah and Ajman.
         </p>
 
         {/* Stats */}
-        <div className="w-full mt-6">
-          <div className="grid grid-cols-2 md:flex md:flex-row items-center justify-center md:justify-between gap-6 md:gap-0">
+        <div className="w-full flex justify-center mt-12">
+          <div className="w-[80%] grid grid-cols-2 md:flex md:flex-row items-center justify-between gap-6">
             {stats.map((stat, index) => (
-              <div key={index} className="flex items-center justify-center">
+              <div
+                key={index}
+                className="flex items-center justify-center flex-1"
+              >
                 {/* Stat Block */}
-                <div className="flex flex-col items-center text-center px-2 sm:px-4">
-                  <h3 className="text-green-600 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-1">
+                <div className="flex flex-col items-center text-center">
+                  <h3 className="text-green-600 text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl font-extrabold">
                     {stat.number}
                   </h3>
-                  <p className="text-xs sm:text-sm md:text-base w-40 sm:w-48">
+                  <p className="text-xs lg:mt-2 2xl:mt-6 sm:text-sm md:text-base w-40 lg:text-xl 2xl:text-3xl sm:w-48 2xl:w-80">
                     {stat.label}
                   </p>
                 </div>

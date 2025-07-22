@@ -20,43 +20,139 @@ const Services = () => {
   ];
 
   return (
-    <div className="w-full bg-bggray py-12 sm:py-16 px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 flex flex-col items-center">
-      
+    <div
+      style={{
+        width: "100%",
+        backgroundColor: "#f5f5f5",
+        paddingTop: "clamp(48px, 8vw, 64px)",
+        paddingBottom: "clamp(48px, 8vw, 64px)",
+        paddingLeft: "clamp(16px, 4vw, 128px)",
+        paddingRight: "clamp(16px, 4vw, 128px)",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       {/* Heading */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray mb-2">
+      <h2
+        style={{
+          fontWeight: "bold",
+          textAlign: "center",
+          color: "#333",
+          marginBottom: "clamp(8px, 1.5vw, 16px)",
+          fontSize: "clamp(24px, 3vw, 40px)",
+        }}
+      >
         Our Services
       </h2>
 
       {/* Subtext */}
-      <p className="text-center text-gray-600 text-xs sm:text-sm mb-6 sm:mb-10 max-w-xl">
-        We provide comprehensive pest control and treatment services tailored to your needs.<br/>
+      <p
+        style={{
+          textAlign: "center",
+          color: "#666",
+          marginBottom: "clamp(24px, 4vw, 40px)",
+          maxWidth: "640px",
+          fontSize: "clamp(12px, 2vw, 16px)",
+          lineHeight: "1.5",
+        }}
+      >
+        We provide comprehensive pest control and treatment services tailored to your needs.
+        <br />
         Our expert team ensures effective, safe, and long-lasting solutions.
       </p>
 
       {/* Gallery Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-10 w-full">
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(clamp(200px, 25vw, 300px), 1fr))",
+          gap: "clamp(16px, 2vw, 24px)",
+          width: "100%",
+          marginBottom: "clamp(24px, 4vw, 40px)",
+        }}
+      >
         {services.map((service, index) => (
-          <div key={index} className="relative group rounded-md overflow-hidden">
+          <div
+            key={index}
+            style={{
+              position: "relative",
+              borderRadius: "8px",
+              overflow: "hidden",
+            }}
+          >
             {/* Image */}
             <img
               src={service.img}
               alt={service.title}
-              className="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              style={{
+                width: "100%",
+                height: "clamp(180px, 50vw, 600px)",
+                objectFit: "cover",
+                transition: "transform 0.5s",
+              }}
+              className="group-hover:scale-105"
             />
+
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 transition duration-500"></div>
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                backgroundColor: "rgba(0, 0, 0, 0.4)",
+                transition: "background-color 0.5s",
+              }}
+              className="group-hover:bg-opacity-50"
+            ></div>
 
             {/* Overlay Text */}
-            <div className="absolute bottom-2 sm:bottom-4 left-2 sm:left-4 text-white">
-              <h3 className="text-sm sm:text-base md:text-lg font-semibold">{service.title}</h3>
-              <p className="text-xs">{service.subtitle}</p>
+            <div
+              style={{
+                position: "absolute",
+                bottom: "clamp(8px, 1.5vw, 16px)",
+                left: "clamp(8px, 1.5vw, 16px)",
+                color: "#fff",
+              }}
+            >
+              <h3
+                style={{
+                  fontWeight: "600",
+                  fontSize: "clamp(14px, 2vw, 20px)",
+                  margin: 0,
+                }}
+              >
+                {service.title}
+              </h3>
+              <p
+                style={{
+                  fontSize: "clamp(10px, 1.5vw, 14px)",
+                  margin: 0,
+                }}
+              >
+                {service.subtitle}
+              </p>
             </div>
           </div>
         ))}
       </div>
 
       {/* Learn More Button */}
-      <button className="bg-green-600 mt-4 text-white text-sm font-semibold px-5 sm:px-6 py-2 rounded shadow hover:bg-green-600 transition">
+      <button
+        style={{
+          backgroundColor: "#16a34a",
+          color: "#fff",
+          fontWeight: "600",
+          border: "none",
+          borderRadius: "4px",
+          fontSize: "clamp(12px, 1.8vw, 16px)",
+          padding: "clamp(6px, 1vw, 10px) clamp(12px, 2vw, 20px)",
+          boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+          cursor: "pointer",
+          transition: "background-color 0.3s",
+        }}
+        onMouseOver={(e) => (e.target.style.backgroundColor = "#15803d")}
+        onMouseOut={(e) => (e.target.style.backgroundColor = "#16a34a")}
+      >
         View More
       </button>
     </div>

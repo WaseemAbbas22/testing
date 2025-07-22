@@ -10,6 +10,7 @@ export default {
         inter: ["Inter", "sans-serif"],
         poppins: ["Poppins","sans-serif"]
       },
+      
       colors: {
         'darkgreen':'#32A849',
         'gray': '#444444',

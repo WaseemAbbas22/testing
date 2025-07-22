@@ -12,49 +12,45 @@ const OurTeam = () => {
   ];
 
   return (
-    <div className="w-full flex flex-col items-center py-10 bg-bggray">
+    <div className="w-full h-[50vh] flex flex-col items-center bg-bggray">
       {/* Heading */}
-      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-16">
+      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:py-4 font-bold text-gray-800 2xl:mb-24 2xl:mt-10 2xl:text-7xl">
         Get help from the Team
       </h2>
 
       {/* Team Grid */}
-      <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-6xl px-4 sm:px-8 md:px-12">
+      <div className="grid grid-cols sm:grid-cols-2 lg:mt-12 md:grid-cols-4 gap-8 w-full lg:max-w-[1300px] 2xl:max-w-[2100px] px-4 sm:px-8 md:px-12">
         {team.map((member, index) => (
           <div
             key={index}
-            className="relative bg-white rounded-lg shadow-md mt-4 pt-14 pb-6 px-4 flex flex-col items-center text-center"
-            style={{
-              height: "30vh",
-              minHeight: "150px",
-              maxHeight: "150px",
-            }}
+            className="relative bg-white rounded-lg shadow-md mt-4 pt-14 pb-6 px-4 flex flex-col items-center text-center lg:h-[170px] lg:w-[280px] 2xl:h-[22vh] 2xl:w-[37vh]"
+            
           >
             {/* Left Line with Triangle */}
             <div className="absolute left-0 top-1/2 transform -translate-y-1/2 flex items-center">
-              <div className="h-[15vh] xl:h-[15vh] w-1 bg-green-600"></div>
+              <div className="h-[15vh] xl:h-[15vh] lg:w-1 2xl:w-2 bg-green-600"></div>
              </div>
 
             {/* Right Line with Triangle */}
             <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex items-center">
-             <div className="h-[15vh] w-1 bg-green-600"></div>
+             <div className="h-[15vh] lg:w-1 2xl:w-2 bg-green-600"></div>
             </div>
  
             {/* Circular Image */}
             <img
               src={member.img}
               alt={member.name}
-              className="absolute -top-10 w-20 sm:w-20 md:w-20 h-20 sm:h-20 md:h-20 rounded-full border-4 border-darkgreen object-cover shadow-md"
+              className="absolute -top-10 2xl:-top-16 w-20 sm:w-20 md:w-20 h-20 sm:h-20 md:h-20 2xl:h-28 2xl:w-28 rounded-full border-4 border-darkgreen object-cover shadow-md"
             />
 
             {/* Name */}
-            <h3 className="text-sm sm:text-sm md:text-base font-bold text-gray">{member.name}</h3>
+            <h3 className="text-sm sm:text-sm md:text-base 2xl:text-2xl 2xl:mt-10 2xl:mb-4 font-bold text-gray">{member.name}</h3>
 
             {/* Position */}
-            <p className="text-sm sm:text-xs md:text-xs text-gray">{member.position}</p>
+            <p className="text-sm sm:text-xs md:text-xs lg:mt-4  2xl:text-xl text-gray">{member.position}</p>
 
             {/* Contact */}
-            <p className="text-sm sm:text-sm md:text-md md:mt-1 font-bold px-4  w-44 sm:w-48 md:w-52 break-words">
+            <p className="text-sm text-black/70 sm:text-sm lg:text-lg 2xl:text-3xl md:mt-1 font-bold px-4  w-44 sm:w-48 lg:w-52 2xl:w-80 break-words">
               {member.contact}
             </p>
           </div>
