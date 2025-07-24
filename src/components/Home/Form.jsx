@@ -11,17 +11,17 @@ const Form = () => {
         className="absolute top-0 -right-0 h-full object-cover opacity-80 pointer-events-none overflow-hidden"
         alt="vector design"
       />
-      <div className="bg-green-600 w-full h-[95vh] flex items-center justify-center px-4 sm:px-6  xl:px-8">
+      <div className="bg-green-600 w-full 4xl:h-[90vh] h-[110vh] flex items-center justify-center px-4 sm:px-6  xl:px-8">
         {/* White container */}
-        <div className="bg-white rounded-lg  shadow-lg w-full 2xl:max-w-[1750px] sm:max-w-lg md:max-w-2xl xl:max-w-4xl h-auto h-[85vh] flex flex-col p-4 sm:p-6 md:p-8 z-10">
+        <div className="bg-white rounded-lg shadow-lg w-[83%] h-auto h-[94%] flex flex-col p-4 sm:p-6  z-10">
           {/* Heading at top */}
-          <h1 className="text-xl sm:text-2xl md:text-4xl 2xl:text-7xl font-semibold text-black-400 text-center mb-4 sm:mb-6 2xl:mt-16">
+          <h1 className="text-xl sm:text-2xl md:text-4xl 2xl:text-7xl font-semibold text-black-400 text-center mb-4 sm:mb-6 2xl:mt-12">
             Get in Touch
           </h1>
 
           {/* Form Inputs */}
           <div className="flex-grow flex flex-col justify-center">
-            <form className="flex flex-col items-center text-sm w-full h-full 2xl:mt-8 2xl:px-12">
+            <form className="flex flex-col items-center text-sm w-full h-full 2xl:mt-4 2xl:px-12">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 2xl:gap-10 w-full ">
                 {/* First Name */}
                 <div>

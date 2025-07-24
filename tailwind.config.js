@@ -6,12 +6,26 @@ export default {
   ],
   theme: {
     extend: {
+
+    screens: {
+      sm: '640px',    // Small devices
+      md: '768px',    // Medium devices (tablets)
+      lg: '1024px',   // Large devices (laptops)
+      xl: '1280px',   // Extra large devices (desktops)
+      '2xl': '1600px', // 2x extra large (large desktops)
+      '3xl': '1920px',
+      '4xl': '2500px', // 4x extra large screens
+    },
+
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         poppins: ["Poppins","sans-serif"]
       },
-      
+
+   
+
       colors: {
+        'textcolorgray': '#666666',
         'darkgreen':'#32A849',
         'gray': '#444444',
         'Border': '#F2F2F2',

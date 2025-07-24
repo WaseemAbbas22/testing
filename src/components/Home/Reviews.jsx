@@ -1,3 +1,5 @@
+import React from "react";
+
 const Reviews = () => {
   const reviews = [
     {
@@ -18,45 +20,47 @@ const Reviews = () => {
   ];
 
   return (
-    <div className="w-full min-h-[70vh] py-8 px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 bg-[#F0F0F0] flex flex-col items-center justify-center">
+    <div className="w-full 4xl:h-[55vh] overflow-y-auto py-8 px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 bg-[#F0F0F0] flex flex-col items-center justify-center">
       {/* Heading */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-black/80 mb-1">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl 3xl:text-6xl 4xl:text-6xl font-bold text-center text-black/80 mb-1">
         Client Testimonials
       </h2>
 
       {/* Subtext */}
-      <p className="text-center text-[#777777] text-xs sm:text-sm mb-6 max-w-md">
+      <p className="text-center text-[#777777] text-xs sm:text-sm 3xl:text-lg mb-6 max-w-md 3xl:max-w-4xl 4xl:text-2xl 4xl:max-w-3xl">
         Having Quality Pest Control Services Our customers trust us to provide
         them with high-quality, safe, and UAE-approved pest services.
       </p>
 
       {/* Reviews */}
-      <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mb-10">
+      <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-6 w-full">
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="text-sm w-72 h-[35vh] sm:w-80 border bg-white h-auto border-bggray pb-4 sm:pb-6 rounded-lg shadow-[0px_4px_15px_0px] shadow-black/5 overflow-hidden hover:border-darkgreen"
+            className="text-sm w-full sm:w-[27%]  bg-white rounded-lg shadow-[0px_4px_15px_0px] shadow-black/5 overflow-hidden hover:border-darkgreen"
           >
-            <div className="flex items-center gap-4 px-4 sm:px-5 py-2">
+            <div className="flex items-center gap-x-4 p-4 sm:p-6">
               <img
-                className="h-10 w-10 rounded-full border-2 border-green-600"
+                className="h-10 w-10 sm:h-12 sm:w-12 3xl:h-20 3xl:w-20 4xl:h-20 4xl:w-20 rounded-full border-2 border-green-600 object-cover"
                 src={review.img}
                 alt={review.name}
               />
-              <div>
-                <h1 className="text-sm font-bold text-gray-800">
+              <div className="flex flex-col">
+                <h1 className="text-xs sm:text-sm 3xl:text-2xl 4xl:text-2xl font-bold text-gray-800">
                   {review.name}
                 </h1>
-                <p className="text-gray text-xs">{review.role}</p>
+                <p className="text-gray text-[10px] sm:text-xs 3xl:text-xl 4xl:text-xl">
+                  {review.role}
+                </p>
               </div>
             </div>
-            <div className="p-2 sm:p-0 pb-0 ml-4 sm:mr-2">
-              <div className="flex gap-0.5">
+
+            <div className="px-4 sm:px-6 pb-4">
+              <div className="flex gap-0.5 4xl:mb-4">
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
-                    width="14"
-                    height="12"
+                    className="w-4 h-4 sm:w-5 sm:h-5 3xl:w-6 3xl:h-6 4xl:w-6 4xl:h-6"
                     viewBox="0 0 22 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -68,13 +72,13 @@ const Reviews = () => {
                   </svg>
                 ))}
               </div>
-              <p className="text-gray-500 mt-1 text-xs">
-                "There was hidden pest activity, especially in the storage areas
-                and empty rooms For expert fumigation services, we contacted
-                Accurate Pest Control, and they came out right away. Using safe,
-                odorless solutions that had been approved by the authorities,
-                their team expertly cleaned the entire villa. Now that the pests
-                are gone, our house feels safe, pleasant, and new again."
+              <p className="text-gray-500 text-[10px] sm:text-xs 3xl:text-lg 4xl:text-lg text-justify">
+                Sprays and traps weren't enough to stop the ongoing cockroach
+                problem in our kitchen. For cockroach pest control, we got in
+                touch with Accurate Pest Control. They performed an extensive
+                examination and addressed unnoticed hidden areas. The kitchen
+                has been spotless ever since, with no insects and complete peace
+                of mind.
               </p>
             </div>
           </div>
@@ -82,7 +86,7 @@ const Reviews = () => {
       </div>
 
       {/* View More Button */}
-      <button className="bg-[#32A849] mt-0 text-white text-[10px] font-medium px-4 py-2 rounded shadow hover:bg-green-700 transition">
+      <button className="bg-[#32A849] mt-[2vh] text-white text-[10px] 4xl:text-xl font-medium px-4 py-2 rounded shadow hover:bg-green-700 transition">
         View More Testimonials
       </button>
     </div>

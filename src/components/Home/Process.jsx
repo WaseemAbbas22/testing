@@ -13,21 +13,42 @@ const Process = () => {
   ];
 
   return (
-    <div className="w-full lg:h-[70vh] 2xl:h-[60vh] bg-white flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32  py-12 relative">
+    <div className="w-full lg:h-[70vh] 2xl:h-[60vh] 3xl:h-[62vh] 4xl:h-[60vh] bg-white flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-52 py-12 relative">
       {/* Main Heading */}
-      <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 lg:text-[50px] 2xl:text-7xl">
+      <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 lg:text-[50px] xl:text-4xl 2xl:text-7xl 3xl:text-6xl 4xl:text-7xl">
         Domestic & Commercial Clients
       </h2>
 
       {/* Subheading */}
-      <h3 className="text-xl md:text-3xl font-bold text-center text-gray 2xl:mb-16 lg:mb-12 lg:text-5xl 2xl:text-7xl">
+      <h3 className="text-2xl md:text-3xl font-bold text-center text-gray 2xl:mb-16 lg:mb-12 lg:text-5xl xl:text-4xl 2xl:text-7xl 3xl:text-6xl 4xl:text-7xl mb-4 md:mb-0">
         - 4 step promise
       </h3>
 
       {/* Steps Grid Container with relative to position the line */}
-      <div className="relative w-full max-w-[85%] mb-10 mx-auto">
+      <div className="relative 3xl:max-w-[90%] xl:max-w-[120%]  mb-10">
         {/* Green Dotted Line */}
-        <div className="hidden md:block absolute top-1/2 left-0 w-[90%] border-t-2 border-dotted border-darkgreen z-0"></div>
+       <div
+  className="
+    block
+    absolute
+    left-1/2
+    transform
+    -translate-x-1/2
+    top-0
+    h-full
+    border-l-2
+    border-dashed
+    border-darkgreen
+    z-0
+
+    md:left-1/2
+    md:top-1/2
+    md:w-[90%]
+    md:h-0
+    md:border-l-0
+    md:border-t-2
+  "
+></div>
 
         {/* Steps Grid */}
         <div
@@ -46,15 +67,15 @@ const Process = () => {
           bg-[#F5F5F5] rounded-lg border border-[#E0E0E0] shadow-md 
           flex flex-col items-center justify-center 
           relative hover:shadow-lg hover:border-green-600 transition
-          lg:w-[100%] 2xl:w-[100%] md:w-[200px] lg:w-[250px] 2xl:w-[400px]
-          h-[200px] md:h-[250px] lg:h-[210px] 2xl:h-[320px]
+          w-[260px] md:w-[200px] lg:w-[250px] xl:w-[200px] 2xl:w-[400px] 3xl:w-[310px] 4xl:w-[350px]
+          h-[220px] md:h-[250px] lg:h-[210px] xl:h-[180px] 2xl:h-[320px] 3xl:h-[290px] 4xl:h-[300px]
         "
             >
               {/* Number Box (Left Upper Corner) */}
               <div
                 className="
           absolute top-0 left-0 bg-green-600 text-white 
-          rounded-ee-3xl rounded-ss-md w-10 h-10  2xl:h-20 2xl:w-20 2xl:text-5xl
+          rounded-ee-[40px] rounded-ss-lg w-16 h-16 xl:w-14 xl:h-14  2xl:h-16 2xl:w-14 2xl:text-4xl 4xl:w-20
           flex items-center justify-center text-2xl italic font-semibold
         "
               >
@@ -65,9 +86,9 @@ const Process = () => {
                 <img
                   src={step.img}
                   alt={step.title}
-                  className="h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 2xl:h-28 2xl:w-28 2xl:ml-8 mb-4"
+                  className="h-16 w-16 md:h-16 md:w-16 lg:h-20 lg:w-20 xl:h-14 xl:w-14 2xl:h-28 2xl:w-28 3xl:h-24 3xl:w-24 2xl:ml-6 mb-4"
                 />
-                <h3 className="text-base md:text-lg lg:text-xl 2xl:text-4xl 2xl:mt-6 font-base text-black/60 text-center">
+                <h3 className="text-2xl md:text-lg lg:text-xl 2xl:text-4xl 2xl:mt-6 font-base text-black/60 text-center">
                   {step.title}
                 </h3>
               </div>

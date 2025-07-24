@@ -27,8 +27,6 @@ const Home = () => {
         <HeroMain />
         <Rating />
         <ContactReq />
-        <br />
-        <br />
         <AboutHome />
         <Branches />
         {/*<Services />*/}
@@ -43,6 +41,7 @@ const Home = () => {
         <LastSec />   
         <Footer />
     </div>
+    
     </>
 )
 }

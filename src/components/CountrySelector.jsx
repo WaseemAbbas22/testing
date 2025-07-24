@@ -1,78 +1,94 @@
 import React from "react";
 import Select from "react-select";
-import aeFlag from "../assets/Home/uae.png";
 import pkFlag from "../assets/Home/pak.png";
 import gbFlag from "../assets/Home/uk.png";
 
-const countryOptions = [
+const languageOptions = [
   {
-    value: "AE",
-    label: (
-      <div className="flex items-center">
-        <img
-          src={aeFlag}
-          alt="UAE"
-          className="mr-2"
-          style={{ width: "23px", height: "15px", objectFit: "cover" }}
-        />
-        <span className="text-green-400">UAE</span>
-      </div>
-    ),
-  },
-  {
-    value: "PK",
+    value: "UR",
     label: (
       <div className="flex items-center">
         <img
           src={pkFlag}
-          alt="Pakistan"
+          alt="Urdu"
           className="mr-2"
           style={{ width: "23px", height: "15px", objectFit: "cover" }}
         />
-        <span className="text-green-400">Pakistan</span>
+        <span className="text-green-400">اردو</span>
       </div>
     ),
   },
   {
-    value: "GB",
+    value: "EN",
     label: (
       <div className="flex items-center">
         <img
           src={gbFlag}
-          alt="UK"
+          alt="English"
           className="mr-2"
           style={{ width: "23px", height: "15px", objectFit: "cover" }}
         />
-        <span className="text-green-400">ENG</span>
+        <span className="text-green-400">English</span>
       </div>
     ),
   },
 ];
 
-const CountrySelector = ({ selectedCountry, setSelectedCountry, width, height }) => {
+const LanguageSelector = ({
+  selectedLanguage,
+  setSelectedLanguage,
+  width = {
+    default: "90px",
+    sm: "100px",
+    md: "110px",
+    lg: "120px",
+    xl: "130px",
+    "2xl": "140px",
+    "3xl": "150px",
+    "4xl": "160px",
+  },
+  height = {
+    default: "30px",
+    sm: "35px",
+    md: "40px",
+    lg: "45px",
+    xl: "50px",
+    "2xl": "55px",
+    "3xl": "60px",
+    "4xl": "65px",
+  },
+}) => {
   const handleChange = (option) => {
-    setSelectedCountry(option.value);
+    setSelectedLanguage(option.value);
   };
 
   return (
-    <div style={{ width, height }}>
+    <div
+      className={`
+        w-[${width.default}] sm:w-[${width.sm}] md:w-[${width.md}] lg:w-[${width.lg}]
+        xl:w-[${width.xl}] 2xl:w-[${width["2xl"]}] 3xl:w-[${width["3xl"]}] 4xl:w-[${width["4xl"]}]
+        h-[${height.default}] sm:h-[${height.sm}] md:h-[${height.md}] lg:h-[${height.lg}]
+        xl:h-[${height.xl}] 2xl:h-[${height["2xl"]}] 3xl:h-[${height["3xl"]}] 4xl:h-[${height["4xl"]}]
+      `}
+    >
       <Select
-        options={countryOptions}
-        value={countryOptions.find(c => c.value === selectedCountry) || null}
+        options={languageOptions}
+        value={languageOptions.find((c) => c.value === selectedLanguage) || null}
         onChange={handleChange}
         isSearchable={false}
         styles={{
           control: (provided) => ({
             ...provided,
-            minHeight: height,
-            height: height,
-            border: 'none',
-            boxShadow: 'none',
+            minHeight: "100%",
+            height: "100%",
+            border: "none",
+            boxShadow: "none",
+            borderRadius: "0.375rem", // rounded-md
           }),
           valueContainer: (provided) => ({
             ...provided,
-            height: height,
-            padding: '0 6px',
+            height: "100%",
+            padding: "0 6px",
           }),
           input: (provided) => ({
             ...provided,
@@ -80,13 +96,14 @@ const CountrySelector = ({ selectedCountry, setSelectedCountry, width, height })
           }),
           indicatorsContainer: (provided) => ({
             ...provided,
-            height: height,
+            height: "100%",
           }),
           indicatorSeparator: () => ({
-            display: 'none'
+            display: "none",
           }),
-          dropdownIndicator: () => ({
-            display: 'flex'
+          dropdownIndicator: (provided) => ({
+            ...provided,
+            padding: "0 8px",
           }),
         }}
       />
@@ -94,4 +111,4 @@ const CountrySelector = ({ selectedCountry, setSelectedCountry, width, height })
   );
 };
 
-export default CountrySelector;
+export default LanguageSelector;

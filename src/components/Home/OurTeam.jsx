@@ -2,6 +2,8 @@ import Member1 from "/src/assets/Home/image1.png";
 import Member2 from "/src/assets/Home/image2.png";
 import Member3 from "/src/assets/Home/image3.png";
 import Member4 from "/src/assets/Home/image1.png";
+// lg:max-w-[1300px] 2xl:w-[2100px] 4xl:w-[2300px]
+// lg:h-[170px] lg:w-[280px] 2xl:h-[22vh] 2xl:w-[37vh] 3xl:w-[36vh]
 
 const OurTeam = () => {
   const team = [
@@ -12,18 +14,18 @@ const OurTeam = () => {
   ];
 
   return (
-    <div className="w-full h-[50vh] flex flex-col items-center bg-bggray">
+    <div className="w-full h-auto xl:h-[60vh] 3xl:h-[50vh] 4xl:h-[45vh] flex flex-col items-center bg-bggray">
       {/* Heading */}
-      <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:py-4 font-bold text-gray-800 2xl:mb-24 2xl:mt-10 2xl:text-7xl">
-        Get help from the Team
+      <h2 className="text-xl 3xl:text-6xl xl:mt-4 3xl:mt-8 sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 2xl:mb-24 4xl:mt-20 2xl:text-7xl mt-4 ">
+        Get help from our team
       </h2>
 
       {/* Team Grid */}
-      <div className="grid grid-cols sm:grid-cols-2 lg:mt-12 md:grid-cols-4 gap-8 w-full lg:max-w-[1300px] 2xl:max-w-[2100px] px-4 sm:px-8 md:px-12">
+      <div className="grid grid-cols xl:h-[10vh] 4xl:h-[20vh] md:w-[80%] 3xl:w-[80%] sm:grid-cols-2 md:grid-cols-4 gap-8 w-full px-4 sm:px-8 md:px-[5vh] xl:mt-[8vh] 3xl:mt-4 4xl:mt-2 mt-8 " >
         {team.map((member, index) => (
           <div
             key={index}
-            className="relative bg-white rounded-lg shadow-md mt-4 pt-14 pb-6 px-4 flex flex-col items-center text-center lg:h-[170px] lg:w-[280px] 2xl:h-[22vh] 2xl:w-[37vh]"
+            className="relative bg-white rounded-lg shadow-md mt-4 pt-14 pb-6 px-4 flex flex-col items-center text-center "
             
           >
             {/* Left Line with Triangle */}
@@ -44,10 +46,10 @@ const OurTeam = () => {
             />
 
             {/* Name */}
-            <h3 className="text-sm sm:text-sm md:text-base 2xl:text-2xl 2xl:mt-10 2xl:mb-4 font-bold text-gray">{member.name}</h3>
+            <h3 className="text-sm sm:text-sm md:text-base 2xl:text-2xl 2xl:mt-6  font-bold text-gray">{member.name}</h3>
 
             {/* Position */}
-            <p className="text-sm sm:text-xs md:text-xs lg:mt-4  2xl:text-xl text-gray">{member.position}</p>
+            <p className="text-sm sm:text-xs md:text-xs lg:mt-2  2xl:text-xl text-gray">{member.position}</p>
 
             {/* Contact */}
             <p className="text-sm text-black/70 sm:text-sm lg:text-lg 2xl:text-3xl md:mt-1 font-bold px-4  w-44 sm:w-48 lg:w-52 2xl:w-80 break-words">
