@@ -20,7 +20,7 @@ export const pests = [
     id: 1,
     name: "ANTS",
     desc: "Treatment",
-    more: "We deliver safe, effective pest control and sanitization solutions for homes and businesses. Protect your property and health with our certified, hassle-free services...",
+    more: "Ant pest control successfully destroys hidden nests, gets rid of active colonies, and makes  sure ants don't come back to infest your house or place of business.",
     image: AntImage,
     link: "/ant" // or full URL
   },
@@ -28,7 +28,7 @@ export const pests = [
     id: 2,
     name: "COCKROACHES",
     desc: "Treatment",
-    more: "We deliver safe, effective pest control and sanitization solutions for homes and businesses. Protect your property and health with our certified, hassle-free services...",
+    more: "Cockroach killer services properly target concealed locations, remove infestations quickly, and stop cockroach growth in the future.",
     image: CockroachImage,
     link: "/cockroch" // or full URL
   },
@@ -36,7 +36,7 @@ export const pests = [
     id: 3,
     name: "RED BUGS",
     desc: "Treatment",
-    more: "We deliver safe, effective pest control and sanitization solutions for homes and businesses. Protect your property and health with our certified, hassle-free services...",
+    more: "Bed bug treatment safely targets infected bedding, furniture and room corners to get rid of eggs, tiny insects and adults.",
     image: RedBugImage,
     link: "/redbug" // or full URL
   },
@@ -44,7 +44,7 @@ export const pests = [
     id: 4,
     name: "RODENTS",
     desc: "Treatment",
-    more: "We deliver safe, effective pest control and sanitization solutions for homes and businesses. Protect your property and health with our certified, hassle-free services...",
+    more: "Rodent control is for the purpose of keeping rats from returning to properties. Our experts remove breeding places and block all points of entry.",
     image: RodentImage,
     link: "/rodents" // or full URL
   },
@@ -52,7 +52,7 @@ export const pests = [
     id: 5,
     name: "FLIES",
     desc: "Treatment",
-    more: "We deliver safe, effective pest control and sanitization solutions for homes and businesses. Protect your property and health with our certified, hassle-free services...",
+    more: "Fly control services help to keep your living space safe, clean, and fly-free by removing  places of breeding and sanitizing important locations.",
     image: FlyImage,
     link: "/flies" // or full URL
   },
@@ -60,7 +60,7 @@ export const pests = [
     id: 6,
     name: "MOSQUITOES",
     desc: "Treatment",
-    more: "We deliver safe, effective pest control and sanitization solutions for homes and businesses. Protect your property and health with our certified, hassle-free services...",
+    more: "Mosquito fumigation protects your area from future mosquito infestations by destroying  adult mosquitoes and focusing on areas where they breed.",
     image: MosquitoImage,
     link: "/mosquito" // or full URL
   },
@@ -68,7 +68,7 @@ export const pests = [
     id: 7,
     name: "SPIDERS",
     desc: "Treatment",
-    more: "We deliver safe, effective pest control and sanitization solutions for homes and businesses. Protect your property and health with our certified, hassle-free services...",
+    more: "Spider control services clean cobwebs, sanitize contaminated areas and maintain a safe and spider-free atmosphere all year long.",
     image: SpiderImage,
     link: "/spider" // or full URL
   },
@@ -76,7 +76,7 @@ export const pests = [
     id: 8,
     name: "TERMITES",
     desc: "Treatment",
-    more: "We deliver safe, effective pest control and sanitization solutions for homes and businesses. Protect your property and health with our certified, hassle-free services...",
+    more: "Anti-termite treatments shield your foundation, remove underlying colonies, and stop homes and businesses from suffering structural damage.",
     image: TermiteImage,
     link: "/termites" // or full URL
   },

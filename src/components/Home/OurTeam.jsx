@@ -7,7 +7,7 @@ import Member4 from "/src/assets/Home/image1.png";
 
 const OurTeam = () => {
   const team = [
-    { img: Member1, name: "Abdullah", position: "Dubai Call Centre", contact: "+971 52 152 8725,+971 4 375 6435" },
+    { img: Member1, name: "Numan", position: "Dubai Call Centre", contact: "+971 52 152 8725,+971 4 375 6435" },
     { img: Member2, name: "Neha", position: "Get Quotation", contact: "info@accuratepestcontrol.ae" },
     { img: Member3, name: "Saleem", position: "Services", contact: "operations@accuratepestcontrol.ae" },
     { img: Member4, name: "Azeem", position: "Sales", contact: "sales@accuratepst control.ae" },

@@ -10,12 +10,12 @@ const Branches = () => {
   return (
     <div className="w-full md:h-[60vh] bg-white flex flex-col items-center lg:mt-12 2xl:space-y-10 2xl:py-20">
       {/* Heading */}
-      <h2 className="text-2xl 2xl:text-7xl lg:text-[40px] font-bold text-center text-black/80">
+      <h2 className="text-2xl 2xl:text-7xl lg:text-[40px] font-bold text-center text-black/80 xl:mb-4">
         We pride ourselves in holding
       </h2>
 
       {/* Subtext */}
-      <p className="text-center text-black/50 text-gray lg:mb-2 text-sm max-w-xs lg:text-md 2xl:text-2xl lg:max-w-2xl 2xl:max-w-5xl">
+      <p className="text-center text-black/50 text-gray lg:mb-1 text-sm max-w-xs lg:text-md 2xl:text-2xl lg:max-w-2xl 2xl:max-w-5xl">
         We offer certified pest control Sharjah Municipality, licensed by Dubai, Ajman, Foodwatch, NPMA, HACCP, and the Ministry of Climate Change & Environment.
       </p>
 
