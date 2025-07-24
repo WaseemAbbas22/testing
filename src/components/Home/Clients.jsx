@@ -55,7 +55,7 @@ const OurClients = () => {
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-32 lg:h-20
-            xl:w-20 xl:h-12
+            xl:w-20 xl:h-24
             2xl:w-40 2xl:h-28
             3xl:w-44 3xl:h-30
             4xl:w-60 4xl:h-16

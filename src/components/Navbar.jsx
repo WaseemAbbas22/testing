@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-b-[2px] 2xl:border-b-[8px] border-green-600 shadow-sm text-gray-900 xl:h-[11vh] 2xl:h-[9vh] 3xl:h-[10vh] 4xl:h-[9vh] ">
+    <nav className="bg-white border-b-[2px] 2xl:border-b-[8px] border-green-600 shadow-sm text-gray-900 xl:h-[15vh] 2xl:h-[9vh] 3xl:h-[10vh] 4xl:h-[9vh] ">
       <div
         className="
         md:w-[85%]
@@ -30,7 +30,7 @@ const Navbar = () => {
               <img
                 src={Logo}
                 alt="Logo"
-                className="h-8 sm:h-9 md:h-10 lg:h-14 xl:h-12 2xl:h-20 2xl:mt-2 3xl:h-20"
+                className="h-8 sm:h-9 md:h-10 lg:h-14 xl:h-20 2xl:h-20 2xl:mt-2 3xl:h-20"
               />
             </a>
           </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
               className="
               flex
               space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-4 xl:space-x-3 2xl:space-x-8 3xl:space-x-4 4xl:space-x-8
-              text-[10px] sm:text-xs md:text-sm lg:text-md xl:text-xs 2xl:text-2xl 3xl:text-lg 4xl:text-2xl
+              text-[10px] sm:text-xs md:text-sm lg:text-md xl:text-lg 2xl:text-2xl 3xl:text-lg 4xl:text-2xl
               text-gray
             "
             >
@@ -64,7 +64,7 @@ const Navbar = () => {
                   Home
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/pests" className="nav-link-hover">
                   Pests
                 </Link>
@@ -83,13 +83,13 @@ const Navbar = () => {
                 <Link to="/about" className="nav-link-hover">
                   About Us
                 </Link>
-              </li>
-              <li>
+              </li>*/}
+              <li> 
                 <Link to="/documents" className="nav-link-hover">
                   Documents
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/equipment-trading" className="nav-link-hover">
                   Pest Control Equipment Trading
                 </Link>
@@ -108,7 +108,7 @@ const Navbar = () => {
                 <Link to="/contact" className="nav-link-hover">
                   Contact Us
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
