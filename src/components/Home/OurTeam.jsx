@@ -1,16 +1,16 @@
-import Member1 from "/src/assets/Home/image1.png";
-import Member2 from "/src/assets/Home/image2.png";
-import Member3 from "/src/assets/Home/image3.png";
-import Member4 from "/src/assets/Home/image1.png";
+import Member1 from "/src/assets/Home/image2.jpg";
+import Member2 from "/src/assets/Home/image3.jpg";
+import Member3 from "/src/assets/Home/image1.jpg";
+import Member4 from "/src/assets/Home/image4.jpg";
 // lg:max-w-[1300px] 2xl:w-[2100px] 4xl:w-[2300px]
 // lg:h-[170px] lg:w-[280px] 2xl:h-[22vh] 2xl:w-[37vh] 3xl:w-[36vh]
 
 const OurTeam = () => {
   const team = [
-    { img: Member1, name: "Numan", position: "Dubai Call Centre", contact: "+971 52 152 8725,+971 4 375 6435" },
-    { img: Member2, name: "Neha", position: "Get Quotation", contact: "info@accuratepestcontrol.ae" },
-    { img: Member3, name: "Saleem", position: "Services", contact: "operations@accuratepestcontrol.ae" },
-    { img: Member4, name: "Azeem", position: "Sales", contact: "sales@accuratepst control.ae" },
+    { img: Member1, name: "Malik Numan", position: "Dubai Call Centre", contact: "inquiry@accuratpestcontrol.ae" },
+    { img: Member2, name: "Mostafa Ismail", position: "Get Quotation", contact: "sales7@accuratepestcontrol.ae" },
+    { img: Member3, name: "Sathya Murugan", position: "Services", contact: "sales3@accuratepestcontrol.ae" },
+    { img: Member4, name: "Mayson Dela", position: "Dubai Call Centre", contact: "+971 52 449 6173,+971 800 8725" },
   ];
 
   return (
@@ -38,13 +38,14 @@ const OurTeam = () => {
              <div className="h-[15vh] lg:w-1 2xl:w-2 bg-green-600"></div>
             </div>
  
+            
             {/* Circular Image */}
             <img
               src={member.img}
               alt={member.name}
-              className="absolute -top-10 2xl:-top-16 w-20 sm:w-20 md:w-20 h-20 sm:h-20 md:h-20 2xl:h-28 2xl:w-28 rounded-full border-4 border-darkgreen object-cover shadow-md"
+              className="absolute -top-10 bg-white 2xl:-top-16 w-20 sm:w-20 md:w-20 h-20 sm:h-20 md:h-20 2xl:h-28 2xl:w-28 rounded-full  object-contain border-4 border-darkgreen shadow-md"
             />
-
+           
             {/* Name */}
             <h3 className="text-sm sm:text-sm md:text-base 2xl:text-2xl 2xl:mt-6  font-bold text-gray">{member.name}</h3>
 
