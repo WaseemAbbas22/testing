@@ -15,7 +15,7 @@ const TopBar = () => {
         <div className="flex flex-wrap items-center justify-center md:justify-start lg:space-x-4 2xl:space-x-6">
 
           {/* Phone */}
-          <div className="flex md:flex hidden md:block  items-center lg:text-base lg:space-x-2 2xl:text-2xl 2xl:space-x-4 ">
+          <div className="md:flex hidden md:block  items-center lg:text-base lg:space-x-2 2xl:text-2xl 2xl:space-x-4 ">
             <FaPhoneAlt className="2xl:text-2xl" />
             <span>+971 52 152 8725</span>
           </div>
