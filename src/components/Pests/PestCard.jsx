@@ -43,7 +43,7 @@ const PestCard = ({ pestName }) => {
           <div
             className="absolute mb-4 transition-all duration-500 ease-in-out transform group-hover:-translate-y-32 
           sm:mb-6 
-          md:mb-8  2xl:group-hover:-translate-y-56 md:group-hover:-translate-y-28 text-left"
+          md:mb-8  2xl:group-hover:-translate-y-56 md:group-hover:-translate-y-32 text-left"
           >
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 pr-6 ">
               <p className="text-white text-sm text-justify md:text-xs lg:text-xs xl:text-xs 2xl:mb-8 2xl:text-xl 3xl:text-base 4xl:text-xl 2xl:ml-6">

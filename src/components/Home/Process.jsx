@@ -13,7 +13,7 @@ const Process = () => {
   ];
 
   return (
-    <div className="w-full lg:h-[70vh] 2xl:h-[60vh] 3xl:h-[62vh] 4xl:h-[60vh] bg-white flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-52 py-12 relative">
+    <div className="w-full lg:h-[70vh] 2xl:h-[60vh] 3xl:h-[62vh] 4xl:h-[55vh] bg-white flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-52 py-12 relative">
       {/* Main Heading */}
       <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 lg:text-[50px] xl:text-4xl 2xl:text-7xl 3xl:text-6xl 4xl:text-7xl">
         Domestic & Commercial Clients
@@ -25,10 +25,11 @@ const Process = () => {
       </h3>
 
       {/* Steps Grid Container with relative to position the line */}
-      <div className="relative 3xl:max-w-[90%] xl:max-w-[120%]  mb-10">
+      <div className="relative w-full md:w-[105%] 3xl:w-[84%] mx-auto mb-10 justify-center">
+
         {/* Green Dotted Line */}
-       <div
-  className="
+        <div
+          className="
     block
     absolute
     left-1/2
@@ -48,7 +49,7 @@ const Process = () => {
     md:border-l-0
     md:border-t-2
   "
-></div>
+        ></div>
 
         {/* Steps Grid */}
         <div
@@ -57,7 +58,7 @@ const Process = () => {
     grid-cols-1 
     md:grid-cols-4 
     gap-4 md:gap-8 lg:gap-10 
-    relative z-10
+    relative z-10 w-full justify-items-center
   "
         >
           {steps.map((step, index) => (
@@ -67,15 +68,15 @@ const Process = () => {
           bg-[#F5F5F5] rounded-lg border border-[#E0E0E0] shadow-md 
           flex flex-col items-center justify-center 
           relative hover:shadow-lg hover:border-green-600 transition
-          w-[260px] md:w-[200px] lg:w-[250px] xl:w-[200px] 2xl:w-[400px] 3xl:w-[310px] 4xl:w-[350px]
-          h-[220px] md:h-[250px] lg:h-[210px] xl:h-[180px] 2xl:h-[320px] 3xl:h-[290px] 4xl:h-[300px]
+          w-[260px] md:w-[200px] lg:w-[250px] xl:w-[200px] 2xl:w-[400px] 3xl:w-[260px] 4xl:w-[350px]
+          h-[220px] md:h-[250px] lg:h-[210px] xl:h-[180px] 2xl:h-[320px] 3xl:h-[250px] 4xl:h-[300px]
         "
             >
               {/* Number Box (Left Upper Corner) */}
               <div
                 className="
           absolute top-0 left-0 bg-green-600 text-white 
-          rounded-ee-[40px] rounded-ss-lg w-16 h-16 xl:w-14 xl:h-14  2xl:h-16 2xl:w-14 2xl:text-4xl 4xl:w-20
+          rounded-ee-[30px] rounded-ss-lg w-16 h-16 xl:w-12 xl:h-12  2xl:h-16 2xl:w-14 2xl:text-4xl 4xl:w-16
           flex items-center justify-center text-2xl italic font-semibold
         "
               >
@@ -86,7 +87,13 @@ const Process = () => {
                 <img
                   src={step.img}
                   alt={step.title}
-                  className="h-16 w-16 md:h-16 md:w-16 lg:h-20 lg:w-20 xl:h-14 xl:w-14 2xl:h-28 2xl:w-28 3xl:h-24 3xl:w-24 2xl:ml-6 mb-4"
+                  className="h-16 w-16 mb-4
+                  md:h-16 md:w-16 
+                  lg:h-20 lg:w-20 
+                  xl:h-14 xl:w-14 
+                  2xl:h-28 2xl:w-28 2xl:ml-4
+                  3xl:h-20 3xl:w-20
+                  4xl:h-24 4xl:w-24  "
                 />
                 <h3 className="text-2xl md:text-lg lg:text-xl 2xl:text-4xl 2xl:mt-6 font-base text-black/60 text-center">
                   {step.title}

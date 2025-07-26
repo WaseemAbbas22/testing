@@ -8,12 +8,12 @@ import Client7 from "/src/assets/Home/LogoClients7.png";
 import Client8 from "/src/assets/Home/LogoClients8.png";
 import Client9 from "/src/assets/Home/LogoClient9.png";
 import Client10 from "/src/assets/Home/LogoClients10.png";
-import { useTranslation } from "/src/utils/translations";
+//import { useTranslation } from "/src/utils/translations";
 
 import ClientBox from "./ClientBox"; // Adjust path accordingly
 
 const OurClients = () => {
-  const { t } = useTranslation();
+  //const { t } = useTranslation();
   return (
     <div
       className="w-full bg-white py-12 px-6  flex flex-col items-center justify-center

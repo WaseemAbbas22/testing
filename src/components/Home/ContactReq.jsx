@@ -39,7 +39,7 @@ const ContactRequest = () => {
       <div className="relative w-[90%] mx-auto flex flex-col items-start 
       xl:w-[75%]  
       3xl:w-[75%] 
-      4xl:w-[72%] ">
+      4xl:w-[74%] ">
         <h2 className="text-white text-3xl font-semibold mb-6 text-left lg:text-4xl xl:text-3xl 2xl:text-6xl">
           Get a Free Inspection
         </h2>
@@ -67,7 +67,7 @@ const ContactRequest = () => {
                 xl:text-sm xl:h-10
                 2xl:h-20
                 3xl:text-2xl
-                4xl:text-2xl 4xl:ml-2"
+                4xl:text-2xl 4xl:ml-2 4xl:h-24" 
                 required
               >
                 <option value="">Select Pest Concern</option>
