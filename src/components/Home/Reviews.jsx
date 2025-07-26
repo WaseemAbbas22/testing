@@ -6,16 +6,22 @@ const Reviews = () => {
       name: "Fatima A., Dubai Marina",
       role: "House Wife",
       img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&h=100&auto=format&fit=crop",
+      subtext:
+        "Sprays and traps weren't enough to stop the ongoing cockroach problem in our kitchen. For cockroach pest control, we got in touch with Accurate Pest Control.They performed an extensive examination and addressed unnoticed hidden areas. The kitchen has been spotless ever since, with no insects and complete peace of mind.",
     },
     {
       name: "Hassan R., Abu Dhabi",
       role: "Facilities Manager",
       img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=100",
+      subtext:
+        "There was hidden pest activity, especially in the storage areas and empty rooms For expert fumigation services, we contacted Accurate Pest Control, and they came out right away. Using safe, odorless solutions that had been approved by the authorities, their team expertly cleaned the entire villa. Now that the pests are gone, our house feels safe, pleasant, and new again.",
     },
     {
       name: "Leila M., Sharjah",
       role: "Property Manager",
       img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&h=100&auto=format&fit=crop",
+      subtext:
+        "On our rooftop, we had an extreme pigeon problem. Safe, helpful, and timely bird control in Dubai by Accurate Pest Control. The appropriate barrier was built by the team. Since then, there have been no more birds—excellent service!",
     },
   ];
 
@@ -37,9 +43,13 @@ const Reviews = () => {
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="text-sm w-full sm:w-[27%]  bg-white rounded-lg shadow-[0px_4px_15px_0px] shadow-black/5 overflow-hidden hover:border-darkgreen"
+            className="w-full w-[85%] sm:w-[30%] 4xl:w-[27%] 
+      bg-white rounded-lg shadow-[0px_4px_15px_0px] shadow-black/5 overflow-hidden 
+      hover:border-darkgreen flex flex-col 
+      h-[200px] sm:h-[300px] md:h-[320px] lg:h-[350px] xl:h-[250px] 2xl:h-[400px] 3xl:h-[420px] 4xl:h-[380px]"
           >
-            <div className="flex items-center gap-x-4 p-4 sm:p-6">
+            {/* Image and Name */}
+            <div className="flex items-center gap-x-4 p-4 4xl:p-8 sm:pl-6">
               <img
                 className="h-10 w-10 sm:h-12 sm:w-12 3xl:h-20 3xl:w-20 4xl:h-20 4xl:w-20 rounded-full border-2 border-green-600 object-cover"
                 src={review.img}
@@ -55,12 +65,13 @@ const Reviews = () => {
               </div>
             </div>
 
-            <div className="px-4 sm:px-6 pb-4">
-              <div className="flex gap-0.5 4xl:mb-4">
+            {/* Stars and Subtext */}
+            <div className="px-4 sm:px-6 pb-4 flex flex-col">
+              <div className="flex gap-0.5 mb-2">
                 {[...Array(5)].map((_, i) => (
                   <svg
                     key={i}
-                    className="w-4 h-4 sm:w-5 sm:h-5 3xl:w-6 3xl:h-6 4xl:w-6 4xl:h-6"
+                    className="w-4 h-4 sm:w-4 sm:h-4 3xl:w-6 3xl:h-6 4xl:w-6 4xl:h-6"
                     viewBox="0 0 22 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -72,13 +83,8 @@ const Reviews = () => {
                   </svg>
                 ))}
               </div>
-              <p className="text-gray-500 text-[10px] sm:text-xs 3xl:text-lg 4xl:text-lg text-justify">
-                Sprays and traps weren't enough to stop the ongoing cockroach
-                problem in our kitchen. For cockroach pest control, we got in
-                touch with Accurate Pest Control. They performed an extensive
-                examination and addressed unnoticed hidden areas. The kitchen
-                has been spotless ever since, with no insects and complete peace
-                of mind.
+              <p className="text-[#777777] text-[10px] sm:text-xs 3xl:text-lg 4xl:text-lg text-justify">
+                {review.subtext}
               </p>
             </div>
           </div>
@@ -86,7 +92,7 @@ const Reviews = () => {
       </div>
 
       {/* View More Button */}
-      <button className="bg-[#32A849] mt-[2vh] text-white text-[10px] 4xl:text-xl font-medium px-4 py-2 rounded shadow hover:bg-green-700 transition">
+      <button className="bg-[#32A849] mt-[3vh] text-white text-[10px] 3xl:text-xl 4xl:text-xl font-medium px-4 py-2 rounded shadow hover:bg-green-700 transition">
         View More Testimonials
       </button>
     </div>
