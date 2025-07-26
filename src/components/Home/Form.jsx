@@ -1,7 +1,13 @@
+// src/components/Home/Form.jsx
 import { useState } from "react";
 import Vector from "/src/assets/Home/VectorForm.png";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+import { useTranslation } from '../../utils/translations'; // Correct import path
+
 const Form = () => {
-  const [countryCode, setCountryCode] = useState("+971"); // default UAE
+  const [phone, setPhone] = useState("");
+  const { t, currentLanguage } = useTranslation();
 
   return (
     <div className="relative bg-green-600 py-10">
@@ -11,31 +17,31 @@ const Form = () => {
         className="absolute top-0 -right-0 h-full object-cover opacity-80 pointer-events-none overflow-hidden"
         alt="vector design"
       />
-      <div className="bg-green-600 w-full 4xl:h-[90vh] h-[110vh] flex items-center justify-center px-4 sm:px-6  xl:px-8">
+      <div className="bg-[#33A92F80] w-full 4xl:h-[90vh] h-[115vh] flex items-center justify-center px-4 sm:px-6 xl:px-8">
         {/* White container */}
-        <div className="bg-white rounded-lg shadow-lg w-[83%] h-auto h-[94%] flex flex-col p-4 sm:p-6  z-10">
+        <div className="bg-white border border-[#D6D6D6] rounded-2xl shadow-lg w-[70%] h-[95%] flex flex-col p-4 sm:p-6 z-10">
           {/* Heading at top */}
           <h1 className="text-xl sm:text-2xl md:text-4xl 2xl:text-7xl font-semibold text-black-400 text-center mb-4 sm:mb-6 2xl:mt-12">
-            Get in Touch
+            {t('getInTouch')}
           </h1>
 
           {/* Form Inputs */}
           <div className="flex-grow flex flex-col justify-center">
             <form className="flex flex-col items-center text-sm w-full h-full 2xl:mt-4 2xl:px-12">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 2xl:gap-10 w-full ">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 2xl:gap-10 w-full">
                 {/* First Name */}
                 <div>
                   <label
                     className="text-black/70 font-bold text-xs 2xl:text-2xl"
                     htmlFor="firstName"
                   >
-                    First Name
+                    {t('firstName')}
                   </label>
                   <input
-                    className="custom-textarea placeholder-gray-400 2xl:h-20 2xl:text-2xl rounded-xl "
+                    className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-4 2xl:pl-6 2xl:h-20 2xl:text-2xl rounded-lg 2xl:rounded-xl"
                     type="text"
                     id="firstName"
-                    placeholder="First Name "
+                    placeholder={t('firstName')}
                     required
                   />
                 </div>
@@ -46,13 +52,13 @@ const Form = () => {
                     className="text-black/70 font-bold text-xs 2xl:text-2xl"
                     htmlFor="lastName"
                   >
-                    Last Name
+                    {t('lastName')}
                   </label>
                   <input
-                    className="custom-textarea placeholder-gray-400 2xl:h-20 2xl:text-2xl rounded-xl"
+                    className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-4 2xl:pl-6 2xl:h-20 2xl:text-2xl rounded-xl"
                     type="text"
                     id="lastName"
-                    placeholder="Last Name"
+                    placeholder={t('lastName')}
                     required
                   />
                 </div>
@@ -63,24 +69,54 @@ const Form = () => {
                     className="text-black/70 font-bold text-xs 2xl:text-2xl"
                     htmlFor="phone"
                   >
-                    Phone Number
+                    {t('phoneNo')}
                   </label>
-                  <div className="flex mt-1 sm:mt-2">
-                    <select
-                      value={countryCode}
-                      onChange={(e) => setCountryCode(e.target.value)}
-                      className="custom-textare 2xl:h-14 2xl:text-2xl rounded-xl"
-                    >
-                      <option value="+971">🇦🇪</option>
-                      <option value="+92">🇵🇰</option>
-                      <option value="+91">🇮🇳</option>
-                      <option value="+1">🇺🇸</option>
-                    </select>
-                    <input
-                      className="custom-textarea placeholder-gray-400 2xl:h-20 2xl:text-lg  rounded-xl"
-                      type="tel"
-                      id="phone"
-                      placeholder="Phone Number"
+                  <div className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-4 2xl:pl-6 2xl:h-20 2xl:text-2xl rounded-xl p-0 overflow-hidden">
+                    <PhoneInput
+                      country={"ae"}
+                      value={phone}
+                      onChange={(phone) => setPhone(phone)}
+                      dropdownStyle={{
+                        maxHeight: "30vh",
+                        overflowY: "auto",
+                        border: "none",
+                        boxShadow: "none",
+                      }}
+                      inputStyle={{
+                        border: "none",
+                        outline: "none",
+                        boxShadow: "none",
+                        background: "transparent",
+                        width: "100%",
+                        paddingLeft: "48px",
+                        height: "100%",
+                        fontSize: "inherit",
+                        color: "#999999",
+                      }}
+                      buttonStyle={{
+                        border: "none",
+                        outline: "none",
+                        boxShadow: "none",
+                        background: "transparent",
+                        height: "100%",
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                      containerStyle={{
+                        border: "none",
+                        outline: "none",
+                        boxShadow: "none",
+                        background: "transparent",
+                        width: "100%",
+                        height: "100%",
+                        padding: "0",
+                        margin: "0",
+                      }}
+                      inputClass="
+                        text-[#999999]  
+                        text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 4xl:!text-2xl 4xl:!ml-2
+                        placeholder-gray-400
+                      "
                       required
                     />
                   </div>
@@ -92,13 +128,13 @@ const Form = () => {
                     className="text-black/70 font-bold text-xs 2xl:text-2xl"
                     htmlFor="email"
                   >
-                    Email
+                    {t('email')}
                   </label>
                   <input
-                    className="custom-textarea placeholder-gray-400 2xl:h-20 2xl:text-2xl  rounded-xl"
+                    className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-4 2xl:pl-6 2xl:h-20 2xl:text-2xl rounded-xl"
                     type="email"
                     id="email"
-                    placeholder="E-mail"
+                    placeholder={t('email')}
                     required
                   />
                 </div>
@@ -109,19 +145,19 @@ const Form = () => {
                     className="text-black/70 font-bold text-xs 2xl:text-2xl"
                     htmlFor="pestConcern"
                   >
-                    Select Pest Concern
+                    {t('selectPestConcern')}
                   </label>
                   <select
                     id="pestConcern"
-                    className="custom-textarea placeholder-gray-400 2xl:h-20 2xl:text-2xl  rounded-xl"
+                    className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-4 2xl:pl-6 2xl:h-20 2xl:text-2xl rounded-xl"
                     required
                   >
                     <option value="">select----</option>
-                    <option value="ants">Ants</option>
-                    <option value="cockroaches">Cockroaches</option>
-                    <option value="termites">Termites</option>
-                    <option value="bedbugs">Bed Bugs</option>
-                    <option value="rodents">Rodents</option>
+                    <option value="ants">{t('ants')}</option>
+                    <option value="cockroaches">{t('cockroaches')}</option>
+                    <option value="termites">{t('termites')}</option>
+                    <option value="bedbugs">{t('bedbugs')}</option>
+                    <option value="rodents">{t('rodents')}</option>
                   </select>
                 </div>
 
@@ -131,17 +167,17 @@ const Form = () => {
                     className="text-black/70 font-bold text-xs 2xl:text-2xl"
                     htmlFor="priorityType"
                   >
-                    Select Priority Type
+                    {t('selectPriorityType')}
                   </label>
                   <select
                     id="priorityType"
-                    className="custom-textarea placeholder-gray-400 2xl:h-20 2xl:text-2xl  rounded-xl"
+                    className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-4 2xl:pl-6 2xl:h-20 2xl:text-2xl rounded-xl"
                     required
                   >
                     <option value="">select----</option>
-                    <option value="standard">Standard</option>
-                    <option value="urgent">Urgent</option>
-                    <option value="emergency">Emergency</option>
+                    <option value="standard">{t('standard')}</option>
+                    <option value="urgent">{t('urgent')}</option>
+                    <option value="emergency">{t('emergency')}</option>
                   </select>
                 </div>
               </div>
@@ -152,12 +188,12 @@ const Form = () => {
                   className="text-black/70 font-bold text-xs 2xl:text-2xl"
                   htmlFor="message"
                 >
-                  Message
+                  {t('message')}
                 </label>
                 <textarea
-                  className="custom-textarea placeholder-gray-400 h-28 2xl:h-52 2xl:text-2xl rounded-xl"
+                  className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-4 2xl:pl-6 4xl:py-6 h-28 2xl:h-52 2xl:text-2xl rounded-xl"
                   id="message"
-                  placeholder="Write your message"
+                  placeholder={t('writeYourMessage')}
                   required
                 ></textarea>
               </div>
@@ -168,9 +204,9 @@ const Form = () => {
           <div className="flex justify-left mt-2 sm:mt-4 2xl:mb-4 2xl:px-12">
             <button
               type="submit"
-              className="text-[11px]  rounded-xl font-xs 2xl:text-xl bg-green-600 text-white h-8 w-[120px] sm:w-[130px] 2xl:w-[200px] 2xl:h-16 px-1 active:scale-95 transition hover:bg-green-700"
+              className="text-[11px] rounded-xl font-xs 2xl:text-xl bg-green-600 text-white h-8 w-[120px] sm:w-[130px] 2xl:w-[200px] 2xl:h-16 px-1 active:scale-95 transition hover:bg-green-700"
             >
-              Send Message
+              {t('sendMessage')}
             </button>
           </div>
         </div>
