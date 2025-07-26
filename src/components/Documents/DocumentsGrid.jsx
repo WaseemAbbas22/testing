@@ -1,4 +1,4 @@
-import download from '/src/assets/Documents/downloadImg.png'
+import download from "/src/assets/Documents/downloadImg.png";
 
 const DocumentsGrid = () => {
   const gridDocs = [
@@ -33,7 +33,7 @@ const DocumentsGrid = () => {
   ];
 
   return (
-    <div className="w-[90%] md:w-[100%] lg:w-[70%] mx-auto flex flex-wrap md:flex-nowrap justify-center gap-4 mt-10">
+    <div className="w-[90%] md:w-[100%] lg:w-[70%] xl:w-[75%] mx-auto flex flex-wrap md:flex-nowrap justify-center gap-4 mt-10">
       {gridDocs.map((doc) => (
         <div
           key={doc.id}
@@ -42,36 +42,49 @@ const DocumentsGrid = () => {
           {/* Content Above Buttons */}
           <div className="flex flex-col justify-between px-6 py-5 flex-grow">
             {/* Document Name */}
-            <h2 className="text-bold font-bold mb-2">{doc.name}</h2>
+            <h2 className="text-bold 3xl:text-2xl 4xl:text-4xl font-bold mb-2 3xl:mb-8 4xl:mb-10 ">
+              {doc.name}
+            </h2>
 
             {/* Valid Till */}
-            <div>
-              <p className="text-sm font-semibold">Valid Till</p>
-              <p className="text-xs">({doc.validFrom})</p>
+            <div className="text-[#444444]">
+              <p className="text-sm 3xl:text-xl 4xl:text-3xl font-semibold">
+                Valid Till
+              </p>
+              <p className="text-xs- 3xl:text-xl 4xl:text-2xl">({doc.validFrom})</p>
             </div>
           </div>
 
           {/* Black Bar */}
-          
 
-          {/* Buttons - full width with no margin below */}
-          <div className="flex w-full rounded bg-[#D1D1D1]">
+          <div className="flex w-full rounded-lg bg-[#D1D1D1] overflow-hidden">
+            {/* MSDS Button */}
             <a
               href={doc.msdsLink}
               download
-              className="flex items-center justify-center gap-2 text-semibold font-bold text-[#32A849] px-3 py-2 flex-1 hover:bg-gray-800 hover:text-white transition"
+              className="group flex items-center justify-center gap-2 text-xl xl:text-xl 3xl:text-2xl 4xl:text-3xl font-bold text-[#32A849] px-3 py-2 flex-1 transition hover:bg-darkgreen hover:text-white"
             >
-              MSDS <img src={download} className='h-5 w-5' />
+              MSDS
+              <img
+                src={download}
+                className="h-6 w-6 xl:h-6 xl:w-6 3xl:h-8 3xl:w-8 4xl:h-10 4xl:w-10 transition duration-300 group-hover:invert group-hover:brightness-125"
+              />
             </a>
 
-            <div className="w-px bg-[#A2A2A2] h-8 mt-1"></div>
+            {/* Divider */}
+            <div className="w-px bg-[#A2A2A2] h-8 self-center"></div>
 
+            {/* COR Button */}
             <a
               href={doc.corLink}
               download
-              className="flex items-center justify-center gap-2 text-semibold font-bold text-[#32A849] px-3 py-2 flex-1 hover:bg-gray-800 hover:text-white transition"
+              className="group flex items-center justify-center gap-2 rounded-lg text-semibold text-xl xl:text-xl 3xl:text-2xl 4xl:text-3xl font-bold text-[#32A849] px-3 py-3 flex-1 transition hover:bg-darkgreen hover:text-white"
             >
-              COR <img src={download} className='h-5 w-5' />
+              COR
+              <img
+                src={download}
+                className=" h-6 w-6 xl:h-6 xl:w-6 3xl:h-8 3xl:w-8 4xl:h-10 4xl:w-10 transition duration-300 group-hover:invert group-hover:brightness-125"
+              />
             </a>
           </div>
         </div>

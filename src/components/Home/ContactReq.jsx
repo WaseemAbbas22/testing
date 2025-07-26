@@ -78,7 +78,7 @@ const ContactRequest = () => {
             </div>
 
             {/* Divider */}
-            <div className="hidden md:block w-px bg-[#999999] h-auto mt-2"></div>
+            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 3xl:mt-6 3xl:mb-6"></div>
 
             {/* Name */}
             <div className="flex-1 px-4 py-3 4xl:py-5">
@@ -100,7 +100,7 @@ const ContactRequest = () => {
             </div>
 
             {/* Divider */}
-            <div className="hidden md:block w-px bg-[#999999] h-auto mt-2"></div>
+            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 3xl:mt-6 3xl:mb-6"></div>
 
             {/* Phone */}
             <div className="flex-1 px-4 py-3 4xl:py-5">
@@ -127,7 +127,7 @@ const ContactRequest = () => {
             </div>
 
             {/* Divider */}
-            <div className="hidden md:block w-px bg-[#999999] h-auto mt-2"></div>
+            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 3xl:mt-6 3xl:mb-6 "></div>
 
             {/* Email */}
             <div className="flex-1 px-4 py-1 4xl:py-3">

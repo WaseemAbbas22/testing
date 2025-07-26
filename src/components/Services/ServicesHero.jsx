@@ -1,8 +1,12 @@
-import { useState, useEffect, useRef } from 'react';
-import PropTypes from 'prop-types';
+import { useState, useEffect, useRef } from "react";
+import PropTypes from "prop-types";
 import PhoneCallBox from "/src/components/Home/PhoneCallBox";
 
-const ServicesHero = ({ title = "Services", breadcrumb = "Home > Services", bgImg }) => {
+const ServicesHero = ({
+  title = "Services",
+  breadcrumb = "Home > Services",
+  bgImg,
+}) => {
   const [isFixed, setIsFixed] = useState(false);
   const heroRef = useRef(null);
 
@@ -20,42 +24,82 @@ const ServicesHero = ({ title = "Services", breadcrumb = "Home > Services", bgIm
   }, []);
 
   return (
-    <div ref={heroRef} className="relative w-full overflow-hidden" style={{ height: "50vh" }}>
+    <div
+      ref={heroRef}
+      className="relative w-full overflow-hidden h-[30vh] sm:h-[40vh]"
+    >
       {/* Responsive Image */}
       <img
         src={bgImg}
         alt="Hero Background"
         className="absolute inset-0 w-full h-full object-cover"
-        style={{
-          objectFit: "cover", // ensures it still covers but scales down
-        }}
       />
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col justify-center h-full px-[4vw] text-white">
+      <div className="xl:ml-32 3xl:ml-44 relative z-10 flex flex-col justify-center h-full px-4 sm:px-[4vw] text-white">
         <h1
-          className="font-bold"
-          style={{
-            fontSize: "5vw",
-            lineHeight: "1.2",
-          }}>
+          className="font-bold leading-tight sm:leading-[1.2] xl:text-4xl 3xl:text-8xl "
+          
+        >
           {title}
         </h1>
-
-        <p style={{ fontSize: "2vw", marginTop: "0.5vw" }}>
+        <p
+          className="mt-1"
+          style={{
+            fontSize: "2vh",
+          }}
+        >
           {breadcrumb}
         </p>
 
-        <div className={`${isFixed ? "fixed top-2 right-2 z-50" : "absolute bottom-2 right-2"}`}>
+        {/* PhoneCallBox (Desktop Only) */}
+        <div className="fixed hidden md:block bottom-10 right-0 z-50">
           <PhoneCallBox
-            title="Call for free Inspection"
-            phone="0800-25456158"
-            containerWidth="180px"
-            containerHeight="44px"
+            upperText="Call for Free Inspection"
+            phoneNumber="800 8725"
+            bgColor="bg-[#E50000]"
+            iconColor="text-[#E50000]"
+            iconSize="xl:text-2xl 3xl:text-3xl 4xl:text-3xl"
+            iconPadding="xl:p-3 4xl:p-4 3xl:p-4"
+            upperTextColor="text-white"
+            phoneTextColor="text-white"
+            containerHeight={{
+              base: "h-[60px]",
+              "2xl": "2xl:h-[70px]",
+              "3xl": "3xl:h-[80px]",
+              "4xl": "4xl:h-[85px]",
+            }}
+            containerWidth={{
+              base: "w-[250px]",
+              "2xl": "2xl:w-[350px]",
+              "3xl": "3xl:w-[300px]",
+              "4xl": "4xl:w-[350px]",
+            }}
+            upperTextSize={{
+              base: "text-md",
+              "2xl": "2xl:text-sm",
+              "3xl": "3xl:text-lg",
+              "4xl": "4xl:text-2xl",
+            }}
+            phoneTextSize={{
+              base: "text-xl",
+              "2xl": "2xl:text-base",
+              "3xl": "3xl:text-2xl",
+              "4xl": "4xl:text-3xl",
+            }}
           />
+        </div>
+
+        {/* Mobile: Floating Free Inspection Tab */}
+        <div className="md:hidden fixed right-0 top-1/4 transform -translate-y-1/2 z-50">
+          <button className="bg-red-600 text-white flex flex-col items-center justify-center w-8 h-28 rounded-l-md shadow-lg">
+            <span className="text-[10px] font-medium tracking-wider transform -rotate-90 whitespace-nowrap px-1">
+              Free Inspection
+            </span>
+          </button>
         </div>
       </div>
     </div>
@@ -65,7 +109,7 @@ const ServicesHero = ({ title = "Services", breadcrumb = "Home > Services", bgIm
 ServicesHero.propTypes = {
   title: PropTypes.string,
   breadcrumb: PropTypes.string,
-  bgImg: PropTypes.string
+  bgImg: PropTypes.string,
 };
 
 export default ServicesHero;
