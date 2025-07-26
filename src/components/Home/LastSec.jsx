@@ -28,21 +28,21 @@ const KeepSteps = () => {
   ];
 
   return (
-    <div className="w-full xl:h-[80vh] 3xl:h-[80vh] xl:mt-4 bg-gray-50 2xl:py-10 px-1 md:px-16 lg:px-24 xl:px-32 3xl:py-16 4xl:py-20 flex flex-col items-center mt-4 md:mt-0">
+    <div className="w-full py-2  xl:h-[80vh] 3xl:h-[80vh] xl:mt-4 bg-gray-50 2xl:py-10 px-1 md:px-16 lg:px-24 xl:px-32 3xl:py-16 4xl:py-20 flex flex-col items-center mt-4 md:mt-0">
       {/* Heading */}
-      <h2 className="text-3xl md:text-3xl font-semibold text-center text-gray-800 mb-2 xl:text-3xl 2xl:text-5xl ">
+      <h2 className="text-3xl md:text-3xl font-semibold text-center text-gray-800 mb-2 xl:text-3xl 2xl:text-5xl">
         Keep Steps with Us
       </h2>
 
       {/* Subtext */}
-      <p className="text-center text-gray-600 text-xs sm:mb-2 max-w-2xl xl:max-w-lg xl:text-md 2xl:mt-4 2xl:max-w-4xl 2xl:text-2xl ">
+      <p className="text-center w-[90%] text-[#444444] text-xs sm:mb-2 xl:max-w-lg xl:text-md 2xl:mt-4 2xl:max-w-4xl 2xl:text-2xl ">
         To get latest information and be sensitive to market information,
         product trends, and international facts from Mystore.com news and
         events.
       </p>
 
       {/* Cards */}
-      <div className="w-[98%] mx-auto flex flex-col md:flex-row md:space-x-[2vh] space-y-4 md:space-y-0 mt-4">
+      <div className="w-[90%] md:w-[98] mx-auto flex flex-col md:flex-row md:space-x-[2vh] space-y-4 md:space-y-0 mt-4">
         {cards.map((card, index) => (
           <div
             key={index}
