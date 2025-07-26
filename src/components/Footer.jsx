@@ -51,9 +51,9 @@ const Footer = () => {
           {/* Middle Section: Links (30%) */}
           <div className="flex flex-row text-left">
             <div>
-              {/* <h2 className="font-semibold mb-2 text-sm lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
+             <h2 className="font-semibold mb-2 text-sm lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
                 About Us
-              </h2> */}
+              </h2> 
               <ul className="text-[12px] lg:text-[13px] xl:text-sm 2xl:text-lg 3xl:text-xl 4xl:text-2xl font-md space-y-1">
                 {[
                   "Home",
@@ -208,6 +208,7 @@ const Footer = () => {
             <ul className="text-xs space-y-1">
               {[
                 "Home",
+                "Documents",
                 ].map((item, i) => (
                 <li key={i}>
                   <a href="#">{item}</a>
@@ -309,11 +310,12 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Footer */}
+        
+      </div>
+      {/* Bottom Footer */}
         <div className="bg-[#0C520A] text-center text-[9px] py-2 w-full mt-auto">
           © 2025 | Accurate Pest Control | All rights reserved.
         </div>
-      </div>
     </footer>
   );
 };
