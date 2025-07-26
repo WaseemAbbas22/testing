@@ -44,7 +44,7 @@ const HeroMain = () => {
           <p
             className="
           text-textcolorgray
-            
+      
             text-[10px]
             sm:text-sm
             md:text-base
@@ -119,7 +119,7 @@ const HeroMain = () => {
       </div>
 
       {/* PhoneCallBox */}
-      <div className="absolute hidden md:block -bottom-2 right-2">
+      <div className="fixed hidden md:block bottom-10 right-0 z-50">
         <PhoneCallBox
           upperText="Call for Free Inspection"
           phoneNumber="800 8725"
