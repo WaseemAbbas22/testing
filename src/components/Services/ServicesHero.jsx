@@ -26,7 +26,7 @@ const ServicesHero = ({
   return (
     <div
       ref={heroRef}
-      className="relative w-full overflow-hidden h-[30vh] sm:h-[40vh]"
+      className="relative w-full overflow-hidden h-[25vh] sm:h-[40vh]"
     >
       {/* Responsive Image */}
       <img
@@ -39,9 +39,9 @@ const ServicesHero = ({
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Content */}
-      <div className="xl:ml-32 3xl:ml-44 relative z-10 flex flex-col justify-center h-full px-4 sm:px-[4vw] text-white">
+      <div className="ml-2 xl:ml-32 3xl:ml-44 4xl:ml-56 relative z-10 flex flex-col justify-center h-full px-4 sm:px-[4vw] text-white">
         <h1
-          className="font-bold leading-tight sm:leading-[1.2] xl:text-4xl 3xl:text-8xl "
+          className="font-bold leading-tight sm:leading-[1.2] text-2xl xl:text-4xl 3xl:text-8xl "
           
         >
           {title}
