@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { LanguageProvider } from './context/LanguageContext';
+//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About"; // Assuming you have an About page
@@ -34,7 +36,7 @@ const App = () => {
   return (
     <>
     <div>
-    
+    <LanguageProvider>
       <Router>
         <Routes>
         {/* Main NavLinks */}  
@@ -73,6 +75,7 @@ const App = () => {
           
         </Routes>
       </Router>
+      </LanguageProvider>
     
     </div>
     </>  
