@@ -8,41 +8,54 @@ import Client7 from "/src/assets/Home/LogoClients7.png";
 import Client8 from "/src/assets/Home/LogoClients8.png";
 import Client9 from "/src/assets/Home/LogoClient9.png";
 import Client10 from "/src/assets/Home/LogoClients10.png";
+import { useTranslation } from "/src/utils/translations";
 
 import ClientBox from "./ClientBox"; // Adjust path accordingly
 
 const OurClients = () => {
+  const { t } = useTranslation();
   return (
-    <div className="w-full bg-white py-12 px-6 md:px-16 lg:px-24 xl:px-32 2xl:px-72 3xl:px-40 4xl:px-9 flex flex-col md:flex-row items-center justify-center">
+    <div
+      className="w-full bg-white py-12 px-6  flex flex-col items-center justify-center
+    md:px-16 md:flex-row
+    lg:px-24 
+    xl:px-20 xl:w-[85%] xl:ml-20 
+    2xl:px-72
+    3xl:px-40 3xl:w-[92%]
+    4xl:w-[75%]  4xl:h-[40vh]  4xl:justify-center 4xl:ml-80 4xl:px-2 4xl:-space-x-40 
+          "
+    >
       {/* Left Side - Heading */}
-      <div className="md:w-1/3 flex flex-col justify-center mb-8 md:mb-0 md:mr-10">
-        <h2 className="text-3xl md:text-4xl 2xl:text-6xl font-bold text-gray-800 text-left">
-          Our Clients
-        </h2>
-        <p className="mt-2 text-sm md:text-base 2xl:text-2xl text-justify text-[#666666]">
-          Recognized as one of Dubai's top pest control companies, we offer
-          professional pest management services to customers in Dubai, Sharjah,
-          and Ajman, guaranteeing trustworthy treatments, quick responses, and
-          total satisfaction for residences, businesses and warehouses.
-        </p>
-      </div>
+<div className="md:w-[60%] md:mr-10 flex flex-col justify-center mb-8 text-center md:text-left">
+  <h2 className="text-3xl md:text-4xl xl:text-4xl 2xl:text-6xl font-bold text-gray-800">
+    Our Valued Customers
+  </h2>
+  <p className="mt-2 mx-auto md:mx-0 w-[90%]  4xl:w-[80%] text-xs md:text-base xl:text-sm 2xl:text-2xl 4xl:text-2xl text-[#666666]">
+    Recognized as one of Dubai's top pest control companies, we offer
+    professional pest management services to customers in Dubai, Sharjah,
+    and Ajman, guaranteeing trustworthy treatments, quick responses, and
+    peace of mind.
+  </p>
+</div>
+
 
       {/* Right Side - Clients Grid */}
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-y-4  w-full md:w-[70%]">
+      <div className="grid grid-cols-3 md:grid-cols-4  w-full md:w-[85%] 4xl:w-[70%] h-[90%]">
         <ClientBox
           logo={Client8}
           name="Pure Food Processing Industries L.L.C"
           border="border-r border-b border-black/10"
           logoSizeClasses="
-            w-20 h-12
+            4xl:py-2
+            w-20 h-6
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-20 lg:h-24
-            xl:w-36 xl:h-24
+            xl:w-24 xl:h-6 
             2xl:w-40 2xl:h-28
-            3xl:w-44 3xl:h-30
-            4xl:w-60 4xl:h-12
-            object-contain
+            3xl:w-40 3xl:h-12 3xl:mt-2 3xl:mb-1
+            4xl:w-52 4xl:h-16
+            
           "
         />
 
@@ -51,49 +64,52 @@ const OurClients = () => {
           name="Golden Grains General Trading"
           border="border-r border-b  border-l border-black/10"
           logoSizeClasses="
-            w-20 h-12
+          4xl:py-0 4xl:mb-2
+            w-16 h-8
             sm:w-24 sm:h-14
             md:w-28 md:h-16
-            lg:w-32 lg:h-20
-            xl:w-20 xl:h-24
+            lg:w-28 lg:h-20
+            xl:w-20 xl:h-8
             2xl:w-40 2xl:h-28
-            3xl:w-44 3xl:h-30
-            4xl:w-60 4xl:h-16
-            object-contain
+            3xl:w-28 3xl:h-12 3xl:mt-2 3xl:mb-1
+            4xl:w-36 4xl:h-14
+            
           "
         />
 
         <ClientBox
           logo={Client6}
           name="Boxx Storage"
-          border="border-r border-b  border-l border-black/10"
+          border="md:border-r border-b  border-l border-black/10"
           logoSizeClasses="
-            w-20 h-12
+            4xl:py-0 4xl:mb-2
+            w-12 h-8
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-32 lg:h-20
-            xl:w-36 xl:h-24
+            xl:w-20 xl:h-10
             2xl:w-40 2xl:h-28
-            3xl:w-44 3xl:h-30
-            4xl:w-60 4xl:h-12
-            object-contain
+            3xl:w-28 3xl:h-12 3xl:mb-1 3xl:mt-2
+            4xl:w-32 4xl:h-14
+            
           "
         />
 
         <ClientBox
           logo={Client5}
           name="Meridian PF General Trading"
-          border="border-b  border-l border-black/10"
+          border="border-b  border-r md:border-r-0 md:border-l border-black/10"
           logoSizeClasses="
-            w-20 h-12
+            4xl:mb-2
+            w-20 h-8 mt-2 mb-2
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-32 lg:h-20
-            xl:w-36 xl:h-24
+            xl:w-20 xl:h-8
             2xl:w-40 2xl:h-28
-            3xl:w-44 3xl:h-30
-            4xl:w-60 4xl:h-12
-            object-contain
+            3xl:w-32 3xl:h-12
+            4xl:w-40 4xl:h-14
+          
           "
         />
 
@@ -102,50 +118,52 @@ const OurClients = () => {
           name="Three Star Printing Press"
           border="border-r border-b border-black/10"
           logoSizeClasses="
-            w-20 h-12
+          4xl:mt-6 4xl:mb-4
+            w-16 h-6 mt-4 mb-2
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-32 lg:h-20
-            xl:w-36 xl:h-24
+            xl:w-24 xl:h-8
             2xl:w-40 2xl:h-28
-            3xl:w-44 3xl:h-30
-            4xl:w-60 4xl:h-12
-            object-contain
+            3xl:w-32 3xl:h-12 3xl:mb-4
+            4xl:w-44 4xl:h-12
+            
           "
         />
 
         <ClientBox
           logo={Client10}
           name="Sama Alkhair Food and Beverages L.L.C"
-          border="border-r border-b  border-l border-black/10"
+          border="md:border-r border-b  border-l border-black/10"
           logoSizeClasses="
-            w-20 h-12
+          4xl:mt-8 4xl:mb-4
+          xl:mt-2
+            w-20 h-4 mt-4
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-32 lg:h-20
-            xl:w-36 xl:h-24
+            xl:w-24 xl:h-6 xl:mt-4 xl:mb-2
             2xl:w-40 2xl:h-28
-            3xl:w-44 3xl:h-30
-            4xl:w-60 4xl:h-12
-            object-contain
-          "
+            3xl:w-32 3xl:h-8 3xl:mt-4 3xl:mb-2
+            4xl:w-44 4xl:h-10
+            "
         />
 
         <ClientBox
           logo={Client3}
           name="IFM Investments L.L.C"
-          border="border-r border-b  border-l border-black/10"
+          border="border-r border-b  md:border-l border-black/10"
           logoSizeClasses="
-            w-20 h-12
+          4xl:mt-4 4xl:mb-2
+            w-10 h-10 mt-2 mb-2
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-32 lg:h-20
-            xl:w-36 xl:h-24
+            xl:w-12 xl:h-12
             2xl:w-40 2xl:h-28
-            3xl:w-44 3xl:h-30
-            4xl:w-60 4xl:h-12
-            object-contain
-          "
+            3xl:w-16 3xl:h-16 
+            4xl:w-16 4xl:h-16
+            "
         />
 
         <ClientBox
@@ -153,49 +171,55 @@ const OurClients = () => {
           name="Golden Ready Mix"
           border="border-l border-b border-black/10"
           logoSizeClasses="
-            w-20 h-12
+          4xl:mt-1 4xl:mb-2
+            w-20 h-10 mt-2 mb-2
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-32 lg:h-20
-            xl:w-36 xl:h-24
+            xl:w-20 xl:h-12
             2xl:w-40 2xl:h-28
-            3xl:w-44 3xl:h-30
-            4xl:w-60 4xl:h-12
-            object-contain
-          "
+            3xl:w-32 3xl:h-16
+            4xl:w-32 4xl:h-20
+            "
         />
+        {/* Empty div for spacing */}
+        <div className="hidden md:block"></div>
 
         <ClientBox
           logo={Client1}
           name="Grand Barsha Department Store Warehouse"
-          border="border-r border-black/10"
+          border="md:border-r border-l border-b md:border-b-0 border-black/10"
           logoSizeClasses="
-            w-20 h-12
+          4xl:mt-4 4xl:mb-2
+            w-16 h-12 mt-2
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-32 lg:h-20
-            xl:w-36 xl:h-24
+            xl:w-20 xl:h-12
             2xl:w-40 2xl:h-28
             3xl:w-44 3xl:h-30
-            4xl:w-60 4xl:h-12
-            object-contain
+            4xl:w-36 4xl:h-20
           "
         />
+{/* Empty div for spacing */}
+        <div className="md:hidden md:block"></div>
 
         <ClientBox
           logo={Client9}
           name="Gutmann PVB Plastic Sheets Manufacturing L.L.C"
-          border="border-r border-black/10"
+          border="border-r border-l  md:border-r border-black/10"
           logoSizeClasses="
-            w-20 h-12
+          4xl:mt-16
+          xl:mt-8
+          4xl:mb-4
+            w-24 h-4 mt-4 mb-2
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-32 lg:h-20
-            xl:w-36 xl:h-24
+            xl:w-28 xl:h-4
             2xl:w-40 2xl:h-28
-            3xl:w-44 3xl:h-30
-            4xl:w-60 4xl:h-12
-            object-contain
+            3xl:w-44 3xl:h-8  3xl:mt-12 3xl:mb-4
+            4xl:w-56 4xl:h-6
           "
         />
       </div>
