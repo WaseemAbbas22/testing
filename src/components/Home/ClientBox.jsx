@@ -8,7 +8,7 @@ const ClientBox = ({ logo, name, border, logoSizeClasses }) => {
         alt={name}
         className={` block ${logoSizeClasses}`} // added block
       />
-      <p className="text-[10px] 2xl:text-base">{name}</p>
+      <p className="text-[10px] 2xl:text-base ">{name}</p>
     </div>
   );
 };
