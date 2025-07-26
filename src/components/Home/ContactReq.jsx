@@ -36,7 +36,10 @@ const ContactRequest = () => {
       <div className="absolute inset-0 bg-black/70 z-0"></div>
 
       {/* Content */}
-      <div className="relative w-[90%] xl:w-[75%] 3xl:w-[75%] 4xl:w-[72%] mx-auto flex flex-col items-start">
+      <div className="relative w-[90%] mx-auto flex flex-col items-start 
+      xl:w-[75%]  
+      3xl:w-[75%] 
+      4xl:w-[72%] ">
         <h2 className="text-white text-3xl font-semibold mb-6 text-left lg:text-4xl xl:text-3xl 2xl:text-6xl">
           Get a Free Inspection
         </h2>
@@ -58,7 +61,13 @@ const ContactRequest = () => {
               <select
                 value={service}
                 onChange={(e) => setService(e.target.value)}
-                className="w-full 4xl:ml-2 text-[#999999] text-xs xl:text-sm 3xl:text-2xl 4xl:text-2xl focus:outline-none h-12 lg:h-10 xl:h-10 2xl:h-20 border-b border-[#D7D7D7] focus:outline-none md:border-0"
+                className="w-full text-[#999999] text-xs focus:outline-none h-12  border-b border-[#D7D7D7] focus:outline-none
+                md:border-0
+                lg:h-10
+                xl:text-sm xl:h-10
+                2xl:h-20
+                3xl:text-2xl
+                4xl:text-2xl 4xl:ml-2"
                 required
               >
                 <option value="">Select Pest Concern</option>
@@ -72,13 +81,20 @@ const ContactRequest = () => {
             <div className="hidden md:block w-px bg-[#999999] h-auto mt-2"></div>
 
             {/* Name */}
-            <div className="flex-1 px-4 py-3">
+            <div className="flex-1 px-4 py-3 4xl:py-5">
               <input
                 type="text"
                 placeholder="Your Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full 4xl:ml-4 text-[#999999] text-xs xl:text-sm 3xl:text-2xl 4xl:text-2xl focus:outline-none h-10 lg:h-10 xl:h-10 2xl:h-16 border-b border-[#D7D7D7] focus:outline-none md:border-0"
+                className="w-full 4xl:ml-4 text-[#999999] border-b border-[#D7D7D7] text-xs  focus:outline-none h-10 
+                md:border-0
+                lg:h-10 
+                xl:h-10  xl:text-sm
+                2xl:h-16
+                3xl:h-20 focus:outline-none 3xl:text-2xl 
+                4xl:text-2xl"
+
                 required
               />
             </div>
@@ -86,46 +102,46 @@ const ContactRequest = () => {
             {/* Divider */}
             <div className="hidden md:block w-px bg-[#999999] h-auto mt-2"></div>
 
-            {/* Phone Number */}
-            <div className="flex-1 w-[25%] px-4 py-2 text-sm xl:text-xl 3xl:text-2xl 4xl:text-4xl text-[#999999] ">
-              <PhoneInput
-                country={"ae"}
-                value={phone}
-                onChange={(phone) => setPhone(phone)}
-                dropdownStyle={{
-                  maxHeight: "50vh",
-                  overflowY: "auto",
-                }}
-                inputClass="
-    w-full
-    h-[70px] text-[24px]
-    flex items-center
-
-    lg:h-[60px] lg:text-[20px]
-    md:h-[50px] md:text-[18px]
-    sm:h-[45px] sm:text-[16px]
-  "
-    
-                containerClass="
-    w-full flex items-center
-    border-transperant outline-none shadow-none
-    focus:outline-none focus:ring-0
-  "
-                required
-              />
+            {/* Phone */}
+            <div className="flex-1 px-4 py-3 4xl:py-5">
+              <div className="h-10 lg:h-10 xl:h-10 2xl:h-16 3xl:h-20 w-full relative">
+                <PhoneInput
+                  country={"ae"}
+                  value={phone}
+                  onChange={(phone) => setPhone(phone)}
+                  inputClass="!w-full !h-full !pl-12 !text-[#999999] !bg-transparent !border-none focus:!outline-none text-xs 
+                  xl:text-sm 
+                  3xl:!text-xl 3xl:!ml-2 
+                  4xl:text-2xl"
+                  containerClass="!w-full !h-full !bg-transparent !flex !items-center !border-b !border-[#D7D7D7] md:border-none !outline-none"
+                  buttonClass="!bg-transparent !border-none !h-full !flex !items-center"
+                  dropdownStyle={{
+                    maxHeight: "30vh",
+                    overflowY: "auto",
+                    border: "none",
+                    boxShadow: "none",
+                  }}
+                  required
+                />
+              </div>
             </div>
 
             {/* Divider */}
             <div className="hidden md:block w-px bg-[#999999] h-auto mt-2"></div>
 
             {/* Email */}
-            <div className="flex-1 px-4 py-2">
+            <div className="flex-1 px-4 py-1 4xl:py-3">
               <input
                 type="email"
                 placeholder="E-mail"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full text-[#999999] text-xs 4xl:ml-4 xl:text-sm 3xl:text-2xl 4xl:text-2xl focus:outline-none h-10 lg:h-10 xl:h-10 2xl:h-20 "
+                className="w-full text-[#999999] text-xs  focus:outline-none h-10
+                lg:h-10
+                xl:text-sm xl:h-14 
+                2xl:h-20
+                3xl:text-2xl  3xl:h-24 
+                4xl:ml-4 4xl:text-2xl"
                 required
               />
             </div>
@@ -135,7 +151,12 @@ const ContactRequest = () => {
           <div className="mt-4 w-full md:mt-0 md:ml-6 md:w-auto flex justify-left sm:ml-10">
             <button
               type="submit"
-              className="bg-[#32A849] text-white text-sm sm:text-base md:text-lg font-semibold px-4 sm:px-6 md:px-8 py-2 xl:py-4 3xl:py-8 4xl:px-10 4xl:px-14 4xl:text-[24px] rounded sm:rounded-lg shadow hover:bg-green-700 transition"
+              className="bg-[#32A849] text-white text-sm font-semibold px-6 py-2 rounded shadow hover:bg-green-700 transition
+              sm:text-base  sm:px-6 sm:rounded-lg
+              md:text-lg md:px-8  
+              xl:py-[17px]
+              3xl:py-[36px] 3xl:px-16 3xl:text-2xl 
+              4xl:px-16 4xl:px-14 4xl:py-11 4xl:text-[24px]   "
             >
               SEND
             </button>
