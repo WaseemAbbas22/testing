@@ -8,7 +8,7 @@ import Company7 from "/src/assets/Home/company7.png";
 
 const Branches = () => {
   return (
-    <div className="w-full md:h-[60vh] bg-white flex flex-col items-center lg:mt-12 2xl:space-y-10 2xl:py-20">
+    <div className="w-full md:h-[60vh] bg-white flex flex-col items-center 3xl:mb-6 2xl:space-y-10 2xl:py-20">
       {/* Heading */}
       <h2 className="text-2xl 2xl:text-7xl lg:text-[40px] font-bold text-center text-black/80 xl:mb-4">
         We pride ourselves in holding
@@ -37,14 +37,14 @@ const Branches = () => {
               className="h-12 lg:h-20 2xl:h-28 xl:h-16 3xl:h-28 object-contain"
             />
           </div>
-          <div className="border border-[#DEDEDE] h-[12vh] lg:h-[15vh] 2xl:h-[12vh] rounded-lg bg-bggray flex justify-center items-center">
+          <div className="border border-[#DEDEDE] h-[10vh] lg:h-[15vh] 2xl:h-[12vh] rounded-lg bg-bggray flex justify-center items-center">
             <img
               src={Company3}
               alt="Company 3"
               className="h-5 2xl:h-12 lg:h-8 xl:h-6 3xl:h-8  4xl:h-10 object-contain"
             />
           </div>
-          <div className="border border-[#DEDEDE] h-[12vh] lg:h-[15vh] 2xl:h-[12vh] rounded-lg bg-bggray flex justify-center items-center">
+          <div className="border border-[#DEDEDE] h-[10vh] lg:h-[15vh] 2xl:h-[12vh] rounded-lg bg-bggray flex justify-center items-center">
             <img
               src={Company2}
               alt="Company 4"
@@ -54,19 +54,19 @@ const Branches = () => {
         </div>
       </div>
 
-      <div className="flex flex-col mt-2 mb-2 md:mb-0 md:mt-0 items-center 2xl:space-y-6 w-[80%] md:w-[60%] mx-auto">
+      <div className="flex flex-col mt-2 mb-4 md:mb-0 md:mt-0 items-center 2xl:space-y-6 w-[80%] md:w-[60%] mx-auto">
         {/* Lower Line with 3 Boxes - Responsive for Mobile */}
         <div className="w-full">
           {/* For Mobile: 2 boxes in first row */}
-          <div className="grid grid-cols-2 gap-4 mb-4 md:hidden">
-            <div className="border border-[#DEDEDE] h-[12vh] rounded-lg bg-bggray flex justify-center items-center">
+          <div className="grid grid-cols-2 gap-2.5 mb-4 md:hidden">
+            <div className="border border-[#DEDEDE] h-[10vh] rounded-lg bg-bggray flex justify-center items-center">
               <img
                 src={Company1}
                 alt="Company 5"
                 className="h-10 object-contain"
               />
             </div>
-            <div className="border border-[#DEDEDE] h-[12vh] rounded-lg bg-bggray flex justify-center items-center">
+            <div className="border border-[#DEDEDE] h-[10vh] rounded-lg bg-bggray flex justify-center items-center">
               <img
                 src={Company6}
                 alt="Company 6"
@@ -77,7 +77,7 @@ const Branches = () => {
           
           {/* For Mobile: 1 box centered in second row */}
           <div className="flex justify-center md:hidden">
-            <div className="border border-[#DEDEDE] h-[12vh] w-[calc(50%-0.5rem)] rounded-lg bg-bggray flex justify-center items-center">
+            <div className="border border-[#DEDEDE] h-[10vh] w-[calc(50%-0.5rem)] rounded-lg bg-bggray flex justify-center items-center">
               <img
                 src={Company7}
                 alt="Company 7"
