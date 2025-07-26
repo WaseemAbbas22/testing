@@ -8,7 +8,7 @@ const HeroMain = () => {
       {/* Inner Content Container */}
       <div className="w-full md:w-[90%] lg:w-[90%] xl:w-[92%] 2xl:w-[81%] flex flex-col md:flex-row items-center justify-between md:space-x-8 lg:space-x-8 xl:space-x-2 2xl:space-x-0 space-y-6 md:space-y-0">
         {/* Left Side */}
-        <div className="w-full md:w-1/2 flex flex-col space-y-1 md:space-y-4 lg:space-y-2 xl:space-y-2 2xl:space-y-6 text-left">
+        <div className="w-full md:w-1/2 flex flex-col space-y-2 md:space-y-4 lg:space-y-2 xl:space-y-2 2xl:space-y-6 text-left">
           <h1
             className="
           

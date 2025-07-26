@@ -18,7 +18,7 @@ const Navbar = () => {
         2xl:w-[80%]
         3xl:w-[83%]
         mx-auto
-        px-4 sm:px-6 md:px-4 lg:px-40 xl:px-20 2xl:px-16 
+        px-5 sm:px-6 md:px-4 lg:px-40 xl:px-20 2xl:px-16 
         py-2
       "
       >
