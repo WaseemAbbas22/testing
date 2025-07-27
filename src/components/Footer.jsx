@@ -12,19 +12,19 @@ import LogoWhite from "/src/assets/Home/LogoWhite.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-darkgreen text-white w-full">
+    <footer className="bg-darkgreen text-white w-full items-center">
       {/* Desktop/Tablet Layout (md and above) */}
-      <div className="hidden md:flex xl:h-[65vh] 4xl:h-[50vh] 3xl:h-[50vh] xl:h-[52vh] flex-col justify-between">
+      <div className="hidden md:flex xl:h-[50vh] 4xl:h-[50vh] 3xl:h-[50vh] xl:h-[52vh] flex-col items-center justify-between ">
         {/* Main Footer Content Container */}
         <div className="w-[75%] mx-auto flex flex-row justify-between xl:mt-10 3xl:mt-12 4xl:mt-20">
           {/* Left Section: Logo & Description (30%) */}
-          <div className="w-[30%] flex flex-col items-start">
+          <div className="w-[30%] flex flex-col ">
             <img
               src={LogoWhite}
               alt="Accurate Logo"
               className="w-12 xl:w-28 2xl:w-44 h-auto"
             />
-            <p className="mt-4 text-xs lg:text-xs xl:text-xs 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-justify leading-relaxed text-left">
+            <p className="mt-4 text-xs lg:text-xs xl:text-sm 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-justify leading-relaxed text-left">
               Accurate Pest Control Services LLC is a trusted provider of
               professional pest management solutions across the UAE. With
               certified technicians and municipality pest control approvals, we
@@ -49,16 +49,13 @@ const Footer = () => {
           </div>
 
           {/* Middle Section: Links (30%) */}
-          <div className="flex flex-row text-left">
+          <div className="flex flex-row text-left xl:gap-6 4xl:gap-32">
             <div>
-             <h2 className="font-semibold mb-2 text-sm lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
+              <h2 className="font-semibold mb-2 text-sm lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
                 About Us
-              </h2> 
+              </h2>
               <ul className="text-[12px] lg:text-[13px] xl:text-sm 2xl:text-lg 3xl:text-xl 4xl:text-2xl font-md space-y-1">
-                {[
-                  "Home",
-                  "Documents",
-                  ].map((item, i) => (
+                {["Home", "Documents"].map((item, i) => (
                   <li key={i}>
                     <a href="#">{item}</a>
                   </li>
@@ -92,7 +89,7 @@ const Footer = () => {
           </div>
 
           {/* Right Section: Contact Info & Locations (30%) */}
-          <div className="w-[30%]  flex flex-col gap-4 text-xs lg:text-sm 2xl:text-lg">
+          <div className="w-[30%] flex flex-col gap-4 text-xs lg:text-sm 2xl:text-lg">
             {/* Contact Info */}
             <div className="flex items-center gap-3">
               <div className="bg-white rounded-full p-1.5 2xl:p-2">
@@ -166,11 +163,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* Bottom Footer */}
-        <div className="bg-[#0C520A] text-center text-[11px] lg:text-[12px] 2xl:text-xl py-2 w-full">
-          © 2025 | Accurate Pest Control | All rights reserved.
-        </div>
       </div>
 
       {/* Mobile Layout (below md) */}
@@ -206,10 +198,7 @@ const Footer = () => {
           <div>
             <h2 className="font-semibold mb-2 text-xl">About Us</h2>
             <ul className="text-xs space-y-1">
-              {[
-                "Home",
-                "Documents",
-                ].map((item, i) => (
+              {["Home", "Documents"].map((item, i) => (
                 <li key={i}>
                   <a href="#">{item}</a>
                 </li>
@@ -246,9 +235,7 @@ const Footer = () => {
             <div className="bg-white rounded-full p-1">
               <FaPhoneAlt className="text-darkgreen text-xs" />
             </div>
-            <span className="text-base">
-              +971 52 152 8725, +971 4 375 6435
-            </span>
+            <span className="text-base">+971 52 152 8725, +971 4 375 6435</span>
           </div>
 
           <div className="flex items-center gap-3">
@@ -309,16 +296,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        
       </div>
-      {/* Bottom Footer */}
-        <div className="bg-[#0C520A] text-center text-[9px] py-2 w-full mt-auto">
-          © 2025 | Accurate Pest Control | All rights reserved.
-        </div>
+
+      <div className="bg-[#0C520A] text-center text-xs  py-2 w-full mt-auto">
+        © 2025 | Accurate Pest Control | All rights reserved.
+      </div>
     </footer>
   );
 };
 
 export default Footer;
-

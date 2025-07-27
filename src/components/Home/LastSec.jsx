@@ -2,9 +2,9 @@ import Pic1 from "/src/assets/Home/step1.png";
 import Pic2 from "/src/assets/Home/step2.png";
 import Pic3 from "/src/assets/Home/step3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faCalendarAlt, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import lastsec from "/src/assets/Home/lastsec.png";
-
+//import { FaCalendarAlt } from "react-icons/fa";
 const KeepSteps = () => {
   const cards = [
     {
@@ -12,18 +12,21 @@ const KeepSteps = () => {
       title: "Pest Control Tips, Insights & Expert Advice",
       description:
         "Stay informed with the latest pest prevention tips, seasonal advice, and expert insights from our certified technicians. Whether you're dealing with termites, cockroaches...",
+        date: '01/05/2024',
     },
     {
       img: Pic2,
       title: "Expert Tips from UAE Pest Specialists",
       description:
         "Get insider knowledge straight from the professionals. Our blog covers real issues faced by homeowners and businesses in the UAE — with clear, practical solutions...",
+        date: '01/05/2024',
     },
     {
       img: Pic3,
       title: "Smarter Pest Control Starts Here",
       description:
         "Whether you're a first-time homeowner or a facility manager, our blog gives you the tools to stay ahead of pests. Find DIY prevention hacks, product comparisons, service guides...",
+        date: '01/05/2024',
     },
   ];
 
@@ -56,7 +59,7 @@ const KeepSteps = () => {
             />
 
             {/* Content */}
-            <div className="flex flex-col flex-grow p-4">
+            <div className="flex flex-col flex-grow pt-4">
               <h3 className="text-sm 2xl:text-xl 3xl:text-2xl font-semibold text-gray-800 mb-1 mt-2">
                 {card.title}
               </h3>
@@ -69,20 +72,34 @@ const KeepSteps = () => {
                 {card.description}
               </p>
 
-              {/* Button at bottom */}
-              <button
-                type="button"
-                className="mt-4 bg-green-600 text-white text-[12px] rounded px-2 py-1 w-[30%] 2xl:text-lg hover:bg-green-700 flex items-center justify-center gap-1"
-              >
-                Read More <FontAwesomeIcon icon={faArrowRight} />
-              </button>
+              {/* Bottom Row: Date on Left, Button on Right */}
+              <div className="flex items-center justify-between mt-4">
+            
+                {/* Read More Button */}
+                <button
+                  type="button"
+                  className="bg-green-600 text-white text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-xs 2xl:text-xs rounded px-2 2xl:px-4 py-1 2xl:py-2 w-fit hover:bg-green-700 flex items-center justify-center gap-1"
+                >
+                  Read More <FontAwesomeIcon icon={faArrowRight} />
+                </button>
+
+                {/* Calendar Date */}
+                <div className="flex items-center text-[#444444] text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-xs 2xl:text-lg 3xl:text-lg 4xl:text-base  gap-2 mt-2">
+                  <FontAwesomeIcon
+                    icon={faCalendarAlt}
+                    className="text-[#444444]"
+                  />
+                  <span>{card.date}</span>
+                </div>
+
+              </div>
             </div>
           </div>
         ))}
       </div>
 
       {/* View More Button */}
-      <button className="bg-green-600 text-white 2xl:text-2xl text-xs font-sm px-6 py-2 2xl:mt-16 rounded-md flex items-center gap-2 hover:bg-green-700 transition mt-4 mb-2">
+      <button className="bg-green-600 text-white 2xl:text-lg text-xs font-sm px-6 py-2 2xl:mt-12 rounded-md flex items-center gap-2 hover:bg-green-700 transition mt-6 mb-2">
         View More
       </button>
     </div>

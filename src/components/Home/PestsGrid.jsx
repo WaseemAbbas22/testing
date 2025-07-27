@@ -8,7 +8,7 @@ const PestGrid = () => {
         Protect your space with our trusted pest control services - fast, effective and approved by Dubai Municipality standards.
       </p>
 
-      <div className=" w-[90%] 2xl:w-[86%] xl:w-[90%] lg:w-[95%] 3xl:w-[100%] 4xl:w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4 xl:gap-4 2xl:gap-6 3xl:gap-4 justify-items-center justify-center">
+      <div className=" w-[90%] 2xl:w-[86%] xl:w-[90%] lg:w-[95%] 3xl:w-[100%] 4xl:w-[102%] mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4 xl:gap-4 2xl:gap-6 3xl:gap-4 justify-items-center justify-center">
         <PestCard pestName="ANTS" />
         <PestCard pestName="COCKROACHES" />
         <PestCard pestName="RED BUGS" />
