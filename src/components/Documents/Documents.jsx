@@ -169,11 +169,11 @@ const Documents = () => {
         >
           {/* Name */}
           <div className="flex-1">
-            <h2 className="text-xs 3xl:text-3xl md:text-lg font-bold">{doc.name}</h2>
+            <h2 className="text-xs 2xl:text-2xl 3xl:text-3xl md:text-lg font-bold">{doc.name}</h2>
           </div>
 
           {/* Validity */}
-          <div className="flex flex-row md:flex-1 mr-4 text-gray-800 text-[10px] xl:text-xl 3xl:text-3xl font-bold">
+          <div className="flex flex-row md:flex-1 mr-4 text-gray-800 text-[10px] xl:text-xl 2xl:text-2xl 3xl:text-3xl font-bold">
             Valid Till:
             <span className="text-[#444444] font-normal text-[10px] xl:text-base 3xl:text-xl ml-2">
               ({doc.validity})
@@ -188,10 +188,10 @@ const Documents = () => {
                 download
                 className="text-[#32A849] hover:text-green-900 transition flex items-center gap-1"
               >
-                <span className="text-xs xl:text-xl 3xl:text-3xl   md:font-semibold font-semibold">
+                <span className="text-xs xl:text-xl 2xl:text-2xl 3xl:text-3xl   md:font-semibold font-semibold">
                   MSDS
                 </span>
-                <img src={download} alt="" className="h-4 w-4 xl:h-6 xl:w-6 3xl:h-10 3xl:w-10 transition hover:invert" />
+                <img src={download} alt="" className="h-4 w-4 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 3xl:h-10 3xl:w-10 transition hover:invert" />
               </a>
             )}
           </div>
@@ -204,10 +204,10 @@ const Documents = () => {
                 download
                 className="text-[#32A849] hover:text-green-900 transition flex items-center gap-1"
               >
-                <span className="text-xs xl:text-xl 3xl:text-3xl  xl md:font-semibold font-semibold">
+                <span className="text-xs xl:text-xl 2xl:text-2xl 3xl:text-3xl  xl md:font-semibold font-semibold">
                   COR
                 </span>
-                <img src={download} alt="" className="h-4 w-4 xl:h-6 xl:w-6 3xl:h-10 3xl:w-10 transition hover:invert" />
+                <img src={download} alt="" className="h-4 w-4 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 3xl:h-10 3xl:w-10 transition hover:invert" />
               </a>
             )}
           </div>

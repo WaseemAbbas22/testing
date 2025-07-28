@@ -15,12 +15,12 @@ const Process = () => {
   return (
     <div className="w-full lg:h-[70vh] 2xl:h-[60vh] 3xl:h-[62vh] 4xl:h-[55vh] bg-white flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-52 py-12 relative">
       {/* Main Heading */}
-      <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 lg:text-[50px] xl:text-4xl 2xl:text-7xl 3xl:text-6xl 4xl:text-7xl">
+      <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 lg:text-[50px] xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl">
         Domestic & Commercial Clients
       </h2>
 
       {/* Subheading */}
-      <h3 className="text-2xl md:text-3xl font-bold text-center text-gray 2xl:mb-16 lg:mb-12 lg:text-5xl xl:text-4xl 2xl:text-7xl 3xl:text-6xl 4xl:text-7xl mb-4 md:mb-0">
+      <h3 className="text-2xl md:text-3xl font-bold text-center text-gray 2xl:mb-16 lg:mb-12 lg:text-5xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl mb-4 md:mb-0">
         - 4 step promise
       </h3>
 
@@ -68,8 +68,8 @@ const Process = () => {
           bg-[#F5F5F5] rounded-lg border border-[#E0E0E0] shadow-md 
           flex flex-col items-center justify-center 
           relative hover:shadow-lg hover:border-green-600 transition
-          w-[260px] md:w-[200px] lg:w-[250px] xl:w-[200px] 2xl:w-[400px] 3xl:w-[260px] 4xl:w-[350px]
-          h-[220px] md:h-[250px] lg:h-[210px] xl:h-[180px] 2xl:h-[320px] 3xl:h-[250px] 4xl:h-[300px]
+          w-[260px] md:w-[200px] lg:w-[250px] xl:w-[200px] 2xl:w-[250px] 3xl:w-[260px] 4xl:w-[350px]
+          h-[220px] md:h-[250px] lg:h-[210px] xl:h-[180px] 2xl:h-[230px] 3xl:h-[250px] 4xl:h-[300px]
         "
             >
               {/* Number Box (Left Upper Corner) */}
@@ -91,11 +91,11 @@ const Process = () => {
                   md:h-16 md:w-16 
                   lg:h-20 lg:w-20 
                   xl:h-14 xl:w-14 
-                  2xl:h-28 2xl:w-28 2xl:ml-4
+                  2xl:h-16 2xl:w-16 2xl:ml-4
                   3xl:h-20 3xl:w-20
                   4xl:h-24 4xl:w-24  "
                 />
-                <h3 className="text-2xl md:text-lg lg:text-xl 2xl:text-4xl 2xl:mt-6 font-base text-black/60 text-center">
+                <h3 className="text-2xl md:text-lg lg:text-xl 2xl:text-3xl 2xl:mt-2 3xl:text-4xl 3xl:mt-6  font-base text-black/60 text-center">
                   {step.title}
                 </h3>
               </div>

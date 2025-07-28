@@ -3,12 +3,12 @@ import PestCard from "../Pests/PestCard";
 const PestGrid = () => {
   return (
     <div className="w-full bg-bggray md:py-16 py-6 px-4 md:px-16 lg:px-32 2xl:px-72 text-center ">
-      <h2 className="text-black/70  text-2xl lg:text-5xl md:text-3xl font-bold md:mb-2 2xl:text-7xl 2xl:mt-8">Our Services</h2>
-      <p className="text-black/60 lg:text-sm sm:text-sm mb-6 lg:max-w-md 2xl:max-w-3xl mx-auto 2xl:text-2xl 2xl:mb-8">
+      <h2 className="text-black/70  text-2xl lg:text-5xl md:text-3xl font-bold md:mb-2 2xl:text-6xl 3xl:text-7xl 2xl:mt-8">Our Services</h2>
+      <p className="text-black/60 lg:text-sm sm:text-sm mb-6 lg:max-w-md 2xl:max-w-2xl 3xl:max-w-3xl mx-auto 2xl:text-xl 3xl:text-2xl 2xl:mb-8">
         Protect your space with our trusted pest control services - fast, effective and approved by Dubai Municipality standards.
       </p>
 
-      <div className=" w-[90%] 2xl:w-[86%] xl:w-[90%] lg:w-[95%] 3xl:w-[100%] 4xl:w-[102%] mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4 xl:gap-4 2xl:gap-6 3xl:gap-4 justify-items-center justify-center">
+      <div className=" w-[90%] 2xl:w-[100%] xl:w-[90%] lg:w-[95%] 3xl:w-[100%] 4xl:w-[102%] mx-auto grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-2 lg:gap-4 xl:gap-4 2xl:gap-4 3xl:gap-4 justify-items-center justify-center">
         <PestCard pestName="ANTS" />
         <PestCard pestName="COCKROACHES" />
         <PestCard pestName="RED BUGS" />

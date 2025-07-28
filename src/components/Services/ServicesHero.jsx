@@ -62,7 +62,7 @@ const ServicesHero = ({
             phoneNumber="800 8725"
             bgColor="bg-[#E50000]"
             iconColor="text-[#E50000]"
-            iconSize="xl:text-2xl 3xl:text-3xl 4xl:text-3xl"
+            iconSize="xl:text-2xl 2xl:text-3xl 3xl:text-3xl 4xl:text-3xl"
             iconPadding="xl:p-3 4xl:p-4 3xl:p-4"
             upperTextColor="text-white"
             phoneTextColor="text-white"
@@ -74,19 +74,19 @@ const ServicesHero = ({
             }}
             containerWidth={{
               base: "w-[250px]",
-              "2xl": "2xl:w-[350px]",
+              "2xl": "2xl:w-[250px]",
               "3xl": "3xl:w-[300px]",
               "4xl": "4xl:w-[350px]",
             }}
             upperTextSize={{
               base: "text-md",
-              "2xl": "2xl:text-sm",
+              "2xl": "2xl:text-base",
               "3xl": "3xl:text-lg",
               "4xl": "4xl:text-2xl",
             }}
             phoneTextSize={{
               base: "text-xl",
-              "2xl": "2xl:text-base",
+              "2xl": "2xl:text-2xl",
               "3xl": "3xl:text-2xl",
               "4xl": "4xl:text-3xl",
             }}

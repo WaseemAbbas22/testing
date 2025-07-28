@@ -9,7 +9,7 @@ const ContactRequest = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const containerRef = useRef(null);
-  const [pcontainerHeight, setContainerHeight] = useState(0);
+  const [pcontainerHeight , setContainerHeight] = useState(0);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -40,7 +40,7 @@ const ContactRequest = () => {
       xl:w-[75%]  
       3xl:w-[75%] 
       4xl:w-[74%] ">
-        <h2 className="text-white text-3xl font-semibold mb-6 text-left lg:text-4xl xl:text-3xl 2xl:text-6xl">
+        <h2 className="text-white text-3xl font-semibold mb-6 text-left lg:text-4xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl">
           Get a Free Inspection
         </h2>
 
@@ -57,7 +57,7 @@ const ContactRequest = () => {
             "
           >
             {/* Dropdown */}
-            <div className="flex-1 px-4 py-3 ">
+            <div className="flex-1 px-4 py-3 3xl:py-6 ">
               <select
                 value={service}
                 onChange={(e) => setService(e.target.value)}
@@ -65,7 +65,7 @@ const ContactRequest = () => {
                 md:border-0
                 lg:h-10
                 xl:text-sm xl:h-10
-                2xl:h-20
+                2xl:h-12
                 3xl:text-2xl
                 4xl:text-2xl 4xl:ml-2 4xl:h-24" 
                 required
@@ -78,10 +78,10 @@ const ContactRequest = () => {
             </div>
 
             {/* Divider */}
-            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 3xl:mt-6 3xl:mb-6"></div>
+            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 2xl:mt-4 2xl:mb-4 3xl:mt-6 3xl:mb-6"></div>
 
             {/* Name */}
-            <div className="flex-1 px-4 py-3 4xl:py-5">
+            <div className="flex-1 px-4 py-3 2xl:py-2 4xl:py-5">
               <input
                 type="text"
                 placeholder="Your Name"
@@ -91,7 +91,7 @@ const ContactRequest = () => {
                 md:border-0
                 lg:h-10 
                 xl:h-10  xl:text-sm
-                2xl:h-16
+                2xl:h-14
                 3xl:h-20 focus:outline-none 3xl:text-2xl 
                 4xl:text-2xl"
 
@@ -100,11 +100,11 @@ const ContactRequest = () => {
             </div>
 
             {/* Divider */}
-            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 3xl:mt-6 3xl:mb-6"></div>
+            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 2xl:mt-4 2xl:mb-4 3xl:mt-6 3xl:mb-6"></div>
 
             {/* Phone */}
             <div className="flex-1 px-4 py-3 4xl:py-5">
-              <div className="h-10 lg:h-10 xl:h-10 2xl:h-16 3xl:h-20 w-full relative">
+              <div className="h-10 lg:h-10 xl:h-10 2xl:h-12 3xl:h-20 w-full relative">
                 <PhoneInput
                   country={"ae"}
                   value={phone}
@@ -127,10 +127,10 @@ const ContactRequest = () => {
             </div>
 
             {/* Divider */}
-            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 3xl:mt-6 3xl:mb-6 "></div>
+            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 2xl:mt-4 2xl:mb-4 3xl:mt-6 3xl:mb-6 "></div>
 
             {/* Email */}
-            <div className="flex-1 px-4 py-1 4xl:py-3">
+            <div className="flex-1 px-4 py-1 2xl:py-0 4xl:py-3">
               <input
                 type="email"
                 placeholder="E-mail"
@@ -139,7 +139,7 @@ const ContactRequest = () => {
                 className="w-full text-[#999999] text-xs  focus:outline-none h-10
                 lg:h-10
                 xl:text-sm xl:h-14 
-                2xl:h-20
+                2xl:h-[70px]
                 3xl:text-2xl  3xl:h-24 
                 4xl:ml-4 4xl:text-2xl"
                 required
@@ -155,6 +155,7 @@ const ContactRequest = () => {
               sm:text-base  sm:px-6 sm:rounded-lg
               md:text-lg md:px-8  
               xl:py-[17px]
+              2xl:py-[22px]
               3xl:py-[36px] 3xl:px-16 3xl:text-2xl 
               4xl:px-16 4xl:px-14 4xl:py-11 4xl:text-[24px]   "
             >

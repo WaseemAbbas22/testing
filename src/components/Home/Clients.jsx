@@ -20,17 +20,17 @@ const OurClients = () => {
     md:px-16 md:flex-row
     lg:px-24 
     xl:px-20 xl:w-[85%] xl:ml-20 
-    2xl:px-72
+    2xl:px-40 2xl:w-[94%]
     3xl:px-40 3xl:w-[92%]
     4xl:w-[75%]  4xl:h-[40vh]  4xl:justify-center 4xl:ml-80 4xl:px-2 4xl:-space-x-40 
           "
     >
       {/* Left Side - Heading */}
 <div className="md:w-[60%] md:mr-10 flex flex-col justify-center mb-8 text-center md:text-left">
-  <h2 className="text-3xl md:text-4xl xl:text-4xl 2xl:text-6xl font-bold text-gray-800">
+  <h2 className="text-3xl md:text-4xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl font-bold text-gray-800">
     Our Valued Customers
   </h2>
-  <p className="mt-2 mx-auto md:mx-0 w-[90%]  4xl:w-[80%] text-xs md:text-base xl:text-sm 2xl:text-2xl 4xl:text-2xl text-[#666666]">
+  <p className="mt-2 mx-auto md:mx-0 w-[90%] text-justify   4xl:w-[80%] text-xs md:text-base xl:text-sm 2xl:text-base 3xl:text-2xl  text-[#666666]">
     Recognized as one of Dubai's top pest control companies, we offer
     professional pest management services to customers in Dubai, Sharjah,
     and Ajman, guaranteeing trustworthy treatments, quick responses, and
@@ -52,7 +52,7 @@ const OurClients = () => {
             md:w-28 md:h-16
             lg:w-20 lg:h-24
             xl:w-24 xl:h-6 
-            2xl:w-40 2xl:h-28
+            2xl:w-32 2xl:h-10 2xl:mt-2
             3xl:w-40 3xl:h-12 3xl:mt-2 3xl:mb-1
             4xl:w-52 4xl:h-16
             
@@ -70,7 +70,7 @@ const OurClients = () => {
             md:w-28 md:h-16
             lg:w-28 lg:h-20
             xl:w-20 xl:h-8
-            2xl:w-40 2xl:h-28
+            2xl:w-24 2xl:h-12
             3xl:w-28 3xl:h-12 3xl:mt-2 3xl:mb-1
             4xl:w-36 4xl:h-14
             
@@ -88,7 +88,7 @@ const OurClients = () => {
             md:w-28 md:h-16
             lg:w-32 lg:h-20
             xl:w-20 xl:h-10
-            2xl:w-40 2xl:h-28
+            2xl:w-20 2xl:h-12
             3xl:w-28 3xl:h-12 3xl:mb-1 3xl:mt-2
             4xl:w-32 4xl:h-14
             
@@ -106,7 +106,7 @@ const OurClients = () => {
             md:w-28 md:h-16
             lg:w-32 lg:h-20
             xl:w-20 xl:h-8
-            2xl:w-40 2xl:h-28
+            2xl:w-16 2xl:h-8
             3xl:w-32 3xl:h-12
             4xl:w-40 4xl:h-14
           
@@ -124,7 +124,7 @@ const OurClients = () => {
             md:w-28 md:h-16
             lg:w-32 lg:h-20
             xl:w-24 xl:h-8
-            2xl:w-40 2xl:h-28
+            2xl:w-28 2xl:h-10
             3xl:w-32 3xl:h-12 3xl:mb-4
             4xl:w-44 4xl:h-12
             
@@ -143,7 +143,7 @@ const OurClients = () => {
             md:w-28 md:h-16
             lg:w-32 lg:h-20
             xl:w-24 xl:h-6 xl:mt-4 xl:mb-2
-            2xl:w-40 2xl:h-28
+            2xl:w-28 2xl:h-7 2xl:mt-7
             3xl:w-32 3xl:h-8 3xl:mt-4 3xl:mb-2
             4xl:w-44 4xl:h-10
             "
@@ -160,7 +160,7 @@ const OurClients = () => {
             md:w-28 md:h-16
             lg:w-32 lg:h-20
             xl:w-12 xl:h-12
-            2xl:w-40 2xl:h-28
+            2xl:w-12 2xl:h-12
             3xl:w-16 3xl:h-16 
             4xl:w-16 4xl:h-16
             "
@@ -177,7 +177,7 @@ const OurClients = () => {
             md:w-28 md:h-16
             lg:w-32 lg:h-20
             xl:w-20 xl:h-12
-            2xl:w-40 2xl:h-28
+            2xl:w-20 2xl:h-12
             3xl:w-32 3xl:h-16
             4xl:w-32 4xl:h-20
             "
@@ -196,7 +196,7 @@ const OurClients = () => {
             md:w-28 md:h-16
             lg:w-32 lg:h-20
             xl:w-20 xl:h-12
-            2xl:w-40 2xl:h-28
+            2xl:w-20 2xl:h-14
             3xl:w-44 3xl:h-30
             4xl:w-36 4xl:h-20
           "
@@ -217,7 +217,7 @@ const OurClients = () => {
             md:w-28 md:h-16
             lg:w-32 lg:h-20
             xl:w-28 xl:h-4
-            2xl:w-40 2xl:h-28
+            2xl:w-28 2xl:h-4 2xl:mt-10
             3xl:w-44 3xl:h-8  3xl:mt-12 3xl:mb-4
             4xl:w-56 4xl:h-6
           "

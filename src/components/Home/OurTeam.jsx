@@ -32,14 +32,30 @@ const OurTeam = () => {
   ];
 
   return (
-    <div className="w-full h-auto h-[140vh] xl:h-[60vh] 3xl:h-[50vh] 4xl:h-[45vh] flex flex-col items-center bg-bggray">
+    <div className="w-full h-auto h-[140vh] xl:h-[60vh] 2xl:h-[50vh] 3xl:h-[50vh] 4xl:h-[45vh] flex flex-col items-center bg-bggray">
       {/* Heading */}
-      <h2 className=" text-3xl 3xl:text-6xl xl:mt-4 3xl:mt-8 sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 2xl:mb-24 4xl:mt-20 2xl:text-7xl mt-6 ">
+      <h2 className=" text-3xl mt-6  
+      3xl:text-6xl 3xl:mt-8
+      xl:mt-4  
+      sm:text-2xl 
+      md:text-3xl 
+      lg:text-4xl 
+      font-bold 
+      text-gray-800 
+      2xl:mt-12 2xl:text-6xl 
+      4xl:mt-20  ">
         Get help from our team
       </h2>
 
       {/* Team Grid */}
-      <div className="grid grid-cols xl:h-[10vh] 4xl:h-[20vh] md:w-[80%] 3xl:w-[80%] sm:grid-cols-2 md:grid-cols-4 gap-8 w-full px-4 sm:px-8 md:px-[5vh] xl:mt-[8vh] 3xl:mt-4 4xl:mt-2 mt-8 ">
+      <div className="grid grid-cols gap-8 w-full mt-8 px-4
+      xl:h-[10vh] xl:mt-[8vh]  
+      4xl:h-[20vh] 4xl:mt-20 
+      md:w-[80%] md:grid-cols-4 md:px-[5vh]
+      2xl:h-[16vh]
+      3xl:w-[80%] 3xl:mt-20 
+      sm:grid-cols-2    
+      sm:px-8 ">
         {team.map((member, index) => (
           <div
             key={index}
@@ -56,7 +72,7 @@ const OurTeam = () => {
 
             {/* Right vertical line with sloped ends */}
             <div className="absolute top-0 right-0 h-full flex items-center">
-              <div className="relative h-[100px] 3xl:h-[120px] 4xl:h-[120px] w-[6px] bg-green-600">
+              <div className="relative h-[100px] 2xl:h-[110px] 3xl:h-[120px] 4xl:h-[120px] w-[6px] bg-green-600">
                 <div className="absolute top-0 left-0 w-full h-3 bg-green-600 origin-top-left transform -skew-y-12"></div>
                 <div className="absolute bottom-0 left-0 w-full h-3 bg-green-600 origin-bottom-left transform skew-y-12
                 "></div>
@@ -71,17 +87,17 @@ const OurTeam = () => {
             />
 
             {/* Name */}
-            <h3 className="text-sm sm:text-sm md:text-base 2xl:text-2xl 2xl:mt-6 font-bold text-gray">
+            <h3 className="text-sm sm:text-sm md:text-base 2xl:text-xl 2xl:mt-4 3xl:text-2xl  3xl:mt-6 font-bold text-gray">
               {member.name}
             </h3>
 
             {/* Position */}
-            <p className="text-sm sm:text-xs md:text-xs lg:mt-2  2xl:text-xl text-gray">
+            <p className="text-sm sm:text-xs md:text-xs lg:mt-2  2xl:text-base 3xl:text-xl text-gray">
               {member.position}
             </p>
 
             {/* Contact */}
-            <p className="text-sm text-black/70 sm:text-sm lg:text-lg 2xl:text-3xl md:mt-1 font-bold px-4  w-44 sm:w-48 lg:w-52 2xl:w-80 break-words">
+            <p className="text-sm text-black/70 sm:text-sm lg:text-lg 2xl:text-2xl 3xl:text-3xl md:mt-1 font-bold px-4  w-44 sm:w-48 lg:w-52 2xl:w-64 3xl:w-80 break-words">
               {member.contact}
             </p>
           </div>

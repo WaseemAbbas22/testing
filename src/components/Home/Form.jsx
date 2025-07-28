@@ -19,9 +19,9 @@ const Form = () => {
       />
       <div className="bg-[#33A92F80] w-full 4xl:h-[90vh] h-[115vh] flex items-center justify-center px-4 sm:px-6 xl:px-8">
         {/* White container */}
-        <div className="bg-white border border-[#D6D6D6] rounded-2xl shadow-lg w-[70%] h-[95%] flex flex-col p-4 sm:p-6 z-10">
+        <div className="bg-white border border-[#D6D6D6] rounded-2xl shadow-lg w-[80%] h-[95%] flex flex-col p-4 sm:p-6 z-10">
           {/* Heading at top */}
-          <h1 className="text-xl sm:text-2xl md:text-4xl 2xl:text-7xl font-semibold text-black-400 text-center mb-4 sm:mb-6 2xl:mt-12">
+          <h1 className="text-xl sm:text-2xl md:text-4xl 2xl:text-6xl 3xl:text-7xl font-semibold text-black-400 text-center mb-4 sm:mb-6 2xl:mt-12">
             {t('getInTouch')}
           </h1>
 
@@ -38,7 +38,7 @@ const Form = () => {
                     {t('firstName')}
                   </label>
                   <input
-                    className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-4 2xl:pl-6 2xl:h-20 2xl:text-2xl rounded-lg 2xl:rounded-xl"
+                    className="custom-textarea border-[#DEDEDE] placeholder-gray-100 pl-4 2xl:pl-6 2xl:h-16 3xl:h-20 2xl:text-xl 3xl:text-2xl rounded-lg 2xl:rounded-xl"
                     type="text"
                     id="firstName"
                     placeholder={t('firstName')}
@@ -55,7 +55,7 @@ const Form = () => {
                     {t('lastName')}
                   </label>
                   <input
-                    className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-4 2xl:pl-6 2xl:h-20 2xl:text-2xl rounded-xl"
+                    className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-4 2xl:pl-6 2xl:h-16 3xl:h-20 2xl:text-xl 3xl:text-2xl rounded-xl"
                     type="text"
                     id="lastName"
                     placeholder={t('lastName')}
@@ -71,7 +71,7 @@ const Form = () => {
                   >
                     {t('phoneNo')}
                   </label>
-                  <div className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-4 2xl:pl-6 2xl:h-20 2xl:text-2xl rounded-xl p-0 overflow-hidden">
+                  <div className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-4 2xl:pl-6 2xl:h-16 3xl:h-20 2xl:text-2xl rounded-xl p-0 overflow-hidden">
                     <PhoneInput
                       country={"ae"}
                       value={phone}
@@ -131,7 +131,7 @@ const Form = () => {
                     {t('email')}
                   </label>
                   <input
-                    className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-4 2xl:pl-6 2xl:h-20 2xl:text-2xl rounded-xl"
+                    className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-4 2xl:pl-6 2xl:h-16 3xl:h-20 2xl:text-xl 3xl:text-2xl rounded-xl"
                     type="email"
                     id="email"
                     placeholder={t('email')}
@@ -149,7 +149,7 @@ const Form = () => {
                   </label>
                   <select
                     id="pestConcern"
-                    className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-4 2xl:pl-6 2xl:h-20 2xl:text-2xl rounded-xl"
+                    className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-4 2xl:pl-6 2xl:h-16 3xl:h-20 2xl:text-xl 3xl:text-2xl rounded-xl"
                     required
                   >
                     <option value="">select----</option>
@@ -171,7 +171,7 @@ const Form = () => {
                   </label>
                   <select
                     id="priorityType"
-                    className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-4 2xl:pl-6 2xl:h-20 2xl:text-2xl rounded-xl"
+                    className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-4 2xl:pl-6 2xl:h-16 3xl:h-20 2xl:text-xl 3xl:text-2xl rounded-xl"
                     required
                   >
                     <option value="">select----</option>
@@ -191,7 +191,7 @@ const Form = () => {
                   {t('message')}
                 </label>
                 <textarea
-                  className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-4 2xl:pl-6 4xl:py-6 h-28 2xl:h-52 2xl:text-2xl rounded-xl"
+                  className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-4 2xl:pl-6 4xl:py-6 h-28 2xl:h-52 2xl:text-xl 3xl:text-2xl rounded-xl"
                   id="message"
                   placeholder={t('writeYourMessage')}
                   required

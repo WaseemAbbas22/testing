@@ -6,7 +6,7 @@ const HeroMain = () => {
   return (
     <div className="relative bg-[#32A84926]/15  h-[70%] flex flex-col items-center justify-center py-8 px-4 md:px-10 md:py-12 lg:px-32 lg:py-12 xl:px-32 xl:py-12 2xl:px-16 2xl:py-12 3xl:px-10">
       {/* Inner Content Container */}
-      <div className="w-full md:w-[90%] lg:w-[90%] xl:w-[92%] 2xl:w-[81%] flex flex-col md:flex-row items-center justify-between md:space-x-8 lg:space-x-8 xl:space-x-2 2xl:space-x-0 space-y-6 md:space-y-0">
+      <div className="w-full md:w-[90%] lg:w-[90%] xl:w-[92%] 2xl:w-[83%] 3xl:w-[81%] flex flex-col md:flex-row items-center justify-between md:space-x-8 lg:space-x-8 xl:space-x-2 2xl:space-x-0 space-y-6 md:space-y-0">
         {/* Left Side */}
         <div className="w-full md:w-1/2 flex flex-col space-y-2 md:space-y-4 lg:space-y-2 xl:space-y-2 2xl:space-y-6 text-left">
           <h1
@@ -33,7 +33,8 @@ const HeroMain = () => {
             md:text-base
             lg:text-base
             xl:text-base
-            2xl:text-2xl
+            2xl:text-xl
+            3xl:text-2xl
             font-bold text-black/70
           "
           >
@@ -50,7 +51,7 @@ const HeroMain = () => {
             md:text-base
             lg:text-xs g:w-[490px]
             xl:text-xs xl:w-[460px]
-            2xl:text-xl 2xl:w-[800px]
+            2xl:text-base 2xl:w-[600px]
             3xl:w-[700px]
             text-[#666666] text-justify
           "
@@ -77,8 +78,9 @@ const HeroMain = () => {
               md:text-base
               lg:text-xs
               xl:text-xs
-              2xl:text-lg
-              font-medium px-4 py-2 lg:px-4 xl:px-4 xl:py-1 2xl:px-4 2xl:py-3 rounded-lg shadow hover:bg-green-600 transition
+              2xl:text-base
+              3xl:text-lg
+              font-medium px-4 py-2 lg:px-4 xl:px-4 xl:py-1 2xl:px-4 2xl:py-2 3xl:px-4 3xl:py-3 rounded-lg shadow hover:bg-green-600 transition
             "
             >
               Get a Free Inspection
@@ -91,8 +93,9 @@ const HeroMain = () => {
               md:text-base
               lg:text-xs
               xl:text-xs
-              2xl:text-lg
-              font-medium px-4 py-2 lg:px-6 xl:px-6 xl:py-2 2xl:px-6 2xl:py-4 rounded-md shadow hover:bg-green-600 transition
+              2xl:text-base
+              3xl:text-lg
+              font-medium px-4 py-2 lg:px-6 xl:px-6 xl:py-2 2xl:px-4 2xl:py-2 3xl:px-6 3xl:py-4 rounded-md shadow hover:bg-green-600 transition
             "
             >
               View Services
@@ -109,7 +112,7 @@ const HeroMain = () => {
         </div>
 
         {/* Right Side */}
-        <div className="w-full md:w-1/2 xl:w-3/4 4xl:w-1/2 flex justify-center items-center">
+        <div className="w-full md:w-1/2 xl:w-3/4 2xl:w-2/4 4xl:w-1/2 flex justify-center items-center">
           <img
             className="w-full h-full object-contain rounded-lg"
             src={HeroImg}
@@ -137,19 +140,19 @@ const HeroMain = () => {
           }}
           containerWidth={{
             base: "w-[250px]",
-            "2xl": "2xl:w-[350px]",
+            "2xl": "2xl:w-[250px]",
             "3xl": "3xl:w-[300px]",
             "4xl": "4xl:w-[350px]",
           }}
           upperTextSize={{
             base: "text-md",
-            "2xl": "2xl:text-sm",
+            "2xl": "2xl:text-base",
             "3xl": "3xl:text-lg",
             "4xl": "4xl:text-2xl",
           }}
           phoneTextSize={{
             base: "text-xl",
-            "2xl": "2xl:text-base",
+            "2xl": "2xl:text-lg",
             "3xl": "3xl:text-2xl",
             "4xl": "4xl:text-3xl",
           }}

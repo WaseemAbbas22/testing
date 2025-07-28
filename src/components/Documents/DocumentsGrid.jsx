@@ -42,16 +42,16 @@ const DocumentsGrid = () => {
           {/* Content Above Buttons */}
           <div className="flex flex-col justify-between px-6 py-5 flex-grow">
             {/* Document Name */}
-            <h2 className="text-bold 3xl:text-2xl 4xl:text-4xl font-bold mb-2 3xl:mb-8 4xl:mb-10 ">
+            <h2 className="text-bold 2xl:text-2xl 3xl:text-2xl 4xl:text-4xl font-bold mb-2 2xl:mb-6 3xl:mb-8 4xl:mb-10 ">
               {doc.name}
             </h2>
 
             {/* Valid Till */}
             <div className="text-[#444444]">
-              <p className="text-sm 3xl:text-xl 4xl:text-3xl font-semibold">
+              <p className="text-sm 2xl:text-xl 3xl:text-xl 4xl:text-3xl font-semibold">
                 Valid Till
               </p>
-              <p className="text-xs- 3xl:text-xl 4xl:text-2xl">({doc.validFrom})</p>
+              <p className="text-xs  2xl:text-base 3xl:text-xl 4xl:text-2xl">({doc.validFrom})</p>
             </div>
           </div>
 
@@ -62,12 +62,12 @@ const DocumentsGrid = () => {
             <a
               href={doc.msdsLink}
               download
-              className="group flex items-center justify-center gap-2 text-xl xl:text-xl 3xl:text-2xl 4xl:text-3xl font-bold text-[#32A849] px-3 py-2 flex-1 transition hover:bg-darkgreen hover:text-white"
+              className="group flex items-center justify-center gap-2 text-xl xl:text-xl 2xl:text-2xl 4xl:text-3xl font-bold text-[#32A849] px-3 py-2 flex-1 transition hover:bg-darkgreen hover:text-white"
             >
               MSDS
               <img
                 src={download}
-                className="h-6 w-6 xl:h-6 xl:w-6 3xl:h-8 3xl:w-8 4xl:h-10 4xl:w-10 transition duration-300 group-hover:invert group-hover:brightness-125"
+                className="h-6 w-6 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 4xl:h-10 4xl:w-10 transition duration-300 group-hover:invert group-hover:brightness-125"
               />
             </a>
 
@@ -78,12 +78,12 @@ const DocumentsGrid = () => {
             <a
               href={doc.corLink}
               download
-              className="group flex items-center justify-center gap-2 rounded-lg text-semibold text-xl xl:text-xl 3xl:text-2xl 4xl:text-3xl font-bold text-[#32A849] px-3 py-3 flex-1 transition hover:bg-darkgreen hover:text-white"
+              className="group flex items-center justify-center gap-2 rounded-lg text-semibold text-xl xl:text-xl 2xl:text-2xl 4xl:text-3xl font-bold text-[#32A849] px-3 py-3 flex-1 transition hover:bg-darkgreen hover:text-white"
             >
               COR
               <img
                 src={download}
-                className=" h-6 w-6 xl:h-6 xl:w-6 3xl:h-8 3xl:w-8 4xl:h-10 4xl:w-10 transition duration-300 group-hover:invert group-hover:brightness-125"
+                className=" h-6 w-6 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 4xl:h-10 4xl:w-10 transition duration-300 group-hover:invert group-hover:brightness-125"
               />
             </a>
           </div>

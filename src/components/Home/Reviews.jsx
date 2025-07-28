@@ -46,7 +46,7 @@ const Reviews = () => {
             className="w-full w-[85%] sm:w-[30%] 4xl:w-[27%] 
       bg-white rounded-lg shadow-[0px_4px_15px_0px] shadow-black/5 overflow-hidden 
       hover:border-darkgreen flex flex-col 
-      h-[200px] sm:h-[300px] md:h-[320px] lg:h-[350px] xl:h-[250px] 2xl:h-[400px] 3xl:h-[420px] 4xl:h-[380px]"
+      h-[200px] sm:h-[300px] md:h-[320px] lg:h-[350px] xl:h-[250px] 2xl:h-[250px] 3xl:h-[420px] 4xl:h-[380px]"
           >
             {/* Image and Name */}
             <div className="flex items-center gap-x-4 p-4 4xl:p-8 sm:pl-6">

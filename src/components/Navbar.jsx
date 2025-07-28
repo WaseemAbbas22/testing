@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-b-[2px] 2xl:border-b-[8px] border-green-600 shadow-sm text-gray-900 xl:h-[15vh] 2xl:h-[9vh] 3xl:h-[10vh] 4xl:h-[9vh] ">
+    <nav className="bg-white border-b-[2px] 2xl:border-b-[8px] border-green-600 shadow-sm text-gray-900 xl:h-[13vh] 2xl:h-[12vh] 3xl:h-[10vh] 4xl:h-[9vh] ">
       <div
         className="
         md:w-[85%]
@@ -30,7 +30,7 @@ const Navbar = () => {
               <img
                 src={Logo}
                 alt="Logo"
-                className="h-8 sm:h-9 md:h-10 lg:h-14 xl:h-20 2xl:h-20 2xl:mt-2 3xl:h-20"
+                className="h-8 sm:h-9 md:h-10 lg:h-14 xl:h-16 2xl:h-20 2xl:mt-2 3xl:h-20"
               />
             </a>
           </div>
@@ -122,18 +122,18 @@ const Navbar = () => {
               bgColor="bg-[#32A849]"
               iconColor="text-[#32A849]"
               iconSize="text-xl 4xl:text-2xl" // e.g. text-xl, text-2xl, text-3xl
-              iconPadding="xl:p-2.5 3xl:p-3.5 4xl:p-5"  // e.g. p-2, p-3, p-4, p-6
+              iconPadding="xl:p-2.5 2xl:py-3 3xl:p-3.5 4xl:p-5"  // e.g. p-2, p-3, p-4, p-6
               upperTextColor="text-white"
               phoneTextColor="text-white"
               containerHeight={{
                 base: "h-[50px]",
-                "2xl": "2xl:h-[70px]",
+                "2xl": "2xl:h-[60px]",
                 "3xl": "3xl:h-[65px]",
                 "4xl": "4xl:h-[85px]",
               }}
               containerWidth={{
                 base: "w-[190px]",
-                "2xl": "2xl:w-[350px]",
+                "2xl": "2xl:w-[220px]",
                 "3xl": "3xl:w-[250px]",
                 "4xl": "4xl:w-[320px]",
               }}

@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className="bg-darkgreen text-white w-full items-center">
       {/* Desktop/Tablet Layout (md and above) */}
-      <div className="hidden md:flex xl:h-[50vh] 4xl:h-[50vh] 3xl:h-[50vh] xl:h-[52vh] flex-col items-center justify-between ">
+      <div className="hidden md:flex xl:h-[58vh] 2xl:h-[45vh] 4xl:h-[45vh] 3xl:h-[50vh] xl:h-[52vh] flex-col items-center justify-between ">
         {/* Main Footer Content Container */}
         <div className="w-[75%] mx-auto flex flex-row justify-between xl:mt-10 3xl:mt-12 4xl:mt-20">
           {/* Left Section: Logo & Description (30%) */}
@@ -22,9 +22,9 @@ const Footer = () => {
             <img
               src={LogoWhite}
               alt="Accurate Logo"
-              className="w-12 xl:w-28 2xl:w-44 h-auto"
+              className="w-12 xl:w-28 2xl:w-36 3xl:w-44 h-auto"
             />
-            <p className="mt-4 text-xs lg:text-xs xl:text-sm 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-justify leading-relaxed text-left">
+            <p className="mt-4 text-xs lg:text-xs xl:text-sm 2xl:text-base 3xl:text-xl 4xl:text-2xl text-justify leading-relaxed text-left">
               Accurate Pest Control Services LLC is a trusted provider of
               professional pest management solutions across the UAE. With
               certified technicians and municipality pest control approvals, we
@@ -39,9 +39,9 @@ const Footer = () => {
                 (Icon, i) => (
                   <div
                     key={i}
-                    className="bg-white rounded-full p-1.5 lg:p-2 2xl:p-3"
+                    className="bg-white rounded-full p-1.5 lg:p-2 2xl:p-1.5 3xl:p-3"
                   >
-                    <Icon className="text-darkgreen text-[14px] lg:text-[13px] 2xl:text-2xl" />
+                    <Icon className="text-darkgreen text-[14px] lg:text-[13px] 2xl:text-xl 3xl:text-2xl" />
                   </div>
                 )
               )}
@@ -121,17 +121,17 @@ const Footer = () => {
             {/* Locations */}
             <div className="text-white mt-2 xl:text-lg 2xl:text-lg w-full">
               <div className="relative">
-                <div className="absolute top-3 left-3 w-px 3xl:ml-1 h-[calc(75%-8px)] bg-white"></div>
+                <div className="absolute top-3 left-3 w-px 2xl:ml-1 3xl:ml-1 h-[calc(75%-8px)] bg-white"></div>
 
                 <div className="space-y-1">
                   {/* Head Office */}
                   <div className="flex items-start relative 4xl:w-[87%]">
                     <div className="relative z-10">
-                      <div className="bg-white rounded-full p-1.5 2xl:p-2 flex items-center justify-center">
+                      <div className="bg-white rounded-full p-1.5 2xl:p-2  flex items-center justify-center">
                         <FaMapMarkerAlt className="text-green-600 text-[12px] lg:text-[14px] xl:text-md 2xl:text-xl" />
                       </div>
                     </div>
-                    <span className="ml-3 w-full text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-lg leading-relaxed pb-2 border-b border-white 3xl:text-xl 4xl:text-2xl 3xl:mb-2 4xl:mb-2">
+                    <span className="ml-3 w-full text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-base 3xl:text-lg leading-relaxed pb-2 border-b border-white 3xl:text-xl 4xl:text-2xl 3xl:mb-2 4xl:mb-2">
                       <strong>Head Office:</strong> Warehouse No.1, Plot No.
                       247-289, Al Qusais Industrial Area 4, Dubai – UAE
                     </span>
@@ -140,9 +140,9 @@ const Footer = () => {
                   {/* Sharjah Branch */}
                   <div className="flex items-start relative xl:w-[110%] 3xl:w-[105%] 4xl:w-[92%]">
                     <div className="relative z-10">
-                      <div className="bg-white rounded-full w-2 h-2 mt-2 ml-[8px] 3xl:ml-[10px] 2xl:w-3 2xl:h-3"></div>
+                      <div className="bg-white rounded-full w-2 h-2 mt-2 ml-[8px] 2xl:ml-[10px] 3xl:ml-[10px] 2xl:w-3 2xl:h-3"></div>
                     </div>
-                    <span className="ml-5 w-full font-semibold text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-lg leading-relaxed pb-2 border-b border-white 3xl:text-xl 4xl:text-2xl 3xl:mb-2 4xl:mb-2">
+                    <span className="ml-5 w-full font-semibold text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-base 3xl:text-lg leading-relaxed pb-2 border-b border-white 3xl:text-xl 4xl:text-2xl 3xl:mb-2 4xl:mb-2">
                       <strong>Sharjah Branch:</strong> Building No. 3702, Shop
                       No 3 & 4, Muweilah Commercial area, Sharjah – UAE
                     </span>
@@ -151,9 +151,9 @@ const Footer = () => {
                   {/* Ajman Branch */}
                   <div className="flex items-start relative 3xl:w-[92%] 4xl:w-[90%]">
                     <div className="relative z-10">
-                      <div className="bg-white rounded-full w-2 h-2 mt-2 ml-[8px] 3xl:ml-[10px] 2xl:w-3 2xl:h-3"></div>
+                      <div className="bg-white rounded-full w-2 h-2 mt-2 ml-[8px] 2xl:ml-[10px] 3xl:ml-[10px] 2xl:w-3 2xl:h-3"></div>
                     </div>
-                    <span className="ml-5 w-full text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-lg leading-relaxed pb-2 3xl:text-xl 4xl:text-2xl">
+                    <span className="ml-5 w-full text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-base 3xl:text-lg leading-relaxed pb-2 3xl:text-xl 4xl:text-2xl">
                       <strong>Ajman Branch:</strong> Shop No. 1, Plot No. 3074,
                       Eastern Sector, Al Zahya 1, Ajman - UAE
                     </span>
@@ -298,7 +298,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-[#0C520A] text-center text-xs  py-2 w-full mt-auto">
+      <div className="bg-[#0C520A] text-center text-xs 2xl:text-base  py-2 w-full mt-auto">
         © 2025 | Accurate Pest Control | All rights reserved.
       </div>
     </footer>

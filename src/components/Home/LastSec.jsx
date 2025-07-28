@@ -38,7 +38,7 @@ const KeepSteps = () => {
       </h2>
 
       {/* Subtext */}
-      <p className="text-center w-[90%] text-[#444444] text-xs sm:mb-2 xl:max-w-lg xl:text-md 2xl:mt-4 2xl:max-w-4xl 2xl:text-2xl ">
+      <p className="text-center w-[90%] text-[#444444] text-xs sm:mb-2 xl:max-w-lg xl:text-md 2xl:mt-4 2xl:max-w-3xl 3xl:max-w-4xl 2xl:text-xl 3xl:text-2xl ">
         To get latest information and be sensitive to market information,
         product trends, and international facts from Mystore.com news and
         events.
@@ -68,7 +68,7 @@ const KeepSteps = () => {
                 alt="Last Section"
                 className="h-2 w-auto mt-1"
               />
-              <p className="text-xs 2xl:text-xl 3xl:text-xl text-gray-600 mt-2 flex-grow">
+              <p className="text-xs 2xl:text-lg 3xl:text-xl text-gray-600 mt-2 flex-grow">
                 {card.description}
               </p>
 
@@ -84,7 +84,7 @@ const KeepSteps = () => {
                 </button>
 
                 {/* Calendar Date */}
-                <div className="flex items-center text-[#444444] text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-xs 2xl:text-lg 3xl:text-lg 4xl:text-base  gap-2 mt-2">
+                <div className="flex items-center text-[#444444] text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-xs 2xl:text-base 3xl:text-lg 4xl:text-base  gap-2 mt-2">
                   <FontAwesomeIcon
                     icon={faCalendarAlt}
                     className="text-[#444444]"

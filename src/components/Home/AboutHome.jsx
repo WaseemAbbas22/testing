@@ -4,18 +4,18 @@ import man from "/src/assets/Home/man.png";
 
 const AboutHome = () => {
   return (
-    <div className="bg-[#F0F0F0] md:w-full md:h-[75vh] xl:h-[80vh]  flex items-center justify-center py-10">
+    <div className="bg-[#F0F0F0] md:w-full md:h-[75vh] xl:h-[80vh] 2xl:h-[65vh] 3xl:h-[75vh]  flex items-center justify-center py-10">
       {/* Main Flex Container */}
       <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-[85%] px-4 2xl:space-x-12 4xl:w-[75%] 2xl:gap-10">
         {/* Left Side Div */}
         <div className="flex justify-center items-center w-full">
           {/* Green Container */}
-          <div className="relative rounded-2xl flex justify-center items-end shadow-lg bg-gradient-to-t from-[#32A849] via-white to-[#32A849] xl:w-[60%] 3xl:w-[70%] lg:h-[65vh] xl:h-[64vh] 2xl:h-[64vh] 3xl:h-[60vh] 4xl:h-[56vh] overflow-visible">
+          <div className="relative rounded-2xl flex justify-center items-end shadow-lg bg-gradient-to-t from-[#32A849] via-white to-[#32A849] xl:w-[60%] 3xl:w-[70%] lg:h-[65vh] xl:h-[64vh] 2xl:h-[55vh] 3xl:h-[60vh] 4xl:h-[56vh] overflow-visible">
             {/* Man Image with light white drop shadow */}
             <img
               src={man}
               alt="About Us"
-              className="z-10 w-[90%] lg:h-[60vh] 2xl:h-[61.5vh] 3xl:h-[54vh] 4xl:h-[52vh] object-contain"
+              className="z-10 w-[90%] lg:h-[60vh] 2xl:h-[50vh] 3xl:h-[54vh] 4xl:h-[52vh] object-contain"
               style={{
                 filter: "drop-shadow(0px 4px 10px rgba(250, 247, 248, 0.73))",
               }}
@@ -38,20 +38,20 @@ const AboutHome = () => {
         </div>
 
         {/* Right Side Div */}
-        <div className="w-full 4xl:space-y-10 3xl:space-y-6 xl:space-y-2 md:pr-8 mt-2">
+        <div className="w-full 4xl:space-y-10 3xl:space-y-6 xl:space-y-2 2xl:space-y-6 md:pr-8 mt-2">
           {/* Small Text */}
           <p className="text-[#32A849] text-[14px] font-semibold text-left md:text-left 2xl:text-2xl">
             About Us
           </p>
 
           {/* Heading */}
-          <h2 className="text-[24px] lg:text-4xl xl:text-4xl 2xl:text-7xl 3xl:text-6xl 4xl:max-w-2xl font-semibold text-gray-800 leading-tight text-left">
+          <h2 className="text-[24px] lg:text-4xl xl:text-4xl 2xl:text-[42px] 3xl:text-6xl 4xl:max-w-2xl font-semibold text-gray-800 leading-tight text-left">
             Dubai Municipality Pest Control – Approved Experts for Local Pest
             Issues
           </h2>
 
           {/* Paragraphs */}
-          <p className="text-[#666666] text-[11px] lg:text-base text-justify xl:text-sm 2xl:text-2xl 3xl:text-xl text-left ">
+          <p className="text-[#666666] text-[11px] lg:text-base text-justify xl:text-sm 2xl:text-[17px] 3xl:text-xl text-left ">
             Our most significant area of expertise is Dubai Municipality Pest
             Control, and we offer completely compliant services with local
             government regulations. Controlling common insects in Dubai for
@@ -67,7 +67,7 @@ const AboutHome = () => {
 
           {/* Button */}
           <div className="flex justify-left md:justify-start">
-            <button className="bg-[#32A849] text-white text-[11px] 2xl:text-lg font-medium px-6 xl:mt-0 mt-2 py-2.5 rounded-lg shadow hover:bg-green-700 transition">
+            <button className="bg-[#32A849] text-white text-[11px] 2xl:text-base 3xl:text-lg font-medium px-6 xl:mt-0 mt-2 py-2.5 rounded-lg shadow hover:bg-green-700 transition">
               Learn More
             </button>
           </div>
