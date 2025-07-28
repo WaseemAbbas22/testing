@@ -26,7 +26,6 @@ const Process = () => {
 
       {/* Steps Grid Container with relative to position the line */}
       <div className="relative w-full md:w-[105%] 3xl:w-[84%] mx-auto mb-10 justify-center">
-
         {/* Green Dotted Line */}
         <div
           className="

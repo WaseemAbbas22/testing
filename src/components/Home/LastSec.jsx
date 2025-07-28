@@ -12,96 +12,91 @@ const KeepSteps = () => {
       title: "Pest Control Tips, Insights & Expert Advice",
       description:
         "Stay informed with the latest pest prevention tips, seasonal advice, and expert insights from our certified technicians. Whether you're dealing with termites, cockroaches...",
-        date: '01/05/2024',
+      date: "01/05/2024",
     },
     {
       img: Pic2,
       title: "Expert Tips from UAE Pest Specialists",
       description:
         "Get insider knowledge straight from the professionals. Our blog covers real issues faced by homeowners and businesses in the UAE — with clear, practical solutions...",
-        date: '01/05/2024',
+      date: "01/05/2024",
     },
     {
       img: Pic3,
       title: "Smarter Pest Control Starts Here",
       description:
         "Whether you're a first-time homeowner or a facility manager, our blog gives you the tools to stay ahead of pests. Find DIY prevention hacks, product comparisons, service guides...",
-        date: '01/05/2024',
+      date: "01/05/2024",
     },
   ];
 
   return (
-    <div className="w-full py-2  xl:h-[80vh] 3xl:h-[80vh] xl:mt-4 bg-gray-50 2xl:py-10 px-1 md:px-16 lg:px-24 xl:px-32 3xl:py-16 4xl:py-20 flex flex-col items-center mt-4 md:mt-0">
-      {/* Heading */}
-      <h2 className="text-3xl md:text-3xl font-semibold text-center text-gray-800 mb-2 xl:text-3xl 2xl:text-5xl">
-        Keep Steps with Us
-      </h2>
+    <div className="w-full h-[80vh] bg-gray-50 px-4 md:px-16 lg:px-24 xl:px-32 2xl:py-10 flex items-center justify-center">
+      <div className="flex flex-col items-center justify-center w-full">
+        {/* Heading */}
+        <h2 className="text-3xl font-semibold text-center text-gray-800 mb-2 2xl:text-5xl">
+          Keep Steps with Us
+        </h2>
 
-      {/* Subtext */}
-      <p className="text-center w-[90%] text-[#444444] text-xs sm:mb-2 xl:max-w-lg xl:text-md 2xl:mt-4 2xl:max-w-3xl 3xl:max-w-4xl 2xl:text-xl 3xl:text-2xl ">
-        To get latest information and be sensitive to market information,
-        product trends, and international facts from Mystore.com news and
-        events.
-      </p>
+        {/* Subtext */}
+        <p className="text-center w-[90%] max-w-4xl text-[#444444] text-xs 2xl:text-xl">
+          To get latest information and be sensitive to market information,
+          product trends, and international facts from Mystore.com news and
+          events.
+        </p>
 
-      {/* Cards */}
-      <div className="w-[90%] md:w-[98] mx-auto flex flex-col md:flex-row md:space-x-[2vh] space-y-4 md:space-y-0 mt-4">
-        {cards.map((card, index) => (
-          <div
-            key={index}
-            className="flex flex-col rounded-lg overflow-hidden bg-white w-full md:w-[32%]"
-          >
-            {/* Image */}
-            <img
-              src={card.img}
-              alt={card.title}
-              className="w-full h-[150px] sm:h-[180px] md:h-[200px] lg:h-[120px] xl:h-[120px] 2xl:h-[170px] 3xl:h-[200px] 4xl:h-[350px] object-cover"
-            />
-
-            {/* Content */}
-            <div className="flex flex-col flex-grow pt-4">
-              <h3 className="text-sm 2xl:text-xl 3xl:text-2xl font-semibold text-gray-800 mb-1 mt-2">
-                {card.title}
-              </h3>
+        {/* Cards */}
+        <div className="w-[90%] md:w-[98%] mx-auto flex flex-col md:flex-row md:space-x-[2vh] space-y-4 md:space-y-0 mt-4">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="flex flex-col rounded-lg overflow-hidden bg-white w-full md:w-[32%]"
+            >
+              {/* Image */}
               <img
-                src={lastsec}
-                alt="Last Section"
-                className="h-2 w-auto mt-1"
+                src={card.img}
+                alt={card.title}
+                className="w-full h-[150px] sm:h-[180px] md:h-[200px] lg:h-[120px] xl:h-[120px] 2xl:h-[170px] 3xl:h-[200px] 4xl:h-[350px] object-cover"
               />
-              <p className="text-xs 2xl:text-lg 3xl:text-xl text-gray-600 mt-2 flex-grow">
-                {card.description}
-              </p>
 
-              {/* Bottom Row: Date on Left, Button on Right */}
-              <div className="flex items-center justify-between mt-4">
-            
-                {/* Read More Button */}
-                <button
-                  type="button"
-                  className="bg-green-600 text-white text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-xs 2xl:text-xs rounded px-2 2xl:px-4 py-1 2xl:py-2 w-fit hover:bg-green-700 flex items-center justify-center gap-1"
-                >
-                  Read More <FontAwesomeIcon icon={faArrowRight} />
-                </button>
+              {/* Content */}
+              <div className="flex flex-col flex-grow pt-4 px-2">
+                <h3 className="text-sm 2xl:text-xl 3xl:text-2xl font-semibold text-gray-800 mb-1 mt-2">
+                  {card.title}
+                </h3>
+                <img
+                  src={lastsec}
+                  alt="Last Section"
+                  className="h-2 w-auto mt-1"
+                />
+                <p className="text-xs 2xl:text-lg 3xl:text-xl text-gray-600 mt-2 flex-grow">
+                  {card.description}
+                </p>
 
-                {/* Calendar Date */}
-                <div className="flex items-center text-[#444444] text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-xs 2xl:text-base 3xl:text-lg 4xl:text-base  gap-2 mt-2">
-                  <FontAwesomeIcon
-                    icon={faCalendarAlt}
-                    className="text-[#444444]"
-                  />
-                  <span>{card.date}</span>
+                {/* Bottom Row */}
+                <div className="flex items-center justify-between mt-4">
+                  <button
+                    type="button"
+                    className="bg-green-600 text-white text-[10px] sm:text-xs md:text-sm xl:text-xs 2xl:text-xs rounded px-2 2xl:px-4 py-1 2xl:py-2 hover:bg-green-700 flex items-center gap-1"
+                  >
+                    Read More <FontAwesomeIcon icon={faArrowRight} />
+                  </button>
+
+                  <div className="flex items-center text-[#444444] text-[10px] sm:text-xs md:text-sm xl:text-xs 2xl:text-base 3xl:text-lg  gap-2 mt-2">
+                    <FontAwesomeIcon icon={faCalendarAlt} />
+                    <span>{card.date}</span>
+                  </div>
                 </div>
-
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      {/* View More Button */}
-      <button className="bg-green-600 text-white 2xl:text-lg text-xs font-sm px-6 py-2 2xl:mt-12 rounded-md flex items-center gap-2 hover:bg-green-700 transition mt-6 mb-2">
-        View More
-      </button>
+        {/* View More Button */}
+        <button className="bg-green-600 text-white text-xs 2xl:text-lg font-medium px-6 py-2 rounded-md flex items-center gap-2 hover:bg-green-700 transition mt-6">
+          View More
+        </button>
+      </div>
     </div>
   );
 };

@@ -14,9 +14,9 @@ const Footer = () => {
   return (
     <footer className="bg-darkgreen text-white w-full items-center">
       {/* Desktop/Tablet Layout (md and above) */}
-      <div className="hidden md:flex xl:h-[58vh] 2xl:h-[45vh] 4xl:h-[45vh] 3xl:h-[50vh] xl:h-[52vh] flex-col items-center justify-between ">
+     <div className="hidden md:flex xl:h-[58vh] 2xl:h-[45vh] 4xl:h-[45vh] 3xl:h-[50vh] flex items-center justify-center w-full">
         {/* Main Footer Content Container */}
-        <div className="w-[75%] mx-auto flex flex-row justify-between xl:mt-10 3xl:mt-12 4xl:mt-20">
+        <div className="w-[75%] flex flex-row justify-between">
           {/* Left Section: Logo & Description (30%) */}
           <div className="w-[30%] flex flex-col ">
             <img

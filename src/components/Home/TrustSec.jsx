@@ -1,4 +1,4 @@
-import Img from "/src/assets/Home/trustsec.png"; // Replace with your actual image path
+import Img from "/src/assets/Home/trustsec.png";
 
 const TrustSec = () => {
   const stats = [
@@ -10,7 +10,7 @@ const TrustSec = () => {
 
   return (
     <div
-      className="w-full h-[45vh] bg-cover bg-center flex flex-col items-center justify-center px-4 sm:px-6 md:px-16 lg:px-24 2xl:px-20 3xl:px-32 xl:px-32 relative py-10 sm:py-12 md:py-16"
+      className="w-full min-h-[45vh] bg-cover bg-center flex flex-col items-center justify-center relative px-4 sm:px-6 md:px-16 lg:px-24 2xl:px-32 3xl:px-40 py-10 sm:py-12 md:py-16"
       style={{
         backgroundImage: `url(${Img})`,
       }}
@@ -19,34 +19,34 @@ const TrustSec = () => {
       <div className="absolute inset-0 bg-black opacity-70"></div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white w-full">
-        <p className="text-center justify-center lg:ml-[300px] 2xl:ml-[200px] 3xl:ml-[300px] 4xl:ml-[500px] justify-center items-center text-xs sm:text-sm lg:text-xl 2xl:mb-12 px-2 max-w-[100%] 4xl:max-w-7xl 2xl:max-w-6xl lg:max-w-3xl 2xl:text-3xl 4xl:text-4xl font-xs">
-          Our team are one of the most recognized pest control companies in
-          Dubai, offering safe solutions and a history of satisfied customers in
-          Sharjah and Ajman.
+      <div className="relative z-10 text-center text-white w-full max-w-screen-xl">
+        {/* Description */}
+        <p className="text-xs sm:text-sm md:text-base lg:text-xl 2xl:text-3xl 3xl:text-4xl max-w-4xl mx-auto font-medium px-2">
+          Our team is one of the most recognized pest control companies in Dubai,
+          offering safe solutions and a history of satisfied customers in Sharjah and Ajman.
         </p>
 
-        {/* Stats */}
-        <div className="w-full flex justify-center mt-4  md:mt-12">
-          <div className="w-[80%] grid grid-cols-2 lg:flex lg:flex-row items-center justify-between gap-6">
+        {/* Stats Section */}
+        <div className="w-full flex justify-center mt-6 md:mt-12">
+          <div className="grid grid-cols-2 gap-y-6 gap-x-4 sm:gap-6 lg:flex lg:justify-between w-full max-w-5xl px-4">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center flex-1"
+                className="flex items-center justify-center w-full"
               >
                 {/* Stat Block */}
                 <div className="flex flex-col items-center text-center">
-                  <h3 className="text-green-600 text-3xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-extrabold">
+                  <h3 className="text-green-600 text-3xl sm:text-4xl md:text-4xl lg:text-5xl 2xl:text-6xl font-extrabold">
                     {stat.number}
                   </h3>
-                  <p className="text-[18px] lg:mt-2 2xl:mt-6 sm:text-sm md:text-base w-40 lg:text-xl 2xl:text-3xl 4xl:text-4xl sm:w-48 2xl:w-[270px] 3xl:w-80">
+                  <p className="text-white text-xs sm:text-sm md:text-base lg:text-lg 2xl:text-2xl mt-2 max-w-[180px] sm:max-w-[200px] 2xl:max-w-xs">
                     {stat.label}
                   </p>
                 </div>
 
-                {/* Divider Line except after last item */}
+                {/* Divider (only show between items on larger screens) */}
                 {index !== stats.length - 1 && (
-                  <div className="hidden md:block h-10 border-r border-gray-300 mx-4 4xl:mx-10"></div>
+                  <div className="hidden lg:block h-10 border-r border-gray-400 mx-4 2xl:mx-8"></div>
                 )}
               </div>
             ))}

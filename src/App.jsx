@@ -72,6 +72,8 @@ const App = () => {
 
         {/*Job Detail Webpages */}
           <Route path="/jobdetail" element={<JobDetail />} /> 
+
+          
           
         </Routes>
       </Router>

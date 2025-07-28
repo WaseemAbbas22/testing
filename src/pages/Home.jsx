@@ -17,6 +17,7 @@ import Form from "../components/Home/Form"
 import LastSec from "../components/Home/LastSec" 
 import PestsGrid from "../components/Home/PestsGrid"
 //import PestsGrid from "../components/Pests/PestsGrid"
+import TawkToWidget from "/src/components/TawkToWidget";
 
 const Home = () => {
   return (
@@ -39,6 +40,7 @@ const Home = () => {
         <Reviews />
         <Form /> 
         <LastSec />   
+        <TawkToWidget />
         <Footer />
     </div>
     
