@@ -120,12 +120,12 @@ const Messages = () => {
 
           {/* Image */}
           <div className="md:w-1/2 flex justify-center items-center">
-            <div className="w-full max-w-sm md:max-w-md lg:max-w-lg rounded-lg overflow-hidden ">
+            <div className="w-full max-w-xs rounded-2xl overflow-hidden">
               <div className="aspect-[3/4] flex items-center justify-center">
                 <img
-                  src={CEOImg}
+                  src={MDImg}
                   alt="MD"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
             </div>

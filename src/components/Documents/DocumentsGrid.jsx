@@ -164,7 +164,7 @@ const DocumentGrid = () => {
       {chemicalDocuments.map((doc, i) => (
         <div
           key={i}
-          className="flex flex-col justify-between bg-[#32A8491A] rounded shadow transition border border-transparent hover:border-darkgreen h-full"
+          className="flex flex-col justify-between bg-[#32A8491A] rounded-lg shadow transition border border-darkgreen h-full"
         >
           {/* Top Content */}
           <div className="flex flex-col justify-between px-6 py-2 flex-grow">
@@ -179,7 +179,7 @@ const DocumentGrid = () => {
           </div>
 
           {/* Buttons */}
-          <div className="flex w-full rounded-b-lg bg-[#EAEAEA] overflow-hidden">
+          <div className="flex w-full rounded-md bg-[#EAEAEA] overflow-hidden border-t border-darkgreen">
             {/* MSDS */}
             <a
               href={doc.msds}
