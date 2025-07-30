@@ -77,7 +77,7 @@ const TrustSec = () => {
             </div>
 
             {/* Tablet/Desktop View */}
-            <div className="hidden sm:flex w-[80%] justify-between justify-center items-center sm:gap-6">
+            <div className="hidden sm:flex w-[80%] justify-between justify-center items-center mx-auto ">
               {stats.map((stat, index) => (
                 <React.Fragment key={index}>
                   {/* Stat Block */}
