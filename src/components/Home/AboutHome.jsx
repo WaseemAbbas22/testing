@@ -1,6 +1,7 @@
 import Circle1 from "/src/assets/Home/cir1.png";
 import Circle2 from "/src/assets/Home/cir2.png";
 import man from "/src/assets/Home/man.png";
+import Vector from "/src/assets/Home/brightVector.svg";
 
 const AboutHome = () => {
   return (
@@ -10,16 +11,22 @@ const AboutHome = () => {
         {/* Left Side Div */}
         <div className="flex justify-center items-center w-full">
           {/* Green Container */}
-          <div className="relative rounded-2xl flex justify-center items-end shadow-lg bg-gradient-to-t from-[#32A849] via-white to-[#32A849] xl:w-[60%] 3xl:w-[60%] lg:h-[65vh] xl:h-[64vh] 2xl:h-[55vh] 3xl:h-[60vh] 4xl:h-[56vh] overflow-visible">
-            {/* Man Image with light white drop shadow */}
-            <img
-              src={man}
-              alt="About Us"
-              className="z-10 w-[90%] lg:h-[60vh] 2xl:h-[50vh] 3xl:h-[54vh] 4xl:h-[52vh] object-contain"
-              style={{
-                filter: "drop-shadow(0px 4px 10px rgba(250, 247, 248, 0.73))",
-              }}
-            />
+          <div className="relative rounded-2xl flex justify-center items-end shadow-lg bg-darkgreen xl:w-[60%] 3xl:w-[60%] lg:h-[65vh] xl:h-[64vh] 2xl:h-[55vh] 3xl:h-[60vh] 4xl:h-[56vh] overflow-visible">
+            <div className="relative w-full flex justify-center items-center">
+              {/* Vector Image (Behind) */}
+              <img
+                src={Vector}
+                alt="Background Vector"
+                className="absolute z-0 w-[95%] lg:h-[70vh] 2xl:h-[80vh] 3xl:h-[90vh] 4xl:h-[70vh] object-contain"
+              />
+
+              {/* Man Image (Front) */}
+              <img
+                src={man}
+                alt="About Us"
+                className="z-10 w-[90%] lg:h-[60vh] 2xl:h-[50vh] 3xl:h-[54vh] 4xl:h-[52vh] object-contain drop-shadow-[0_4px_12px_rgba(255,255,255,0.15)]"
+              />
+            </div>
 
             {/* Bottom Left Circle */}
             <img

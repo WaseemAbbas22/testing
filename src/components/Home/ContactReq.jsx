@@ -72,7 +72,7 @@ const ContactRequest = () => {
             </div>
 
             {/* Divider */}
-            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 2xl:mt-4 2xl:mb-4 3xl:mt-6 3xl:mb-6"></div>
+            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 2xl:mt-2 2xl:mb-4 3xl:mt-3 3xl:mb-3"></div>
 
             {/* Name */}
             <div className="flex-1 h-full flex items-center justify-center px-4 py-3 2xl:py-2 4xl:py-5">
@@ -89,7 +89,7 @@ const ContactRequest = () => {
             </div>
 
             {/* Divider */}
-            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 2xl:mt-4 2xl:mb-4 3xl:mt-6 3xl:mb-6"></div>
+            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 2xl:mt-4 2xl:mb-4 3xl:mt-3 3xl:mb-3"></div>
 
             {/* Phone */}
             <div className="flex-1 h-full flex items-center justify-center px-4 py-3 2xl:py-2 4xl:py-5">
@@ -115,7 +115,7 @@ const ContactRequest = () => {
             </div>
 
             {/* Divider */}
-            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 2xl:mt-4 2xl:mb-4 3xl:mt-6 3xl:mb-6 "></div>
+            <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 2xl:mt-4 2xl:mb-4 3xl:mt-3 3xl:mb-3 "></div>
 
             {/* Name */}
             <div className="flex-1 h-full flex items-center justify-center px-4 py-3 2xl:py-2 4xl:py-5">
