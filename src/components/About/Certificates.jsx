@@ -17,12 +17,12 @@ const Certificates = () => {
         {[Cert1, Cert2, Cert3].map((cert, index) => (
           <div
             key={index}
-            className="border-8 border-green-600 rounded-lg p-2 sm:p-3 md:p-4 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300"
+            className="border-[6px] border-green-600 rounded-lg p-2 sm:p-3 md:p-4 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300"
           >
             <img
               src={cert}
               alt={`Certificate ${index + 1}`}
-              className="h-40 sm:h-48 md:h-56 lg:h-64 xl:h-72 2xl:h-64 w-auto object-contain mx-auto rounded-md"
+              className="h-40 sm:h-48 md:h-56 lg:h-64 xl:h-44 2xl:h-56 3xl:h-64 w-auto object-contain mx-auto rounded-md"
             />
           </div>
         ))}
