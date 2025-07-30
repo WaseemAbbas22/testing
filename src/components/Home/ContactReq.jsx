@@ -9,7 +9,7 @@ const ContactRequest = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const containerRef = useRef(null);
-  const [pcontainerHeight , setContainerHeight] = useState(0);
+  const [pcontainerHeight, setContainerHeight] = useState(0);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,10 +36,10 @@ const ContactRequest = () => {
       <div className="absolute inset-0 bg-black/70 z-0"></div>
 
       {/* Content */}
-      <div className="relative w-[90%] mx-auto flex flex-col items-start 
-      xl:w-[75%]  
-      3xl:w-[75%] 
-      4xl:w-[74%] ">
+      <div
+        className="relative w-[90%] mx-auto flex flex-col items-start 
+      md:w-[70%]"
+      >
         <h2 className="text-white text-3xl font-semibold mb-6 text-left lg:text-4xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl">
           Get a Free Inspection
         </h2>
@@ -53,21 +53,15 @@ const ContactRequest = () => {
             ref={containerRef}
             className="
               flex flex-col bg-white rounded-lg shadow w-full
-              md:flex-row
+              md:flex-row  md:h-[60px] 2xl:h-[70px] 
             "
           >
             {/* Dropdown */}
-            <div className="flex-1 px-4 py-3 3xl:py-6 ">
+            <div className="flex-1 h-full flex items-center justify-center px-4 py-4 sm:py-0">
               <select
                 value={service}
                 onChange={(e) => setService(e.target.value)}
-                className="w-full text-[#999999] text-xs focus:outline-none h-12  border-b border-[#D7D7D7] focus:outline-none
-                md:border-0
-                lg:h-10
-                xl:text-sm xl:h-10
-                2xl:h-12
-                3xl:text-2xl
-                4xl:text-2xl 4xl:ml-2 4xl:h-24" 
+                className="w-full text-[#999999] text-xs focus:outline-none border-b border-[#D7D7D7] md:border-0 h-[38px]"
                 required
               >
                 <option value="">Select Pest Concern</option>
@@ -81,20 +75,15 @@ const ContactRequest = () => {
             <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 2xl:mt-4 2xl:mb-4 3xl:mt-6 3xl:mb-6"></div>
 
             {/* Name */}
-            <div className="flex-1 px-4 py-3 2xl:py-2 4xl:py-5">
+            <div className="flex-1 h-full flex items-center justify-center px-4 py-3 2xl:py-2 4xl:py-5">
               <input
                 type="text"
                 placeholder="Your Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full 4xl:ml-4 text-[#999999] border-b border-[#D7D7D7] text-xs  focus:outline-none h-10 
-                md:border-0
-                lg:h-10 
-                xl:h-10  xl:text-sm
-                2xl:h-14
-                3xl:h-20 focus:outline-none 3xl:text-2xl 
-                4xl:text-2xl"
-
+                className="w-full h-[38px] 4xl:ml-4 text-[#999999] border-b border-[#D7D7D7] text-xs focus:outline-none 
+    md:border-0
+    xl:text-sm"
                 required
               />
             </div>
@@ -103,20 +92,19 @@ const ContactRequest = () => {
             <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 2xl:mt-4 2xl:mb-4 3xl:mt-6 3xl:mb-6"></div>
 
             {/* Phone */}
-            <div className="flex-1 px-4 py-3 4xl:py-5">
-              <div className="h-10 lg:h-10 xl:h-10 2xl:h-12 3xl:h-20 w-full relative">
+            <div className="flex-1 h-full flex items-center justify-center px-4 py-3 2xl:py-2 4xl:py-5">
+              <div className="w-full relative">
                 <PhoneInput
                   country={"ae"}
                   value={phone}
                   onChange={(phone) => setPhone(phone)}
-                  inputClass="!w-full !h-full !pl-12 !text-[#999999] !bg-transparent !border-none focus:!outline-none text-xs 
-                  xl:text-sm 
-                  3xl:!text-xl 3xl:!ml-2 
-                  4xl:text-2xl"
-                  containerClass="!w-full !h-full !bg-transparent !flex !items-center !border-b !border-[#D7D7D7] md:border-none !outline-none"
+                  inputClass="!w-full !h-[38px] !text-[#999999] !bg-transparent !border-none focus:!outline-none text-xs 
+      xl:text-sm 
+      3xl:!text-xl 3xl:!ml-2 
+      4xl:text-2xl"
+                  containerClass="!w-full !bg-transparent !flex !items-center !border-b !border-[#D7D7D7] md:border-none !outline-none"
                   buttonClass="!bg-transparent !border-none !h-full !flex !items-center"
                   dropdownStyle={{
-                    maxHeight: "30vh",
                     overflowY: "auto",
                     border: "none",
                     boxShadow: "none",
@@ -129,35 +117,29 @@ const ContactRequest = () => {
             {/* Divider */}
             <div className="hidden md:block w-0.5 bg-[#CCCCCC] h-auto mt-2 mb-2 2xl:mt-4 2xl:mb-4 3xl:mt-6 3xl:mb-6 "></div>
 
-            {/* Email */}
-            <div className="flex-1 px-4 py-1 2xl:py-0 4xl:py-3">
+            {/* Name */}
+            <div className="flex-1 h-full flex items-center justify-center px-4 py-3 2xl:py-2 4xl:py-5">
               <input
-                type="email"
-                placeholder="E-mail"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full text-[#999999] text-xs  focus:outline-none h-10
-                lg:h-10
-                xl:text-sm xl:h-14 
-                2xl:h-[70px]
-                3xl:text-2xl  3xl:h-24 
-                4xl:ml-4 4xl:text-2xl"
+                type="text"
+                placeholder="Email"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="w-full h-[38px] 4xl:ml-4 text-[#999999] text-xs focus:outline-none 
+    md:border-0
+    xl:text-sm"
                 required
               />
             </div>
           </div>
 
           {/* Send Button */}
-          <div className="mt-4 w-full md:mt-0 md:ml-6 md:w-auto flex justify-left sm:ml-10">
+          <div className="flex items-center justify-start px-4 py-3 2xl:py-2 4xl:py-5 md:py-0 md:h-[60px] 2xl:h-[86px]">
             <button
               type="submit"
-              className="bg-[#32A849] text-white text-sm font-semibold px-6 py-2 rounded shadow hover:bg-green-700 transition
-              sm:text-base  sm:px-6 sm:rounded-lg
-              md:text-lg md:px-8  
-              xl:py-[17px]
-              2xl:py-[22px]
-              3xl:py-[36px] 3xl:px-16 3xl:text-2xl 
-              4xl:px-16 4xl:px-14 4xl:py-11 4xl:text-[24px]   "
+              className="bg-[#32A849] text-white text-sm font-semibold px-8 py-4 h-full rounded shadow 
+    hover:bg-green-700 transition duration-300
+    sm:text-sm sm:px-10 sm:rounded-lg 
+    xl:text-sm 3xl:text-lg 4xl:text-xl"
             >
               SEND
             </button>

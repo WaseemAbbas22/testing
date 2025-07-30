@@ -1,89 +1,212 @@
 import download from "/src/assets/Documents/downloadImg.png";
 
-const DocumentsGrid = () => {
-  const gridDocs = [
-    {
-      id: 1,
-      name: "Quick Bayt Granules",
-      validFrom: "01-01-2025",
-      msdsLink: "#",
-      corLink: "#",
-    },
-    {
-      id: 2,
-      name: "Quick Bayt Granules",
-      validFrom: "01-02-2025",
-      msdsLink: "#",
-      corLink: "#",
-    },
-    {
-      id: 3,
-      name: "Quick Bayt Granules",
-      validFrom: "01-03-2025",
-      msdsLink: "#",
-      corLink: "#",
-    },
-    {
-      id: 4,
-      name: "Quick Bayt Granules",
-      validFrom: "01-04-2025",
-      msdsLink: "#",
-      corLink: "#",
-    },
-  ];
-
+const chemicalDocuments = [
+  {
+    name: "Ajman Approved Chemical List",
+    validity: "17-Jan-2025",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Ecatrol IC3",
+    validity: "01-Dec-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Tandem",
+    validity: "31-Jan-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Penta 250 FP",
+    validity: "03-Dec-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Maxforce Prime Roach Gel",
+    validity: "10-Dec-2025",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Delta Super SC",
+    validity: "07-Feb-2025",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Deltacid Speedy SC",
+    validity: "17-Sep-2025",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Cimexa Dust Powder",
+    validity: "15-Sep-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Ratimor Wax Blocks",
+    validity: "01-Dec-2025",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Starbar Fly Trap Attractant",
+    validity: "01-Jan-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Lambdastar Ultra Capsulate",
+    validity: "01-Mar-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Cymina 10 EC",
+    validity: "12-Apr-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Protecta",
+    validity: "Valid Till (---)",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Delta Park",
+    validity: "01-Dec-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Sindoxa",
+    validity: "17-June-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Surefire Spectrum",
+    validity: "10-June-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Magnum Cockroach Gel",
+    validity: "01-Dec-2025",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Pestphos",
+    validity: "07-Apr-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Temprid",
+    validity: "07-Apr-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Intice Gel",
+    validity: "30-Dec-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Intice Granules",
+    validity: "30-Dec-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Thifast",
+    validity: "01-Feb-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Agita WG",
+    validity: "01-June-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Acetellic Ec 50",
+    validity: "12-May-2026",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Cymina Plus EC",
+    validity: "12-Feb-2027",
+    msds: "#",
+    cor: "#",
+  },
+  {
+    name: "Quick Bayt Granules",
+    validity: "01-Sep-2026",
+    msds: "#",
+    cor: "#",
+  }
+];
+const DocumentGrid = () => {
   return (
-    <div className="w-[90%] md:w-[100%] lg:w-[70%] xl:w-[75%] mx-auto flex flex-wrap md:flex-nowrap justify-center gap-4 mt-10">
-      {gridDocs.map((doc) => (
+    <div className="w-[90%] xl:w-[75%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 gap-6 mt-10">
+      {chemicalDocuments.map((doc, i) => (
         <div
-          key={doc.id}
-          className="flex flex-col bg-[#F0F0F0] rounded shadow w-full md:w-[35%] text-center"
+          key={i}
+          className="flex flex-col justify-between bg-[#32A8491A] rounded shadow transition border border-transparent hover:border-darkgreen h-full"
         >
-          {/* Content Above Buttons */}
-          <div className="flex flex-col justify-between px-6 py-5 flex-grow">
-            {/* Document Name */}
-            <h2 className="text-bold 2xl:text-2xl 3xl:text-2xl 4xl:text-4xl font-bold mb-2 2xl:mb-6 3xl:mb-8 4xl:mb-10 ">
+          {/* Top Content */}
+          <div className="flex flex-col justify-between px-6 py-2 flex-grow">
+            <h2 className="font-bold text-sm md:text-base xl:text-lg 2xl:text-2xl leading-tight text-center">
               {doc.name}
             </h2>
 
-            {/* Valid Till */}
-            <div className="text-[#444444]">
-              <p className="text-sm 2xl:text-xl 3xl:text-xl 4xl:text-3xl font-semibold">
-                Valid Till
-              </p>
-              <p className="text-xs  2xl:text-base 3xl:text-xl 4xl:text-2xl">({doc.validFrom})</p>
+            <div className="text-[#444444] text-center">
+              <p className="text-xs md:text-sm xl:text-sm 2xl:text-lg font-semibold">Valid Till</p>
+              <p className="text-xs md:text-sm xl:text-sm 2xl:text-lg">({doc.validity})</p>
             </div>
           </div>
 
-          {/* Black Bar */}
-
-          <div className="flex w-full rounded-lg bg-[#D1D1D1] overflow-hidden">
-            {/* MSDS Button */}
+          {/* Buttons */}
+          <div className="flex w-full rounded-b-lg bg-[#EAEAEA] overflow-hidden">
+            {/* MSDS */}
             <a
-              href={doc.msdsLink}
+              href={doc.msds}
               download
-              className="group flex items-center justify-center gap-2 text-xl xl:text-xl 2xl:text-2xl 4xl:text-3xl font-bold text-[#32A849] px-3 py-2 flex-1 transition hover:bg-darkgreen hover:text-white"
+              className="group flex items-center justify-center gap-2 text-sm md:text-base xl:text-lg 2xl:text-xl font-bold text-[#32A849] px-3 py-1 flex-1 transition hover:bg-darkgreen hover:text-white"
             >
               MSDS
               <img
                 src={download}
-                className="h-6 w-6 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 4xl:h-10 4xl:w-10 transition duration-300 group-hover:invert group-hover:brightness-125"
+                alt="download"
+                className="h-5 w-5 md:h-6 md:w-6 2xl:h-8 2xl:w-8 transition duration-300 group-hover:invert group-hover:brightness-125"
               />
             </a>
 
-            {/* Divider */}
-            <div className="w-px bg-[#A2A2A2] h-8 self-center"></div>
+            <div className="w-px bg-[#A2A2A2] h-8 self-center" />
 
-            {/* COR Button */}
+            {/* COR */}
             <a
-              href={doc.corLink}
+              href={doc.cor}
               download
-              className="group flex items-center justify-center gap-2 rounded-lg text-semibold text-xl xl:text-xl 2xl:text-2xl 4xl:text-3xl font-bold text-[#32A849] px-3 py-3 flex-1 transition hover:bg-darkgreen hover:text-white"
+              className="group flex items-center justify-center gap-2 text-sm md:text-base xl:text-lg 2xl:text-xl font-bold text-[#32A849] px-3 py-2 flex-1 transition hover:bg-darkgreen hover:text-white"
             >
               COR
               <img
                 src={download}
-                className=" h-6 w-6 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8 4xl:h-10 4xl:w-10 transition duration-300 group-hover:invert group-hover:brightness-125"
+                alt="download"
+                className="h-5 w-5 md:h-6 md:w-6 2xl:h-8 2xl:w-8 transition duration-300 group-hover:invert group-hover:brightness-125"
               />
             </a>
           </div>
@@ -93,4 +216,4 @@ const DocumentsGrid = () => {
   );
 };
 
-export default DocumentsGrid;
+export default DocumentGrid;

@@ -41,7 +41,7 @@ const ServicesHero = ({
       {/* Content */}
       <div className="ml-2 xl:ml-32 3xl:ml-44 4xl:ml-56 relative z-10 flex flex-col justify-center h-full px-4 sm:px-[4vw] text-white">
         <h1
-          className="font-bold leading-tight sm:leading-[1.2] text-2xl xl:text-4xl 3xl:text-8xl "
+          className="font-bold leading-tight sm:leading-[1.2] text-2xl xl:text-4xl 3xl:text-5xl "
           
         >
           {title}

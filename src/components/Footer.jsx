@@ -14,9 +14,9 @@ const Footer = () => {
   return (
     <footer className="bg-darkgreen text-white w-full items-center">
       {/* Desktop/Tablet Layout (md and above) */}
-     <div className="hidden md:flex xl:h-[58vh] 2xl:h-[45vh] 4xl:h-[45vh] 3xl:h-[50vh] flex items-center justify-center w-full">
+      <div className="hidden md:flex min-h-[50vh] xl:min-h-[62vh] 2xl:min-h-[45vh] 3xl:min-h-[50vh] 4xl:min-h-[45vh] items-center justify-center w-full ">
         {/* Main Footer Content Container */}
-        <div className="w-[75%] flex flex-row justify-between">
+        <div className="w-[75%] flex flex-row justify-between mt-[8vh] mb-[2vh]">
           {/* Left Section: Logo & Description (30%) */}
           <div className="w-[30%] flex flex-col ">
             <img
@@ -24,7 +24,7 @@ const Footer = () => {
               alt="Accurate Logo"
               className="w-12 xl:w-28 2xl:w-36 3xl:w-44 h-auto"
             />
-            <p className="mt-4 text-xs lg:text-xs xl:text-sm 2xl:text-base 3xl:text-xl 4xl:text-2xl text-justify leading-relaxed text-left">
+            <p className="mt-4 text-xs font-xs text-white/90 lg:text-xs xl:text-xs 2xl:text-base 3xl:text-xl 4xl:text-2xl text-justify leading-relaxed text-left">
               Accurate Pest Control Services LLC is a trusted provider of
               professional pest management solutions across the UAE. With
               certified technicians and municipality pest control approvals, we
@@ -39,7 +39,7 @@ const Footer = () => {
                 (Icon, i) => (
                   <div
                     key={i}
-                    className="bg-white rounded-full p-1.5 lg:p-2 2xl:p-1.5 3xl:p-3"
+                    className="bg-white rounded-full p-1.5 lg:p-2 2xl:p-1.5 3xl:p-2"
                   >
                     <Icon className="text-darkgreen text-[14px] lg:text-[13px] 2xl:text-xl 3xl:text-2xl" />
                   </div>
@@ -51,10 +51,10 @@ const Footer = () => {
           {/* Middle Section: Links (30%) */}
           <div className="flex flex-row text-left xl:gap-6 4xl:gap-32">
             <div>
-              <h2 className="font-semibold mb-2 text-sm lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
+              <h2 className="font-semibold mb-2 text-white/90 text-sm lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
                 About Us
               </h2>
-              <ul className="text-[12px] lg:text-[13px] xl:text-sm 2xl:text-lg 3xl:text-xl 4xl:text-2xl font-md space-y-1">
+              <ul className="text-[12px] lg:text-[13px] text-white/90 xl:text-sm 2xl:text-lg 3xl:text-xl 4xl:text-2xl font-md space-y-1">
                 {["Home", "Documents"].map((item, i) => (
                   <li key={i}>
                     <a href="#">{item}</a>
@@ -64,10 +64,10 @@ const Footer = () => {
             </div>
 
             <div className="xl:ml-14 3xl:ml-12 4xl:ml-10">
-              <h2 className="font-semibold mb-2 text-sm lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
+              <h2 className="font-semibold mb-2 text-sm  text-white/90 lg:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
                 Pest Library
               </h2>
-              <ul className="text-[12px] lg:text-[13px] xl:text-sm 2xl:text-lg 3xl:text-xl 4xl:text-2xl font-thin space-y-1">
+              <ul className="text-[12px] lg:text-[13px]  text-white/90 xl:text-sm 2xl:text-lg 3xl:text-xl 4xl:text-2xl font-thin space-y-1">
                 {[
                   "Venomous",
                   "Cockroaches",
@@ -95,7 +95,7 @@ const Footer = () => {
               <div className="bg-white rounded-full p-1.5 2xl:p-2">
                 <FaPhoneAlt className="text-darkgreen text-[12px] lg:text-[14px] 2xl:text-xl" />
               </div>
-              <span className="font-thin xl:text-[14px] 3xl:text-xl 4xl:text-2xl">
+              <span className="font-thin xl:text-[14px]  text-white/90 3xl:text-xl 4xl:text-2xl">
                 +971 52 152 8725, +971 4 375 6435
               </span>
             </div>
@@ -104,16 +104,16 @@ const Footer = () => {
               <div className="bg-white rounded-full p-1.5 2xl:p-2">
                 <FaGlobe className="text-darkgreen text-[12px] lg:text-[14px] 2xl:text-xl" />
               </div>
-              <span className="font-thin xl:text-[15px] 3xl:text-xl 4xl:text-2xl">
+              <span className="font-thin xl:text-[15px] text-white/90 3xl:text-xl 4xl:text-2xl">
                 www.accuratepestcontrol.ae
               </span>
             </div>
 
             <div className="flex items-center gap-x-3">
               <div className="bg-white rounded-full p-1.5 2xl:p-2">
-                <FaEnvelope className="text-darkgreen text-[12px] lg:text-[14px] 2xl:text-xl" />
+                <FaEnvelope className="text-darkgreen  text-[12px] lg:text-[14px] 2xl:text-xl" />
               </div>
-              <span className="font-thin xl:text-[14px] 3xl:text-xl 4xl:text-2xl">
+              <span className="font-thin xl:text-[14px] text-white/90 3xl:text-xl 4xl:text-2xl">
                 info@accuratepestcontrol.ae
               </span>
             </div>
@@ -131,7 +131,7 @@ const Footer = () => {
                         <FaMapMarkerAlt className="text-green-600 text-[12px] lg:text-[14px] xl:text-md 2xl:text-xl" />
                       </div>
                     </div>
-                    <span className="ml-3 w-full text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-base 3xl:text-lg leading-relaxed pb-2 border-b border-white 3xl:text-xl 4xl:text-2xl 3xl:mb-2 4xl:mb-2">
+                    <span className="ml-3 text-white/90 w-full text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-base 3xl:text-lg leading-relaxed pb-2 border-b border-white 3xl:text-xl 4xl:text-2xl 3xl:mb-2 4xl:mb-2">
                       <strong>Head Office:</strong> Warehouse No.1, Plot No.
                       247-289, Al Qusais Industrial Area 4, Dubai – UAE
                     </span>
@@ -142,7 +142,7 @@ const Footer = () => {
                     <div className="relative z-10">
                       <div className="bg-white rounded-full w-2 h-2 mt-2 ml-[8px] 2xl:ml-[10px] 3xl:ml-[10px] 2xl:w-3 2xl:h-3"></div>
                     </div>
-                    <span className="ml-5 w-full font-semibold text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-base 3xl:text-lg leading-relaxed pb-2 border-b border-white 3xl:text-xl 4xl:text-2xl 3xl:mb-2 4xl:mb-2">
+                    <span className="ml-5 text-white/90  w-full font-semibold text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-base 3xl:text-lg leading-relaxed pb-2 border-b border-white 3xl:text-xl 4xl:text-2xl 3xl:mb-2 4xl:mb-2">
                       <strong>Sharjah Branch:</strong> Building No. 3702, Shop
                       No 3 & 4, Muweilah Commercial area, Sharjah – UAE
                     </span>
@@ -153,7 +153,7 @@ const Footer = () => {
                     <div className="relative z-10">
                       <div className="bg-white rounded-full w-2 h-2 mt-2 ml-[8px] 2xl:ml-[10px] 3xl:ml-[10px] 2xl:w-3 2xl:h-3"></div>
                     </div>
-                    <span className="ml-5 w-full text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-base 3xl:text-lg leading-relaxed pb-2 3xl:text-xl 4xl:text-2xl">
+                    <span className="ml-5 text-white/90 w-full text-[12px] lg:text-[13px] xl:text-[14px] 2xl:text-base 3xl:text-lg leading-relaxed pb-2 3xl:text-xl 4xl:text-2xl">
                       <strong>Ajman Branch:</strong> Shop No. 1, Plot No. 3074,
                       Eastern Sector, Al Zahya 1, Ajman - UAE
                     </span>
@@ -174,7 +174,7 @@ const Footer = () => {
             alt="Accurate Logo"
             className="w-32 h-auto mb-4"
           />
-          <p className="text-[12px] leading-relaxed items-start text-justify ">
+          <p className="text-[12px] text-white/90 leading-relaxed items-start text-justify ">
             Accurate Pest Control Services LLC is a trusted provider of
             professional pest management solutions across the UAE. With
             certified technicians and municipality pest control approvals, we
@@ -197,7 +197,7 @@ const Footer = () => {
         <div className="flex items-start gap-12 pb-6 ">
           <div>
             <h2 className="font-semibold mb-2 text-xl">About Us</h2>
-            <ul className="text-xs space-y-1">
+            <ul className="text-xs text-white/90 space-y-1">
               {["Home", "Documents"].map((item, i) => (
                 <li key={i}>
                   <a href="#">{item}</a>
@@ -208,7 +208,7 @@ const Footer = () => {
 
           <div>
             <h2 className="font-semibold mb-2 text-xl">Pest Library</h2>
-            <ul className="text-xs space-y-1">
+            <ul className="text-xs text-white/90 space-y-1">
               {[
                 "Venomous",
                 "Cockroaches",
@@ -233,23 +233,23 @@ const Footer = () => {
         <div className="flex flex-col gap-3 pb-6">
           <div className="flex items-center gap-2">
             <div className="bg-white rounded-full p-1">
-              <FaPhoneAlt className="text-darkgreen text-xs" />
+              <FaPhoneAlt className="text-darkgreen  text-xs" />
             </div>
-            <span className="text-base">+971 52 152 8725, +971 4 375 6435</span>
+            <span className="text-base text-white/90">+971 52 152 8725, +971 4 375 6435</span>
           </div>
 
           <div className="flex items-center gap-3">
             <div className="bg-white rounded-full p-1">
               <FaGlobe className="text-darkgreen text-xs" />
             </div>
-            <span className="text-base">www.accuratepestcontrol.ae</span>
+            <span className="text-base text-white/90">www.accuratepestcontrol.ae</span>
           </div>
 
           <div className="flex items-center gap-3">
             <div className="bg-white rounded-full p-1">
               <FaEnvelope className="text-darkgreen text-xs" />
             </div>
-            <span className="text-lg">info@accuratepestcontrol.ae</span>
+            <span className="text-lg text-white/90">info@accuratepestcontrol.ae</span>
           </div>
         </div>
 
@@ -266,7 +266,7 @@ const Footer = () => {
                     <FaMapMarkerAlt className="text-green-600 text-xs" />
                   </div>
                 </div>
-                <span className="ml-3 text-[14px] leading-relaxed border-b border-white">
+                <span className="ml-3 text-white/90 text-[14px] leading-relaxed border-b border-white">
                   <strong>Head Office:</strong> Warehouse No.1, Plot No.
                   247-289, Al Qusais Industrial Area 4, Dubai – UAE
                 </span>
@@ -277,7 +277,7 @@ const Footer = () => {
                 <div className="relative z-10">
                   <div className="bg-white rounded-full w-2 h-2 mt-2 ml-[6px]"></div>
                 </div>
-                <span className="ml-[14px] text-[14px] leading-relaxed border-b border-white ">
+                <span className="ml-[14px] text-white/90 text-[14px] leading-relaxed border-b border-white ">
                   <strong>Sharjah Branch:</strong> Building No. 3702, Shop No 3
                   & 4, Muweilah Commercial area, Sharjah – UAE
                 </span>
@@ -288,7 +288,7 @@ const Footer = () => {
                 <div className="relative z-10">
                   <div className="bg-white rounded-full w-2 h-2 mt-1 ml-[6px]"></div>
                 </div>
-                <span className="ml-[14px] text-[14px] leading-relaxed ">
+                <span className="ml-[14px] text-white/90 text-[14px] leading-relaxed ">
                   <strong>Ajman Branch:</strong> Shop No. 1, Plot No. 3074,
                   Eastern Sector, Al Zahya 1, Ajman - UAE
                 </span>
@@ -298,7 +298,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-[#0C520A] text-center text-xs 2xl:text-base  py-2 w-full mt-auto">
+      <div className="bg-[#0C520A] text-white/90 text-center text-xs 2xl:text-base  py-2 w-full mt-auto">
         © 2025 | Accurate Pest Control | All rights reserved.
       </div>
     </footer>

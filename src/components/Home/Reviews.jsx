@@ -28,38 +28,38 @@ const Reviews = () => {
   return (
     <div className="w-full 4xl:h-[55vh] overflow-y-auto py-8 px-4 sm:px-6 md:px-16 lg:px-24 xl:px-32 bg-[#F0F0F0] flex flex-col items-center justify-center">
       {/* Heading */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl 3xl:text-6xl 4xl:text-6xl font-bold text-center text-black/80 mb-1">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl 3xl:text-5xl 4xl:text-6xl font-bold text-center text-black/80 mb-1">
         Client Testimonials
       </h2>
 
       {/* Subtext */}
-      <p className="text-center text-[#777777] text-xs sm:text-sm 3xl:text-lg mb-6 max-w-md 3xl:max-w-4xl 4xl:text-2xl 4xl:max-w-3xl">
+      <p className="text-center text-[#777777] text-xs sm:text-sm 3xl:text-lg mb-6 max-w-md 3xl:max-w-xl 3xl:mt-4 4xl:text-2xl 4xl:max-w-3xl">
         Having Quality Pest Control Services Our customers trust us to provide
         them with high-quality, safe, and UAE-approved pest services.
       </p>
 
       {/* Reviews */}
-      <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-6 w-full">
+      <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-6 w-full hover:border-darkgreen">
         {reviews.map((review, index) => (
           <div
             key={index}
             className="w-full w-[85%] sm:w-[30%] 4xl:w-[27%] 
       bg-white rounded-lg shadow-[0px_4px_15px_0px] shadow-black/5 overflow-hidden 
       hover:border-darkgreen flex flex-col 
-      h-[200px] sm:h-[300px] md:h-[320px] lg:h-[350px] xl:h-[250px] 2xl:h-[250px] 3xl:h-[420px] 4xl:h-[380px]"
+      h-[200px] sm:h-[300px] md:h-[320px] lg:h-[350px] xl:h-[250px] 2xl:h-[250px] 3xl:h-[300px] 4xl:h-[380px] border border-transparent hover:border-darkgreen transition-all duration-100"
           >
             {/* Image and Name */}
             <div className="flex items-center gap-x-4 p-4 4xl:p-8 sm:pl-6">
               <img
-                className="h-10 w-10 sm:h-12 sm:w-12 3xl:h-20 3xl:w-20 4xl:h-20 4xl:w-20 rounded-full border-2 border-green-600 object-cover"
+                className="h-10 w-10 sm:h-12 sm:w-12 3xl:h-12 3xl:w-12 4xl:h-20 4xl:w-20 rounded-full border-2 border-green-600 object-cover"
                 src={review.img}
                 alt={review.name}
               />
               <div className="flex flex-col">
-                <h1 className="text-xs sm:text-sm 3xl:text-2xl 4xl:text-2xl font-bold text-gray-800">
+                <h1 className="text-xs sm:text-sm 3xl:text-lg 4xl:text-2xl font-bold text-gray-800">
                   {review.name}
                 </h1>
-                <p className="text-gray text-[10px] sm:text-xs 3xl:text-xl 4xl:text-xl">
+                <p className="text-gray text-[10px] sm:text-xs 3xl:text-base 4xl:text-xl">
                   {review.role}
                 </p>
               </div>
@@ -83,7 +83,7 @@ const Reviews = () => {
                   </svg>
                 ))}
               </div>
-              <p className="text-[#777777] text-[10px] sm:text-xs 3xl:text-lg 4xl:text-lg text-justify">
+              <p className="text-[#777777] text-[10px] sm:text-xs 2xl:text-sm 3xl:text-base 4xl:text-lg text-justify">
                 {review.subtext}
               </p>
             </div>

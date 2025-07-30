@@ -32,57 +32,59 @@ const OurTeam = () => {
   ];
 
   return (
-    <div className="w-full bg-bggray py-16 px-4 md:px-8 lg:px-16 flex items-center justify-center">
-      <div className="flex flex-col items-center w-full max-w-[1400px]">
+    <div className="w-full bg-bggray flex items-center justify-center py-10 sm:py-[6vh]">
+      <div className="flex flex-col items-center w-full">
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-bold text-gray-800 text-center mb-12 sm:mb-20">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-bold text-gray-800 text-center mb-16">
           Get help from our team
         </h2>
 
-        {/* Team Grid */}
-        <div className="grid w-full gap-8 sm:grid-cols-2 md:grid-cols-4">
-          {team.map((member, index) => (
-            <div
-              key={index}
-              className="relative bg-white rounded-lg shadow-md pt-16 pb-6 px-4 flex flex-col items-center text-center"
-            >
-              {/* Vertical Lines */}
-              <div className="absolute top-0 left-0 h-full flex items-center">
-                <div className="relative h-[100px] 3xl:h-[120px] w-[6px] bg-green-600">
-                  <div className="absolute top-0 right-0 w-full h-3 bg-green-600 origin-top-right transform skew-y-12"></div>
-                  <div className="absolute bottom-0 right-0 w-full h-3 bg-green-600 origin-bottom-right transform -skew-y-12"></div>
+        {/* Team Section */}
+        <div className="w-full flex justify-center bg-[#f3f3f3]">
+          <div className="w-[75%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 sm:gap-8">
+            {team.map((member, index) => (
+              <div
+                key={index}
+                className="relative bg-white rounded-xl shadow-md pt-10 pb-6 px-4 flex flex-col items-center text-center min-h-[40px] sm:min-h-[340px] lg:min-h-[120px]"
+              >
+                {/* Vertical Green Side Lines */}
+                <div className="absolute top-0 left-0 h-full flex items-center">
+                  <div className="relative h-[100px] lg:h-[80px] w-[6px] bg-green-600">
+                    <div className="absolute top-0 right-0 w-full h-3 bg-green-600 origin-top-right transform skew-y-12"></div>
+                    <div className="absolute bottom-0 right-0 w-full h-3 bg-green-600 origin-bottom-right transform -skew-y-12"></div>
+                  </div>
                 </div>
-              </div>
-              <div className="absolute top-0 right-0 h-full flex items-center">
-                <div className="relative h-[100px] 3xl:h-[120px] w-[6px] bg-green-600">
-                  <div className="absolute top-0 left-0 w-full h-3 bg-green-600 origin-top-left transform -skew-y-12"></div>
-                  <div className="absolute bottom-0 left-0 w-full h-3 bg-green-600 origin-bottom-left transform skew-y-12"></div>
+                <div className="absolute top-0 right-0 h-full flex items-center">
+                  <div className="relative h-[100px] lg:h-[80px] w-[6px] bg-green-600">
+                    <div className="absolute top-0 left-0 w-full h-3 bg-green-600 origin-top-left transform -skew-y-12"></div>
+                    <div className="absolute bottom-0 left-0 w-full h-3 bg-green-600 origin-bottom-left transform skew-y-12"></div>
+                  </div>
                 </div>
+
+                {/* Avatar */}
+                <img
+                  src={member.img}
+                  alt={member.name}
+                  className="absolute -top-10 w-20 h-20 2xl:h-24 2xl:w-24 rounded-full object-contain border-4 border-green-600 shadow-md bg-white"
+                />
+
+                {/* Name */}
+                <h3 className="mt-4 xl:mt-4 2xl:mt-8 3xl:mt-8 text-sm sm:text-base lg:text-sm 2xl:text-xl font-bold text-black/70 leading-tight">
+                  {member.name}
+                </h3>
+
+                {/* Position */}
+                <p className="text-xs sm:text-sm lg:text-xs mt-1 text-black/70 ">
+                  {member.position}
+                </p>
+
+                {/* Contact */}
+                <p className="text-lg sm:text-sm lg:text-base 2xl:text-xl 3xl:text-2xl text-black/80 font-bold break-words w-full sm:max-w-[152px] 2xl:max-w-[200px] 3xl:max-w-[225px]">
+                  {member.contact}
+                </p>
               </div>
-
-              {/* Avatar */}
-              <img
-                src={member.img}
-                alt={member.name}
-                className="absolute -top-10 w-20 h-20 sm:w-20 sm:h-20 md:w-20 md:h-20 2xl:h-28 2xl:w-28 rounded-full object-contain border-4 border-darkgreen shadow-md bg-white"
-              />
-
-              {/* Name */}
-              <h3 className="mt-2 text-sm md:text-base 2xl:text-xl 3xl:text-2xl font-bold text-gray">
-                {member.name}
-              </h3>
-
-              {/* Position */}
-              <p className="text-xs md:text-sm 2xl:text-base 3xl:text-xl text-gray mt-1">
-                {member.position}
-              </p>
-
-              {/* Contact */}
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg 2xl:text-xl 3xl:text-2xl text-black/70 font-bold mt-2 break-words w-full max-w-[220px]">
-                {member.contact}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

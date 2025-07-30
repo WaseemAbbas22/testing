@@ -13,19 +13,19 @@ const Process = () => {
   ];
 
   return (
-    <div className="w-full lg:h-[70vh] 2xl:h-[60vh] 3xl:h-[62vh] 4xl:h-[55vh] bg-white flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-52 py-12 relative">
+    <div className="w-full lg:h-[70vh] 2xl:h-[60vh] 3xl:h-[62vh] 4xl:h-[55vh] bg-white flex flex-col items-center justify-center px-6  py-12 relative">
       {/* Main Heading */}
-      <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800 lg:text-[50px] xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl">
+      <h2 className="text-2xl md:text-4xl font-bold text-center text-black/80 lg:text-[50px] xl:text-4xl 2xl:text-5xl 3xl:text-[50px] 4xl:text-7xl">
         Domestic & Commercial Clients
       </h2>
 
       {/* Subheading */}
-      <h3 className="text-2xl md:text-3xl font-bold text-center text-gray 2xl:mb-16 lg:mb-12 lg:text-5xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl mb-4 md:mb-0">
+      <h3 className="text-2xl md:text-3xl font-bold text-center text-black/80 2xl:mb-16 lg:mb-12 lg:text-5xl xl:text-4xl 2xl:text-5xl 3xl:text-5xl 4xl:text-7xl mb-4 md:mb-0">
         - 4 step promise
       </h3>
 
       {/* Steps Grid Container with relative to position the line */}
-      <div className="relative w-full md:w-[105%] 3xl:w-[84%] mx-auto mb-10 justify-center">
+      <div className="relative w-full md:w-[80%]  mx-auto mb-10 justify-center">
         {/* Green Dotted Line */}
         <div
           className="
@@ -56,7 +56,7 @@ const Process = () => {
     grid 
     grid-cols-1 
     md:grid-cols-4 
-    gap-4 md:gap-8 lg:gap-10 
+    gap-4 md:gap-8 lg:gap-0 
     relative z-10 w-full justify-items-center
   "
         >
@@ -67,7 +67,7 @@ const Process = () => {
           bg-[#F5F5F5] rounded-lg border border-[#E0E0E0] shadow-md 
           flex flex-col items-center justify-center 
           relative hover:shadow-lg hover:border-green-600 transition
-          w-[260px] md:w-[200px] lg:w-[250px] xl:w-[200px] 2xl:w-[250px] 3xl:w-[260px] 4xl:w-[350px]
+          w-[260px] md:w-[200px] lg:w-[250px] xl:w-[220px] 2xl:w-[270px] 3xl:w-[300px] 4xl:w-[350px]
           h-[220px] md:h-[250px] lg:h-[210px] xl:h-[180px] 2xl:h-[230px] 3xl:h-[250px] 4xl:h-[300px]
         "
             >

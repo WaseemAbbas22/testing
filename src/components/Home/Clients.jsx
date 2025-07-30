@@ -27,10 +27,10 @@ const OurClients = () => {
     >
       {/* Left Side - Heading */}
 <div className="md:w-[60%] md:mr-10 flex flex-col justify-center mb-8 text-center md:text-left">
-  <h2 className="text-3xl md:text-4xl xl:text-4xl 2xl:text-5xl 3xl:text-6xl font-bold text-gray-800">
+  <h2 className="text-3xl md:text-4xl xl:text-4xl 2xl:text-5xl 3xl:text-5xl font-semibold text-gray-800">
     Our Valued Customers
   </h2>
-  <p className="mt-2 mx-auto md:mx-0 w-[90%] text-justify   4xl:w-[80%] text-xs md:text-base xl:text-sm 2xl:text-base 3xl:text-2xl  text-[#666666]">
+  <p className="mt-2 mx-auto md:mx-0 w-[90%] text-justify   4xl:w-[80%] text-xs md:text-base xl:text-sm 2xl:text-base 3xl:text-lg  text-[#666666]">
     Recognized as one of Dubai's top pest control companies, we offer
     professional pest management services to customers in Dubai, Sharjah,
     and Ajman, guaranteeing trustworthy treatments, quick responses, and
@@ -40,7 +40,7 @@ const OurClients = () => {
 
 
       {/* Right Side - Clients Grid */}
-      <div className="grid grid-cols-3 md:grid-cols-4  w-full md:w-[85%] 4xl:w-[70%] h-[90%]">
+      <div className="grid grid-cols-3 md:grid-cols-4  w-full md:w-[95%] ">
         <ClientBox
           logo={Client8}
           name="Pure Food Processing Industries L.L.C"

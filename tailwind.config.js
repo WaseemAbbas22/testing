@@ -4,6 +4,9 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+   
+  darkMode: false,
+
   theme: {
     extend: {
 
@@ -21,7 +24,6 @@ export default {
         inter: ["Inter", "sans-serif"],
         poppins: ["Poppins","sans-serif"]
       },
-
    
 
       colors: {
@@ -57,3 +59,4 @@ export default {
   },
   plugins: [],
 };
+

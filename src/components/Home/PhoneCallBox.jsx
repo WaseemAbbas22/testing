@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { FaPhoneAlt } from "react-icons/fa";
 
 const PhoneCallBox = ({
+  spaceX = "space-x-2", 
   upperText = "Call for Schedule",
   phoneNumber = "052 152 8725",
   bgColor = "bg-green-600",
@@ -10,6 +11,7 @@ const PhoneCallBox = ({
   iconPadding = "p-4", // 🆕 icon padding input (Tailwind class)
   upperTextColor = "text-white",
   phoneTextColor = "text-white",
+   iconMarginLeft = "ml-2",
   containerHeight = {
     base: "h-[80px]",
     "2xl": "2xl:h-[70px]",
@@ -34,26 +36,27 @@ const PhoneCallBox = ({
   return (
     <div
       className={`
-        flex items-center rounded overflow-hidden shadow-md space-x-2 mb-2
+        flex items-center rounded overflow-hidden shadow-md
+        ${spaceX}
         ${bgColor}
         ${containerHeight.base} ${containerHeight["2xl"] || ""} ${containerHeight["3xl"] || ""} ${containerHeight["4xl"] || ""}
         ${containerWidth.base} ${containerWidth["2xl"] || ""} ${containerWidth["3xl"] || ""} ${containerWidth["4xl"] || ""}
       `}
     >
       {/* Icon Part */}
-      <div className={`bg-white flex items-center justify-center ${iconPadding} ml-2 rounded-md`}>
+      <div className={`bg-white flex items-center justify-center ${iconPadding} ${iconMarginLeft} rounded-md`}>
         <FaPhoneAlt className={`${iconSize} ${iconColor}`} />
       </div>
 
       {/* Text Part */}
-      <div className="flex flex-col justify-center px-1">
+      <div className="flex flex-col justify-center">
         <span
           className={`${upperTextColor} ${upperTextSize.base} ${upperTextSize["2xl"] || ""} ${upperTextSize["3xl"] || ""} ${upperTextSize["4xl"] || ""}`}
         >
           {upperText}
         </span>
         <span
-          className={`font-semibold ${phoneTextColor} ${phoneTextSize.base} ${phoneTextSize["2xl"] || ""} ${phoneTextSize["3xl"] || ""} ${phoneTextSize["4xl"] || ""}`}
+          className={`font-base ${phoneTextColor} ${phoneTextSize.base} ${phoneTextSize["2xl"] || ""} ${phoneTextSize["3xl"] || ""} ${phoneTextSize["4xl"] || ""}`}
         >
           {phoneNumber}
         </span>
@@ -63,6 +66,7 @@ const PhoneCallBox = ({
 };
 
 PhoneCallBox.propTypes = {
+  spaceX: PropTypes.string,
   upperText: PropTypes.string,
   phoneNumber: PropTypes.string,
   bgColor: PropTypes.string,
@@ -75,6 +79,7 @@ PhoneCallBox.propTypes = {
   containerWidth: PropTypes.object,
   upperTextSize: PropTypes.object,
   phoneTextSize: PropTypes.object,
+  iconMarginLeft: PropTypes.string,
 };
 
 export default PhoneCallBox;

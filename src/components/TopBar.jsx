@@ -17,19 +17,19 @@ const TopBar = () => {
         <div className="flex flex-wrap items-center justify-center md:justify-start lg:space-x-4 2xl:space-x-6">
           
           {/* Phone */}
-          <div className="md:flex hidden md:block items-center lg:text-base lg:space-x-2 2xl:text-xl 3xl:text-2xl 2xl:space-x-4">
-            <FaPhoneAlt className="2xl:text-xl 3xl:text-2xl" />
+          <div className="md:flex hidden md:block items-center lg:text-sm lg:space-x-2 2xl:text-base 3xl:text-lg 2xl:space-x-2 3xl:space-x-4">
+            <FaPhoneAlt className="2xl:text-base 3xl:text-lg" />
             <span>+971 52 152 8725</span>
           </div>
 
           {/* Email */}
-          <div className="flex md:flex hidden md:block items-center lg:text-base lg:space-x-2 2xl:text-xl 3xl:text-2xl 2xl:space-x-4">
-            <FaEnvelope className="2xl:text-xl 3xl:text-2xl " />
+          <div className="flex md:flex hidden md:block items-center lg:text-sm lg:space-x-2 2xl:text-base 3xl:text-lg 2xl:space-x-2 3xl:space-x-4">
+            <FaEnvelope className="2xl:text-base 3xl:text-lg " />
             <span>info@accuratepestcontrol.ae</span>
           </div>
 
           {/* Social Icons */}
-          <div className="flex items-center lg:text-base space-x-4 lg:space-x-2 2xl:space-x-4 2xl:text-xl 3xl:text-2xl">
+          <div className="flex items-center lg:text-sm space-x-4 lg:space-x-2 2xl:space-x-2 3xl:space-x-3 2xl:text-base 3xl:text-lg">
             <span>{t('followUsOn')}</span>
             <a href="#" className="hover:text-gray-300 transition">
               <FaFacebookF />
