@@ -35,7 +35,7 @@ const OurTeam = () => {
     <div className="w-full bg-bggray flex items-center justify-center py-10 sm:py-[6vh]">
       <div className="flex flex-col items-center w-full">
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl font-bold text-gray-800 text-center mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl 3xl:text-[55px] font-bold text-black/80 text-center mb-16">
           Get help from our team
         </h2>
 
@@ -74,12 +74,12 @@ const OurTeam = () => {
                 </h3>
 
                 {/* Position */}
-                <p className="text-xs sm:text-sm lg:text-xs mt-1 text-black/70 ">
+                <p className="text-xs sm:text-sm lg:text-xs 3xl:text-base mt-1 text-black/70 ">
                   {member.position}
                 </p>
 
                 {/* Contact */}
-                <p className="text-lg sm:text-sm lg:text-base 2xl:text-xl 3xl:text-2xl text-black/80 font-bold break-words w-full sm:max-w-[152px] 2xl:max-w-[200px] 3xl:max-w-[225px]">
+                <p className="text-lg sm:text-sm lg:text-base 2xl:text-xl 3xl:text-2xl text-black/70 font-bold break-words w-full sm:max-w-[152px] 2xl:max-w-[200px] 3xl:max-w-[225px]">
                   {member.contact}
                 </p>
               </div>
