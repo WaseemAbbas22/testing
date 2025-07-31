@@ -4,14 +4,14 @@ import MissionIcon from "/src/assets/About/mission.png";
 
 const AboutCompany = () => {
   return (
-    <div className="w-full sm:w-[75%] min-h-screen bg-white mx-auto px-4 py-12 flex flex-col justify-left items-start ">
+    <div className="w-full sm:w-[75%] min-h-screen bg-white mx-auto px-4 py-[6vh] flex flex-col justify-left items-start ">
       {/* Company Introduction Section */}
       <div className="mx-auto">
-        <h2 className="text-3xl sm:text-3xl md:text-5xl font-bold mb-6 sm:mb-8 text-gray-900   text-left">
+        <h2 className="text-[32px] sm:text-3xl md:text-5xl xl:text-4xl 2xl:text-5xl 3xl:text-[52px] font-bold mb-2 sm:mb-[5vh] text-gray-900   text-left">
           Company Introduction
         </h2>
 
-        <div className="space-y-4 sm:space-y-6 text-[#666666] text-sm sm:text-base md:text-[18px] leading-relaxed text-justify">
+        <div className="space-y-3 xl:space-y-3 sm:space-y-2 3xl:space-y-5 text-[#666666] text-sm sm:text-base md:text-[18px] xl:text-[15px] 2xl:text-[18px] 3xl:text-[20px] xl:leading-tight">
           <p>
             At Accurate Pest Control, we pride ourselves on being one of the
             fastest-growing pest control companies in the UAE. Established in
@@ -131,23 +131,23 @@ const AboutCompany = () => {
 
       {/* Mission & Vision Boxes */}
       <div className="mt-12 sm:mt-16 w-full mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-4">
           {/* Our Mission */}
-          <div className="bg-gradient-to-b from-[#20B73D] to-[#0C520A] text-white rounded-lg p-6 sm:p-8 shadow-lg flex flex-col items-center text-center min-h-[300px] sm:min-h-[350px]">
+          <div className="bg-gradient-to-b from-[#20B73D] to-[#0C520A] text-white rounded-lg p-6 sm:p-[6vh]  shadow-lg flex flex-col items-center text-center min-h-[100px] sm:min-h-[160px]">
             {/* Vision Icon (Image instead of SVG) */}
-            <div className="w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-4 bg-white rounded-full flex items-center justify-center overflow-hidden">
+            <div className="w-12 h-12 xl:w-12 xl:h-12  2xl:w-16 2xl:h-16 3xl:w-20 3xl:h-20 mb-4 sm:mb-4 bg-white rounded-full flex items-center justify-center overflow-hidden">
               <img
                 src={MissionIcon}
                 alt="Mission Icon"
-                className="w-6 h-6 sm:w-8 sm:h-8 md:w-20 md:h-20 object-contain"
+                className="w-12 h-12 sm:w-8 sm:h-8 md:w-20 md:h-20 object-contain"
               />
             </div>
 
-            <h3 className="text-xl sm:text-2xl xl:text-3xl font-bold mb-4 sm:mb-6">
+            <h3 className="text-xl sm:text-2xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl font-bold mb-4 sm:mb-6">
               Our Mission
             </h3>
 
-            <p className="text-xs sm:text-sm md:text-base leading-relaxed max-w-base">
+            <p className="text-xs text-white/90 sm:text-sm md:text-xs xl:text-xs 2xl:text-base 3xl:text-lg leading-relaxed  max-w-xl md:max-w-md 2xl:max-w-lg 3xl:max-w-xl">
               We offer numerous benefits to our customers, taking pride in our
               integrity and business ethics. Our commitment to continuous
               improvement drives us to remain at the forefront of the pest
@@ -159,21 +159,21 @@ const AboutCompany = () => {
           </div>
 
           {/* Our Vision */}
-          <div className="bg-gradient-to-b from-[#20B73D] to-[#0C520A] text-white rounded-lg p-6 sm:p-8 shadow-lg flex flex-col items-center text-center min-h-[300px] sm:min-h-[350px]">
+          <div className="bg-gradient-to-b from-[#20B73D] to-[#0C520A] text-white rounded-lg p-6 sm:p-[6vh]  shadow-lg flex flex-col items-center text-center min-h-[100px] sm:min-h-[160px]">
             {/* Vision Icon (Image instead of SVG) */}
-            <div className="w-12 h-12 sm:w-16 sm:h-16 mb-4 sm:mb-4 bg-white rounded-full flex items-center justify-center overflow-hidden">
+            <div className="w-12 h-12 xl:w-12 xl:h-12  2xl:w-16 2xl:h-16 3xl:w-20 3xl:h-20 mb-4 sm:mb-4 bg-white rounded-full flex items-center justify-center overflow-hidden">
               <img
                 src={VisionIcon}
                 alt="Vision Icon"
-                className="w-6 h-6 sm:w-8 sm:h-8 md:w-20 md:h-20 object-contain"
+                className="w-12 h-12 sm:w-8 sm:h-8 md:w-20 md:h-20 object-contain"
               />
             </div>
 
-            <h3 className="text-xl sm:text-2xl xl:text-3xl font-bold mb-4 sm:mb-6">
+            <h3 className="text-xl sm:text-2xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl font-bold mb-4 sm:mb-6">
               Our Vision
             </h3>
 
-            <p className="text-xs sm:text-sm md:text-base leading-relaxed max-w-base">
+            <p className="text-xs text-white/90 sm:text-sm md:text-xs xl:text-xs 2xl:text-base 3xl:text-lg leading-relaxed max-w-xl md:max-w-md 2xl:max-w-lg 3xl:max-w-xl">
               Our mission is to deliver exceptional customer value, rooted in
               integrity and strong business ethics. We are committed to
               continuous improvement, staying abreast of advancements in pest
