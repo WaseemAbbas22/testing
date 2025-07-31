@@ -93,7 +93,7 @@ const KeepSteps = () => {
         </div>
 
         {/* View More Button */}
-        <button className="bg-green-600 text-white text-xs 2xl:text-sm font-medium px-6 py-2 rounded-md flex items-center gap-2 hover:bg-green-700 transition mt-6">
+        <button className="bg-green-600 text-white text-xs 2xl:text-sm font-medium px-6 py-2 rounded-md flex items-center gap-2 hover:bg-green-700 transition mt-6 3xl:mt-20">
           View More
         </button>
       </div>

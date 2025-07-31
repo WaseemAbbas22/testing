@@ -145,7 +145,7 @@ const OurClients = () => {
             lg:w-32 lg:h-20
             xl:w-24 xl:h-6 xl:mt-4 xl:mb-2
             2xl:w-28 2xl:h-7 2xl:mt-7
-            3xl:w-32 3xl:h-8 3xl:mt-4 3xl:mb-2
+            3xl:w-32 3xl:h-8 3xl:mt-10 3xl:mb-2
             4xl:w-44 4xl:h-10
             "
         />
@@ -198,7 +198,7 @@ const OurClients = () => {
             lg:w-32 lg:h-20
             xl:w-20 xl:h-12
             2xl:w-20 2xl:h-14
-            3xl:w-44 3xl:h-30
+            3xl:w-36 3xl:h-24
             4xl:w-36 4xl:h-20
           "
         />
@@ -219,7 +219,7 @@ const OurClients = () => {
             lg:w-32 lg:h-20
             xl:w-28 xl:h-4
             2xl:w-28 2xl:h-4 2xl:mt-10
-            3xl:w-44 3xl:h-8  3xl:mt-12 3xl:mb-4
+            3xl:w-44 3xl:h-8  3xl:mt-14 3xl:mb-4
             4xl:w-56 4xl:h-6
           "
         />
