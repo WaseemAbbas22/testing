@@ -53,7 +53,7 @@ const ContactRequest = () => {
             ref={containerRef}
             className="
               flex flex-col bg-white rounded-lg shadow w-full
-              md:flex-row  md:h-[60px] 2xl:h-[70px] 
+              md:flex-row  md:h-[60px] 2xl:h-[70px] 4xl:h-[85px]
             "
           >
             {/* Dropdown */}
@@ -61,7 +61,7 @@ const ContactRequest = () => {
               <select
                 value={service}
                 onChange={(e) => setService(e.target.value)}
-                className="w-full text-[#999999] text-xs focus:outline-none border-b border-[#D7D7D7] md:border-0 h-[38px]"
+                className="w-full text-[#999999] text-xs 3xl:text-lg 4xl:text-2xl focus:outline-none border-b border-[#D7D7D7] md:border-0 h-[38px]"
                 required
               >
                 <option value="">Select Pest Concern</option>
@@ -83,7 +83,7 @@ const ContactRequest = () => {
                 onChange={(e) => setName(e.target.value)}
                 className="w-full h-[38px] 4xl:ml-4 text-[#999999] border-b border-[#D7D7D7] text-xs focus:outline-none 
     md:border-0
-    xl:text-sm"
+    xl:text-sm 3xl:text-lg 4xl:text-2xl"
                 required
               />
             </div>
@@ -126,14 +126,14 @@ const ContactRequest = () => {
                 onChange={(e) => setName(e.target.value)}
                 className="w-full h-[38px] 4xl:ml-4 text-[#999999] text-xs focus:outline-none 
     md:border-0
-    xl:text-sm"
+    xl:text-sm 3xl:text-lg 4xl:text-2xl"
                 required
               />
             </div>
           </div>
 
           {/* Send Button */}
-          <div className="flex items-center justify-start px-4 py-3 2xl:py-2 4xl:py-5 md:py-0 md:h-[60px] 2xl:h-[86px]">
+          <div className="flex items-center justify-start px-4 py-3 2xl:py-2 4xl:py-0 4xl:md:py-0 md:h-[60px] 2xl:h-[86px]">
             <button
               type="submit"
               className="bg-[#32A849] text-white text-sm font-semibold px-8 py-4 h-full rounded shadow 

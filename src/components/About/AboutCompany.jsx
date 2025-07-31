@@ -7,11 +7,11 @@ const AboutCompany = () => {
     <div className="w-full sm:w-[75%] min-h-screen bg-white mx-auto px-4 py-[6vh] flex flex-col justify-left items-start ">
       {/* Company Introduction Section */}
       <div className="mx-auto">
-        <h2 className="text-[32px] sm:text-3xl md:text-5xl xl:text-4xl 2xl:text-5xl 3xl:text-[52px] font-bold mb-2 sm:mb-[5vh] text-gray-900   text-left">
+        <h2 className="text-[32px] sm:text-3xl md:text-5xl xl:text-4xl 2xl:text-5xl 3xl:text-[52px] 4xl:text-[60px] font-bold mb-2 sm:mb-[5vh] text-gray-900   text-left">
           Company Introduction
         </h2>
 
-        <div className="space-y-3 xl:space-y-3 sm:space-y-2 3xl:space-y-5 text-[#666666] text-sm sm:text-base md:text-[18px] xl:text-[15px] 2xl:text-[18px] 3xl:text-[20px] xl:leading-tight">
+        <div className="space-y-3 xl:space-y-3 sm:space-y-2 3xl:space-y-5 text-[#666666] text-sm sm:text-base md:text-[18px] xl:text-[15px] 2xl:text-[18px] 3xl:text-[20px] 4xl:text-[26px] xl:leading-tight 4xl:leading-normal">
           <p>
             At Accurate Pest Control, we pride ourselves on being one of the
             fastest-growing pest control companies in the UAE. Established in
@@ -147,7 +147,7 @@ const AboutCompany = () => {
               Our Mission
             </h3>
 
-            <p className="text-xs text-white/90 sm:text-sm md:text-xs xl:text-xs 2xl:text-base 3xl:text-lg leading-relaxed  max-w-xl md:max-w-md 2xl:max-w-lg 3xl:max-w-xl">
+            <p className="text-xs text-white/90 sm:text-sm md:text-xs xl:text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl leading-relaxed  max-w-xl md:max-w-md 2xl:max-w-lg 3xl:max-w-xl 4xl:max-w-2xl">
               We offer numerous benefits to our customers, taking pride in our
               integrity and business ethics. Our commitment to continuous
               improvement drives us to remain at the forefront of the pest
@@ -173,7 +173,7 @@ const AboutCompany = () => {
               Our Vision
             </h3>
 
-            <p className="text-xs text-white/90 sm:text-sm md:text-xs xl:text-xs 2xl:text-base 3xl:text-lg leading-relaxed max-w-xl md:max-w-md 2xl:max-w-lg 3xl:max-w-xl">
+            <p className="text-xs text-white/90 sm:text-sm md:text-xs xl:text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl leading-relaxed max-w-xl md:max-w-md 2xl:max-w-lg 3xl:max-w-xl 4xl:max-w-2xl">
               Our mission is to deliver exceptional customer value, rooted in
               integrity and strong business ethics. We are committed to
               continuous improvement, staying abreast of advancements in pest

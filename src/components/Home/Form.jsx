@@ -19,51 +19,51 @@ const Form = () => {
 
       {/* Container */}
       <div className="relative bg-[#33A92F80] w-full h-full flex items-center justify-center px-4 sm:px-6 xl:px-8">
-        <div className="bg-white border border-[#D6D6D6] rounded-2xl shadow-lg sm:w-[70%] h-[90%] flex flex-col px-4 sm:px-10 py-6 sm:py-8 z-10 overflow-y-auto">
+        <div className="bg-white border border-[#D6D6D6] rounded-2xl shadow-lg sm:w-[70%] h-[96%] flex flex-col px-4 sm:px-10 py-6 sm:py-8 z-10 overflow-y-auto">
           
           {/* Heading */}
-          <h1 className="text-center text-black/80 font-bold text-xl sm:text-2xl md:text-4xl 2xl:text-5xl text-black mb-4 3xl:mb-0 3xl:mt-4 2xl:mb-0 2xl:mt-4">
+          <h1 className="text-center text-black/80 font-bold text-xl sm:text-2xl md:text-4xl 2xl:text-5xl text-black mb-4 3xl:mb-4 3xl:mt-2 2xl:mb-0 2xl:mt-4 4xl:mb-12 4xl:mt-8 4xl:text-6xl">
             {t("getInTouch")}
           </h1>
 
           {/* Form */}
-          <form className="flex flex-col justify-center flex-grow w-full 2xl:space-y-4">
+          <form className="flex flex-col justify-center flex-grow w-full 2xl:space-y-4 4xl:space-y-16 3xl:space-y-12">
             {/* Grid Inputs */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-x-6   w-full">
               {/* First Name */}
               <div>
-                <label className="text-black/70 font-semibold text-xs 2xl:text-lg" htmlFor="firstName">
+                <label className="text-black/70 font-semibold text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl" htmlFor="firstName">
                   {t("firstName")}
                 </label>
                 <input
                   id="firstName"
                   type="text"
                   placeholder={t("firstName")}
-                  className="custom-textarea border-[#DEDEDE] placeholder-gray-100 pl-3 2xl:pl-6 2xl:h-10 3xl:h-16 text-xs 2xl:text-base 3xl:text-lg rounded-md 2xl:rounded-lg w-full"
+                  className="custom-textarea border-[#DEDEDE] placeholder-gray-100 pl-3 2xl:pl-6 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
                 />
               </div>
 
               {/* Last Name */}
               <div>
-                <label className="text-black/70 font-semibold text-xs 2xl:text-base 3xl:text-lg" htmlFor="lastName">
+                <label className="text-black/70 font-semibold text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl" htmlFor="lastName">
                   {t("lastName")}
                 </label>
                 <input
                   id="lastName"
                   type="text"
                   placeholder={t("lastName")}
-                  className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-3 2xl:pl-6 2xl:h-10 3xl:h-16 text-xs 2xl:text-base 3xl:text-lg rounded-md 2xl:rounded-lg w-full"
+                  className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-3 2xl:pl-6 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
                 />
               </div>
 
               {/* Phone */}
               <div>
-                <label className="text-black/70 font-semibold text-xs 2xl:text-base 3xl:text-lg" htmlFor="phone">
+                <label className="text-black/70 font-semibold text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl" htmlFor="phone">
                   {t("phoneNo")}
                 </label>
-                <div className="custom-textarea border-[#DEDEDE] rounded-md 2xl:rounded-lg text-xs  2xl:h-10 3xl:h-16">
+                <div className="custom-textarea border-[#DEDEDE] rounded-md 2xl:rounded-lg text-xs  2xl:h-10 3xl:h-16 4xl:h-20">
                   <PhoneInput
                     country={"ae"}
                     value={phone}
@@ -95,26 +95,26 @@ const Form = () => {
 
               {/* Email */}
               <div>
-                <label className="text-black/70 font-semibold text-xs 3xl:text-lg 2xl:text-base" htmlFor="email">
+                <label className="text-black/70 font-semibold text-xs 3xl:text-lg 2xl:text-base 4xl:text-2xl" htmlFor="email">
                   {t("email")}
                 </label>
                 <input
                   id="email"
                   type="email"
                   placeholder={t("email")}
-                  className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-3 2xl:pl-6 2xl:h-10 3xl:h-16 text-xs 2xl:text-base 3xl:text-lg rounded-md 2xl:rounded-lg w-full"
+                  className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-3 2xl:pl-6 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
                 />
               </div>
 
               {/* Pest Concern */}
               <div>
-                <label className="text-black/70 font-semibold text-xs 2xl:text-lg" htmlFor="pestConcern">
+                <label className="text-black/70 font-semibold text-xs 2xl:text-lg 4xl:text-2xl" htmlFor="pestConcern">
                   {t("selectPestConcern")}
                 </label>
                 <select
                   id="pestConcern"
-                  className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-2 2xl:pl-6 2xl:h-10 3xl:h-16 text-xs 2xl:text-base 3xl:text-lg rounded-md 2xl:rounded-lg w-full"
+                  className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-2 2xl:pl-6 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
                 >
                   <option value="">select----</option>
@@ -128,12 +128,12 @@ const Form = () => {
 
               {/* Priority */}
               <div>
-                <label className="text-black/70 font-semibold text-xs 2xl:text-lg" htmlFor="priorityType">
+                <label className="text-black/70 font-semibold text-xs 2xl:text-lg 4xl:text-2xl" htmlFor="priorityType">
                   {t("selectPriorityType")}
                 </label>
                 <select
                   id="priorityType"
-                  className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-3 2xl:pl-6 2xl:h-10 3xl:h-16 text-xs 2xl:text-base 3xl:text-lg rounded-md 2xl:rounded-lg w-full"
+                  className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-3 2xl:pl-6 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
                 >
                   <option value="">select----</option>
@@ -146,13 +146,13 @@ const Form = () => {
 
             {/* Message Box */}
             <div className=" w-full">
-              <label className="text-black/70 font-semibold text-xs 2xl:text-lg" htmlFor="message">
+              <label className="text-black/70 font-semibold text-xs 2xl:text-lg 4xl:text-2xl" htmlFor="message">
                 {t("message")}
               </label>
               <textarea
                 id="message"
                 placeholder={t("writeYourMessage")}
-                className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-4 2xl:pl-6 4xl:py-6 h-28 2xl:h-40 3xl:h-48 text-xs 2xl:text-base 3xl:text-lg rounded-md 2xl:rounded-lg w-full"
+                className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-4 2xl:pl-6 4xl:py-6 h-28 2xl:h-40 3xl:h-48 4xl:h-56 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                 required
               ></textarea>
             </div>
@@ -161,7 +161,7 @@ const Form = () => {
             <div className="flex justify-start mt-4 2xl:mb-2">
               <button
                 type="submit"
-                className="text-xs 2xl:text-base 3xl:text-lg bg-green-600 text-white rounded-md 2xl:rounded-lg h-8 w-[120px] sm:w-[100px] 2xl:w-[150px] 2xl:h-12 3xl:mt-24 px-1 active:scale-95 transition hover:bg-green-700"
+                className="text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl bg-green-600 text-white rounded-md 2xl:rounded-lg h-8 w-[120px] sm:w-[100px] 2xl:w-[150px] 4xl:w-[180px] 4xl:h-16 2xl:h-12 2xl:mt-16 3xl:mt-24 4xl:mt-20 px-1 active:scale-95 transition hover:bg-green-700"
               >
                 {t("sendMessage")}
               </button>

@@ -14,7 +14,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-b-[2px] 2xl:border-b-[8px] border-green-600 shadow-sm text-gray-900 h-[35px] xl:h-[13vh] 2xl:h-[12vh] 3xl:h-[12vh] 4xl:h-[9vh]">
+    <nav className="bg-white border-b-[4px] 2xl:border-b-[8px] border-green-600 shadow-sm text-gray-900 h-[35px] xl:h-[13vh] 2xl:h-[12vh] 3xl:h-[12vh] 4xl:h-[9vh]">
       <div
         className="
         w-[90%]
@@ -101,7 +101,7 @@ const Navbar = () => {
                 base: "h-[47px]",
                 "2xl": "2xl:h-[53px]",
                 "3xl": "3xl:h-[58px]",
-                "4xl": "4xl:h-[85px]",
+                "4xl": "4xl:h-[78px]",
               }}
               containerWidth={{
                 base: "w-[160px]",

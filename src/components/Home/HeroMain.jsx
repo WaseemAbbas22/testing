@@ -5,13 +5,13 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const HeroMain = () => {
   return (
-    <div className="relative bg-[#32A84926]/15 h-[70%] flex items-center justify-center py-8 px-4 sm:px-0 mx-auto sm:py-[6vh]">
+    <div className="relative bg-[#32A84926]/15 h-[70%] flex items-center justify-center py-8 px-4 sm:px-0  sm:py-[6vh]">
       {/* Inner Content Container - 83% width */}
-      <div className="sm:w-[75%] flex flex items-center justify-center">
+      <div className="md:w-[75%] mx-auto flex items-center justify-center">
         <div className="flex flex-col sm:flex-row items-center w-full">
 
           {/* Text Section */}
-          <div className="flex-1 flex flex-col justify-center  xl:space-y-[1.2vh] 3xl:space-y-[1.8vh]">
+          <div className="flex-1 flex-col justify-center  xl:space-y-[1.2vh] 3xl:space-y-[1.8vh]">
             <h1 className="text-2xl font-bold text-gray-900 
             sm:text-lg 
             md:text-xl 
@@ -31,7 +31,8 @@ const HeroMain = () => {
             lg:text-base 
             xl:text-[15px] xl:leading-[1] 
             2xl:text-lg 2xl:leading-[1.2]
-            3xl:text-xl 3xl:leading-[1] "
+            3xl:text-xl 3xl:leading-[1] 
+            4xl:text-3xl 4xl:leading-[1.2] text-left"
             >
               Dubai municipality's pest control solution tailored <br /> control
               for commercial properties
@@ -44,7 +45,8 @@ const HeroMain = () => {
             lg:text-xs 
             xl:text-[12.8px] 
             2xl:text-[15.8px] 2xl:leading-[1.2]
-            3xl:text-lg 3xl:leading-[1.3]">
+            3xl:text-lg 3xl:leading-[1.2]
+            4xl:text-xl 4xl:leading-[1.3]">
               In Dubai, Pest Control is not only essential for business but also
               a top functional and legal concern. Our company's Pest Control
               Dubai services are designed for industries that value cleanliness,
@@ -67,7 +69,8 @@ const HeroMain = () => {
               lg:text-xs lg:px-4
               xl:text-xs xl:px-2 xl:py-1 xl:rounded-[4px]
               2xl:text-sm 2xl:px-4 2xl:py-2
-              3xl:text-base 3xl:px-3 3xl:py-2 3xl:rounded-md"
+              3xl:text-base 3xl:px-3 3xl:py-2 3xl:rounded-md
+              4xl:text-lg 4xl:px-4 4xl:py-2 4xl:rounded-md"
               >
                 Get a Free Inspection
               </button>
@@ -78,7 +81,8 @@ const HeroMain = () => {
               lg:text-xs lg:px-6
               xl:text-xs xl:px-2 xl:py-2 xl:rounded-[4px]
               2xl:text-sm 2xl:px-4 2xl:py-2
-              3xl:text-base 3xl:px-3 3xl:py-2 3xl:rounded-md  "
+              3xl:text-base 3xl:px-3 3xl:py-2 3xl:rounded-md 
+              4xl:text-lg 4xl:px-4 4xl:py-2 4xl:rounded-md"
               >
                 View Services
               </button>
@@ -89,9 +93,9 @@ const HeroMain = () => {
           <div className="md-w-[2vh] flex-shrink-0"></div>
 
           {/* Image Section */}
-          <div className="flex-1 flex items-center justify-center  mt-4 sm:mt-0">
+          <div className="flex-1 items-center justify-center  mt-4 sm:mt-0">
             <img
-              className="  rounded-lg"
+              className="object-cover  rounded-lg"
               src={HeroImg}
               alt="Hero"
             />

@@ -59,7 +59,7 @@ const Ratings = ({ rating }) => {
             <img
               src={googleLogo}
               alt="Facebook Logo"
-              className="h-20 sm:h-10 md:h-20 xl:h-20 2xl:h-24 3xl:h-[130x] 4xl:h-44 2xl:ml-4 3xl:ml-0"
+              className="h-20 sm:h-10 md:h-20 xl:h-20 2xl:h-24 3xl:h-[110px] 4xl:h-44 2xl:ml-4 3xl:ml-0"
             />
           </div>
 
@@ -68,7 +68,7 @@ const Ratings = ({ rating }) => {
 
           {/* Content */}
           <div className="flex-1 md:ml-4 4xl:ml-10 space-y-2 sm:space-y-0 2xl:space-y-2 3xl:space-y-2">
-            <p className="text-xs xl:text-base 2xl:text-xl 3xl:text-2xl text-black/60 ">
+            <p className="text-xs xl:text-base 2xl:text-xl 3xl:text-xl text-black/60 ">
               Google Rating
             </p>
             <div className="flex items-center">
@@ -79,7 +79,7 @@ const Ratings = ({ rating }) => {
             </div>
             <a
               href="#"
-              className="text-xs xl:text-base 2xl:text-xl 3xl:text-2xl text-blue-600 hover:text-green-800"
+              className="text-xs xl:text-base 2xl:text-xl 3xl:text-xl text-blue-600 hover:text-green-800"
             >
               See all our Reviews
             </a>
@@ -94,7 +94,7 @@ const Ratings = ({ rating }) => {
             <img
               src={facebookLogo}
               alt="Facebook Logo"
-              className="h-14 sm:h-10 md:h-20 xl:h-14 2xl:h-[80px] 3xl:h-[130x] 4xl:h-44 2xl:ml-0 3xl:ml-0"
+              className="h-14 sm:h-10 md:h-20 xl:h-14 2xl:h-[80px] 3xl:h-[90px] 4xl:h-32 2xl:ml-0 3xl:ml-0"
             />
           </div>
 
@@ -103,7 +103,7 @@ const Ratings = ({ rating }) => {
 
           {/* Content */}
           <div className="flex-1 md:ml-4 4xl:ml-10 space-y-2 sm:space-y-0 2xl:space-y-2 3xl:space-y-2">
-            <p className="text-xs xl:text-base 2xl:text-xl 3xl:text-2xl text-black/60 ">
+            <p className="text-xs xl:text-base 2xl:text-xl 3xl:text-xl text-black/60 ">
               Facebook Rating
             </p>
             <div className="flex items-center">
@@ -114,7 +114,7 @@ const Ratings = ({ rating }) => {
             </div>
             <a
               href="#"
-              className="text-xs xl:text-base 2xl:text-xl 3xl:text-2xl text-blue-600 hover:text-green-800"
+              className="text-xs xl:text-base 2xl:text-xl 3xl:text-xl text-blue-600 hover:text-green-800"
             >
               See all our Reviews
             </a>
