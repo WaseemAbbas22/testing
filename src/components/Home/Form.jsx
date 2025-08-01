@@ -161,7 +161,7 @@ const Form = () => {
             <div className="flex justify-start mt-4 2xl:mb-2">
               <button
                 type="submit"
-                className="text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl bg-green-600 text-white rounded-md 2xl:rounded-lg h-8 w-[120px] sm:w-[100px] 2xl:w-[150px] 4xl:w-[180px] 4xl:h-16 2xl:h-12 2xl:mt-16 3xl:mt-24 4xl:mt-20 px-1 active:scale-95 transition hover:bg-green-700"
+                className="text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl bg-green-600 text-white rounded-md 2xl:rounded-lg h-8 w-[120px] sm:w-[100px] 2xl:w-[150px] 4xl:w-[180px] 4xl:h-16 2xl:h-12 2xl:mt-16 3xl:mt-2 4xl:mt-20 px-1 active:scale-95 transition hover:bg-green-700"
               >
                 {t("sendMessage")}
               </button>
