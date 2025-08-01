@@ -138,7 +138,7 @@ const ContactRequest = () => {
               type="submit"
               className="bg-[#32A849] text-white text-sm font-semibold px-8 py-4 h-full rounded shadow 
     hover:bg-green-700 transition duration-300
-    sm:text-sm sm:px-10 sm:rounded-lg 
+    sm:text-sm sm:px-10 sm:rounded-md  
     xl:text-sm 3xl:text-lg 4xl:text-xl"
             >
               SEND

@@ -39,7 +39,7 @@ const Form = () => {
                   id="firstName"
                   type="text"
                   placeholder={t("firstName")}
-                  className="custom-textarea border-[#DEDEDE] placeholder-gray-100 pl-3 2xl:pl-6 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
+                  className="custom-textarea border-[#DEDEDE] placeholder-gray-100 pl-3 2xl:pl-6 3xl:pl-4 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
                 />
               </div>
@@ -53,7 +53,7 @@ const Form = () => {
                   id="lastName"
                   type="text"
                   placeholder={t("lastName")}
-                  className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-3 2xl:pl-6 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
+                  className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-3 2xl:pl-6 3xl:pl-4 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
                 />
               </div>
@@ -102,7 +102,7 @@ const Form = () => {
                   id="email"
                   type="email"
                   placeholder={t("email")}
-                  className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-3 2xl:pl-6 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
+                  className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-3 2xl:pl-6 3xl:pl-4 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
                 />
               </div>
@@ -114,7 +114,7 @@ const Form = () => {
                 </label>
                 <select
                   id="pestConcern"
-                  className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-2 2xl:pl-6 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
+                  className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-2 2xl:pl-6 3xl:pl-4 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
                 >
                   <option value="">select----</option>
@@ -133,7 +133,7 @@ const Form = () => {
                 </label>
                 <select
                   id="priorityType"
-                  className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-3 2xl:pl-6 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
+                  className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-3 2xl:pl-6 3xl:pl-4 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
                 >
                   <option value="">select----</option>
@@ -152,7 +152,7 @@ const Form = () => {
               <textarea
                 id="message"
                 placeholder={t("writeYourMessage")}
-                className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-4 2xl:pl-6 4xl:py-6 h-28 2xl:h-40 3xl:h-48 4xl:h-56 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
+                className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-4 2xl:pl-6 3xl:pl-4 4xl:py-6 h-28 2xl:h-40 3xl:h-48 4xl:h-56 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                 required
               ></textarea>
             </div>

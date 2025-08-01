@@ -10,7 +10,7 @@ const PestGrid = () => {
         </h2>
 
         {/* Description */}
-        <p className="text-black/60 text-sm md:text-base lg:text-sm 2xl:text-lg 3xl:text-lg mt-2 mb-6 md:mb-8 lg:mb-8 2xl:mb-10 sm:max-w-[40%]">
+        <p className="text-black/60 text-sm md:text-base lg:text-sm 2xl:text-lg 3xl:text-lg mt-2 mb-6 md:mb-8 lg:mb-8 2xl:mb-10 sm:max-w-[35%]">
           Protect your space with our trusted pest control services — fast, effective, and approved by Dubai Municipality standards.
         </p>
 

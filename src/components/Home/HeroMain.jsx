@@ -20,8 +20,7 @@ const HeroMain = () => {
             2xl:text-[40px] 
             3xl:text-[45px] 3xl:leading-tight 
             4xl:text-6xl ">
-              Trusted Commercial Pest <br /> Control Dubai Solution -<br />{" "}
-              Fast, Safe, Compliant
+              Trusted Commercial Pest <br /> Control Dubai Solution Fast<br /> Safe Compliant
             </h1>
 
             <h2
@@ -43,7 +42,7 @@ const HeroMain = () => {
             sm:text-sm 
             md:text-base 
             lg:text-xs 
-            xl:text-[12.8px] 
+            xl:text-[12.7px] 
             2xl:text-[15.8px] 2xl:leading-[1.2]
             3xl:text-lg 3xl:leading-[1.2]
             4xl:text-xl 4xl:leading-[1.3]">
@@ -67,7 +66,7 @@ const HeroMain = () => {
               sm:text-sm 
               md:text-base 
               lg:text-xs lg:px-4
-              xl:text-xs xl:px-2 xl:py-1 xl:rounded-[4px]
+              xl:text-xs xl:px-2 xl:mt-1 xl:py-1 xl:rounded-[4px]
               2xl:text-sm 2xl:px-4 2xl:py-2
               3xl:text-base 3xl:px-3 3xl:py-2 3xl:rounded-md
               4xl:text-lg 4xl:px-4 4xl:py-2 4xl:rounded-md"
@@ -79,7 +78,7 @@ const HeroMain = () => {
               sm:text-sm 
               md:text-base 
               lg:text-xs lg:px-6
-              xl:text-xs xl:px-2 xl:py-2 xl:rounded-[4px]
+              xl:text-xs xl:px-2 xl:py-2 xl:mt-1 xl:rounded-[4px]
               2xl:text-sm 2xl:px-4 2xl:py-2
               3xl:text-base 3xl:px-3 3xl:py-2 3xl:rounded-md 
               4xl:text-lg 4xl:px-4 4xl:py-2 4xl:rounded-md"
@@ -113,16 +112,16 @@ const HeroMain = () => {
       </div>
 
       {/* PhoneCallBox */}
-      <div className="fixed hidden md:block bottom-10 right-0 z-50">
+      <div className="fixed hidden md:block bottom-10 xl:bottom-80 3xl:bottom-[400px] right-0 z-50">
         <PhoneCallBox
           upperText="Call for Free Inspection"
-          phoneNumber="800 8725"
+          phoneNumber="0800 8725"
           bgColor="bg-[#E50000]"
           iconColor="text-[#E50000]"
           iconSize="xl:text-2xl 3xl:text-3xl 4xl:text-3xl"
-          iconPadding="xl:p-3 4xl:p-4 3xl:p-4"
-          upperTextColor="text-white"
-          phoneTextColor="text-white"
+          iconPadding="xl:p-3 4xl:p-4 3xl:p-3"
+          upperTextColor="text-white xl:text-[13px] 3xl:text-[15px]"
+          phoneTextColor="text-white font-bold"
           iconMarginLeft="xl:ml-2"
           containerHeight={{
             base: "h-[60px]",
@@ -131,9 +130,9 @@ const HeroMain = () => {
             "4xl": "4xl:h-[85px]",
           }}
           containerWidth={{
-            base: "w-[250px]",
+            base: "w-[200px]",
             "2xl": "2xl:w-[250px]",
-            "3xl": "3xl:w-[280px]",
+            "3xl": "3xl:w-[245px]",
             "4xl": "4xl:w-[350px]",
           }}
           upperTextSize={{
@@ -143,9 +142,9 @@ const HeroMain = () => {
             "4xl": "4xl:text-2xl",
           }}
           phoneTextSize={{
-            base: "text-xl",
+            base: "text-2xl",
             "2xl": "2xl:text-lg",
-            "3xl": "3xl:text-2xl",
+            "3xl": "3xl:text-3xl",
             "4xl": "4xl:text-3xl",
           }}
         />

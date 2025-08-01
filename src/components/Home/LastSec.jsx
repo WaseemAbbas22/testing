@@ -34,15 +34,13 @@ const KeepSteps = () => {
     <div className="w-full md:h-[90vh] 2xl:h-[80vh] bg-gray-50 px-4 py-10 md:px-16 lg:px-24 xl:px-32 2xl:py-10 flex items-center justify-center">
       <div className="flex flex-col items-center justify-center w-full">
         {/* Heading */}
-        <h2 className="text-2xl font-semibold text-center text-black/80 mb-2 2xl:text-4xl">
+        <h2 className="text-2xl font-semibold text-center text-black/90 mb-2 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl">
           Keep the Steps with Us
         </h2>
 
         {/* Subtext */}
         <p className="text-center sm:w-[40%] max-w-4xl text-[#444444] text-xs 2xl:text-lg 3xl:text-lg 4xl:text-lg mb-4">
-          To get latest information and be sensitive to market information,
-          product trends, and international facts from Mystore.com news and
-          events.
+          To get latest information and be sensitive to market information, product trends international facts from Mystore.com news and events.
         </p>
 
         {/* Cards */}
@@ -93,7 +91,7 @@ const KeepSteps = () => {
         </div>
 
         {/* View More Button */}
-        <button className="bg-green-600 text-white text-xs 2xl:text-sm font-medium px-6 py-2 rounded-md flex items-center gap-2 hover:bg-green-700 transition mt-6 3xl:mt-20">
+        <button className="bg-green-600 text-white text-xs 2xl:text-sm font-medium px-6 py-2 3xl:py-3 rounded-md flex items-center gap-2 hover:bg-green-700 transition mt-6 3xl:mt-20">
           View More
         </button>
       </div>

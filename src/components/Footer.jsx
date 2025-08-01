@@ -55,7 +55,7 @@ const Footer = () => {
                 About Us
               </h2>
               <ul className="text-[12px] lg:text-[13px] text-white/90 xl:text-sm 2xl:text-lg 3xl:text-xl 4xl:text-2xl font-md space-y-1">
-                {["Home", "Documents"].map((item, i) => (
+                {["Home", "Documents","About Us"].map((item, i) => (
                   <li key={i}>
                     <a href="#">{item}</a>
                   </li>
@@ -198,7 +198,7 @@ const Footer = () => {
           <div>
             <h2 className="font-semibold mb-2 text-xl">About Us</h2>
             <ul className="text-xs text-white/90 space-y-1">
-              {["Home", "Documents"].map((item, i) => (
+              {["Home", "Documents","About Us"].map((item, i) => (
                 <li key={i}>
                   <a href="#">{item}</a>
                 </li>
@@ -235,21 +235,27 @@ const Footer = () => {
             <div className="bg-white rounded-full p-1">
               <FaPhoneAlt className="text-darkgreen  text-xs" />
             </div>
-            <span className="text-base text-white/90">+971 52 152 8725, +971 4 375 6435</span>
+            <span className="text-base text-white/90">
+              +971 52 152 8725, +971 4 375 6435
+            </span>
           </div>
 
           <div className="flex items-center gap-3">
             <div className="bg-white rounded-full p-1">
               <FaGlobe className="text-darkgreen text-xs" />
             </div>
-            <span className="text-base text-white/90">www.accuratepestcontrol.ae</span>
+            <span className="text-base text-white/90">
+              www.accuratepestcontrol.ae
+            </span>
           </div>
 
           <div className="flex items-center gap-3">
             <div className="bg-white rounded-full p-1">
               <FaEnvelope className="text-darkgreen text-xs" />
             </div>
-            <span className="text-lg text-white/90">info@accuratepestcontrol.ae</span>
+            <span className="text-lg text-white/90">
+              info@accuratepestcontrol.ae
+            </span>
           </div>
         </div>
 
@@ -297,6 +303,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
+     
+        
 
       <div className="bg-[#0C520A] text-white/90 text-center text-xs 2xl:text-base  py-2 w-full mt-auto">
         © 2025 | Accurate Pest Control | All rights reserved.

@@ -10,12 +10,7 @@ const PestCard = ({ pestName }) => {
   }
 
   return (
-    <div
-      className="
-        relative w-full aspect-[5/5] 
-        rounded-lg shadow-lg group overflow-hidden
-      "
-    >
+    <div className="relative w-full aspect-[5/5] rounded-lg shadow-lg group overflow-hidden">
       <img
         src={pest.image}
         alt={pest.name}
@@ -25,7 +20,6 @@ const PestCard = ({ pestName }) => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg transition duration-300 group-hover:bg-opacity-60 flex flex-col justify-end">
         <div className="px-4 py-6 w-full relative">
-
           {/* Title & Desc */}
           <div
             className="
@@ -45,21 +39,20 @@ const PestCard = ({ pestName }) => {
           <div
             className="
               absolute left-4 right-4 bottom-4 opacity-0
-              group-hover:opacity-100 transition-opacity duration-500 ease-in-out
+              group-hover:opacity-100 transition-opacity duration-1000 ease-in-out
               transform group-hover:translate-y-[-10%]
               text-left
             "
           >
-            <p className="text-white text-xs sm:text-sm md:text-sm 2xl:text-base text-justify">
+            <p className="text-white text-xs sm:text-sm md:text-[13px] 2xl:text-base">
               {pest.more}
             </p>
             <Link to={pest.link}>
-              <button className="bg-green-600 text-white px-3 py-1 text-xs sm:text-sm md:text-xs rounded hover:bg-green-700 transition">
+              <button className="bg-green-600 text-white px-3 py-1 3xl:px-4 3xl:py-1 text-xs sm:text-sm md:text-xs 3xl:text-sm rounded hover:bg-green-700 transition">
                 Read More
               </button>
             </Link>
           </div>
-
         </div>
       </div>
     </div>

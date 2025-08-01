@@ -21,7 +21,7 @@ const Reviews = () => {
       role: "Property Manager",
       img: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&h=100&auto=format&fit=crop",
       subtext:
-        "On our rooftop, we had an extreme pigeon problem. Safe, helpful, and timely bird control in Dubai by Accurate Pest Control. The appropriate barrier was built by the team. Since then, there have been no more birds—excellent service!",
+        "On our rooftop, we had an extreme pigeon problem. Safe, helpful, and timely bird control in Dubai by Accurate Pest Control. The appropriate barrier was built by the team. Since then, there have been no more birds excellent service!",
     },
   ];
 
@@ -43,15 +43,15 @@ const Reviews = () => {
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="w-full w-[85%] sm:w-[30%] 4xl:w-[27%] 
+            className="w-full w-[85%] sm:w-[30%] 3xl:w-[27%] 4xl:w-[27%] 
       bg-white rounded-lg shadow-[0px_4px_15px_0px] shadow-black/5 overflow-hidden 
       hover:border-darkgreen flex flex-col 
-      h-[200px] sm:h-[300px] md:h-[320px] lg:h-[350px] xl:h-[250px] 2xl:h-[250px] 3xl:h-[300px] 4xl:h-[380px] border border-transparent hover:border-darkgreen transition-all duration-100"
+      h-[200px] sm:h-[300px] md:h-[320px] lg:h-[350px] xl:h-[210px] 2xl:h-[250px] 3xl:h-[275px] 4xl:h-[380px] border border-transparent hover:border-darkgreen transition-all duration-100"
           >
             {/* Image and Name */}
-            <div className="flex items-center gap-x-4 p-4 4xl:p-8 sm:pl-6">
+            <div className="flex items-center gap-x-4 px-6 py-3 3xl:px-8 3xl:py-4 4xl:p-8">
               <img
-                className="h-10 w-10 sm:h-12 sm:w-12 3xl:h-12 3xl:w-12 4xl:h-20 4xl:w-20 rounded-full border-2 border-green-600 object-cover"
+                className="h-10 w-10 sm:h-10 sm:w-10 3xl:h-12 3xl:w-12 4xl:h-20 4xl:w-20 rounded-full border-2 border-green-600 object-cover"
                 src={review.img}
                 alt={review.name}
               />
@@ -66,24 +66,18 @@ const Reviews = () => {
             </div>
 
             {/* Stars and Subtext */}
-            <div className="px-4 sm:px-6 pb-4 flex flex-col">
-              <div className="flex gap-0.5 mb-2">
+            <div className="px-4 sm:px-6 pb-4 3xl:px-8 flex flex-col justify-between space-y-2  ">
+              <div className=" flex flex-row">
                 {[...Array(5)].map((_, i) => (
-                  <svg
+                  <img
                     key={i}
-                    className="w-4 h-4 sm:w-4 sm:h-4 3xl:w-6 3xl:h-6 4xl:w-6 4xl:h-6"
-                    viewBox="0 0 22 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
-                      fill="#efeb06ff"
-                    />
-                  </svg>
+                    src="https://img.icons8.com/fluency/48/000000/star.png"
+                    alt="Star"
+                    className="w-4 h-4 sm:w-4 sm:h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6"
+                  />
                 ))}
               </div>
-              <p className="text-[#777777] text-[10px] sm:text-xs 2xl:text-sm 3xl:text-base 4xl:text-lg text-justify">
+              <p className="text-[#777777] text-[10px] sm:text-[12px] 2xl:text-sm 3xl:text-[16px] 4xl:text-lg xl:leading-tight text-justify">
                 {review.subtext}
               </p>
             </div>

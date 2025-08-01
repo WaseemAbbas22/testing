@@ -11,7 +11,7 @@ import DocumentsGrid from "../components/Documents/DocumentsGrid" // Assuming yo
 const DocumentsPage = () => {
   return (
     <>
-    <div>
+    <div className="relative">
         <TopBar />
         <Navbar />
         <ServicesHero
@@ -25,7 +25,30 @@ const DocumentsPage = () => {
         <br />
         <ContactReq />
         
-        <Footer />
+        <button
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="
+          fixed
+          bottom-6
+          left-6
+          z-50
+          bg-white
+          text-darkgreen
+          text-2xl
+          font-extrabold
+          px-6
+          py-3
+          rounded-full
+          shadow
+          hover:bg-gray-100
+          transition
+        "
+      >
+        ↑
+      </button>
+
+      {/* Footer */}
+      <Footer />
     </div>
     </>   
   )

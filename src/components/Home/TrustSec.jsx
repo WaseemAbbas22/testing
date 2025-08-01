@@ -18,12 +18,12 @@ const TrustSec = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-70 sm:opacity-50"></div>
+      <div className="absolute inset-0 bg-black opacity-70 sm:opacity-60"></div>
 
       {/* Content */}
       <div className="relative z-10 text-center text-white w-full">
         {/* Description */}
-        <p className="text-sm text-white/90 sm:text-sm md:text-base lg:text-base 2xl:text-xl 3xl:text-[24px] max-w-[100%] sm:max-w-[45%] mx-auto font-xs px-2">
+        <p className="text-sm text-white/90 sm:text-sm md:text-base lg:text-[17px] 2xl:text-xl 3xl:text-[24px] max-w-[100%] sm:max-w-[48%] mx-auto font-xs px-2">
           Our team is one of the most recognized pest control companies in
           Dubai, offering safe solutions and a history of satisfied customers in
           Sharjah and Ajman.
@@ -82,10 +82,10 @@ const TrustSec = () => {
                 <React.Fragment key={index}>
                   {/* Stat Block */}
                   <div className="flex flex-col items-center justify-center  text-center w-full sm:w-auto 3xl:mt-4">
-                    <h3 className="text-green-600 text-3xl sm:text-4xl md:text-4xl lg:text-3xl 2xl:text-4xl 3xl:text-5xl font-semibold font-poppins">
+                    <h3 className="text-green-600 text-3xl sm:text-4xl md:text-4xl lg:text-3xl 2xl:text-4xl 3xl:text-[47px] font-bold font-poppins">
                       {stat.number}
                     </h3>
-                    <p className="text-white text-xs sm:text-sm md:text-base lg:text-lg 2xl:text-xl 3xl:text-2xl 3xl:mt-2 max-w-[90%]">
+                    <p className="text-white/90 text-xs sm:text-sm md:text-base xl:text-[17px] 2xl:text-xl 3xl:text-[25px] 3xl:mt-3 max-w-[90%]">
                       {stat.label}
                     </p>
                   </div>

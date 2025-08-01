@@ -22,7 +22,7 @@ import TawkToWidget from "/src/components/TawkToWidget";
 const Home = () => {
   return (
     <>
-    <div>
+   <div className="relative">
         <TopBar />
         <Navbar />
         <HeroMain />
@@ -41,7 +41,31 @@ const Home = () => {
         <Form /> 
         <LastSec />   
         <TawkToWidget />
-        <Footer />
+        {/* Scroll-to-top button */}
+      <button
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className="
+          fixed
+          bottom-6
+          left-6
+          z-50
+          bg-white
+          text-darkgreen
+          text-2xl
+          font-extrabold
+          px-6
+          py-3
+          rounded-full
+          shadow
+          hover:bg-gray-100
+          transition
+        "
+      >
+        ↑
+      </button>
+
+      {/* Footer */}
+      <Footer />
     </div>
     
     </>

@@ -94,7 +94,7 @@ const Process = () => {
                   3xl:h-20 3xl:w-20
                   4xl:h-24 4xl:w-24  "
                 />
-                <h3 className="text-2xl md:text-lg lg:text-xl 2xl:text-3xl 2xl:mt-2 3xl:text-4xl 3xl:mt-6  font-base text-black/60 text-center">
+                <h3 className="text-2xl md:text-lg lg:text-xl 2xl:text-3xl 2xl:mt-2 3xl:text-3xl 3xl:mt-6  font-base text-black/60 text-center">
                   {step.title}
                 </h3>
               </div>

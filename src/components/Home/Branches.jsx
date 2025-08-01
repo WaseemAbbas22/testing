@@ -10,19 +10,19 @@ const Branches = () => {
   return (
     <div className="w-full md:h-[65vh] 2xl:h-[60vh] bg-white flex flex-col items-center py-10 md:py-[5vh] ">
       {/* Heading */}
-      <h2 className="text-2xl md:text-xl 2xl:text-5xl 3xl:text-6xl lg:text-[40px] font-bold text-center text-black/80 md:mb-[3vh]">
+      <h2 className="text-2xl md:text-xl 2xl:text-5xl 3xl:text-5xl lg:text-[32px] font-bold text-center text-black/80 md:mb-[2vh]">
         We pride ourselves in holding
       </h2>
 
       {/* Subtext */}
-      <p className="text-center text-black/50 text-gray text-xs lg:text-md 2xl:text-xl 3xl:text-xl max-w-[90%] sm:max-w-[40%] ">
+      <p className="text-center text-black/45 text-gray text-xs lg:text-md 2xl:text-xl 3xl:text-lg max-w-[90%] xl:max-w-[35%] 3xl:max-w-[37%]">
         We offer certified pest control Sharjah Municipality, licensed by Dubai, Ajman, Foodwatch, NPMA, HACCP, and the Ministry of Climate Change & Environment.
       </p>
 
       {/* Boxes Grid */}
-      <div className="flex flex-col-2 items-center space-y-8 w-[80%] 2xl:space-y-6 md:w-[80%] mx-auto lg:mb-6 lg:mt-4">
+      <div className="flex flex-col-2 items-center space-y-8 w-[75%] 2xl:space-y-6  mx-auto lg:mb-6 lg:mt-4">
         {/* Upper Line with 4 Boxes */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-4 lg:gap-x-12  2xl:gap-10 3xl:gap-10  w-full 2xl:px-12 ">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-4 lg:gap-x-10  2xl:gap-10 3xl:gap-14  w-full 2xl:px-12 ">
           <div className="h-[10vh] lg:h-[15vh] 2xl:h-[12vh] rounded-lg bg-bggray border border-[#DEDEDE] flex justify-center items-center">
             <img
               src={Company5}
@@ -54,7 +54,7 @@ const Branches = () => {
         </div>
       </div>
 
-      <div className="flex flex-col mt-2 mb-4 md:mb-0 md:mt-0 items-center 2xl:space-y-6 w-[80%] md:w-[60%] mx-auto">
+      <div className="flex flex-col mt-2 mb-4 md:mb-0 md:mt-0 items-center 2xl:space-y-6 w-[80%] md:w-[55%] mx-auto">
         {/* Lower Line with 3 Boxes - Responsive for Mobile */}
         <div className="w-full">
           {/* For Mobile: 2 boxes in first row */}
@@ -87,7 +87,7 @@ const Branches = () => {
           </div>
 
           {/* For MD and above: Original 3-column layout */}
-          <div className="hidden md:grid md:grid-cols-3 gap-16 md:w-full">
+          <div className="hidden md:grid md:grid-cols-3 gap-10 3xl:gap-14 md:w-full">
             <div className="border border-[#DEDEDE] h-[1vh] lg:h-[15vh] 2xl:h-[12vh] rounded-lg bg-bggray flex justify-center items-center">
               <img
                 src={Company1}

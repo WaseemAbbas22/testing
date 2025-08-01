@@ -227,13 +227,27 @@ const DocumentGrid = () => {
 
   return (
     <div className="w-[90%] xl:w-[75%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 sm:gap-4 mt-10">
-      {chemicalDocuments.map((doc, i) => (
-        <div
-          key={i}
-          className="flex flex-col justify-between bg-[#32A8491A] rounded-lg shadow transition border border-[#32A849] h-full sm:h-[300px] lg:h-[150px] 2xl:h-[200px] 3xl:h-[210px] hover:shadow-lg hover:scale-105"
-        >
-          {/* Top Content */}
-          <div className="flex flex-col justify-between items-center px-6 py-2 flex-grow">
+     {chemicalDocuments.map((doc, i) => {
+  const isSecondLast = i === chemicalDocuments.length - 2;
+  const isLast = i === chemicalDocuments.length - 1;
+  const lastRowClass =
+    chemicalDocuments.length % 4 === 2
+      ? isSecondLast
+        ? "col-start-2"
+        : isLast
+        ? "col-start-3"
+        : ""
+      : chemicalDocuments.length % 4 === 1 && isLast
+      ? "col-start-2 col-span-2"
+      : "";
+
+  return (
+    <div
+      key={i}
+      className={`flex flex-col justify-between bg-[#32A8491A] rounded-lg shadow transition border border-[#32A849] h-full sm:h-[300px] lg:h-[150px] 2xl:h-[200px] 3xl:h-[210px] hover:shadow-lg hover:scale-105 duration-500 ${lastRowClass}`}
+    >
+      {/* Top Content */}
+          <div className="flex flex-col justify-between justify-center items-center px-6 py-2 flex-grow">
             <h2 className="flex text-black/80 justify-center items-center font-bold text-sm md:text-base xl:text-lg 2xl:text-2xl 3xl:text-3xl text-center">
               {doc.name}
             </h2>
@@ -277,7 +291,8 @@ const DocumentGrid = () => {
             </button>
           </div>
         </div>
-      ))}
+      );
+     })}
     </div>
   );
 };

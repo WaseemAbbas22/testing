@@ -11,20 +11,20 @@ const AboutHome = () => {
         {/* Left Side Div */}
         <div className="flex justify-center items-center w-full">
           {/* Green Container */}
-          <div className="relative rounded-2xl flex justify-center items-end shadow-lg bg-darkgreen xl:w-[60%] 3xl:w-[60%] lg:h-[65vh] xl:h-[64vh] 2xl:h-[55vh] 3xl:h-[55vh] 4xl:h-[55vh] overflow-visible">
+          <div className="relative rounded-2xl flex justify-center items-end shadow-lg bg-darkgreen xl:w-[60%] lg:h-[65vh] xl:h-[64vh] 2xl:h-[55vh] 3xl:h-[53vh] 4xl:h-[55vh] overflow-visible">
             <div className="relative w-full flex justify-center items-center">
               {/* Vector Image (Behind) */}
               <img
                 src={Vector}
                 alt="Background Vector"
-                className="absolute z-10 w-[95%] lg:h-[70vh] 2xl:h-[80vh] 3xl:h-[90vh] 4xl:h-[100vh] object-contain"
+                className="absolute z-10 w-[95%] lg:h-[70vh] 2xl:h-[80vh] 3xl:h-[90%] 4xl:h-[100vh] object-contain"
               />
 
               {/* Man Image (Front) */}
               <img
                 src={man}
                 alt="About Us"
-                className="z-10 w-[90%] h-[60%] object-contain drop-shadow-[0_4px_12px_rgba(255,255,255,0.15)]"
+                className="z-10 w-[80%]  object-contain drop-shadow-[0_4px_12px_rgba(255,255,255,0.15)]"
               />
             </div>
 

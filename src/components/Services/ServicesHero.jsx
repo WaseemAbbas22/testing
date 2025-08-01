@@ -56,16 +56,16 @@ const ServicesHero = ({
         </p>
 
         {/* PhoneCallBox (Desktop Only) */}
-        <div className="fixed hidden md:block bottom-10 right-0 z-50">
+        <div className="fixed hidden md:block xl:bottom-60 3xl:bottom-[450px] right-0 z-50">
           <PhoneCallBox
             upperText="Call for Free Inspection"
-            phoneNumber="800 8725"
+            phoneNumber="0800 8725"
             bgColor="bg-[#E50000]"
             iconColor="text-[#E50000]"
             iconSize="xl:text-2xl 2xl:text-3xl 3xl:text-3xl 4xl:text-3xl"
             iconPadding="xl:p-3 4xl:p-4 3xl:p-4"
-            upperTextColor="text-white"
-            phoneTextColor="text-white"
+            upperTextColor="text-white xl:text-[13px] 3xl:text-[15px]"
+            phoneTextColor="text-white font-bold xl:text-2xl 3xl:text-3xl"
             containerHeight={{
               base: "h-[60px]",
               "2xl": "2xl:h-[70px]",
@@ -73,9 +73,9 @@ const ServicesHero = ({
               "4xl": "4xl:h-[85px]",
             }}
             containerWidth={{
-              base: "w-[250px]",
+              base: "w-[200px]",
               "2xl": "2xl:w-[250px]",
-              "3xl": "3xl:w-[300px]",
+              "3xl": "3xl:w-[250px]",
               "4xl": "4xl:w-[350px]",
             }}
             upperTextSize={{

@@ -6,10 +6,17 @@ import Member4 from "/src/assets/Home/image4.jpg";
 const OurTeam = () => {
   const team = [
     {
-      img: Member4,
-      name: "Malik Numan",
-      position: "Services",
-      contact: "inquiry@accuratpestcontrol.ae",
+      img: Member1,
+      name: "Mayson Dela",
+      position: "Dubai Call Centre",
+      contact: "+971 52 449 6173,+971 800 8725",
+    },
+
+    {
+      img: Member3,
+      name: "Sathya Murugan",
+      position: "Get Quotation",
+      contact: "sales3@accuratepestcontrol.ae",
     },
     {
       img: Member2,
@@ -18,16 +25,10 @@ const OurTeam = () => {
       contact: "sales7@accuratepestcontrol.ae",
     },
     {
-      img: Member3,
-      name: "Sathya Murugan",
-      position: "Get Quotation",
-      contact: "sales3@accuratepestcontrol.ae",
-    },
-    {
-      img: Member1,
-      name: "Mayson Dela",
-      position: "Dubai Call Centre",
-      contact: "+971 52 449 6173,+971 800 8725",
+      img: Member4,
+      name: "Malik Numan",
+      position: "Services",
+      contact: "inquiry@accuratpestcontrol.ae",
     },
   ];
 
@@ -65,7 +66,7 @@ const OurTeam = () => {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="absolute -top-10 w-20 h-20 2xl:h-24 2xl:w-24 rounded-full object-contain border-4 border-green-600 shadow-md bg-white"
+                  className="absolute -top-10 w-20 h-20 2xl:h-24 2xl:w-24 3xl:h-[86px] 3xl:w-[86px] rounded-full object-contain border-4 border-green-600 shadow-md bg-white"
                 />
 
                 {/* Name */}

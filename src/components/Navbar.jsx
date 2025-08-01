@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { HiMenu } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "/src/assets/Home/APClogo.svg";
 import PhoneCallBox from "../components/Home/PhoneCallBox";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
-//px-5 sm:px-6 md:px-4 lg:px-40 xl:px-20 2xl:px-16 
+//px-5 sm:px-6 md:px-4 lg:px-40 xl:px-20 2xl:px-16
 // md:w-[85%]
 //         xl:w-[75%]
 //         2xl:w-[80%]
 //         3xl:w-[83%]
-        
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -63,23 +63,36 @@ const Navbar = () => {
             "
             >
               <li>
-                <Link to="/" className="nav-link-hover">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    `nav-link-hover ${isActive ? "nav-link-active" : ""}`
+                  }
+                >
                   Home
-                </Link>
+                </NavLink>
               </li>
 
               <li>
-                <Link to="/documents" className="nav-link-hover">
+                <NavLink
+                  to="/documents"
+                  className={({ isActive }) =>
+                    `nav-link-hover ${isActive ? "nav-link-active" : ""}`
+                  }
+                >
                   Documents
-                </Link>
+                </NavLink>
               </li>
+
               <li>
-                <Link
+                <NavLink
                   to="/about"
-                  className="hover:text-green-600 hover:underline"
+                  className={({ isActive }) =>
+                    `nav-link-hover ${isActive ? "nav-link-active" : ""}`
+                  }
                 >
                   About Us
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -91,14 +104,14 @@ const Navbar = () => {
               phoneNumber="052 152 8725"
               bgColor="bg-[#32A849]"
               iconColor="text-[#32A849]"
-              iconSize="text-xl 2xl:text-xl 4xl:text-2xl"
-              iconPadding="xl:p-2.5 2xl:py-3 3xl:p-3.5 4xl:p-5"
-              upperTextColor="text-white"
-              phoneTextColor="text-white"
-              iconMarginLeft = "ml-1 2xl:ml-1.2 3xl:ml-1.5"
-              spaceX = "space-x-1.5"
+              iconSize="text-xl 2xl:text-xl 3xl:text-2xl 4xl:text-2xl"
+              iconPadding="xl:p-2.5 2xl:py-3 3xl:p-3 4xl:p-5"
+              upperTextColor="text-white xl:text-[13px] 3xl:text-lg"
+              phoneTextColor="text-white font-bold"
+              iconMarginLeft="ml-1 2xl:ml-1.2 3xl:ml-1.5"
+              spaceX="space-x-1.5"
               containerHeight={{
-                base: "h-[47px]",
+                base: "h-[50px]",
                 "2xl": "2xl:h-[53px]",
                 "3xl": "3xl:h-[58px]",
                 "4xl": "4xl:h-[78px]",
@@ -106,7 +119,7 @@ const Navbar = () => {
               containerWidth={{
                 base: "w-[160px]",
                 "2xl": "2xl:w-[175px]",
-                "3xl": "3xl:w-[210px]",
+                "3xl": "3xl:w-[215px]",
                 "4xl": "4xl:w-[320px]",
               }}
               upperTextSize={{
