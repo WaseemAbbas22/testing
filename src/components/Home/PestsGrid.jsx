@@ -16,11 +16,11 @@ const PestGrid = () => {
 
         {/* Pest Cards Grid */}
         <div className=" w-[85%]  grid grid-cols-1 sm:grid-cols-4 gap-4">
-          <PestCard pestName="ANTS" />
+          <PestCard pestName="ANTS" className="hidden md:block" />
           <PestCard pestName="COCKROACHES" />
           <PestCard pestName="RED BUGS" />
           <PestCard pestName="RODENTS" />
-          <PestCard pestName="FLIES" />
+          <PestCard pestName="FLIES" className="hidden md:block" />
           <PestCard pestName="MOSQUITOES" />
           <PestCard pestName="SPIDERS" />
           <PestCard pestName="TERMITES" />

@@ -44,8 +44,8 @@ const OurClients = () => {
           name="Pure Food Processing Industries L.L.C"
           border="border-r border-b border-black/10"
           logoSizeClasses="
-            4xl:py-2
-            w-20 h-6
+          
+            w-20 h-5 mt-2
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-20 lg:h-24
@@ -63,7 +63,7 @@ const OurClients = () => {
           border="border-r border-b  border-l border-black/10"
           logoSizeClasses="
           4xl:py-0 4xl:mb-2
-            w-16 h-8
+            w-20 h-8
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-28 lg:h-20
@@ -116,7 +116,7 @@ const OurClients = () => {
           name="Three Star Printing Press"
           border="border-r border-b border-black/10"
           logoSizeClasses="
-            w-16 h-6 mt-4 mb-2
+            w-20 h-6 mt-4 mb-2
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-32 lg:h-20
@@ -136,7 +136,7 @@ const OurClients = () => {
           logoSizeClasses="
           4xl:mt-8 4xl:mb-4
           xl:mt-2
-            w-20 h-4 mt-4
+            w-24 h-5 mt-5 mb-2 
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-32 lg:h-20
@@ -210,7 +210,7 @@ const OurClients = () => {
           4xl:mt-16
           xl:mt-8
           4xl:mb-4
-            w-24 h-4 mt-4 mb-2
+            w-24 h-3 mt-4 mb-2
             sm:w-24 sm:h-14
             md:w-28 md:h-16
             lg:w-32 lg:h-20

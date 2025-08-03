@@ -2,6 +2,8 @@ import Member1 from "/src/assets/Home/image2.jpg";
 import Member2 from "/src/assets/Home/image3.jpg";
 import Member3 from "/src/assets/Home/image1.jpg";
 import Member4 from "/src/assets/Home/image4.jpg";
+import LeftLine from "/src/assets/Home/LeftLine.svg";
+import RightLine from "/src/assets/Home/RightLine.svg";
 
 const OurTeam = () => {
   const team = [
@@ -48,19 +50,19 @@ const OurTeam = () => {
                 key={index}
                 className="relative bg-white rounded-xl shadow-md pt-10 pb-6 px-4 flex flex-col items-center text-center min-h-[40px] sm:min-h-[340px] lg:min-h-[120px]"
               >
-                {/* Vertical Green Side Lines */}
-                <div className="absolute top-0 left-0 h-full flex items-center">
-                  <div className="relative h-[100px] lg:h-[80px] w-[6px] bg-green-600">
-                    <div className="absolute top-0 right-0 w-full h-3 bg-green-600 origin-top-right transform skew-y-12"></div>
-                    <div className="absolute bottom-0 right-0 w-full h-3 bg-green-600 origin-bottom-right transform -skew-y-12"></div>
-                  </div>
-                </div>
-                <div className="absolute top-0 right-0 h-full flex items-center">
-                  <div className="relative h-[100px] lg:h-[80px] w-[6px] bg-green-600">
-                    <div className="absolute top-0 left-0 w-full h-3 bg-green-600 origin-top-left transform -skew-y-12"></div>
-                    <div className="absolute bottom-0 left-0 w-full h-3 bg-green-600 origin-bottom-left transform skew-y-12"></div>
-                  </div>
-                </div>
+                {/* Left SVG Line */}
+                <img
+                  src={LeftLine}
+                  alt="Left Line"
+                  className="absolute left-0 top-1/2 -translate-y-1/2 w-auto h-[100px] 3xl:h-[120px] xl:h-[100px] z-10"
+                />
+
+                {/* Right SVG Line */}
+                <img
+                  src={RightLine}
+                  alt="Right Line"
+                  className="absolute right-0 top-1/2 -translate-y-1/2 w-auto h-[100px] 3xl:h-[120px] xl:h-[100px] z-10"
+                />
 
                 {/* Avatar */}
                 <img

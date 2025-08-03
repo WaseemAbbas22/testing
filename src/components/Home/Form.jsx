@@ -3,10 +3,40 @@ import Vector from "/src/assets/Home/VectorForm.png";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useTranslation } from "../../utils/translations";
+import { useRef } from "react";
 
 const Form = () => {
   const [phone, setPhone] = useState("");
+  const [pestConcern, setPestConcern] = useState("");
+  const [priorityType, setPriorityType] = useState("");
   const { t } = useTranslation();
+
+  const [message, setMessage] = useState("");
+  const formRef = useRef(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(formRef.current);
+    formData.append("phone", phone); // Add phone manually
+
+    try {
+     await fetch("https://formsubmit.co/dde8afb3bc99d85ee4bdf6b0e0052631", {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+          },
+          body: formData,
+        }
+      );
+
+      // Optionally reset fields
+      formRef.current.reset();
+      setPhone("");
+    } catch (err) {
+      console.error("Submission error:", err);
+    }
+  };
 
   return (
     <div className="relative bg-green-600 py-10 md:h-[120vh] 2xl:h-screen flex items-center justify-center overflow-hidden">
@@ -20,24 +50,38 @@ const Form = () => {
       {/* Container */}
       <div className="relative bg-[#33A92F80] w-full h-full flex items-center justify-center px-4 sm:px-6 xl:px-8">
         <div className="bg-white border border-[#D6D6D6] rounded-2xl shadow-lg sm:w-[70%] h-[96%] flex flex-col px-4 sm:px-10 py-6 sm:py-8 z-10 overflow-y-auto">
-          
           {/* Heading */}
           <h1 className="text-center text-black/80 font-bold text-xl sm:text-2xl md:text-4xl 2xl:text-5xl text-black mb-4 3xl:mb-4 3xl:mt-2 2xl:mb-0 2xl:mt-4 4xl:mb-12 4xl:mt-8 4xl:text-6xl">
             {t("getInTouch")}
           </h1>
 
           {/* Form */}
-          <form className="flex flex-col justify-center flex-grow w-full 2xl:space-y-4 4xl:space-y-16 3xl:space-y-12">
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="flex flex-col justify-center flex-grow w-full 2xl:space-y-4 4xl:space-y-16 3xl:space-y-12"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Pest Control Lead"
+            />
+
             {/* Grid Inputs */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-x-6   w-full">
               {/* First Name */}
               <div>
-                <label className="text-black/70 font-semibold text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl" htmlFor="firstName">
+                <label
+                  className="text-black/70 font-semibold text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl"
+                  htmlFor="firstName"
+                >
                   {t("firstName")}
                 </label>
                 <input
                   id="firstName"
                   type="text"
+                  name="firstName" // ✅ REQUIRED
                   placeholder={t("firstName")}
                   className="custom-textarea border-[#DEDEDE] placeholder-gray-100 pl-3 2xl:pl-6 3xl:pl-4 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
@@ -46,12 +90,16 @@ const Form = () => {
 
               {/* Last Name */}
               <div>
-                <label className="text-black/70 font-semibold text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl" htmlFor="lastName">
+                <label
+                  className="text-black/70 font-semibold text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl"
+                  htmlFor="lastName"
+                >
                   {t("lastName")}
                 </label>
                 <input
                   id="lastName"
                   type="text"
+                  name="lastName" // ✅ REQUIRED
                   placeholder={t("lastName")}
                   className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-3 2xl:pl-6 3xl:pl-4 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
@@ -60,7 +108,10 @@ const Form = () => {
 
               {/* Phone */}
               <div>
-                <label className="text-black/70 font-semibold text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl" htmlFor="phone">
+                <label
+                  className="text-black/70 font-semibold text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl"
+                  htmlFor="phone"
+                >
                   {t("phoneNo")}
                 </label>
                 <div className="custom-textarea border-[#DEDEDE] rounded-md 2xl:rounded-lg text-xs  2xl:h-10 3xl:h-16 4xl:h-20">
@@ -68,7 +119,11 @@ const Form = () => {
                     country={"ae"}
                     value={phone}
                     onChange={(phone) => setPhone(phone)}
-                    containerStyle={{ width: "100%", height: "100%", background: "transparent" }}
+                    containerStyle={{
+                      width: "100%",
+                      height: "100%",
+                      background: "transparent",
+                    }}
                     inputStyle={{
                       width: "100%",
                       height: "100%",
@@ -90,17 +145,22 @@ const Form = () => {
                     inputClass="text-[#999999]  text-xs  2xl:text-base 3xl:text-lg"
                     required
                   />
+                  <input type="hidden" name="phone" value={phone} />
                 </div>
               </div>
 
               {/* Email */}
               <div>
-                <label className="text-black/70 font-semibold text-xs 3xl:text-lg 2xl:text-base 4xl:text-2xl" htmlFor="email">
+                <label
+                  className="text-black/70 font-semibold text-xs 3xl:text-lg 2xl:text-base 4xl:text-2xl"
+                  htmlFor="email"
+                >
                   {t("email")}
                 </label>
                 <input
                   id="email"
                   type="email"
+                  name="email" // ✅ REQUIRED
                   placeholder={t("email")}
                   className="custom-textarea border-[#DEDEDE] placeholder-gray-400 pl-3 2xl:pl-6 3xl:pl-4 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
@@ -109,11 +169,17 @@ const Form = () => {
 
               {/* Pest Concern */}
               <div>
-                <label className="text-black/70 font-semibold text-xs 2xl:text-lg 4xl:text-2xl" htmlFor="pestConcern">
+                <label
+                  className="text-black/70 font-semibold text-xs 2xl:text-lg 4xl:text-2xl"
+                  htmlFor="pestConcern"
+                >
                   {t("selectPestConcern")}
                 </label>
                 <select
                   id="pestConcern"
+                  name="pestConcern"
+                  value={pestConcern}
+                  onChange={(e) => setPestConcern(e.target.value)}
                   className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-2 2xl:pl-6 3xl:pl-4 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
                 >
@@ -124,15 +190,22 @@ const Form = () => {
                   <option value="bedbugs">{t("bedbugs")}</option>
                   <option value="rodents">{t("rodents")}</option>
                 </select>
+                <input type="hidden" name="pestConcern" value={pestConcern} />
               </div>
 
               {/* Priority */}
               <div>
-                <label className="text-black/70 font-semibold text-xs 2xl:text-lg 4xl:text-2xl" htmlFor="priorityType">
+                <label
+                  className="text-black/70 font-semibold text-xs 2xl:text-lg 4xl:text-2xl"
+                  htmlFor="priorityType"
+                >
                   {t("selectPriorityType")}
                 </label>
                 <select
                   id="priorityType"
+                  name="priorityType"
+                  value={priorityType}
+                  onChange={(e) => setPriorityType(e.target.value)}
                   className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-3 2xl:pl-6 3xl:pl-4 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                   required
                 >
@@ -141,20 +214,28 @@ const Form = () => {
                   <option value="urgent">{t("urgent")}</option>
                   <option value="emergency">{t("emergency")}</option>
                 </select>
+                <input type="hidden" name="priorityType" value={priorityType} />
               </div>
             </div>
 
             {/* Message Box */}
             <div className=" w-full">
-              <label className="text-black/70 font-semibold text-xs 2xl:text-lg 4xl:text-2xl" htmlFor="message">
+              <label
+                className="text-black/70 font-semibold text-xs 2xl:text-lg 4xl:text-2xl"
+                htmlFor="message"
+              >
                 {t("message")}
               </label>
               <textarea
                 id="message"
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 placeholder={t("writeYourMessage")}
                 className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-4 2xl:pl-6 3xl:pl-4 4xl:py-6 h-28 2xl:h-40 3xl:h-48 4xl:h-56 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
                 required
-              ></textarea>
+              />
+             
             </div>
 
             {/* Submit */}
