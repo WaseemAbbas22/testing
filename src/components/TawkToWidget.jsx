@@ -13,6 +13,19 @@ const TawkToWidget = () => {
     s1.setAttribute("crossorigin", "*");
 
     document.body.appendChild(s1);
+
+    // 🛡️ Title protection logic
+    const originalTitle = document.title;
+    const interval = setInterval(() => {
+      if (document.title !== originalTitle) {
+        document.title = originalTitle;
+      }
+    }, 1000); // every 0.5 seconds
+
+    // Clean up interval when component unmounts
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return null;
