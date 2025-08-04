@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // You'll need to import your download icon
 import download from "/src/assets/Documents/downloadImg.png";
@@ -159,7 +159,7 @@ const chemicalDocuments = [
     validity: "01-Sep-2026",
     msds: "/DocumentFiles/Quick Bayt GR MSDS.pdf",
     cor: "/DocumentFiles/COR Quick Bayt Granules.pdf",
-  }
+  },
 ];
 
 const DocumentGrid = () => {
@@ -174,125 +174,151 @@ const DocumentGrid = () => {
     }
 
     const downloadKey = `${docName}-${type}`;
-    
+
     try {
-      setDownloadingStates(prev => ({ ...prev, [downloadKey]: true }));
-      setDownloadErrors(prev => ({ ...prev, [downloadKey]: null }));
+      setDownloadingStates((prev) => ({ ...prev, [downloadKey]: true }));
+      setDownloadErrors((prev) => ({ ...prev, [downloadKey]: null }));
 
       // Create a temporary link element
-      const link = document.createElement('a');
+      const link = document.createElement("a");
       link.href = url;
       link.download = filename || `${docName}-${type}.pdf`;
-      
+
       // Force download attribute and add to DOM temporarily
-      link.setAttribute('download', filename || `${docName}-${type}.pdf`);
-      link.style.display = 'none';
-      
+      link.setAttribute("download", filename || `${docName}-${type}.pdf`);
+      link.style.display = "none";
+
       document.body.appendChild(link);
-      
+
       // Trigger download
       link.click();
-      
+
       // Clean up
       setTimeout(() => {
         document.body.removeChild(link);
-        setDownloadingStates(prev => ({ ...prev, [downloadKey]: false }));
+        setDownloadingStates((prev) => ({ ...prev, [downloadKey]: false }));
       }, 100);
-      
     } catch (error) {
-      console.error('Download failed:', error);
-      setDownloadErrors(prev => ({ 
-        ...prev, 
-        [downloadKey]: `Download failed: ${error.message}` 
+      console.error("Download failed:", error);
+      setDownloadErrors((prev) => ({
+        ...prev,
+        [downloadKey]: `Download failed: ${error.message}`,
       }));
-      
+
       // Alternative method: open in new tab
       try {
-        window.open(url, '_blank', 'noopener,noreferrer');
+        window.open(url, "_blank", "noopener,noreferrer");
       } catch (fallbackError) {
-        alert(`Unable to download ${type} for ${docName}. Please try right-click and "Save As".`);
+        alert(
+          `Unable to download ${type} for ${docName}. Please try right-click and "Save As".`
+        );
       } finally {
-        setDownloadingStates(prev => ({ ...prev, [downloadKey]: false }));
+        setDownloadingStates((prev) => ({ ...prev, [downloadKey]: false }));
       }
     }
   };
 
   // Generate filename from document name and type
   const generateFilename = (docName, type) => {
-    const cleanName = docName.replace(/[^a-zA-Z0-9\s]/g, '').replace(/\s+/g, '-');
+    const cleanName = docName
+      .replace(/[^a-zA-Z0-9\s]/g, "")
+      .replace(/\s+/g, "-");
     return `${cleanName}-${type}.pdf`;
   };
 
-
-
   return (
     <div className="w-[90%] xl:w-[75%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 sm:gap-4 mt-10">
-     {chemicalDocuments.map((doc, i) => {
-  const isSecondLast = i === chemicalDocuments.length - 2;
-  const isLast = i === chemicalDocuments.length - 1;
-  const lastRowClass =
-    chemicalDocuments.length % 4 === 2
-      ? isSecondLast
-        ? "col-start-2"
-        : isLast
-        ? "col-start-3"
-        : ""
-      : chemicalDocuments.length % 4 === 1 && isLast
-      ? "col-start-2 col-span-2"
-      : "";
+      {chemicalDocuments.map((doc, i) => {
+        const isSecondLast = i === chemicalDocuments.length - 2;
+        const isLast = i === chemicalDocuments.length - 1;
+        const lastRowClass =
+          chemicalDocuments.length % 4 === 2
+            ? isSecondLast
+              ? "col-start-2"
+              : isLast
+              ? "col-start-3"
+              : ""
+            : chemicalDocuments.length % 4 === 1 && isLast
+            ? "col-start-2 col-span-2"
+            : "";
 
-  return (
-    <div
-      key={i}
-      className={`flex flex-col justify-between bg-[#32A8491A] rounded-lg shadow transition border border-[#32A849] h-full sm:h-[300px] lg:h-[150px] 2xl:h-[200px] 3xl:h-[210px] hover:shadow-lg hover:scale-105 duration-500 ${lastRowClass}`}
-    >
-      {/* Top Content */}
-          <div className="flex flex-col justify-between justify-center items-center px-6 py-2 flex-grow">
-            <h2 className="flex text-black/80 justify-center items-center font-bold text-sm md:text-base xl:text-lg 2xl:text-2xl 3xl:text-3xl text-center">
-              {doc.name}
-            </h2>
+        return (
+          <div
+            key={i}
+            className={`group flex flex-col justify-between bg-[#32A8491A] rounded-lg shadow transition border border-[#32A849] h-full sm:h-[300px] lg:h-[150px] 2xl:h-[200px] 3xl:h-[210px] hover:shadow-lg hover:scale-105 hover:bg-darkgreen duration-500   ${lastRowClass}`}
+          >
+            {/* Top Content */}
+            <div className=" flex flex-col justify-between justify-center items-center px-6 py-4 flex-grow">
+              <h2 className="flex text-black/80  justify-center items-center font-bold text-sm md:text-base xl:text-lg 2xl:text-2xl 3xl:text-3xl text-center group-hover:text-white transition-colors duration-300">
+                {doc.name}
+              </h2>
 
-            <div className="text-[#444444] text-center">
-              <p className="text-xs md:text-sm xl:text-sm 2xl:text-lg 3xl:text-xl font-semibold">Valid Till</p>
-              <p className="text-xs md:text-sm xl:text-sm 2xl:text-lg 3xl:text-xl">({doc.validity})</p>
+              <div className="text-[#444444] text-center ">
+                <p className="text-xs md:text-sm xl:text-sm 2xl:text-lg 3xl:text-xl font-semibold group-hover:text-white transition-colors duration-300">
+                  Valid Till
+                </p>
+                <p className="text-xs md:text-sm xl:text-sm 2xl:text-lg 3xl:text-xl group-hover:text-white transition-colors duration-300">
+                  ({doc.validity})
+                </p>
+              </div>
+            </div>
+
+            {/* Buttons */}
+            <div className="flex w-full rounded-md bg-[#EAEAEA] overflow-hidden border-t border-[#32A849]">
+              <button
+                onClick={() =>
+                  handleDownload(
+                    doc.msds,
+                    generateFilename(doc.name, "MSDS"),
+                    doc.name,
+                    "MSDS"
+                  )
+                }
+                disabled={
+                  downloadingStates[`${doc.name}-MSDS`] || doc.msds === "#"
+                }
+                className="group flex items-center justify-center gap-2 text-sm md:text-base xl:text-lg 2xl:text-xl font-bold text-[#32A849] px-3 py-1 flex-1 transition hover:bg-[#32A849] hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {downloadingStates[`${doc.name}-MSDS`]
+                  ? "Downloading..."
+                  : "MSDS"}
+                <img
+                  src={download}
+                  alt="download"
+                  className="h-5 w-5 md:h-6 md:w-6 2xl:h-8 2xl:w-8 transition duration-300 hover:invert group-hover:brightness-125"
+                />
+              </button>
+
+              <div className="w-px bg-[#A2A2A2] h-8 self-center" />
+
+              {/* COR */}
+              <button
+                onClick={() =>
+                  handleDownload(
+                    doc.cor,
+                    generateFilename(doc.name, "COR"),
+                    doc.name,
+                    "COR"
+                  )
+                }
+                disabled={
+                  downloadingStates[`${doc.name}-COR`] || doc.cor === "#"
+                }
+                className="group flex items-center justify-center gap-2 text-sm md:text-base xl:text-lg 2xl:text-xl font-bold text-[#32A849] px-3 py-2 flex-1 transition hover:bg-[#32A849] hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {downloadingStates[`${doc.name}-COR`]
+                  ? "Downloading..."
+                  : "COR"}
+                <img
+                  src={download}
+                  alt="download"
+                  className="h-5 w-5 md:h-6 md:w-6 2xl:h-8 2xl:w-8 transition duration-300 hover:invert group-hover:brightness-125"
+                />
+              </button>
             </div>
           </div>
-
-          {/* Buttons */}
-          <div className="flex w-full rounded-md bg-[#EAEAEA] overflow-hidden border-t border-[#32A849]">
-            {/* MSDS */}
-            <button
-              onClick={() => handleDownload(doc.msds, generateFilename(doc.name, 'MSDS'), doc.name, 'MSDS')}
-              disabled={downloadingStates[`${doc.name}-MSDS`] || doc.msds === "#"}
-              className="group flex items-center justify-center gap-2 text-sm md:text-base xl:text-lg 2xl:text-xl font-bold text-[#32A849] px-3 py-1 flex-1 transition hover:bg-[#32A849] hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {downloadingStates[`${doc.name}-MSDS`] ? 'Downloading...' : 'MSDS'}
-              <img
-                src={download}
-                alt="download"
-                className="h-5 w-5 md:h-6 md:w-6 2xl:h-8 2xl:w-8 transition duration-300 group-hover:invert group-hover:brightness-125"
-              />
-            </button>
-
-            <div className="w-px bg-[#A2A2A2] h-8 self-center" />
-
-            {/* COR */}
-            <button
-              onClick={() => handleDownload(doc.cor, generateFilename(doc.name, 'COR'), doc.name, 'COR')}
-              disabled={downloadingStates[`${doc.name}-COR`] || doc.cor === "#"}
-              className="group flex items-center justify-center gap-2 text-sm md:text-base xl:text-lg 2xl:text-xl font-bold text-[#32A849] px-3 py-2 flex-1 transition hover:bg-[#32A849] hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {downloadingStates[`${doc.name}-COR`] ? 'Downloading...' : 'COR'}
-              <img
-                src={download}
-                alt="download"
-                className="h-5 w-5 md:h-6 md:w-6 2xl:h-8 2xl:w-8 transition duration-300 group-hover:invert group-hover:brightness-125"
-              />
-            </button>
-          </div>
-        </div>
-      );
-     })}
+        );
+      })}
     </div>
   );
 };

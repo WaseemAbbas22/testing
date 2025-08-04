@@ -68,7 +68,7 @@ const OurTeam = () => {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="absolute -top-10 w-20 h-20 2xl:h-24 2xl:w-24 3xl:h-[86px] 3xl:w-[86px] rounded-full object-contain border-4 border-green-600 shadow-md bg-white"
+                  className="absolute -top-10 w-20 h-20 2xl:h-24 2xl:w-24 3xl:h-[86px] 3xl:w-[86px] rounded-full object-cover border-4 border-green-600 shadow-md bg-white"
                 />
 
                 {/* Name */}

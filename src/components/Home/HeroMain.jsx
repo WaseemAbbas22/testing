@@ -120,7 +120,7 @@ const HeroMain = () => {
           iconColor="text-[#E50000]"
           iconSize="xl:text-2xl 3xl:text-3xl 4xl:text-3xl"
           iconPadding="xl:p-3 4xl:p-4 3xl:p-3"
-          upperTextColor="text-white xl:text-[13px] 3xl:text-[15px]"
+          upperTextColor="text-white"
           phoneTextColor="text-white font-bold"
           iconMarginLeft="xl:ml-2"
           containerHeight={{
@@ -136,14 +136,14 @@ const HeroMain = () => {
             "4xl": "4xl:w-[350px]",
           }}
           upperTextSize={{
-            base: "text-md",
-            "2xl": "2xl:text-base",
-            "3xl": "3xl:text-lg",
+            base: "text-[13px]",
+            "2xl": "2xl:text-[16px]",
+            "3xl": "3xl:text-[16px]",
             "4xl": "4xl:text-2xl",
           }}
           phoneTextSize={{
             base: "text-2xl",
-            "2xl": "2xl:text-lg",
+            "2xl": "2xl:text-3xl",
             "3xl": "3xl:text-3xl",
             "4xl": "4xl:text-3xl",
           }}

@@ -44,7 +44,7 @@ const PestCard = ({ pestName }) => {
               text-left
             "
           >
-            <p className="text-white text-xs sm:text-sm md:text-[13px] 2xl:text-base">
+            <p className="text-white text-xs sm:text-sm 2xl:text-[16px] 3xl:text-base">
               {pest.more}
             </p>
             <Link to={pest.link}>

@@ -64,8 +64,8 @@ const ServicesHero = ({
             iconColor="text-[#E50000]"
             iconSize="xl:text-2xl 2xl:text-3xl 3xl:text-3xl 4xl:text-3xl"
             iconPadding="xl:p-3 4xl:p-4 3xl:p-4"
-            upperTextColor="text-white xl:text-[13px] 3xl:text-[15px]"
-            phoneTextColor="text-white font-bold xl:text-2xl 3xl:text-3xl"
+            upperTextColor="text-white "
+            phoneTextColor="text-white font-bold  "
             containerHeight={{
               base: "h-[60px]",
               "2xl": "2xl:h-[70px]",
@@ -79,15 +79,15 @@ const ServicesHero = ({
               "4xl": "4xl:w-[350px]",
             }}
             upperTextSize={{
-              base: "text-md",
-              "2xl": "2xl:text-base",
-              "3xl": "3xl:text-lg",
+              base: "xl:text-[13px]",
+              "2xl": "2xl:text-[16px]",
+              "3xl": "3xl:text-[14.8px]",
               "4xl": "4xl:text-2xl",
             }}
             phoneTextSize={{
-              base: "text-xl",
-              "2xl": "2xl:text-2xl",
-              "3xl": "3xl:text-2xl",
+              base: "xl:text-2xl",
+              "2xl": "2xl:text-3xl",
+              "3xl": "3xl:text-3xl",
               "4xl": "4xl:text-3xl",
             }}
           />

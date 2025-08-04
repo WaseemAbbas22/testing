@@ -94,6 +94,16 @@ const Navbar = () => {
                   About Us
                 </NavLink>
               </li>
+              <li>
+                <NavLink
+                  to="/pests"
+                  className={({ isActive }) =>
+                    `nav-link-hover ${isActive ? "nav-link-active" : ""}`
+                  }
+                >
+                  Pests
+                </NavLink>
+              </li>
             </ul>
           </div>
 
