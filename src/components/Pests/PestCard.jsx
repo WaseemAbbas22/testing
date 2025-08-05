@@ -24,13 +24,15 @@ const PestCard = ({ pestName }) => {
           <div
             className="
               transform transition-transform duration-500 ease-in-out -space-y-1.5
-              group-hover:-translate-y-[270%]
+              group-hover:-translate-y-[275%]
+              xl:group-hover:-translate-y-[220%]
+              3xl:group-hover:-translate-y-[270%]
             "
           >
-            <h2 className="text-white text-left pl-3 text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-3xl font-bold">
+            <h2 className="text-white text-left pl-2 xl:pl-0 3xl:pl-3 text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl 2xl:text-3xl font-bold">
               {pest.name}
             </h2>
-            <p className="text-white text-sm pl-3 sm:text-sm md:text-base lg:text-base 2xl:text-lg text-justify">
+            <p className="text-white text-sm pl-2  xl:pl-0 3xl:pl-3 sm:text-sm md:text-base lg:text-base 2xl:text-lg text-justify">
               {pest.desc}
             </p>
           </div>
@@ -38,13 +40,13 @@ const PestCard = ({ pestName }) => {
           {/* Extra Text + Button */}
           <div
             className="
-              absolute left-7 right-4 bottom-6 opacity-0
+              absolute  left-6 xl:left-4 3xl:left-7 right-4 bottom-6 opacity-0
               group-hover:opacity-100 transition-opacity duration-1000 ease-in-out
               transform group-hover:translate-y-[-5%]
               text-left
             "
           >
-            <p className="text-white text-xs sm:text-sm 2xl:text-[16px] 3xl:text-base xl:leading-tight 3xl:leading-tight mb-5 xl:mb-4 3xl:mb-4 text-justify">
+            <p className="text-white text-xs sm:text-xs 2xl:text-[16px] 3xl:text-base xl:leading-tight 3xl:leading-tight mb-5 xl:mb-2 3xl:mb-4 text-justify">
               {pest.more}
             </p>
             <Link to={pest.link}>
