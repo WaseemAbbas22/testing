@@ -21,7 +21,7 @@
 
 @layer components {
   .custom-textarea {
-    @apply w-full mt-1 sm:mt-2 p-2 h-10 border border-bggray rounded resize-none outline-none focus:border-green-300 bg-bggray;
+    @apply w-full mt-1 sm:mt-0 p-2 h-10 border border-bggray rounded resize-none outline-none focus:border-green-300 bg-bggray;
   }
 }
 /*a@layer components {
@@ -39,7 +39,7 @@
 
 
 body {
-  font-family: 'Cabin',sans-serif;
+  font-family: 'Cabin';
   margin: 0;
   width: 100vw;
   background-color: var(--White, #fff);

@@ -5,7 +5,7 @@ import download from "/src/assets/Documents/downloadImg.png";
 
 const chemicalDocuments = [
   {
-    name: "Ajman Approved Chemicals",
+    name: "Ajman Approved Chemicals List",
     validity: "17-Jan-2025",
     msds: "/DocumentFiles/",
     cor: "/DocumentFiles/",
@@ -227,7 +227,7 @@ const DocumentGrid = () => {
   };
 
   return (
-    <div className="w-[90%] xl:w-[75%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 sm:gap-4 mt-10">
+    <div className="w-[90%] xl:w-[75%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 sm:gap-6 mt-20">
       {chemicalDocuments.map((doc, i) => {
         const isSecondLast = i === chemicalDocuments.length - 2;
         const isLast = i === chemicalDocuments.length - 1;
@@ -243,13 +243,14 @@ const DocumentGrid = () => {
             : "";
 
         return (
+          
           <div
             key={i}
             className={`group flex flex-col justify-between bg-[#32A8491A] rounded-lg shadow transition border border-[#32A849] h-full sm:h-[300px] lg:h-[150px] 2xl:h-[200px] 3xl:h-[210px] hover:shadow-lg hover:scale-105 hover:bg-darkgreen duration-500   ${lastRowClass}`}
           >
             {/* Top Content */}
-            <div className=" flex flex-col justify-between justify-center items-center px-6 py-4 flex-grow">
-              <h2 className="flex text-black/80  justify-center items-center font-bold text-sm md:text-base xl:text-lg 2xl:text-2xl 3xl:text-3xl text-center group-hover:text-white transition-colors duration-300">
+            <div className=" flex flex-col justify-between justify-center items-center px-6 py-2 flex-grow">
+              <h2 className="flex text-black/80  justify-center items-center font-bold text-sm md:text-base xl:text-lg 2xl:text-2xl 3xl:text-[28px] text-center group-hover:text-white transition-colors duration-300">
                 {doc.name}
               </h2>
 
@@ -317,6 +318,7 @@ const DocumentGrid = () => {
               </button>
             </div>
           </div>
+          
         );
       })}
     </div>

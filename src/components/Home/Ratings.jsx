@@ -53,7 +53,7 @@ const Ratings = ({ rating }) => {
       h-[50vh] gap-4
       md:h-[35vh]">
         {/* Facebook Rating Box */}
-        <div className="flex xl:w-[100%] 3xl:w-[99%] h-[20vh] items-center bg-[#32A84926]/15 sm:border-2  border-[#32A84926]/50 rounded-md 2xl:rounded-xl px-4 sm:px-6 2xl:py-16 w-full shadow">
+        <div className="flex xl:w-[100%] 3xl:w-[99%] h-[20vh] items-center bg-[#32A84926]/15 border-2  border-[#32A84926]/50 rounded-md 2xl:rounded-xl px-4 sm:px-6 2xl:py-16 w-full shadow">
           {/* Logo */}
           <div className="flex-shrink-0 md:mr-2">
             <img

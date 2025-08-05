@@ -21,7 +21,7 @@ const Process = () => {
 
       {/* Subheading */}
       <h3 className="text-2xl md:text-3xl font-bold text-center text-black/80 2xl:mb-16 lg:mb-12 lg:text-5xl xl:text-4xl 2xl:text-5xl 3xl:text-5xl 4xl:text-7xl mb-4 md:mb-0">
-        - 4 step promise
+        4 step promise
       </h3>
 
       {/* Steps Grid Container with relative to position the line */}
@@ -94,7 +94,7 @@ const Process = () => {
                   3xl:h-20 3xl:w-20
                   4xl:h-24 4xl:w-24  "
                 />
-                <h3 className="text-2xl md:text-lg lg:text-xl 2xl:text-3xl 2xl:mt-2 3xl:text-3xl 3xl:mt-6  font-base text-black/60 text-center">
+                <h3 className="text-2xl md:text-lg lg:text-xl 2xl:text-3xl 2xl:mt-2 3xl:text-3xl 3xl:mt-2  font-base text-black/60 text-center">
                   {step.title}
                 </h3>
               </div>

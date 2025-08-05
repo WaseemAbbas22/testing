@@ -113,23 +113,25 @@ const Navbar = () => {
               upperText="Call for Schedule"
               phoneNumber="052 152 8725"
               bgColor="bg-[#32A849]"
+              spacingY="-space-y-1"
               iconColor="text-[#32A849]"
               iconSize="text-xl 2xl:text-xl 3xl:text-2xl 4xl:text-2xl"
               iconPadding="xl:p-2.5 2xl:py-3 3xl:p-3 4xl:p-5"
               upperTextColor="text-white xl:text-[13px] 3xl:text-lg"
+              roundedValue="rounded-md"
               phoneTextColor="text-white font-bold"
               iconMarginLeft="ml-1 2xl:ml-1.2 3xl:ml-1.5"
               spaceX="space-x-1.5"
               containerHeight={{
                 base: "h-[50px]",
                 "2xl": "2xl:h-[53px]",
-                "3xl": "3xl:h-[58px]",
+                "3xl": "3xl:h-[60px]",
                 "4xl": "4xl:h-[78px]",
               }}
               containerWidth={{
                 base: "w-[160px]",
                 "2xl": "2xl:w-[175px]",
-                "3xl": "3xl:w-[215px]",
+                "3xl": "3xl:w-[220px]",
                 "4xl": "4xl:w-[320px]",
               }}
               upperTextSize={{

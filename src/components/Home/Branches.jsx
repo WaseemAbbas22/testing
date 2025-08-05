@@ -1,10 +1,10 @@
-import Company1 from "/src/assets/Home/company1.png";
-import Company2 from "/src/assets/Home/company2.png";
-import Company3 from "/src/assets/Home/company3.png";
-import Company4 from "/src/assets/Home/company4.png";
-import Company5 from "/src/assets/Home/company5.png";
+import Company1 from "/src/assets/Home/NPMA.svg";
+import Company2 from "/src/assets/Home/HACCP.svg";
+import Company3 from "/src/assets/Home/DM.svg";
+import Company4 from "/src/assets/Home/Ajman.svg";
+import Company5 from "/src/assets/Home/SCM.svg";
 import Company6 from "/src/assets/Home/company6.png";
-import Company7 from "/src/assets/Home/company7.png";
+import Company7 from "/src/assets/Home/Food.svg";
 
 const Branches = () => {
   return (
@@ -25,14 +25,14 @@ const Branches = () => {
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-4 lg:gap-x-10  2xl:gap-10 3xl:gap-14  w-full 2xl:px-12 ">
           <div className="h-[10vh] lg:h-[15vh] 2xl:h-[12vh] rounded-lg bg-bggray border border-[#DEDEDE] flex justify-center items-center">
             <img
-              src={Company5}
+              src={Company1}
               alt="Company 1"
-              className="h-8 lg:h-12 2xl:h-12 3xl:h-16 object-contain"
+              className="h-7 lg:h-12 2xl:h-12 3xl:h-14 object-contain"
             />
           </div>
           <div className="border border-[#DEDEDE] h-[10vh] lg:h-[15vh] 2xl:h-[12vh] rounded-lg bg-bggray flex justify-center items-center">
             <img
-              src={Company4}
+              src={Company2}
               alt="Company 2"
               className="h-12 lg:h-20 2xl:h-28 xl:h-16 2xl:h-[8vh] 3xl:h-20 object-contain"
             />
@@ -41,12 +41,12 @@ const Branches = () => {
             <img
               src={Company3}
               alt="Company 3"
-              className="h-5 2xl:h-12 lg:h-8 xl:h-6 2xl:h-7 3xl:h-8  4xl:h-10 object-contain"
+              className="h-4 2xl:h-12 lg:h-8 xl:h-6 2xl:h-7 3xl:h-8  4xl:h-10 object-contain"
             />
           </div>
           <div className="border border-[#DEDEDE] h-[10vh] lg:h-[15vh] 2xl:h-[12vh] rounded-lg bg-bggray flex justify-center items-center">
             <img
-              src={Company2}
+              src={Company4}
               alt="Company 4"
               className="h-12 2xl:h-20 lg:h-24 xl:h-20 3xl:h-24 4xl:h-28  object-contain"
             />
@@ -54,23 +54,23 @@ const Branches = () => {
         </div>
       </div>
 
-      <div className="flex flex-col mt-2 mb-4 md:mb-0 md:mt-0 items-center 2xl:space-y-6 w-[80%] md:w-[55%] mx-auto">
+      <div className="flex flex-col mt-2 mb-4 md:mb-0 md:mt-0 items-center 2xl:space-y-6 w-[75%] md:w-[55%] mx-auto">
         {/* Lower Line with 3 Boxes - Responsive for Mobile */}
         <div className="w-full">
           {/* For Mobile: 2 boxes in first row */}
-          <div className="grid grid-cols-2 gap-2.5 mb-4 md:hidden">
+          <div className="grid grid-cols-2 gap-2 mb-2 md:hidden">
             <div className="border border-[#DEDEDE] h-[10vh] rounded-lg bg-bggray flex justify-center items-center">
               <img
-                src={Company1}
+                src={Company5}
                 alt="Company 5"
-                className="h-10 object-contain"
+                className="h-8 object-contain"
               />
             </div>
             <div className="border border-[#DEDEDE] h-[10vh] rounded-lg bg-bggray flex justify-center items-center">
               <img
                 src={Company6}
                 alt="Company 6"
-                className="h-20 object-contain"
+                className="h-16 object-contain"
               />
             </div>
           </div>
@@ -87,10 +87,10 @@ const Branches = () => {
           </div>
 
           {/* For MD and above: Original 3-column layout */}
-          <div className="hidden md:grid md:grid-cols-3 gap-10 3xl:gap-14 md:w-full">
+          <div className="hidden md:grid md:grid-cols-3 gap-10 3xl:gap-14 md:w-full 3xl:mt-2">
             <div className="border border-[#DEDEDE] h-[1vh] lg:h-[15vh] 2xl:h-[12vh] rounded-lg bg-bggray flex justify-center items-center">
               <img
-                src={Company1}
+                src={Company5}
                 alt="Company 5"
                 className="h-2 2xl:h-14 lg:h-16 xl:h-12 3xl:h-16 4xl:h-20 object-contain"
               />
@@ -106,7 +106,7 @@ const Branches = () => {
               <img
                 src={Company7}
                 alt="Company 7"
-                className="h-16 2xl:h-16 lg:h-16 xl:h-12 3xl:h-20 4xl:h-24 object-contain"
+                className="h-16 2xl:h-16 lg:h-16 xl:h-12 3xl:h-[68px] 4xl:h-24 object-contain"
               />
             </div>
           </div>

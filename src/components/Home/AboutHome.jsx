@@ -11,13 +11,13 @@ const AboutHome = () => {
         {/* Left Side Div */}
         <div className="flex justify-center items-center w-full">
           {/* Green Container */}
-          <div className="relative rounded-2xl flex justify-center items-end shadow-lg bg-darkgreen xl:w-[60%] lg:h-[65vh] xl:h-[64vh] 2xl:h-[55vh] 3xl:h-[53vh] 4xl:h-[55vh] overflow-visible">
+          <div className="relative rounded-2xl flex justify-center items-end shadow-lg bg-darkgreen xl:w-[60%]  lg:h-[65vh] xl:h-[64vh] 2xl:h-[55vh] 3xl:h-[53vh] 4xl:h-[55vh] overflow-visible">
             <div className="relative w-full flex justify-center items-center">
               {/* Vector Image (Behind) */}
               <img
                 src={Vector}
                 alt="Background Vector"
-                className="absolute z-10 w-[95%] lg:h-[70vh] 2xl:h-[80vh] 3xl:h-[90%] 4xl:h-[100vh] object-contain"
+                className="absolute z-10 w-[95%]  lg:h-[70vh] 2xl:h-[80vh] 3xl:h-[90%] 4xl:h-[100vh] object-contain"
               />
 
               {/* Man Image (Front) */}
@@ -32,7 +32,7 @@ const AboutHome = () => {
             <img
               src={Circle2}
               alt="Bottom Left"
-              className="absolute z-20 rounded-full border-2 border-white shadow-md w-[35%]  md:w-[30%] xl:w-[32%] 3xl:w-[35%] 4xl:w-[36%] bottom-[5%]  left-[-15%] xl:left-[-15%] 3xl:left-[-20%] object-cover"
+              className="absolute z-20 rounded-full border-2 border-white shadow-md w-[35%]  md:w-[30%] xl:w-[32%] 3xl:w-[35%] 4xl:w-[36%] bottom-[3%] lg:bottom-[5%]  left-[-15%] xl:left-[-15%] 3xl:left-[-20%] object-cover"
             />
 
             {/* Top Right Circle */}

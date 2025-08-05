@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
    
   darkMode: false,
 
@@ -19,6 +20,8 @@ export default {
       '3xl': '1920px',
       '4xl': '2500px', // 4x extra large screens
     },
+/* Custom utility classes should be added via plugins or in your CSS file, not directly in the config. */
+
 
       fontFamily: {
         inter: ["Inter", "sans-serif"],

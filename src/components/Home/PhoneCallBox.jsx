@@ -1,3 +1,4 @@
+import { space } from "postcss/lib/list";
 import PropTypes from "prop-types";
 import { FaPhoneAlt } from "react-icons/fa";
 
@@ -11,7 +12,9 @@ const PhoneCallBox = ({
   iconPadding = "p-4", // 🆕 icon padding input (Tailwind class)
   upperTextColor = "text-white",
   phoneTextColor = "text-white",
+  spacingY = "space-y-1", // 🆕 space between icon and text
    iconMarginLeft = "ml-2",
+  roundedValue = "rounded-md", // 🆕 rounded value input (Tailwind class)
   containerHeight = {
     base: "h-[80px]",
     "2xl": "2xl:h-[70px]",
@@ -36,7 +39,7 @@ const PhoneCallBox = ({
   return (
     <div
       className={`
-        flex items-center rounded overflow-hidden shadow-md
+        flex items-center ${roundedValue} overflow-hidden shadow-md
         ${spaceX}
         ${bgColor}
         ${containerHeight.base} ${containerHeight["2xl"] || ""} ${containerHeight["3xl"] || ""} ${containerHeight["4xl"] || ""}
@@ -49,7 +52,7 @@ const PhoneCallBox = ({
       </div>
 
       {/* Text Part */}
-      <div className="flex flex-col justify-center">
+      <div className={`flex flex-col justify-center ${spacingY || 'space-y-0'}`}>
         <span
           className={`${upperTextColor} ${upperTextSize.base} ${upperTextSize["2xl"] || ""} ${upperTextSize["3xl"] || ""} ${upperTextSize["4xl"] || ""}`}
         >
@@ -68,7 +71,9 @@ const PhoneCallBox = ({
 PhoneCallBox.propTypes = {
   spaceX: PropTypes.string,
   upperText: PropTypes.string,
+  roundedValue: PropTypes.string, // 🆕 rounded value input (Tailwind class)
   phoneNumber: PropTypes.string,
+  spacingY: PropTypes.string, // 🆕 space between icon and text
   bgColor: PropTypes.string,
   iconColor: PropTypes.string,
   iconSize: PropTypes.string, // 🆕 icon size prop type

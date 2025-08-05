@@ -23,7 +23,7 @@ const TrustSec = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white w-full">
         {/* Description */}
-        <p className="text-sm text-white/90 sm:text-sm md:text-base lg:text-[17px] 2xl:text-xl 3xl:text-[24px] max-w-[100%] sm:max-w-[48%] mx-auto font-xs px-2">
+        <p className="text-sm text-white/85 sm:text-sm md:text-base lg:text-[17px] 2xl:text-xl 3xl:text-[24px] max-w-[100%] sm:max-w-[48%] mx-auto font-xxs px-2">
           Our team is one of the most recognized pest control companies in
           Dubai, offering safe solutions and a history of satisfied customers in
           Sharjah and Ajman.
