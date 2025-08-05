@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { HiMenu } from "react-icons/hi";
+import { HiMenu, HiX } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
 import Logo from "/src/assets/Home/APClogo.svg";
 import PhoneCallBox from "../components/Home/PhoneCallBox";
@@ -149,101 +149,41 @@ const Navbar = () => {
             />
           </div>
 
-          {/* Mobile Menu Toggle */}
-          <div className="md:hidden flex-shrink-0 h-full flex items-center">
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              <HiMenu className="text-xl sm:text-2xl" />
-            </button>
-          </div>
+        {/* Mobile Menu Toggle */}
+        <div className="md:hidden">
+          <button onClick={() => setIsMenuOpen(true)}>
+            <HiMenu className="text-2xl" />
+          </button>
         </div>
-
-        {/* Mobile Menu */}
+        </div>
+        {/* Mobile Menu Overlay */}
         {isMenuOpen && (
-          <div className="md:hidden mt-2">
-            <ul className="flex flex-col space-y-2 text-sm px-2">
-              <li>
-                <Link to="/" className="hover:text-green-600 hover:underline">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/pests"
-                  className="hover:text-green-600 hover:underline"
-                >
-                  Pests
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="hover:text-green-600 hover:underline"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/sectors"
-                  className="hover:text-green-600 hover:underline"
-                >
-                  Sectors
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/about"
-                  className="hover:text-green-600 hover:underline"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/documents"
-                  className="hover:text-green-600 hover:underline"
-                >
-                  Documents
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/equipment-trading"
-                  className="hover:text-green-600 hover:underline"
-                >
-                  Equipment Trading
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/careers"
-                  className="hover:text-green-600 hover:underline"
-                >
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/blogs"
-                  className="hover:text-green-600 hover:underline"
-                >
-                  Blogs
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="hover:text-green-600 hover:underline"
-                >
-                  Contact Us
-                </Link>
-              </li>
+          <div className="fixed top-0 left-0 w-full bg-white z-[100] p-6 flex flex-col">
+            {/* Close button */}
+            <div className="flex justify-end mb-4">
+              <button onClick={() => setIsMenuOpen(false)}>
+                {/* You need to import HiX from react-icons/hi */}
+                <HiX className="text-3xl" />
+              </button>
+            </div>
+
+            <ul className="flex flex-col space-y-4 text-lg">
+              <li><NavLink to="/" onClick={() => setIsMenuOpen(false)}>Home</NavLink></li>
+              <li><NavLink to="/pests" onClick={() => setIsMenuOpen(false)}>Pests</NavLink></li>
+              <li><NavLink to="/services" onClick={() => setIsMenuOpen(false)}>Services</NavLink></li>
+              <li><NavLink to="/sectors" onClick={() => setIsMenuOpen(false)}>Sectors</NavLink></li>
+              <li><NavLink to="/about" onClick={() => setIsMenuOpen(false)}>About Us</NavLink></li>
+              <li><NavLink to="/documents" onClick={() => setIsMenuOpen(false)}>Documents</NavLink></li>
+              <li><NavLink to="/equipment-trading" onClick={() => setIsMenuOpen(false)}>Equipment Trading</NavLink></li>
+              <li><NavLink to="/careers" onClick={() => setIsMenuOpen(false)}>Careers</NavLink></li>
+              <li><NavLink to="/blogs" onClick={() => setIsMenuOpen(false)}>Blogs</NavLink></li>
+              <li><NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</NavLink></li>
             </ul>
           </div>
         )}
       </div>
     </nav>
   );
-};
+}
 
 export default Navbar;
