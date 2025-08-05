@@ -265,7 +265,7 @@ const DocumentGrid = () => {
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row w-full rounded-md bg-[#EAEAEA] overflow-hidden border-b border-[#32A849]">
+            <div className="flex flex-col sm:flex-row w-full rounded-md bg-[#EAEAEA] overflow-hidden border-t border-[#32A849]">
               {/* MSDS */}
               <button
                 onClick={() =>
@@ -279,7 +279,7 @@ const DocumentGrid = () => {
                 disabled={
                   downloadingStates[`${doc.name}-MSDS`] || doc.msds === "#"
                 }
-                className="group flex items-center justify-center border-b border-t border-darkgreen gap-2 text-sm font-bold text-[#32A849] px-3 py-2 flex-1 transition hover:bg-[#32A849] hover:text-white disabled:opacity-50 disabled:cursor-not-allowed sm:text-base xl:text-lg 2xl:text-xl"
+                className="group flex items-center justify-center border-b md:border-b-0 md:border-t-0  border-t border-darkgreen gap-2 text-sm font-bold text-[#32A849] px-3 py-2 flex-1 transition hover:bg-[#32A849] hover:text-white disabled:opacity-50 disabled:cursor-not-allowed sm:text-base xl:text-lg 2xl:text-xl"
               >
                 {downloadingStates[`${doc.name}-MSDS`]
                   ? "Downloading..."
