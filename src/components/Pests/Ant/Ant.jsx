@@ -2,13 +2,44 @@ import TopBar from "/src/components/TopBar";
 import Navbar from "/src/components/Navbar";
 import Footer from "/src/components/Footer";
 import ServicesHero from "/src/components/Services/ServicesHero";
-import HMheroImg from "/src/assets/Pests/housemouseHero.png";
+import HMheroImg from "/src/assets/Pests/Ant/heroImg.svg";
 import PestRemovalBox from "/src/components/Pests/PestRemovalBox";
-import { Import } from "lucide-react";
-import RodentImg1 from "/src/assets/Pests/rodent1.png";
-import RodentImg2 from "/src/assets/Pests/rodent2.png";
+//import { Import } from "lucide-react";
+import Top1 from "/src/assets/Pests/Ant/TopCom1.svg";
+import Top2 from "/src/assets/Pests/Ant/TopCom2.svg";
 import TopComponent from "/src/components/Pests/TopComponent";
-Import;
+import RemoveAnimals from "/src/components/Pests/RemoveAnimals";
+import Img1 from "/src/assets/Pests/Ant/Bot1.svg";
+import Img2 from "/src/assets/Pests/Ant/Bot2.svg";
+import Img3 from "/src/assets/Pests/Ant/Bot3.svg";
+import Img4 from "/src/assets/Pests/Ant/Bot4.svg";
+
+const animalsList = [
+  {
+    img: Img1,
+    name: "ARGENTINE ANTS",
+    sci: "",
+    link: "/house-mouse",
+  },
+  {
+    img: Img2,
+    name: "PAVEMENT ANTS",
+    sci: "",
+    link: "/roof-rat",
+  },
+  {
+    img: Img3,
+    name: "PHARAOH ANTS",
+    sci: "",
+    link: "/bandicoot-rat",
+  },
+  {
+    img: Img4,
+    name: "CARPENTER ANTS",
+    sci: "",
+    link: "/norway-rat",
+  },
+];
 const Ant = () => {
   return (
     <>
@@ -16,17 +47,17 @@ const Ant = () => {
         <TopBar />
         <Navbar />
         <ServicesHero
-          title="Professional Rat Removal Services"
-          breadcrumb="Home > Pests > Rodent"
+          title="Trusted Ant Exterminator Services"
+          breadcrumb="Home > Pests > Details"
           bgImg={HMheroImg}
         />
 
         <TopComponent
-          image1={RodentImg1}
-          image2={RodentImg2}
+          image1={Top1}
+          image2={Top2}
           heading1="Professional Ant and Pest Control Solutions"
           desc1={`Facing an ant infestation? Accurate Pest Control Services LLC Dubai offers professional ant pest control to protect your home or business. Our licensed technicians use eco-safe, effective methods to eliminate ants from every corner indoors or outdoors. Whether you're dealing with red ants in the kitchen or ant trails around your garden, we act fast and efficiently. We also provide long-term prevention plans to ensure ants don’t return and disrupt your space again, giving you peace of mind and a pest free environment.`}
-          button1Text="Contact Now"
+          button1Text="Call Experts"
           heading2="Your Guide to Choosing the Right Ant Control Company"
           desc2="Although small, ants can cause significant problems, especially in homes and food establishments."
           listItems={[
@@ -58,6 +89,7 @@ const Ant = () => {
             },
           ]}
         />
+        <RemoveAnimals heading="We Treat All Types Of Ant Infestations" animals={animalsList} />
         <Footer />
       </div>
     </>

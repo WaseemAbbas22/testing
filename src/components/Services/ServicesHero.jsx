@@ -36,12 +36,12 @@ const ServicesHero = ({
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/60"></div>
 
       {/* Content */}
       <div className="ml-2 xl:ml-32 3xl:ml-44 4xl:ml-56 relative z-10 flex flex-col justify-center h-full px-4 sm:px-[4vw] text-white">
         <h1
-          className="font-bold leading-tight sm:leading-[1.2] text-2xl xl:text-4xl 3xl:text-5xl "
+          className="font-bold leading-tight sm:leading-[1.2] text-2xl xl:text-4xl 3xl:text-5xl max-w-[40%] "
           
         >
           {title}
@@ -56,22 +56,23 @@ const ServicesHero = ({
         </p>
 
         {/* PhoneCallBox (Desktop Only) */}
-        <div className="fixed hidden md:block xl:bottom-60 3xl:bottom-[450px] right-0 z-70">
+        <div className="fixed hidden md:block xl:bottom-60 3xl:bottom-[450px] right-0 z-[40]">
           <PhoneCallBox
             upperText="Call for Free Inspection"
             phoneNumber="0800 8725"
             bgColor="bg-[#E50000]"
             iconColor="text-[#E50000]"
             iconSize="xl:text-2xl 2xl:text-3xl 3xl:text-3xl 4xl:text-3xl"
-            spacingY="space-y-1"
-            iconPadding="xl:p-3 4xl:p-4 3xl:p-4"
+            spacingY="space-y-0"
+            iconPadding="xl:p-3 4xl:p-4 3xl:p-3"
             upperTextColor="text-white "
             roundedValue="rounded-s-md"
-            phoneTextColor="text-white font-bold  "
+          
+            phoneTextColor="text-white font-bold"
             containerHeight={{
               base: "h-[60px]",
               "2xl": "2xl:h-[70px]",
-              "3xl": "3xl:h-[80px]",
+              "3xl": "3xl:h-[70px]",
               "4xl": "4xl:h-[85px]",
             }}
             containerWidth={{

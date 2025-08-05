@@ -14,28 +14,31 @@ const Messages = () => {
               CEO's Message
             </h2>
             <p className="text-black/60 mb-2 2xl:mb-4 3xl:mb-4 text-sm md:text-base xl:text-sm 2xl:text-[16px] 3xl:text-[18px] 4xl:text-[20px] 3xl:leading-tight text-justify">
-              At Accurate Pest Control, our mission goes beyond eliminating
-              pests — it’s about protecting families, securing businesses, and
-              fostering healthier communities across the UAE.From day one, I
-              envisioned a company built on trust, integrity, and a deep
-              commitment to safe, sustainable pest solutions. Today, I’m proud
-              to say we have grown into a trusted name, known for combining
-              proven expertise with the latest eco-friendly methods to deliver
-              lasting peace of mind.
+              At Accurate Pest Control Services, the mission is not limited to
+              eradicating the risks of pests in the UAE alone, but also creating
+              awareness of the dangers of pests.
             </p>
             <p className="text-black/60 mb-2 2xl:mb-4 3xl:mb-6 text-sm md:text-base xl:text-sm 2xl:text-[16px] 3xl:text-[18px] 4xl:text-[20px] 3xl:leading-tight text-justify">
-              Behind every service is a dedicated team of certified
-              professionals who treat your property with the utmost care and
-              respect. Their passion and hard work are the backbone of our
-              promise: to provide reliable, discreet, and effective pest
-              control, every single time. As we look ahead, our focus remains
-              clear — to lead the industry with innovative solutions that
-              protect both people and the planet
+              Pests and the diseases they carry can cause severe damage to human
+              and animal health, as well as to valuable assets and property.
+              Pest infestations may result in irrecoverable losses. Effective
+              control of pests is very important to guarantee a healthy and
+              stable life for everyone and an abundance of active and healthy
+              life.
             </p>
             <p className="text-black/60 mb-2 2xl:mb-4 3xl:mb-6 text-sm md:text-base xl:text-sm 2xl:text-[16px] 3xl:text-[18px] 4xl:text-[20px] 3xl:leading-tight text-justify">
-              Thank you for placing your trust in Accurate Pest Control. We look
-              forward to serving you, safeguarding your spaces, and exceeding
-              your expectations.
+              Pest control is in itself a very specialised field, and Accurate
+              Pest Control Services L.L.C. has all the latest technology and
+              expertise to handle such a challenge. The company is also keen on
+              ensuring that the workforce and technology are maintained to stay
+              on top of the emerging pests and evolving threats. Being
+              concentrated on responsibility, Accurate Pest Control Services
+              L.L.C. Safeguarding people, animals and valuable property and
+              infrastructure sheltering. We will never be able to create a
+              healthier and safer society with only our effort, as it is
+              impossible without the active participation of the community.
+              Everyone must realise the significance of routine pest management
+              and undergo the same on their premises regularly.
             </p>
 
             <div>
@@ -76,35 +79,30 @@ const Messages = () => {
               MD's Message
             </h2>
             <p className="text-black/60 mb-2 3xl:mb-4 text-sm md:text-base xl:text-sm 2xl:text-[16px] 3xl:text-[18px] 4xl:text-[20px] 3xl:leading-tight text-justify">
-              At Accurate Pest Control, we have always believed that true
-              service excellence is built on more than just technical expertise
-              — it is built on understanding, dedication, and genuine care for
-              the people and businesses we serve.
+              At accurate pest control services, we dedicate our time, passion
+              and trust to our valuable clients. Our motto is to achieve utmost
+              customer satisfaction by rendering deep service analysis, planning
+              and implementing our core business ethics.
             </p>
             <p className="text-black/60 mb-2 3xl:mb-4 text-sm md:text-base xl:text-sm 2xl:text-[16px] 3xl:text-[18px] 4xl:text-[20px] 3xl:leading-tight text-justify">
-              As Managing Director, I take great pride in leading a team that
-              goes the extra mile to protect our clients' homes, workplaces, and
-              reputations. Each day, we work with a clear purpose: to deliver
-              fast, effective, and environmentally responsible solutions that
-              make a real difference.
+              Our corporate philosophy is, however, based on a very simple
+              principle: "Give the customer value for money". To this end, we
+              are constantly working towards upgrading and improving every
+              aspect of our activity. Be it the quality of our product or our
+              follow-up service, the emphasis is on keeping on improving.
             </p>
             <p className="text-black/60 mb-2 3xl:mb-4 text-sm md:text-base xl:text-sm  2xl:text-[16px] 3xl:text-[18px] 4xl:text-[20px] 3xl:leading-tight text-justify">
-              We are committed to continuous improvement — embracing the latest
-              technologies, adopting best practices, and investing in the
-              training of our people. This is how we ensure that every
-              treatment, every inspection, and every client interaction reflects
-              our core values of safety, trust, and quality.
+              It is because of this constant commitment to excellence that we
+              have earned the goodwill of so many of our customers.
             </p>
             <p className="text-black/60 mb-2 3xl:mb-4 text-sm md:text-base xl:text-sm  2xl:text-[16px] 3xl:text-[18px] 4xl:text-[20px] 3xl:leading-tight text-justify">
-              I extend my heartfelt gratitude to our loyal customers and
-              dedicated team members who make our success possible. Together, we
-              will continue to set new standards in pest control and uphold the
-              trust you place in us. Thank you for choosing Accurate Pest
-              Control as your partner in protection.
-            </p>
-            <p className="text-black/60 mb-2 3xl:mb-4 text-sm md:text-base xl:text-sm  2xl:text-[16px] 3xl:text-[18px] 4xl:text-[20px] 3xl:leading-tight text-justify">
-              Thank you for choosing Accurate Pest Control as your partner in
-              protection.
+              Nowadays, "APCS" is facing a new stage of active development. Our
+              human resources are well-trained and motivated; our financial
+              Fundamentals are strong, and we have an excellent reputation in
+              the market. Our vision is to set challenging goals for ourselves
+              constantly. We will continue to expand and diversify, and be an
+              example of a progressive company playing a dynamic role in the
+              economic development of the UAE.
             </p>
 
             <div className="space-y-0">

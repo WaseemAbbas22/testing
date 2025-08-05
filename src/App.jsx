@@ -11,7 +11,7 @@ import BlogsPage from "./pages/Blogs"; // Assuming you have a Blogs page
 import Pests from "./pages/Pests"; // Assuming you have a Pests page
 import Sectors from "./pages/Sectors"; // Assuming you have a Sectors page  
 import Careers from "./pages/Careers";
-import Rodent from "./pages/pests/Rodent";
+import Rodent from "/src/components/Pests/Rodent/Rodent";
 import HouseMouse from "/src/components/Pests/Rodent/housemouse";
 import Spider from "/src/components/Pests/Spider/Spider";
 import Lizard from "/src/components/Pests/Lizard/Lizard";

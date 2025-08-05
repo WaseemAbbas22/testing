@@ -12,119 +12,114 @@ const AboutCompany = () => {
         </h2>
 
         <div className="space-y-3 xl:space-y-3 sm:space-y-2 3xl:space-y-5 text-[#666666] text-sm sm:text-base md:text-[18px] xl:text-[15px] 2xl:text-[18px] 3xl:text-[20px] 4xl:text-[26px] xl:leading-tight 4xl:leading-normal">
-          <p>
-            At Accurate Pest Control, we pride ourselves on being one of the
-            fastest-growing pest control companies in the UAE. Established in
-            2023, we ventured into the pest control industry with a clear
-            vision: to provide top-notch pest control services and engage in
-            trading activities while expanding rapidly across the region. Today,
-            we proudly serve over 400+ permanent clients across the three main
-            emirates of the UAE:{" "}
-            <span className="text-green-600 font-medium underline">
-              Dubai, Sharjah, and Ajman
-            </span>
-            .
+          <p className="mb-5 text-justify">
+            Accurate Pest Control Services LLC, Dubai, is one of the most
+            reliable and fast-growing pest control companies in the United Arab
+            Emirates. We established our company in 2023 to enter the pest
+            control business to offer good service at the rate of growth in the
+            region. Our client base, as of now, has over 400 satisfied customers
+            in Ajman, Sharjah, and Dubai. We have many certified, safe, and
+            outcome-based pest control solutions.
           </p>
 
-          <p>
-            In addition to pest control our parent company holds a diversified
-            portfolio of businesses, including{" "}
-            <span className="text-green-600 font-medium underline">
+          <p className="mb-5 text-justify">
+            Our parent company, which is supported by a wide variety of
+            businesses, manages multiple respected companies like{" "}
+            <a href="https://rajputtravelpk.com/" className="text-blue-600 underline hover:text-blue-800">
               Rajput Travel & Tourism LLC
-            </span>
+            </a>
             ,{" "}
-            <span className="text-green-600 font-medium underline">
+            <a href="#" className="text-blue-600 underline hover:text-blue-800">
               Rajput Travel & Tourism Private Limited
-            </span>
+            </a>
             ,{" "}
-            <span className="text-green-600 font-medium underline">
-              Store Al Arab
-            </span>
+            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+              Siyah Al Arab
+            </a>
             ,{" "}
-            <span className="text-green-600 font-medium underline">
+            <a href="#" className="text-blue-600 underline hover:text-blue-800">
               World Citizen Consultants
-            </span>
+            </a>
             ,{" "}
-            <span className="text-green-600 font-medium underline">
+            <a href="#" className="text-blue-600 underline hover:text-blue-800">
               Ghulam Bari Rice Mill
-            </span>
+            </a>
             ,{" "}
-            <span className="text-green-600 font-medium underline">
-              Accurate Sap
-            </span>{" "}
-            and{" "}
-            <span className="text-green-600 font-medium underline">
-              Ramazalnajah
-            </span>{" "}
-            for Recruitment. With a strong presence in the UAE, Saudi Arabia,
-            and Pakistan, we continue to drive growth and innovation in multiple
-            industries.
+            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+              Accurate SAF
+            </a>
+            , and{" "}
+            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+              Ramzaalnajah for Recruitment
+            </a>
+            . We keep blazing the trails as we foresee and dominate across the
+            industries with a significant presence in Saudi Arabia, Pakistan,
+            and the United Arab Emirates.
           </p>
 
-          <p>
-            <span className="text-green-600 font-medium underline">
-              Accurate Pest Control Services L.L.C
-            </span>
-            , a trusted leader in pest control services across Dubai, Sharjah,
-            and Ajman, specializes in innovative solutions for insect and pest
-            extermination, termite control, and fumigation. We have earned a
-            solid reputation for our reliable, professional approach and
-            commitment to delivering outstanding customer care, continuously
-            strengthening our standing in the industry.
+          <p className="mb-5 text-justify">
+            Our Services with Accurate Pest Control Services LLC Dubai, provide
+            Clients with focused insect extermination, termite treatment,
+            fumigation, and rodent control that deliver integrated pest
+            management services to the residential, commercial, and industrial
+            sectors. Whether it is roaches, bed bugs, ants, or termites, our
+            designs are created specifically for your environment.
           </p>
 
-          <p>
-            As a leading pest control company serving{" "}
-            <span className="text-green-600 font-medium underline">
-              Dubai, Sharjah, and Ajman
-            </span>
-            , we are dedicated to continually advancing our pest control methods
-            to remain at the forefront of the industry. We consistently research
-            changes in pest behavior, habitats, and food sources to enhance our
-            services. With a strong commitment to environmental responsibility,
-            we prioritize the use of non-toxic methods to minimize our impact on
-            non-target species and the environment. The insecticides we use are
-            approved by the Ministry of Climate Change and Environment, U.A.E.,
-            and are applied strictly in accordance with the manufacturer's label
-            directions and recommendations.
+          <p className="mb-5 text-justify">
+            We were officially approved by{" "}
+            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+              Dubai Municipality
+            </a>
+            ,{" "}
+            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+              Sharjah Municipality
+            </a>
+            ,{" "}
+            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+              Ajman Municipality
+            </a>
+            ,{" "}
+            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+              Foodwatch and the Ministry of Climate Change and Environment
+              (MOCCAE)
+            </a>
+            . Our team formally adheres to the standards of the UAE. As a member
+            of{" "}
+            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+              NPMA
+            </a>
+            , we keep abreast of all pest behaviour, safety and environment
+            friendly methods as new trends to improve our own culture of pest
+            management.
           </p>
 
-          <p>
-            Understanding that every business has unique needs,{" "}
-            <span className="text-green-600 font-medium underline">
-              Accurate Pest Control Services L.L.C
-            </span>
-            , a leading pest control company in{" "}
-            <span className="text-green-600 font-medium underline">
-              Dubai, Sharjah, and Ajman
-            </span>
-            , tailors its services to meet individual requirements, ensuring the
-            most effective pest control solutions. We are committed to providing
-            dedicated services that help you address and resolve pest-related
-            issues efficiently.
+          <p className="mb-5 text-justify">
+            Care for our environment is immensely important to us, and ensuring
+            that crawling species not targeted are safe from harm by our methods
+            is of utmost importance hence, we will use non-toxic methods
+            whenever possible to ensure your protection of these types and
+            preserve the ecosystem and even if we can't use non-toxic methods we
+            will always start with non-chemical options.
           </p>
 
-          <p>
-            Our services extend to all commercial and residential areas,
-            including offices, schools, hospitals, F&B outlets, restaurants,
-            showrooms, ships, warehouses, and more, making us a leading pest
-            control company across{" "}
-            <span className="text-green-600 font-medium underline">
-              Dubai, Sharjah, and Ajman
-            </span>
-            .
+          <p className="mb-5 text-justify">
+            Understanding your pest issue involves smart identification of the
+            pest or its activity, and effective action via targeting treatment,
+            real-time monitoring and long-term prevention. Accurate Pest Control
+            Services LLC Dubai does not discriminate on who we service or how
+            quickly we can be to serve, giving all equal care in the treatment
+            of all people and treating all sites or circumstances with
+            professionalism.
           </p>
 
-          <p>
-            With a focus on providing benefits to our valued customers, we take
-            pride in our integrity and business ethics, striving to maintain our
-            reputation as a leading pest control company in{" "}
-            <span className="text-green-600 font-medium underline">
-              Dubai, Sharjah, and Ajman
-            </span>
-            . We are committed to continuous training and staying ahead of
-            advancements in pest control, health, and safety—principles that are
-            central to everything we do.
+          <p className="mb-5 text-justify">
+            When it comes to pest control of homes, offices, schools,
+            restaurants, hospitals, ships and warehouses, fast, reliable, great
+            service is what we provide. We will never stop being the best pest
+            control in Dubai. Truly, there is no more consuming feeling than
+            having created a pest-free environment where families and companies
+            prosper as we go to work in our brains.
           </p>
         </div>
       </div>
@@ -148,13 +143,14 @@ const AboutCompany = () => {
             </h3>
 
             <p className="text-xs text-white/90 sm:text-sm md:text-xs xl:text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl leading-relaxed  max-w-xl md:max-w-md 2xl:max-w-lg 3xl:max-w-xl 4xl:max-w-2xl">
-              We offer numerous benefits to our customers, taking pride in our
-              integrity and business ethics. Our commitment to continuous
-              improvement drives us to remain at the forefront of the pest
-              control industry. We are dedicated to ongoing learning and
-              adapting to the ever-evolving landscape of pest control, health,
-              and safety. This dedication to constant training is at the core of
-              everything we do.
+              By providing secure and reliable pest control practices, we aim to
+              safeguard communities, business establishments, and households in
+              the entire UAE. We will strive to provide high-quality customer
+              service in that area using our advanced technology, licensed
+              experts and our bespoke plan. Our business includes making a
+              change to human health through the creation of healthier,
+              pest-free environments through support of recognition in both
+              prevention and sustainability.
             </p>
           </div>
 
@@ -174,12 +170,15 @@ const AboutCompany = () => {
             </h3>
 
             <p className="text-xs text-white/90 sm:text-sm md:text-xs xl:text-xs 2xl:text-base 3xl:text-lg 4xl:text-2xl leading-relaxed max-w-xl md:max-w-md 2xl:max-w-lg 3xl:max-w-xl 4xl:max-w-2xl">
-              Our mission is to deliver exceptional customer value, rooted in
-              integrity and strong business ethics. We are committed to
-              continuous improvement, staying abreast of advancements in pest
-              control, health, and safety practices. This dedication to ongoing
-              training and innovation is central to our operations, ensuring the
-              highest standards in everything we do.
+              Our vision is to produce an excellent quality facility for the
+              most popular family experience brands in the UAE. We exist not
+              just to push against frontiers but also to have core values of
+              progress and trust, and community well-being. Our company is
+              committed to both the enhancement of social health and the
+              preservation of the corporate culture and our environment. All our
+              actions shall be driven by our commitment to serve our customers
+              by offering the best customer service to create compelling
+              relationships and ensure sustained loyalty.
             </p>
           </div>
         </div>
