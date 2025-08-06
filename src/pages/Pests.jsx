@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar"
 import TopBar from "../components/TopBar"
 import ServicesHero from "../components/Services/ServicesHero"
-import PestHeroImg from '/src/assets/Pests/pestHero.png'; // Adjust the path as necessary
+import PestHeroImg from '@/assets/Pests/pestHero.png'; // Adjust the path as necessary
 import Footer from "../components/Footer";
 import PestsGrid from "../components/Pests/PestsGrid";
 const Pests = () => {

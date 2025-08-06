@@ -1,16 +1,16 @@
-import TopBar from "/src/components/TopBar";
-import Navbar from "/src/components/Navbar";
-import ServicesHero from "/src/components/Services/ServicesHero";
-import RodentHeroImg from "/src/assets/Pests/Rodent/rodenthero.svg"; // Adjust the path as
-import Footer from "/src/components/Footer";
+import TopBar from "@/components/TopBar";
+import Navbar from "@/components/Navbar";
+import ServicesHero from "@/components/Services/ServicesHero";
+import RodentHeroImg from "@/assets/Pests/Rodent/rodenthero.svg"; // Adjust the path as
+import Footer from "@/components/Footer";
 import TopComponent from "../TopComponent";
-import Top1 from "/src/assets/Pests/Rodent/Top1.png";
-import Top2 from "/src/assets/Pests/Rodent/Top2.png";
+import Top1 from "@/assets/Pests/Rodent/Top1.png";
+import Top2 from "@/assets/Pests/Rodent/Top2.png";
 import PestRemovalBox from "../PestRemovalBox";
 import RemoveAnimals from "../RemoveAnimals";
-import Img1 from "/src/assets/Pests/Flies/Bot1.svg";
-import Img2 from "/src/assets/Pests/Flies/Bot2.svg";
-import Img3 from "/src/assets/Pests/Flies/Bot3.svg";
+import Img1 from "@/assets/Pests/Flies/Bot1.svg";
+import Img2 from "@/assets/Pests/Flies/Bot2.svg";
+import Img3 from "@/assets/Pests/Flies/Bot3.svg";
 //import Img4 from "/src/assets/Pests/Rodent/bot4.png";
 
 const animalsList = [

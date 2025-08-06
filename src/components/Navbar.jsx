@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
-import Logo from "/src/assets/Home/APClogo.svg";
+import Logo from "@/assets/Home/APClogo.svg";
 import PhoneCallBox from "../components/Home/PhoneCallBox";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 //px-5 sm:px-6 md:px-4 lg:px-40 xl:px-20 2xl:px-16

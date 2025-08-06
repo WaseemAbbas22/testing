@@ -8,7 +8,7 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import LogoWhite from "/src/assets/Home/LogoWhite.png";
+import LogoWhite from "@/assets/Home/LogoWhite.png";
 
 const Footer = () => {
   return (

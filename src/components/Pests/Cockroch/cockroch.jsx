@@ -1,17 +1,17 @@
-import TopBar from "/src/components/TopBar";
-import Navbar from "/src/components/Navbar";
-import Footer from "/src/components/Footer";
-import ServicesHero from "/src/components/Services/ServicesHero";
-import HMheroImg from "/src/assets/Pests/Cockroch/heroImg.svg"; // Adjust the path as needed
+import TopBar from "@/components/TopBar";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import ServicesHero from "@/components/Services/ServicesHero";
+import HMheroImg from "@/assets/Pests/Cockroch/heroImg.svg"; // Adjust the path as needed
 import TopComponent from "../TopComponent";
-import Top1 from "/src/assets/Pests/Cockroch/Top1.svg";
-import Top2 from "/src/assets/Pests/Cockroch/Top2.svg";
+import Top1 from "@/assets/Pests/Cockroch/Top1.svg";
+import Top2 from "@/assets/Pests/Cockroch/Top2.svg";
 import PestRemovalBox from "../PestRemovalBox";
 import RemoveAnimals from "../RemoveAnimals";
-import Img1 from "/src/assets/Pests/Cockroch/Bot1.svg";
-import Img2 from "/src/assets/Pests/Cockroch/Bot2.svg";
-import Img3 from "/src/assets/Pests/Cockroch/Bot3.svg";
-import Img4 from "/src/assets/Pests/Cockroch/Bot4.svg";
+import Img1 from "@/assets/Pests/Cockroch/Bot1.svg";
+import Img2 from "@/assets/Pests/Cockroch/Bot2.svg";
+import Img3 from "@/assets/Pests/Cockroch/Bot3.svg";
+import Img4 from "@/assets/Pests/Cockroch/Bot4.svg";
 
 const animalsList = [
   {

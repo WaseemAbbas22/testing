@@ -1,7 +1,7 @@
 import TopBar from "../components/TopBar"
 import Navbar from "../components/Navbar"
 import ServicesHero from "../components/Services/ServicesHero"
-import SectorHeroImg from '/src/assets/Sectors/heroImg.png'; // Adjust the path as necessary
+import SectorHeroImg from '@/assets/Sectors/heroImg.png'; // Adjust the path as necessary
 import Footer from "../components/Footer";
 import SectorsPage from "../components/SectorPages";
 //import FreeInspection from "../components/Blogs/FreeInspection";

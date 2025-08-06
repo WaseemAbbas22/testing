@@ -2,8 +2,8 @@ import Navbar from "../components/Navbar"
 import TopBar from "../components/TopBar"
 import ServicesHero from "../components/Services/ServicesHero"
 import ServicesSection from "../components/Services/ServicesSection"
-import BlogsHeroImg from '/src/assets/Career/heroImg.png'; // Adjust the path as necessary
-import ServicesImg from '/src/assets/Career/image99.png'; // Adjust the path as
+import BlogsHeroImg from '@/assets/Career/heroImg.png'; // Adjust the path as necessary
+import ServicesImg from '@/assets/Career/image99.png'; // Adjust the path as
 import Footer from "../components/Footer"
 //import Careers from "../components/Careers/Careers" 
 import CareersList from "../components/Careers/Careers";

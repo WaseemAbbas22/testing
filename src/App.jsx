@@ -11,22 +11,22 @@ import BlogsPage from "./pages/Blogs"; // Assuming you have a Blogs page
 import Pests from "./pages/Pests"; // Assuming you have a Pests page
 import Sectors from "./pages/Sectors"; // Assuming you have a Sectors page  
 import Careers from "./pages/Careers";
-import Rodent from "/src/components/Pests/Rodent/Rodent";
-import HouseMouse from "/src/components/Pests/Rodent/housemouse";
-import Spider from "/src/components/Pests/Spider/Spider";
-import Lizard from "/src/components/Pests/Lizard/Lizard";
-import Bird from "/src/components/Pests/Bird/Bird";
-import Flies from "/src/components/Pests/Flies/Flies";
-import Mosquito from "/src/components/Pests/Mosquito/Mosquito";
-import RedBug from "/src/components/Pests/RedBug/RedBug";
-import Tick from "/src/components/Pests/Tick/Tick";
-import Venomous from "/src/components/Pests/Venomous/Venomous";
-import Cockroch from "/src/components/Pests/Cockroch/cockroch";
-import Termites from "/src/components/Pests/Termites/Termites";
-import Wasp from "/src/components/Pests/Wasp/Wasp";
-import Ant from "/src/components/Pests/Ant/Ant";
-import BlogDetail from "/src/components/Blogs/BlogGen";
-import JobDetail from "/src/components/Careers/JobDetail";
+import Rodent from "@/components/Pests/Rodent/Rodent";
+import HouseMouse from "@/components/Pests/Rodent/housemouse";
+import Spider from "@/components/Pests/Spider/Spider";
+import Lizard from "@/components/Pests/Lizard/Lizard";
+import Bird from "@/components/Pests/Bird/Bird";
+import Flies from "@/components/Pests/Flies/Flies";
+import Mosquito from "@/components/Pests/Mosquito/Mosquito";
+import RedBug from "@/components/Pests/RedBug/RedBug";
+import Tick from "@/components/Pests/Tick/Tick";
+import Venomous from "@/components/Pests/Venomous/Venomous";
+import Cockroch from "@/components/Pests/Cockroch/cockroch";
+import Termites from "@/components/Pests/Termites/Termites";
+import Wasp from "@/components/Pests/Wasp/Wasp";
+import Ant from "@/components/Pests/Ant/Ant";
+import BlogDetail from "@/components/Blogs/BlogGen";
+import JobDetail from "@/components/Careers/JobDetail";
 
 
 //import BlogsPage from "./pages/Blogs";

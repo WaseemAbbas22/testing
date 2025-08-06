@@ -1,18 +1,18 @@
-import TopBar from "/src/components/TopBar";
-import Navbar from "/src/components/Navbar";
-import Footer from "/src/components/Footer";
-import ServicesHero from "/src/components/Services/ServicesHero";
-import HMheroImg from "/src/assets/Pests/Ant/heroImg.svg";
-import PestRemovalBox from "/src/components/Pests/PestRemovalBox";
+import TopBar from "@/components/TopBar";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import ServicesHero from "@/components/Services/ServicesHero";
+import HMheroImg from "@/assets/Pests/Ant/heroImg.svg";
+import PestRemovalBox from "@/components/Pests/PestRemovalBox";
 //import { Import } from "lucide-react";
-import Top1 from "/src/assets/Pests/Ant/TopCom1.svg";
-import Top2 from "/src/assets/Pests/Ant/TopCom2.svg";
-import TopComponent from "/src/components/Pests/TopComponent";
-import RemoveAnimals from "/src/components/Pests/RemoveAnimals";
-import Img1 from "/src/assets/Pests/Ant/Bot1.svg";
-import Img2 from "/src/assets/Pests/Ant/Bot2.svg";
-import Img3 from "/src/assets/Pests/Ant/Bot3.svg";
-import Img4 from "/src/assets/Pests/Ant/Bot4.svg";
+import Top1 from "@/assets/Pests/Ant/TopCom1.svg";
+import Top2 from "@/assets/Pests/Ant/TopCom2.svg";
+import TopComponent from "@/components/Pests/TopComponent";
+import RemoveAnimals from "@/components/Pests/RemoveAnimals";
+import Img1 from "@/assets/Pests/Ant/Bot1.svg";
+import Img2 from "@/assets/Pests/Ant/Bot2.svg";
+import Img3 from "@/assets/Pests/Ant/Bot3.svg";
+import Img4 from "@/assets/Pests/Ant/Bot4.svg";
 
 const animalsList = [
   {

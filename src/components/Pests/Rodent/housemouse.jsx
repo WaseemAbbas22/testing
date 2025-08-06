@@ -1,9 +1,9 @@
-import TopBar from '/src/components/TopBar'
-import Navbar from '/src/components/Navbar'
-import Footer from '/src/components/Footer'
-import ServicesHero from '/src/components/Services/ServicesHero'
-import HMheroImg from "/src/assets/Pests/housemouseHero.png"
-import HouseMousePage from '/src/components/Pests/Rodent/housemouseSection'
+import TopBar from '@/components/TopBar'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import ServicesHero from '@/components/Services/ServicesHero'
+import HMheroImg from "@/assets/Pests/housemouseHero.png"
+import HouseMousePage from '@/components/Pests/Rodent/housemouseSection'
 
 const housemouse = () => {
     return (

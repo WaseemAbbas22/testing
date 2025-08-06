@@ -7,7 +7,7 @@ import TopBar from "../components/TopBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ServicesHero from "../components/Services/ServicesHero";
-import BlogsHeroImg from '/src/assets/Blogs/heroImg.png'; // Adjust the path as necessary
+import BlogsHeroImg from '@/assets/Blogs/heroImg.png'; // Adjust the path as necessary
 import SearchBar from "../components/Blogs/SearchBar";
 
 const BlogsPage = () => {
