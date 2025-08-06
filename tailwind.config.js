@@ -5,8 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   
-   
-  darkMode: false,
+  // darkMode: 'class', // Enable dark mode support
+  // Alternatively, you can use 'media' for system preference based dark mode
+  // Example:
+  // darkMode: 'media', // Use this if you want to enable dark mode based
+  darkMode: 'media',
 
   theme: {
     extend: {
