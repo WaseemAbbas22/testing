@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Vector from "/src/assets/Home/VectorForm.png";
+import Vector from "@/assets/Home/VectorForm.png";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useTranslation } from "../../utils/translations";

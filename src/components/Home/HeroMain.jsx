@@ -1,5 +1,5 @@
 import PhoneCallBox from "./PhoneCallBox";
-import HeroImg from "/src/assets/Home/HeroImg.png";
+import HeroImg from "@/assets/Home/HeroImg.png";
 import { FaPhoneAlt } from "react-icons/fa";
 // md:px-10 md:py-12 lg:px-32 lg:py-12 xl:px-32 xl:py-12 2xl:px-16 2xl:py-12 3xl:px-10
 

@@ -1,5 +1,5 @@
-import Img from "/src/assets/Home/trustsec.png";
-import lineDivider from "/src/assets/Home/Divider.svg";
+import Img from "@/assets/Home/trustsec.png";
+import lineDivider from "@/assets/Home/Divider.svg";
 import React from "react";
 
 const TrustSec = () => {

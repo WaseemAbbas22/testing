@@ -1,7 +1,7 @@
 import React from 'react';
-import Cert1 from "/src/assets/About/certificate1.png";
-import Cert2 from "/src/assets/About/certificate2.png";
-import Cert3 from "/src/assets/About/certificate3.png";
+import Cert1 from "@/assets/About/certificate1.png";
+import Cert2 from "@/assets/About/certificate2.png";
+import Cert3 from "@/assets/About/certificate3.png";
 
 const Certificates = () => {
   return (

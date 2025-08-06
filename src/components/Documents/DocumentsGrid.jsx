@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // You'll need to import your download icon
-import download from "/src/assets/Documents/downloadImg.png";
+import download from "@/assets/Documents/downloadImg.png";
 
 const chemicalDocuments = [
   {

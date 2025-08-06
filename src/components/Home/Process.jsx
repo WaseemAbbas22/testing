@@ -1,8 +1,8 @@
 //import { FaSearch, FaFingerprint, FaSprayCan, FaShieldAlt } from "react-icons/fa";
-import InspectionImg from "/src/assets/Home/process1.png";
-import IdentificationImg from "/src/assets/Home/process2.png";
-import ApplicationImg from "/src/assets/Home/process3.png";
-import SafetyCheckImg from "/src/assets/Home/process4.png";
+import InspectionImg from "@/assets/Home/process1.png";
+import IdentificationImg from "@/assets/Home/process2.png";
+import ApplicationImg from "@/assets/Home/process3.png";
+import SafetyCheckImg from "@/assets/Home/process4.png";
 
 const Process = () => {
   const steps = [

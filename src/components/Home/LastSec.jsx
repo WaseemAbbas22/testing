@@ -1,9 +1,9 @@
-import Pic1 from "/src/assets/Home/step1.png";
-import Pic2 from "/src/assets/Home/step2.png";
-import Pic3 from "/src/assets/Home/step3.png";
+import Pic1 from "@/assets/Home/step1.png";
+import Pic2 from "@/assets/Home/step2.png";
+import Pic3 from "@/assets/Home/step3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarAlt, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import lastsec from "/src/assets/Home/lastsec.png";
+import lastsec from "@/assets/Home/lastsec.png";
 //import { FaCalendarAlt } from "react-icons/fa";
 const KeepSteps = () => {
   const cards = [

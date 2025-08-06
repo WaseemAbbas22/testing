@@ -1,7 +1,7 @@
-import Circle1 from "/src/assets/Home/cir1.png";
-import Circle2 from "/src/assets/Home/cir2.png";
-import man from "/src/assets/Home/man.png";
-import Vector from "/src/assets/Home/brightVector.svg";
+import Circle1 from "@/assets/Home/cir1.png";
+import Circle2 from "@/assets/Home/cir2.png";
+import man from "@/assets/Home/man.png";
+import Vector from "@/assets/Home/brightVector.svg";
 
 const AboutHome = () => {
   return (

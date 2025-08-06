@@ -1,11 +1,11 @@
-import Service1 from "/src/assets/Pests/ant.png";
-import Service2 from "/src/assets/Pests/termites.png";
-import Service3 from "/src/assets/Pests/cockroch.png";
-import Service4 from "/src/assets/Pests/redbug.png";
-import Service5 from "/src/assets/Pests/mosquitoes.png";
-import Service6 from "/src/assets/Pests/rodent.png";
-import Service7 from "/src/assets/Pests/flies.png";
-import Service8 from "/src/assets/Pests/spider.png";
+import Service1 from "@/assets/Pests/ant.png";
+import Service2 from "@/assets/Pests/termites.png";
+import Service3 from "@/assets/Pests/cockroch.png";
+import Service4 from "@/assets/Pests/redbug.png";
+import Service5 from "@/assets/Pests/mosquitoes.png";
+import Service6 from "@/assets/Pests/rodent.png";
+import Service7 from "@/assets/Pests/flies.png";
+import Service8 from "@/assets/Pests/spider.png";
 
 const Services = () => {
   const services = [

@@ -1,10 +1,10 @@
-import TopBar from '/src/components/TopBar';
-import Navbar from '/src/components/Navbar';
-import Footer from '/src/components/Footer';
-import ServicesHero from '/src/components/Services/ServicesHero';
-import JobDetailHero from "/src/assets/Career/JobDetailHero.png"
-import JobForm from '/src/components/Careers/JobForm';
-import Jobdetailtext from '/src/components/Careers/Jobdetailtext';
+import TopBar from '@/components/TopBar';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import ServicesHero from '@/components/Services/ServicesHero';
+import JobDetailHero from "@/assets/Career/JobDetailHero.png"
+import JobForm from '@/components/Careers/JobForm';
+import Jobdetailtext from '@/components/Careers/Jobdetailtext';
 
 const JobDetail = () => {
     return (

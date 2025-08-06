@@ -1,10 +1,10 @@
-import Company1 from "/src/assets/Home/NPMA.svg";
-import Company2 from "/src/assets/Home/HACCP.svg";
-import Company3 from "/src/assets/Home/DM.svg";
-import Company4 from "/src/assets/Home/Ajman.svg";
-import Company5 from "/src/assets/Home/SCM.svg";
-import Company6 from "/src/assets/Home/company6.png";
-import Company7 from "/src/assets/Home/Food.svg";
+import Company1 from "@/assets/Home/NPMA.svg";
+import Company2 from "@/assets/Home/HACCP.svg";
+import Company3 from "@/assets/Home/DM.svg";
+import Company4 from "@/assets/Home/Ajman.svg";
+import Company5 from "@/assets/Home/SCM.svg";
+import Company6 from "@/assets/Home/company6.png";
+import Company7 from "@/assets/Home/Food.svg";
 
 const Branches = () => {
   return (

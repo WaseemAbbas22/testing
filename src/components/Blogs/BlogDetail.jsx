@@ -1,5 +1,5 @@
 import { FaCalendarAlt } from "react-icons/fa";
-import heroImg from "/src/assets/Blogs/blogdetailHero.png"
+import heroImg from "@/assets/Blogs/blogdetailHero.png"
 const BlogDetail = () => {
     return (
         <div className="lg:w-full ml-24 py-12 flex flex-col">

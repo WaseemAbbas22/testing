@@ -1,14 +1,14 @@
 //import Client1 from "/src/assets/Home/LogoClients1.png";
-import Client1 from "/src/assets/Home/PureFood.svg";
-import Client2 from "/src/assets/Home/CGFT.svg";
-import Client3 from "/src/assets/Home/Boxx.svg";
-import Client4 from "/src/assets/Home/MPF.svg";
-import Client5 from "/src/assets/Home/ThreeStar.svg";
-import Client6 from "/src/assets/Home/hidubai.svg";
-import Client7 from "/src/assets/Home/Cir.svg";
-import Client8 from "/src/assets/Home/P.svg";
-import Client9 from "/src/assets/Home/Grand.svg";
-import Client10 from "/src/assets/Home/Gutman.svg";
+import Client1 from "@/assets/Home/PureFood.svg";
+import Client2 from "@/assets/Home/CGFT.svg";
+import Client3 from "@/assets/Home/Boxx.svg";
+import Client4 from "@/assets/Home/MPF.svg";
+import Client5 from "@/assets/Home/ThreeStar.svg";
+import Client6 from "@/assets/Home/hidubai.svg";
+import Client7 from "@/assets/Home/Cir.svg";
+import Client8 from "@/assets/Home/P.svg";
+import Client9 from "@/assets/Home/Grand.svg";
+import Client10 from "@/assets/Home/Gutman.svg";
 //import { useTranslation } from "/src/utils/translations";
 
 import ClientBox from "./ClientBox"; // Adjust path accordingly

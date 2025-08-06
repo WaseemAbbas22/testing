@@ -1,6 +1,6 @@
 import React from "react";
-import VisionIcon from "/src/assets/About/vision.png";
-import MissionIcon from "/src/assets/About/mission.png";
+import VisionIcon from "@/assets/About/vision.png";
+import MissionIcon from "@/assets/About/mission.png";
 
 const AboutCompany = () => {
   return (

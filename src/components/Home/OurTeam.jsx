@@ -1,9 +1,9 @@
-import Member1 from "/src/assets/Home/image2.jpg";
-import Member2 from "/src/assets/Home/image3.jpg";
-import Member3 from "/src/assets/Home/image1.jpg";
-import Member4 from "/src/assets/Home/image4.jpg";
-import LeftLine from "/src/assets/Home/LeftLine.svg";
-import RightLine from "/src/assets/Home/RightLine.svg";
+import Member1 from "@/assets/Home/image2.jpg";
+import Member2 from "@/assets/Home/image3.jpg";
+import Member3 from "@/assets/Home/image1.jpg";
+import Member4 from "@/assets/Home/image4.jpg";
+import LeftLine from "@/assets/Home/LeftLine.svg";
+import RightLine from "@/assets/Home/RightLine.svg";
 
 const OurTeam = () => {
   const team = [

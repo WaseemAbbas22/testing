@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-import PhoneCallBox from "/src/components/Home/PhoneCallBox";
+import PhoneCallBox from "@/components/Home/PhoneCallBox";
 
 const ServicesHero = ({
   title = "Services",

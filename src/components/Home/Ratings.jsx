@@ -1,6 +1,6 @@
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
-import googleLogo from "/src/assets/Home/Google.png";
-import facebookLogo from "/src/assets/Home/facebook.png";
+import googleLogo from "@/assets/Home/Google.png";
+import facebookLogo from "@/assets/Home/facebook.png";
 
 //import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 

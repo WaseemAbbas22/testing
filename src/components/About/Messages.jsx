@@ -1,6 +1,6 @@
 import React from "react";
-import CEOImg from "/src/assets/About/CEO.png";
-import MDImg from "/src/assets/About/MD.png";
+import CEOImg from "@/assets/About/CEO.png";
+import MDImg from "@/assets/About/MD.png";
 
 const Messages = () => {
   return (

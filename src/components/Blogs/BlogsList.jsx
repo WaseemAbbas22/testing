@@ -4,7 +4,7 @@ import { useState } from "react";
 import Blog1 from "../../assets/Blogs/blog1.png";
 import Blog2 from "../../assets/Blogs/blog2.png";
 import Blog3 from "../../assets/Blogs/blog3.png";
-import lastsec from "/src/assets/Home/lastsec.png";
+import lastsec from "@/assets/Home/lastsec.png";
 
 const blogs = [
   { id: 1, img: Blog1, title: "Pest Control Tips, Insights & Expert Advice", desc: "Stay informed with the latest pest prevention tips, seasonal advice, and expert insights from our certified technicians. Whether you're dealing with termites, cockroaches...", date: "01 Jul 2025",Link:"/bloggen" },
