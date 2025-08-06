@@ -8,10 +8,10 @@ import Top1 from "@/assets/Pests/Rodent/Top1.png";
 import Top2 from "@/assets/Pests/Rodent/Top2.png";
 import PestRemovalBox from "../PestRemovalBox";
 import RemoveAnimals from "../RemoveAnimals";
-import Img1 from "@/assets/Pests/Rodent/Bot1.png";
-import Img2 from "@/assets/Pests/Rodent/Bot2.png";
-import Img3 from "@/assets/Pests/Rodent/Bot3.png";
-import Img4 from "@/assets/Pests/Rodent/Bot4.png";
+import Img1 from "@/assets/Pests/Rodent/bot1.png";
+import Img2 from "@/assets/Pests/Rodent/bot2.png";
+import Img3 from "@/assets/Pests/Rodent/bot3.png";
+import Img4 from "@/assets/Pests/Rodent/bot4.png";
 
 const animalsList = [
   {
