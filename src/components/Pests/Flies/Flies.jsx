@@ -8,9 +8,9 @@ import Top1 from "/src/assets/Pests/Rodent/Top1.png";
 import Top2 from "/src/assets/Pests/Rodent/Top2.png";
 import PestRemovalBox from "../PestRemovalBox";
 import RemoveAnimals from "../RemoveAnimals";
-import Img1 from "/src/assets/Pests/Flies/bot1.svg";
-import Img2 from "/src/assets/Pests/Flies/bot2.svg";
-import Img3 from "/src/assets/Pests/Flies/bot3.svg";
+import Img1 from "/src/assets/Pests/Flies/Bot1.svg";
+import Img2 from "/src/assets/Pests/Flies/Bot2.svg";
+import Img3 from "/src/assets/Pests/Flies/Bot3.svg";
 //import Img4 from "/src/assets/Pests/Rodent/bot4.png";
 
 const animalsList = [
