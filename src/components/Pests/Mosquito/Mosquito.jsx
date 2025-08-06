@@ -8,7 +8,7 @@ import Top1 from "@/assets/Pests/Mosquito/Top1.svg";
 import Top2 from "@/assets/Pests/Mosquito/Top2.svg";
 import PestRemovalBox from "../PestRemovalBox";
 import RemoveAnimals from "../RemoveAnimals";
-import Img1 from "@/assets/Pests/Mosquito/Bot1.svg";
+import Img1 from "@/assets/Pests/Mosquito/Bot1.svg"; //"C:\Users\Waseem Abbas\Downloads\testing-main\src\assets\Pests\Mosquito\Bot1.svg"
 import Img2 from "@/assets/Pests/Mosquito/Bot3.svg";
 import Img3 from "@/assets/Pests/Mosquito/Bot2.svg";
 //import Img4 from "/src/assets/Pests/Mosquito/Bot4.svg";
