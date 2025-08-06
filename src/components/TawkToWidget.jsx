@@ -20,7 +20,7 @@ const TawkToWidget = () => {
       if (document.title !== originalTitle) {
         document.title = originalTitle;
       }
-    }, 1000); // every 0.5 seconds
+    }, 5000); // every 0.5 seconds
 
     // Clean up interval when component unmounts
     return () => {

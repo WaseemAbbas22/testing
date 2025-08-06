@@ -32,12 +32,7 @@ const animalsList = [
     sci: "",
     link: "/bandicoot-rat",
   },
-  {
-    img: "",
-    name: "",
-    sci: "",
-    link: "",
-  },
+  
 ];
 
 const housemouse = () => {

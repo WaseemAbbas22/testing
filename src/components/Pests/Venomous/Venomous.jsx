@@ -33,12 +33,7 @@ const animalsList = [
     sci: "",
     link: "",
   },
-  {
-    img: "",
-    name: "",
-    sci: "",
-    link: "",
-  },
+  
 ];
 
 const housemouse = () => {
