@@ -18,19 +18,19 @@ const animalsList = [
     img: Img1,
     name: "HOUSE GECKO",
     sci: "",
-    link: "",
+    link: "/house-gecko",
   },
   {
     img: Img2,
     name: "MEDITERRANEAN GECKO",
     sci: "",
-    link: "",
+    link: "/mediterranean-gecko",
   },
   {
     img: Img3,
     name: "YELLOW-BELLIED HOUSE GECKO",
     sci: "",
-    link: "",
+    link: "/yellow-bellied-house-gecko",
   },
   
 ];

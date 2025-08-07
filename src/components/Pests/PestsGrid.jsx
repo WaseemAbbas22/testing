@@ -7,7 +7,7 @@ const PestGrid = () => {
     <div className="w-full bg-gray-50 py-10 px-4 md:px-16 lg:px-32 text-center">
       <h2 className="text-2xl md:text-3xl font-bold mb-8">Our Pest Services</h2>
 
-      <div className=" w-[85%]  grid grid-cols-1 sm:grid-cols-4 gap-4 mx-auto">        {/* First 12 cards */}
+      <div className=" w-[90%]  grid grid-cols-1 sm:grid-cols-4 gap-4 mx-auto">        {/* First 12 cards */}
         <div><PestCard pestName="ANTS" /> </div>
         <div><PestCard pestName="COCKROACHES" /></div>
         <div><PestCard pestName="RED BUGS" /></div>

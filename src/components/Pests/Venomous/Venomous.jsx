@@ -19,19 +19,19 @@ const animalsList = [
     img: Img1,
     name: "ARABIAN COBRA",
     sci: "",
-    link: "",
+    link: "/arabian-cobra",
   },
   {
     img: Img2,
     name: "SAND BOA",
     sci: "",
-    link: "",
+    link: "/sand-boa",
   },
   {
     img: Img3,
     name: "ARABIAN HORNED VIPER",
     sci: "",
-    link: "",
+    link: "/arabian-horned-cobra",
   },
   
 ];

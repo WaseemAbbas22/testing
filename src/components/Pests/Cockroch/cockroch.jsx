@@ -18,25 +18,25 @@ const animalsList = [
     img: Img1,
     name: "GERMAN COCKROACH",
     sci: "",
-    link: "/house-mouse",
+    link: "/german-cockroach",
   },
   {
     img: Img2,
     name: "BROWN-BANDED COCKROACH",
     sci: "",
-    link: "/roof-rat",
+    link: "/brown-banded-cockroach",
   },
   {
     img: Img3,
     name: "SMOKY BROWN COCKROACH",
     sci: "",
-    link: "/bandicoot-rat",
+    link: "/smoky-brown-cockroach",
   },
   {
     img: Img4,
     name: "ORIENTAL COCKROACH",
     sci: "",
-    link: "",
+    link: "/oriental-cockroach",
   },
 ];
 

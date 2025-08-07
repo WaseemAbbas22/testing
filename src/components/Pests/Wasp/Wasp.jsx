@@ -18,25 +18,25 @@ const animalsList = [
     img: Img1,
     name: "PAPER WASP NEST",
     sci: "",
-    link: "",
+    link: "/paper-wasp-nest",
   },
   {
     img: Img2,
     name: "YELLOW JACKET WASP",
     sci: "",
-    link: "",
+    link: "/yellow-jacket-wasp",
   },
   {
     img: Img3,
     name: "HORNEST WASP",
     sci: "",
-    link: "",
+    link: "/hornest-wasp",
   },
   {
     img: Img4,
     name: "ARABIAN PAPER WASP",
     sci: "",
-    link: "",
+    link: "/arabian-paper-wasp",
   },
 ];
 

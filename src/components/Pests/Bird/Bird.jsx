@@ -18,19 +18,19 @@ const animalsList = [
     img: Img1,
     name: "COMMON MYNA",
     sci: "",
-    link: "",
+    link: "/common-myna",
   },
   {
     img: Img2,
     name: "HOUSE SPARROW",
     sci: "",
-    link: "",
+    link: "/house-sparrow",
   },
   {
     img: Img3,
     name: "PIGEONS",
     sci: "",
-    link: "",
+    link: "/pigeons",
   },
   
 ];

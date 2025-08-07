@@ -18,25 +18,25 @@ const animalsList = [
     img: Img1,
     name: "CIMEX LECTULARIUS",
     sci: "",
-    link: "/house-mouse",
+    link: "/cimex-lectularius",
   },
   {
     img: Img2,
     name: "CIMEX HEMIPTERUS",
     sci: "",
-    link: "/roof-rat",
+    link: "/cimex-hemipterus",
   },
   {
     img: Img3,
     name: "BAT BUGS",
     sci: "",
-    link: "/bandicoot-rat",
+    link: "/bat-bug",
   },
   {
     img: Img4,
     name: "CHARLOTTES",
     sci: "",
-    link: "/house-mouse",
+    link: "/charlottes",
   },
   
 ];

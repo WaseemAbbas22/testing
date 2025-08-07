@@ -18,25 +18,25 @@ const animalsList = [
     img: Img1,
     name: "SUBTERRANEAN TERMITES",
     sci: "",
-    link: "/house-mouse",
+    link: "/subterranean-termites",
   },
   {
     img: Img2,
     name: "DRYWOOD TERMITES",
     sci: "",
-    link: "/roof-rat",
+    link: "/drywood-termites",
   },
   {
     img: Img3,
     name: "FORMOSAN TERMITES",
     sci: "",
-    link: "/bandicoot-rat",
+    link: "/formosan-termites",
   },
   {
     img: Img4,
     name: "DAMPWOOD TERMITES",
     sci: "",
-    link: "",
+    link: "/dampwood-termites",
   },
 ];
 

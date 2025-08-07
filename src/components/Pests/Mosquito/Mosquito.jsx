@@ -18,19 +18,19 @@ const animalsList = [
     img: Img1,
     name: "AEDES MOSQUITO",
     sci: "",
-    link: "",
+    link: "/aedes-mosquito",
   },
   {
     img: Img2,
     name: "ANOPHELES MOSQUITO",
     sci: "",
-    link: "",
+    link: "/anopheles-mosquito",
   },
   {
     img: Img3,
     name: "CULEX MOSQUITO",
     sci: "",
-    link: "",
+    link: "/culex-mosquito",
   },
   
 ];

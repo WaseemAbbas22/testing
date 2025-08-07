@@ -29,15 +29,15 @@ const AboutCompany = () => {
               Rajput Travel & Tourism LLC
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+            <a href="https://rajputtravelpk.com/" className="text-blue-600 underline hover:text-blue-800">
               Rajput Travel & Tourism Private Limited
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+            <a href="https://siyanalarabia.com/" className="text-blue-600 underline hover:text-blue-800">
               Siyah Al Arab
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+            <a href="https://worldcitizenconsultants.com/" className="text-blue-600 underline hover:text-blue-800">
               World Citizen Consultants
             </a>
             ,{" "}
@@ -49,7 +49,7 @@ const AboutCompany = () => {
               Accurate SAF
             </a>
             , and{" "}
-            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+            <a href="https://ramazalnajah.com/" className="text-blue-600 underline hover:text-blue-800">
               Ramzaalnajah for Recruitment
             </a>
             . We keep blazing the trails as we foresee and dominate across the
@@ -68,25 +68,25 @@ const AboutCompany = () => {
 
           <p className="mb-5 text-justify">
             We were officially approved by{" "}
-            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+            <a href="https://www.dm.gov.ae/" className="text-blue-600 underline hover:text-blue-800">
               Dubai Municipality
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+            <a href="https://portal.shjmun.gov.ae/en/Pages/Home.aspx" className="text-blue-600 underline hover:text-blue-800">
               Sharjah Municipality
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+            <a href="https://www.am.gov.ae/en/" className="text-blue-600 underline hover:text-blue-800">
               Ajman Municipality
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+            <a href="https://www.moccae.gov.ae/en/knowledge-and-statistics/food-safety.aspx" className="text-blue-600 underline hover:text-blue-800">
               Foodwatch and the Ministry of Climate Change and Environment
               (MOCCAE)
             </a>
             . Our team formally adheres to the standards of the UAE. As a member
             of{" "}
-            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+            <a href="https://www.npmapestworld.org/" className="text-blue-600 underline hover:text-blue-800">
               NPMA
             </a>
             , we keep abreast of all pest behaviour, safety and environment

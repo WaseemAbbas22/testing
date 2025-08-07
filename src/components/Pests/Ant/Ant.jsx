@@ -19,25 +19,25 @@ const animalsList = [
     img: Img1,
     name: "ARGENTINE ANTS",
     sci: "",
-    link: "/house-mouse",
+    link: "/argentine-ant",
   },
   {
     img: Img2,
     name: "PAVEMENT ANTS",
     sci: "",
-    link: "/roof-rat",
+    link: "/pavement-ant",
   },
   {
     img: Img3,
     name: "PHARAOH ANTS",
     sci: "",
-    link: "/bandicoot-rat",
+    link: "/pharaoh-ant",
   },
   {
     img: Img4,
     name: "CARPENTER ANTS",
     sci: "",
-    link: "/norway-rat",
+    link: "/carpenter-ant",
   },
 ];
 const Ant = () => {

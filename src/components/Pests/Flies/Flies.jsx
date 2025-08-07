@@ -18,19 +18,19 @@ const animalsList = [
     img: Img1,
     name: "HOUSE FLY",
     sci: "",
-    link: "",
+    link: "/housefly",
   },
   {
     img: Img2,
     name: "CLUSTER FLY",
     sci: "",
-    link: "",
+    link: "/clusterfly",
   },
   {
     img: Img3,
     name: "FRUIT FLY",
     sci: "",
-    link: "",
+    link: "/fruitfly",
   },
   
 ];

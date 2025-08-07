@@ -18,19 +18,19 @@ const animalsList = [
     img: Img1,
     name: "DEER TICK",
     sci: "",
-    link: "",
+    link: "/deep-tick",
   },
   {
     img: Img2,
     name: "LONE STAR TICK",
     sci: "",
-    link: "",
+    link: "/lone-star-tick",
   },
   {
     img: Img3,
     name: "BROWN DOG TICK",
     sci: "",
-    link: "",
+    link: "/brown-dog-tick",
   },
   
 ];

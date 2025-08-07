@@ -36,7 +36,7 @@ const animalsList = [
     img: Img4,
     name: "NORWAY RAT ",
     sci: "(RATTUS NORVEGICUS)",
-    link: "",
+    link: "/norway-rat",
   },
 ];
 
