@@ -41,7 +41,7 @@ const AboutCompany = () => {
               World Citizen Consultants
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600 underline hover:text-blue-800">
+            <a href="https://www.facebook.com/profile.php?id=100066525975936" className="text-blue-600 underline hover:text-blue-800">
               Ghulam Bari Rice Mill
             </a>
             ,{" "}
