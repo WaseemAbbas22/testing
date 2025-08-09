@@ -13,14 +13,14 @@ const chemicalDocuments = [
   {
     name: "Ecatrol IC3",
     validity: "01-Dec-2026",
-    msds: "public/DocumentFiles/Ecotrol-D-IC3-MSDS.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ecotrol-D-IC3-MSDS.pdf"
-    cor: "public/DocumentFiles/Ecotrol-IC3-COR.pdf",    //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ecotrol-IC3-COR.pdf"
+    msds: "DocumentFiles/Ecotrol-D-IC3-MSDS.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ecotrol-D-IC3-MSDS.pdf"
+    cor: "DocumentFiles/Ecotrol-IC3-COR.pdf",    //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ecotrol-IC3-COR.pdf"
   },
   {
     name: "Tandem",
     validity: "31-Jan-2026",
-    msds: "public/DocumentFiles/Tandem-MSDS.pdf",   //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Tandem-MSDS.pdf"
-    cor: "public/DocumentFiles/Tandem-COR.pdf",   //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Tandem-COR.pdf"
+    msds: "DocumentFiles/Tandem-MSDS.pdf",   //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Tandem-MSDS.pdf"
+    cor: "DocumentFiles/Tandem-COR.pdf",   //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Tandem-COR.pdf"
   },
   {
     name: "Penta 250 FP",
@@ -31,8 +31,8 @@ const chemicalDocuments = [
   {
     name: "Rat Kill Blox",
     validity: "10-Dec-2025",
-    msds: "public/DocumentFiles/Ratkill-Blox-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\RATKILL-BLOX-COR.pdf"
-    cor: "public/DocumentFiles/RATKILL-BLOX-COR.pdf",   //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ratkill-Blox-MSDS.pdf"
+    msds: "DocumentFiles/Ratkill-Blox-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\RATKILL-BLOX-COR.pdf"
+    cor: "DocumentFiles/RATKILL-BLOX-COR.pdf",   //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ratkill-Blox-MSDS.pdf"
   },
   {
     name: "Delta Super SC",
@@ -43,8 +43,8 @@ const chemicalDocuments = [
   {
     name: "Deltacid Speedy SC",
     validity: "17-Sep-2025",
-    msds: "public/DocumentFiles/Deltacid-Speedy-Msds.pd",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Deltacid-Speedy-Msds.pdf"
-    cor: "public/DocumentFiles/Deltacid-Speedy-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Deltacid-Speedy-COR.pdf"
+    msds: "DocumentFiles/Deltacid-Speedy-Msds.pd",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Deltacid-Speedy-Msds.pdf"
+    cor: "DocumentFiles/Deltacid-Speedy-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Deltacid-Speedy-COR.pdf"
   },
   {
     name: "Cimexa Dust Powder",
@@ -55,8 +55,8 @@ const chemicalDocuments = [
   {
     name: "Ratimor Wax Blocks",
     validity: "01-Dec-2025",
-    msds: "public/DocumentFiles/Ratimor-Wax-Blocks-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ratimor-Wax-Blocks-MSDS.pdf"
-    cor: "public/DocumentFiles/Ratimor-Wax-Blocks-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ratimor-Wax-Blocks-COR-2025.pdf"
+    msds: "DocumentFiles/Ratimor-Wax-Blocks-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ratimor-Wax-Blocks-MSDS.pdf"
+    cor: "DocumentFiles/Ratimor-Wax-Blocks-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ratimor-Wax-Blocks-COR-2025.pdf"
    }, 
   {
     name: "Starbar Fly Trap Attractant",
@@ -73,56 +73,56 @@ const chemicalDocuments = [
   {
     name: "Cymina 10 EC",
     validity: "12-Apr-2026",
-    msds: "public/DocumentFiles/CYMINA-10-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\CYMINA-10-MSDS.pdf"
-    cor: "public/DocumentFiles/Cymina-10-COR.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Cymina-10-COR.pdf"
+    msds: "DocumentFiles/CYMINA-10-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\CYMINA-10-MSDS.pdf"
+    cor: "DocumentFiles/Cymina-10-COR.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Cymina-10-COR.pdf"
   },
   {
     name: "Provecta",
     validity: "Valid Till (---)",
-    msds: "public/DocumentFiles/Provecta-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Provecta-MSDS.pdf"
-    cor: "public/DocumentFiles/Provecta-COR.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Provecta-COR.pdf"
+    msds: "DocumentFiles/Provecta-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Provecta-MSDS.pdf"
+    cor: "DocumentFiles/Provecta-COR.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Provecta-COR.pdf"
   },
   {
     name: "Delta Park",
     validity: "01-Dec-2026",
-    msds: "public/DocumentFiles/Delta-Park-MSDS.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Delta-Park-MSDS.pdf"
-    cor: "public/DocumentFiles/DELTA-PARK-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\DELTA-PARK-COR.pdf"
+    msds: "DocumentFiles/Delta-Park-MSDS.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Delta-Park-MSDS.pdf"
+    cor: "DocumentFiles/DELTA-PARK-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\DELTA-PARK-COR.pdf"
   },
   {
     name: "Sindoxa",
     validity: "17-June-2026",
-    msds: "public/DocumentFiles/Sindoxa-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Sindoxa-MSDS.pdf"
-    cor: "public/DocumentFiles/Sindoxa-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Sindoxa-COR.pdf"
+    msds: "DocumentFiles/Sindoxa-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Sindoxa-MSDS.pdf"
+    cor: "DocumentFiles/Sindoxa-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Sindoxa-COR.pdf"
   },
   {
     name: "Surefire Spectrum",
     validity: "10-June-2026",
-    msds: "public/DocumentFiles/Surefire-Spectrum-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Surefire-Spectrum-MSDS.pdf"
-    cor: "public/DocumentFiles/Surefire-Spectrum-COR.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Surefire-Spectrum-COR.pdf"
+    msds: "DocumentFiles/Surefire-Spectrum-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Surefire-Spectrum-MSDS.pdf"
+    cor: "DocumentFiles/Surefire-Spectrum-COR.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Surefire-Spectrum-COR.pdf"
   },
   {
     name: "Magnum Cockroach Gel",
     validity: "01-Dec-2025",
-    msds: "public/DocumentFiles/Magnum-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Magnum-MSDS.pdf"
-    cor: "public/DocumentFiles/Magnum-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Magnum-COR.pdf"
+    msds: "DocumentFiles/Magnum-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Magnum-MSDS.pdf"
+    cor: "DocumentFiles/Magnum-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Magnum-COR.pdf"
   },
   {
     name: "Pestphos",
     validity: "07-Apr-2026",
-    msds: "public/DocumentFiles/Pestphos-MSD-2019.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Pestphos-MSD-2019.pdf"
-    cor: "public/DocumentFiles/Pestphos-COR.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Pestphos-COR.pdf"
+    msds: "DocumentFiles/Pestphos-MSD-2019.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Pestphos-MSD-2019.pdf"
+    cor: "DocumentFiles/Pestphos-COR.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Pestphos-COR.pdf"
   },
   {
     name: "Temprid",
     validity: "07-Apr-2026", 
-    msds: "public/DocumentFiles/Temprid-SC-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Temprid-SC-MSDS.pdf"
-    cor: "public/DocumentFiles/Temprid-SC-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Temprid-SC-COR.pdf"
+    msds: "DocumentFiles/Temprid-SC-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Temprid-SC-MSDS.pdf"
+    cor: "DocumentFiles/Temprid-SC-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Temprid-SC-COR.pdf"
   },
   {
     name: "Intice 10 Premium Bait",
     validity: "30-Dec-2026",
-    msds: "public/DocumentFiles/InTice-10-Perimeter-Bait-SDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\InTice-10-Perimeter-Bait-SDS.pdf"
-    cor: "public/DocumentFiles/Intice-10-Perimeter-Bait-COR.pdf",          //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Intice-10-Perimeter-Bait-COR.pdf"
+    msds: "DocumentFiles/InTice-10-Perimeter-Bait-SDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\InTice-10-Perimeter-Bait-SDS.pdf"
+    cor: "DocumentFiles/Intice-10-Perimeter-Bait-COR.pdf",          //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Intice-10-Perimeter-Bait-COR.pdf"
   },
   {
     name: "Intice Granules",
@@ -134,39 +134,39 @@ const chemicalDocuments = [
   {
     name: "Thifast Granules Fly Bait",
     validity: "01-Feb-2026",
-    msds: "public/DocumentFiles/Thifast-Granules-Fly-Bait-MSDS.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Thifast-Granules-Fly-Bait-MSDS.pdf"
-    cor: "public/DocumentFiles/Thifast-Granules-Fly-Bait-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Thifast-Granules-Fly-Bait-COR.pdf"
+    msds: "DocumentFiles/Thifast-Granules-Fly-Bait-MSDS.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Thifast-Granules-Fly-Bait-MSDS.pdf"
+    cor: "DocumentFiles/Thifast-Granules-Fly-Bait-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Thifast-Granules-Fly-Bait-COR.pdf"
   },
 
   {
     name: "Thifast 10 WG Fly Bait",
     validity: "01-Feb-2026",
-    msds: "public/DocumentFiles/Thifast-10-WG-Fly-Bait-MSDS.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Thifast-10-WG-Fly-Bait-MSDS.pdf"
-    cor: "public/DocumentFiles/Thifast-10-WG-Fly-Bait-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Thifast-10-WG-Fly-Bait-COR.pdf"
+    msds: "DocumentFiles/Thifast-10-WG-Fly-Bait-MSDS.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Thifast-10-WG-Fly-Bait-MSDS.pdf"
+    cor: "DocumentFiles/Thifast-10-WG-Fly-Bait-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Thifast-10-WG-Fly-Bait-COR.pdf"
   },
   {
     name: "Agita WG",
     validity: "01-June-2026",
-    msds: "public/DocumentFiles/Agita-10-WG-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Agita-10-WG-MSDS.pdf"
-    cor: "public/DocumentFiles/Agita-10-WG-COR.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Agita-10-WG-COR.pdf"
+    msds: "DocumentFiles/Agita-10-WG-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Agita-10-WG-MSDS.pdf"
+    cor: "DocumentFiles/Agita-10-WG-COR.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Agita-10-WG-COR.pdf"
   },
   {
     name: "Acetellic Ec 50",
     validity: "12-May-2026",
-    msds: "public/DocumentFiles/Actellic50-MSDS.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Actellic50-MSDS.pdf"
-    cor: "public/DocumentFiles/Actellic-COR .pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Actellic-COR .pdf"
+    msds: "DocumentFiles/Actellic50-MSDS.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Actellic50-MSDS.pdf"
+    cor: "DocumentFiles/Actellic-COR .pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Actellic-COR .pdf"
   },
   {
     name: "Cymina Plus EC",
     validity: "12-Feb-2027",
-    msds: "public/DocumentFiles/Cymina-Plus-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Cymina-Plus-MSDS.pdf"
-    cor: "public/DocumentFiles/Cymina-Plus-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Cymina-Plus-COR.pdf"
+    msds: "DocumentFiles/Cymina-Plus-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Cymina-Plus-MSDS.pdf"
+    cor: "DocumentFiles/Cymina-Plus-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Cymina-Plus-COR.pdf"
   },
   {
     name: "Quick Bayt Granules",
     validity: "01-Sep-2026",
-    msds: "public/DocumentFiles/Quick-Bayt-GR-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Quick-Bayt-GR-MSDS.pdf"
-    cor: "public/DocumentFiles/Quick-Bayt-Granules-COR .pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Quick-Bayt-Granules-COR .pdf"
+    msds: "DocumentFiles/Quick-Bayt-GR-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Quick-Bayt-GR-MSDS.pdf"
+    cor: "DocumentFiles/Quick-Bayt-Granules-COR .pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Quick-Bayt-Granules-COR .pdf"
   },
 ];
 
