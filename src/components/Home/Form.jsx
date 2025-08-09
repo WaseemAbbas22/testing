@@ -181,7 +181,7 @@ const Form = () => {
                   value={pestConcern}
                   onChange={(e) => setPestConcern(e.target.value)}
                   className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-2 2xl:pl-6 3xl:pl-4 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
-                  required
+                  
                 >
                   <option value="">select----</option>
                   <option value="ants">{t("ants")}</option>
@@ -207,7 +207,7 @@ const Form = () => {
                   value={priorityType}
                   onChange={(e) => setPriorityType(e.target.value)}
                   className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-3 2xl:pl-6 3xl:pl-4 2xl:h-10 3xl:h-16 4xl:h-20 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
-                  required
+                
                 >
                   <option value="">select----</option>
                   <option value="standard">{t("standard")}</option>
@@ -233,7 +233,7 @@ const Form = () => {
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder={t("writeYourMessage")}
                 className="custom-textarea border-[#DEDEDE] text-[#B6B6B6] pl-4 2xl:pl-6 3xl:pl-4 4xl:py-6 h-28 2xl:h-40 3xl:h-48 4xl:h-56 text-xs 2xl:text-base 3xl:text-lg 4xl:text-xl rounded-md 2xl:rounded-lg w-full"
-                required
+                
               />
              
             </div>

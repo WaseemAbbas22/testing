@@ -1,0 +1,47 @@
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dubai Municipality Pest Control | Trusted Services</title>
+<meta name="description" content=" Get certified pest control in Dubai with municipality-approved experts. Fast response, safe chemicals & guaranteed satisfaction. Call us today!">
+<meta name="author" content="Muhammad Waqas Chughtai">
+<meta name="copyright" content="Accurate Pest Control Services LLC">
+<meta name="robots" content="index, follow">
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org/",
+	"@type": "LocalBusiness",
+	"name": "Accurate Pest Control Services LLC Dubai",
+	"image": "https://accuratepestcontrol.ae/",
+	"priceRange": "150 To 300 AED",
+	"telephone": "+971 52 449 6173",
+	"url": "https://accuratepestcontrol.ae/",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "Warehouse No.1, Plot No. 247-289, Al Qusais Industrial Area 4, Dubai - UAE",
+		"addressLocality": "Dubai",
+		"addressRegion": "",
+		"addressCountry": "United Arab Emirates"
+	},
+	"openingHoursSpecification": [
+		{
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sunday", "Saturday"],
+			"opens": "08:00",
+			"closes": "22:00"
+		}
+	],
+	"sameAs": ["https://www.facebook.com/accuratepestcontrolservices/", "https://www.instagram.com/accuratepestcontrolservices", "https://www.linkedin.com/company/accurate-pest-control-services-llc", "https://twitter.com/AccuratePestC", "https://www.pinterest.com/accuratepestcontrolservice/", "https://youtube.com/@AccuratePestControlServices"]
+}
+</script>
+
+
+
+

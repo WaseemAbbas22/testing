@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import VisionIcon from "@/assets/About/vision.png";
 import MissionIcon from "@/assets/About/mission.png";
 

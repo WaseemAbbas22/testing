@@ -13,7 +13,7 @@ const chemicalDocuments = [
   {
     name: "Ecatrol IC3",
     validity: "01-Dec-2026",
-    msds: "/DocumentFiles/Ecotrol-D-IC3-MSDS.pdf.pdf",
+    msds: "/DocumentFiles/Ecotrol-D-IC3-MSDS.pdf",
     cor: "/DocumentFiles/Ecotrol-IC3-COR-2025.pdf",
   },
   {
