@@ -5,12 +5,6 @@ import download from "@/assets/Documents/downloadImg.png";
 
 const chemicalDocuments = [
   {
-    name: "Ajman Approved Chemicals List",
-    validity: "17-Jan-2025",
-    msds: "/DocumentFiles/",
-    cor: "/DocumentFiles/",
-  },
-  {
     name: "Ecatrol IC3",
     validity: "01-Dec-2026",
     msds: "DocumentFiles/Ecotrol-D-IC3-MSDS.pdf", //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ecotrol-D-IC3-MSDS.pdf"
@@ -22,54 +16,28 @@ const chemicalDocuments = [
     msds: "DocumentFiles/Tandem-MSDS.pdf",   //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Tandem-MSDS.pdf"
     cor: "DocumentFiles/Tandem-COR.pdf",   //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Tandem-COR.pdf"
   },
-  {
-    name: "Penta 250 FP",
-    validity: "03-Dec-2026",
-    msds: "/DocumentFiles/",
-    cor: "/DocumentFiles/",
-  },
+  
   {
     name: "Rat Kill Blox",
     validity: "10-Dec-2025",
     msds: "DocumentFiles/Ratkill-Blox-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\RATKILL-BLOX-COR.pdf"
     cor: "DocumentFiles/RATKILL-BLOX-COR.pdf",   //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ratkill-Blox-MSDS.pdf"
   },
-  {
-    name: "Delta Super SC",
-    validity: "07-Feb-2025",
-    msds: "/DocumentFiles/",
-    cor: "/DocumentFiles/",
-  },
+  
   {
     name: "Deltacid Speedy SC",
     validity: "17-Sep-2025",
     msds: "DocumentFiles/Deltacid-Speedy-Msds.pd",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Deltacid-Speedy-Msds.pdf"
     cor: "DocumentFiles/Deltacid-Speedy-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Deltacid-Speedy-COR.pdf"
   },
-  {
-    name: "Cimexa Dust Powder",
-    validity: "15-Sep-2026",
-    msds: "/DocumentFiles/",
-    cor: "/DocumentFiles/",
-  },
+  
   {
     name: "Ratimor Wax Blocks",
     validity: "01-Dec-2025",
     msds: "DocumentFiles/Ratimor-Wax-Blocks-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ratimor-Wax-Blocks-MSDS.pdf"
     cor: "DocumentFiles/Ratimor-Wax-Blocks-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Ratimor-Wax-Blocks-COR-2025.pdf"
    }, 
-  {
-    name: "Starbar Fly Trap Attractant",
-    validity: "01-Jan-2026",
-    msds: "/DocumentFiles/",
-    cor: "/DocumentFiles/",
-  },
-  {
-    name: "Lambdastar Ultra Capsulate",
-    validity: "01-Mar-2026",
-    msds: "/DocumentFiles/",
-    cor: "/DocumentFiles/",
-  },
+  
   {
     name: "Cymina 10 EC",
     validity: "12-Apr-2026",
@@ -125,12 +93,11 @@ const chemicalDocuments = [
     cor: "DocumentFiles/Intice-10-Perimeter-Bait-COR.pdf",          //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Intice-10-Perimeter-Bait-COR.pdf"
   },
   {
-    name: "Intice Granules",
-    validity: "30-Dec-2026",
-    msds: "/DocumentFiles/",
-    cor: "/DocumentFiles/",
+    name: "Penta",
+    validity: "07-Apr-2026",
+    msds: "DocumentFiles/Penta-250-FS-MSD.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Penta-250-FS-MSD.pdf"
+    cor: "DocumentFiles/PENTA-250-FP-COR.pdf", //""C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\PENTA-250-FP-COR.pdf"
   },
-
   {
     name: "Thifast Granules Fly Bait",
     validity: "01-Feb-2026",
@@ -168,6 +135,12 @@ const chemicalDocuments = [
     msds: "DocumentFiles/Quick-Bayt-GR-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Quick-Bayt-GR-MSDS.pdf"
     cor: "DocumentFiles/Quick-Bayt-Granules-COR .pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Quick-Bayt-Granules-COR .pdf"
   },
+  {
+    name: "Intice Liquid Bait",
+    validity: "(--)",
+    msds:"DocumentFiles/InTice-Thiquid-Ant-Bait-MSDS.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\InTice-Thiquid-Ant-Bait-MSDS.pdf"
+    cor: "DocumentFiles/Intice-Liquid-Bait-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Intice-Liquid-Bait-COR.pdf"
+  }
 ];
 
 const DocumentGrid = () => {
@@ -257,12 +230,12 @@ const DocumentGrid = () => {
             className={`group flex flex-col justify-between bg-[#32A8491A] rounded-lg shadow transition border border-[#32A849] h-[180px] lg:h-[150px] 2xl:h-[200px] 3xl:h-[210px] hover:shadow-lg hover:scale-105 hover:bg-darkgreen duration-500 ${lastRowClass}`}
           >
             {/* Top Content */}
-            <div className="flex flex-col justify-center items-center px-4 py-2 sm:px-6 sm:py-2 flex-grow">
+            <div className="flex flex-col justify-center items-center px-4 py-2 sm:px-6 sm:py-1 flex-grow">
               <h2 className="text-black/80 font-bold text-lg text-center group-hover:text-white transition-colors duration-300 sm:text-sm md:text-base xl:text-lg 2xl:text-2xl 3xl:text-[28px]">
                 {doc.name}
               </h2>
 
-              <div className="text-[#444444] text-center mt-1 sm:mt-0">
+              <div className="text-[#444444] text-center mt-1 sm:mt-4">
                 <p className="text-sm font-semibold group-hover:text-white transition-colors duration-300 sm:text-sm xl:text-sm 2xl:text-lg 3xl:text-xl">
                   Valid Till
                 </p>
