@@ -43,7 +43,7 @@ const chemicalDocuments = [
   {
     name: "Deltacid Speedy SC",
     validity: "17-Sep-2025",
-    msds: "public/DocumentFiles/Deltacid-Speedy-Msds.pdf",
+    msds: "public/DocumentFiles/Deltacid-Speedy-COR.pdf",  //"C:\Users\Waseem Abbas\Downloads\testing-main\public\DocumentFiles\Deltacid-Speedy-COR.pdf"
     cor: "public/DocumentFiles/Deltacid-Speedy-COR.pdf",
   },
   {
