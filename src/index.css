@@ -1,0 +1,104 @@
+/* Import Google Fonts and Typekit Fonts */@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+
+@import url('https://use.typekit.net/jbl6izv.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*Hower Effect on Links*/
+@layer components {
+  .nav-link-hover {
+    @apply relative hover:text-green-600 after:content-[''] after:absolute after:left-0 xl:after:-bottom-[26px] 3xl:after:-bottom-[45px] after:w-0 after:h-[4px] after:bg-darkgreen after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  .nav-link-active {
+    @apply relative text-green-600 after:content-[''] after:absolute after:left-0 xl:after:-bottom-[26px] 3xl:after:-bottom-[45px] after:w-full after:h-[4px] after:bg-darkgreen;
+  }
+}
+
+@layer components {
+  .custom-textarea {
+    @apply w-full mt-1 sm:mt-0 p-2 h-10 border border-bggray rounded resize-none outline-none focus:border-green-300 bg-bggray;
+  }
+}
+/*a@layer components {
+  .custom-box {
+    @apply bg-[#F2F2F2] w-[150px] md:w-[100%] h-[90%] flex items-center justify-center rounded-md shadow-md;
+  }
+}
+  */
+@layer components {
+  .custom-form{
+    @apply w-full rounded px-3 border border-[#DADADA] py-2 text-xs focus:outline-none focus:ring-2 focus:ring-green-500
+  }}
+
+
+
+
+body {
+  font-family: 'Cabin';
+  margin: 0;
+  width: 100vw;
+  background-color: var(--White, #fff);
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 12px; 
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2); 
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  transition: background-color 0.3s ease;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

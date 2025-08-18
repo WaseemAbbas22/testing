@@ -1,0 +1,62 @@
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}.react-tel-input .flag-dropdown,
+.react-tel-input   .selected-flag {
+  display: flex;
+  align-items: center; /* vertically center flag with input */
+  height: 50px;
+}
+
+/* Adjust scaled flag alignment */
+.react-tel-input .flag-dropdown .selected-flag .flag {
+  transform: scale(1.2);
+  transform-origin: center center; /* ensure scaling is centered */
+}
+
+/* Medium screens (md) */
+@media (min-width: 768px) {
+  .react-tel-input .flag-dropdown,
+  .react-tel-input .selected-flag {
+    height: 55px;
+  }
+
+  .react-tel-input .flag-dropdown .selected-flag .flag {
+    transform: scale(1.4);
+  }
+}
+
+/* Large screens (lg) */
+@media (min-width: 1024px) {
+  .react-tel-input .flag-dropdown,
+  .react-tel-input .selected-flag {
+    height: 60px;
+  }
+
+  .react-tel-input .flag-dropdown .selected-flag .flag {
+    transform: scale(1.6);
+  }
+}
+
+/* Extra large screens (2xl) */
+@media (min-width: 1536px) {
+  .react-tel-input .flag-dropdown,
+  .react-tel-input .selected-flag {
+    
+  }
+
+  .react-tel-input .flag-dropdown .selected-flag .flag {
+    transform: scale(1.8);
+  }
+}
+
+
+
+
+.animate-marquee {
+    animation: marquee 10s linear infinite; 
+}
