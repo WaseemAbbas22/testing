@@ -8,9 +8,9 @@ import Top1 from "@/assets/Pests/Mosquito/Top1.webp";
 import Top2 from "@/assets/Pests/Mosquito/Top2.webp";
 import PestRemovalBox from "../PestRemovalBox";
 import RemoveAnimals from "../RemoveAnimals";
-import Img1 from "@/assets/Pests/Mosquito/bot1.webp"; //"C:\Users\Waseem Abbas\Downloads\testing-main\src\assets\Pests\Mosquito\Bot1.svg"
-import Img2 from "@/assets/Pests/Mosquito/bot3.webp";
-import Img3 from "@/assets/Pests/Mosquito/bot2.webp";
+import Img1 from "@/assets/Pests/Mosquito/Bot1.webp"; //"C:\Users\Waseem Abbas\Downloads\testing-main\src\assets\Pests\Mosquito\Bot1.svg"
+import Img2 from "@/assets/Pests/Mosquito/Bot3.webp";
+import Img3 from "@/assets/Pests/Mosquito/Bot2.webp";
 //import Img4 from "/src/assets/Pests/Mosquito/Bot4.svg";
 
 const animalsList = [
