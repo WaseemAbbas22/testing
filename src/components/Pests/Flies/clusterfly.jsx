@@ -2,7 +2,7 @@ import PestInfoPage from "../PestInfoPage";
 import TopBar from "../../TopBar";
 import Navbar from "../../Navbar";
 import ServicesHero from "../../Services/ServicesHero";
-import RodentHeroImg from "@/assets/Pests/Flies/clusterhero.webp";
+import RodentHeroImg from "@/assets/Pests/Flies/Clusterhero.webp";
 //import React from "react";  
 import Footer from "@/components/Footer";
 
